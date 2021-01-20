@@ -18,7 +18,7 @@
     "baseUrl": ".",
     "types": ["@emotion/react/types/css-prop"],
     "paths": {
-      "@*": ["./*"]
+      "@/*": ["./*"]
     }
   },
   "exclude": ["node_modules"],
