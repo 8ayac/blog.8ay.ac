@@ -14,7 +14,8 @@
     "lint:ts:fix": "eslint src/ builder/ data/ --ext .ts,.tsx --fix",
     "lint:css": "stylelint --syntax css-in-js src/**/*.{tsx,css,scss}",
     "lint:css:fix": "stylelint --syntax css-in-js src/**/*.{tsx,css,scss} --fix",
-    "lint:md": "markdownlint . -c .github/actions/markdownlint/.markdownlintrc --ignore node_modules"
+    "lint:md": "markdownlint . -c .github/actions/markdownlint/.markdownlintrc --ignore node_modules",
+    "toc": "doctoc README.md --github"
   },
   "dependencies": {
     "@emotion/core": "^11.0.0",
