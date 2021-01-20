@@ -5,6 +5,7 @@
   "scripts": {
     "build": "run-s build:next",
     "build:next": "next build",
+    "test": "yarn jest",
     "dev": "next dev",
     "start": "next start",
     "export": "next export",
