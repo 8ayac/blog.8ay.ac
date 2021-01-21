@@ -59,6 +59,12 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 'off',
     'import/prefer-default-export': 'off',
     'import/no-unresolved': 'off',
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: ['**/*.test.ts', '**/*.test.tsx'],
+      },
+    ],
   },
   settings: {
     'import/resolver': {
