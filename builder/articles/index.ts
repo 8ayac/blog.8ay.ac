@@ -1,4 +1,5 @@
 import path from 'path';
+import { ARTICLES_DIR } from '@/src/constants/forBuilder';
 import { Article, ArticleAttribute } from '@/src/types';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import fm from 'front-matter';
@@ -30,8 +31,6 @@ export const parseMarkdownWithMeta = (rawMdContent: string): Article => {
 };
 
 export const build = (outputDir: string, outputFileName: string): void => {
-  const ARTICLES_DIR = 'docs/articles';
-
   const allArticleData = getFileNamesIn(ARTICLES_DIR).map((fname) =>
     parseMarkdownWithMeta(
       fs.readFileSync(path.join(ARTICLES_DIR, fname)).toString()
