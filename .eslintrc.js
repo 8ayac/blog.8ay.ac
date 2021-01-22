@@ -62,9 +62,10 @@ module.exports = {
     'import/no-extraneous-dependencies': [
       'error',
       {
-        devDependencies: ['**/*.test.ts', '**/*.test.tsx'],
+        devDependencies: ['**/*.test.ts', '**/*.test.tsx', '**/*.setup.ts'],
       },
     ],
+    'react/jsx-props-no-spreading': 'off',
   },
   settings: {
     'import/resolver': {
