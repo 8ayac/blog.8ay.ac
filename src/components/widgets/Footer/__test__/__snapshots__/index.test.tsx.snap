@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer is rendered correctly to match the snapshot 1`] = `
+<Footer>
+  <CopyRightParagraph>
+    © 2021 blog.8ay.ac All Rights Reserved.
+  </CopyRightParagraph>
+  <AboutGAParagraph>
+    This website uses Google Analytics, a web analytics service by Google. Google Analytics uses cookies, which are placed on your computer to help the website analyze how you use the site. You can prevent the the collection of your data by disabling cookies in your browser.
+  </AboutGAParagraph>
+</Footer>
+`;
+
+exports[`Footer rendered correctly to match the snapshot 1`] = `
+<footer>
+  <p>
+    © 2021 blog.8ay.ac All Rights Reserved.
+  </p>
+  <p>
+    This website uses Google Analytics, a web analytics service by Google. Google Analytics uses cookies, which are placed on your computer to help the website analyze how you use the site. You can prevent the the collection of your data by disabling cookies in your browser.
+  </p>
+</footer>
+`;
