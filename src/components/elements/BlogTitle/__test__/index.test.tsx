@@ -10,7 +10,7 @@ describe('BlogTitle', () => {
     <BlogTitle title={testTitle} subtitle={testSubtitle} />
   );
 
-  test('rendered correctly to match the snapshot', () => {
+  test('is rendered correctly to match the snapshot', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
