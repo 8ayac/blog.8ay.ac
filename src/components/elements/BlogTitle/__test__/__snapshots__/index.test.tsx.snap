@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BlogTitle rendered correctly to match the snapshot 1`] = `
+<Fragment>
+  <ComponentWrapperDiv>
+    <TitleSpan>
+      Test Title
+    </TitleSpan>
+    <SubtitleSpan>
+      Test Subtitle
+    </SubtitleSpan>
+  </ComponentWrapperDiv>
+</Fragment>
+`;
