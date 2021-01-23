@@ -7,6 +7,7 @@
     "build:articles": "ts-node --project tsconfig.builder.json -r tsconfig-paths/register ./builder/articles",
     "build:next": "next build",
     "test": "yarn jest",
+    "test:update": "yarn jest --updateSnapshot",
     "dev": "next dev",
     "start": "next start",
     "export": "next export",
@@ -31,8 +32,8 @@
     "dayjs": "^1.9.3",
     "moment": "^2.29.1",
     "next": "^10.0.5",
-    "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react": "16.14.0",
+    "react-dom": "16.14.0"
   },
   "devDependencies": {
     "@emotion/babel-plugin": "^11.1.2",
