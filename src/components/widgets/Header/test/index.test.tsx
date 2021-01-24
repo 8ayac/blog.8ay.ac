@@ -16,6 +16,7 @@ describe('Header', () => {
 
       expect(wHeader).toHaveStyleRule('position', 'sticky');
       expect(wHeader).toHaveStyleRule('top', '0');
+      expect(wHeader).toHaveStyleRule('z-index', '100');
       expect(wHeader).toHaveStyleRule('height', '3.7rem');
       expect(wHeader).toHaveStyleRule('padding', '0.5rem 1rem');
       expect(wHeader).toHaveStyleRule(
