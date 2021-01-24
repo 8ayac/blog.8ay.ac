@@ -12,8 +12,8 @@ const gBodyStyle = css`
     margin: 0;
     background-color: ${theme.color.yellow.base};
     font-family: -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI',
-      'Helvetica Neue', HelveticaNeue, YuGothic, 'Yu Gothic Medium', 'Yu Gothic',
-      Verdana, Meiryo, sans-serif;
+      'Helvetica Neue', HelveticaNeue, lYuGothic, 'Yu Gothic Medium',
+      'Yu Gothic', Verdana, Meiryo, sans-serif;
     color: ${theme.color.text.primary};
   }
 `;
@@ -25,45 +25,45 @@ const gHeadingStyle = css`
   h4,
   h5,
   h6 {
-    margin: 0;
-    font-weight: normal;
+    margin: 0 0 0.75em;
+    font-weight: 600;
+    line-height: 1.2;
   }
 `;
 
 const gH1Style = css`
   h1 {
-    font-size: 4.8rem;
-    font-weight: bold;
+    font-size: 2.16em;
   }
 `;
 
 const gH2Style = css`
   h2 {
-    font-size: 4rem;
+    font-size: 1.8em;
   }
 `;
 
 const gH3Style = css`
   h3 {
-    font-size: 3.2rem;
+    font-size: 1.55em;
   }
 `;
 
 const gH4Style = css`
   h4 {
-    font-size: 2.8rem;
+    font-size: 1.25em;
   }
 `;
 
 const gH5Style = css`
   h5 {
-    font-size: 2.4rem;
+    font-size: 1.125em;
   }
 `;
 
 const gH6Style = css`
   h6 {
-    font-size: 2rem;
+    font-size: 1em;
   }
 `;
 
