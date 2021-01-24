@@ -14,28 +14,28 @@ describe('Header', () => {
     test('in Header', () => {
       const wHeader = wrapper.find('Header');
 
+      expect(wHeader).toHaveStyleRule('position', 'sticky');
+      expect(wHeader).toHaveStyleRule('top', '0');
+      expect(wHeader).toHaveStyleRule('height', '3.7rem');
       expect(wHeader).toHaveStyleRule('padding', '0.5rem 1rem');
       expect(wHeader).toHaveStyleRule(
         'background-color',
         theme.color.green.dark2
       );
-      expect(wHeader).toHaveStyleRule('position', 'sticky');
-      expect(wHeader).toHaveStyleRule('top', '0');
       expect(wHeader).toHaveStyleRule(
         'border-bottom',
         `1px solid ${theme.color.green.light}`
       );
-      expect(wHeader).toHaveStyleRule('height', '3.7rem');
     });
 
     test('in HeaderInner', () => {
       const wHeaderInner = wrapper.find('HeaderInner');
 
-      expect(wHeaderInner).toHaveStyleRule('height', '100%');
-      expect(wHeaderInner).toHaveStyleRule('color', 'white');
       expect(wHeaderInner).toHaveStyleRule('display', 'flex');
       expect(wHeaderInner).toHaveStyleRule('align-items', 'center');
       expect(wHeaderInner).toHaveStyleRule('justify-content', 'space-between');
+      expect(wHeaderInner).toHaveStyleRule('height', '100%');
+      expect(wHeaderInner).toHaveStyleRule('color', 'white');
     });
 
     test('in TitleWrapper', () => {
