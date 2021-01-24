@@ -11,6 +11,7 @@ const S = {
   Header: styled.header`
     position: sticky;
     top: 0;
+    z-index: 100;
     height: 3.7rem;
     padding: 0.5rem 1rem;
     background-color: ${theme.color.green.dark2};
