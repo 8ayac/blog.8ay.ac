@@ -107,10 +107,18 @@ export const MarkdownRender: React.FC<{ content: string }> = ({ content }) => {
     Prism.highlightAll();
   });
 
+  const imageUriTransformer = (v: string): string => {
+    return v.replace(/^\/?img\//, '/img/article/');
+  };
+
   return (
     <>
       <S.ConvertedMdBody>
-        <ReactMarkdown source={content} plugins={[remarkGfm]} />
+        <ReactMarkdown
+          source={content}
+          plugins={[remarkGfm]}
+          transformImageUri={imageUriTransformer}
+        />
       </S.ConvertedMdBody>
     </>
   );
