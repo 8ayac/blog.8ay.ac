@@ -1,7 +1,7 @@
 import * as fs from 'fs';
 import path from 'path';
 import {
-  build,
+  generateArticlesJson,
   copyImagesToPublic,
   getDirNamesIn,
   parseMarkdownWithMeta,
@@ -64,13 +64,13 @@ describe('copyImageDirectories', () => {
   });
 });
 
-describe('build', () => {
+describe('generateArticlesJson', () => {
   const testArticlesDir = path.join(TESTDATA_DIR, 'articles');
   const testOutputDir = path.join(TESTDATA_DIR, '.contents');
   const testOutputFileName = 'articles.test.json';
 
   beforeAll(() => {
-    build(testArticlesDir, testOutputDir, testOutputFileName);
+    generateArticlesJson(testArticlesDir, testOutputDir, testOutputFileName);
   });
 
   afterAll(() => {
