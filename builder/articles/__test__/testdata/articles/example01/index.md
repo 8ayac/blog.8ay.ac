@@ -1,4 +1,5 @@
 ---
+id: example01
 title: Example01
 publishedAt: 2000-01-01 00:00:00 +0900
 updatedAt: 2000-01-01 00:00:00 +0900
@@ -12,3 +13,8 @@ bluhbluhbluh
 ## link
 
 - <https://8ay.ac>
+
+## image
+
+![blue](img/blue.png)
+![red](img/red.png)

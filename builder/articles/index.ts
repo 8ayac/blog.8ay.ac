@@ -6,14 +6,18 @@ import fm from 'front-matter';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import fs from 'fs-extra';
 
-export const getFileNamesIn = (dir: string): string[] => {
-  return fs.readdirSync(dir).map((fname) => fname);
+export const getDirNamesIn = (dir: string): string[] => {
+  return fs
+    .readdirSync(dir, { withFileTypes: true })
+    .filter((dirent) => dirent.isDirectory())
+    .map((dirent) => dirent.name);
 };
 
 export const parseMarkdownWithMeta = (rawMdContent: string): Article => {
   const parsed = fm(rawMdContent);
 
   const {
+    id,
     title,
     publishedAt,
     updatedAt,
@@ -22,6 +26,7 @@ export const parseMarkdownWithMeta = (rawMdContent: string): Article => {
   const { body } = parsed;
 
   return {
+    id,
     title,
     publishedAt,
     updatedAt,
@@ -35,9 +40,9 @@ export const build = (
   outputDir: string,
   outputFileName: string
 ): void => {
-  const allArticleData = getFileNamesIn(articlesDir).map((fname) =>
+  const allArticleData = getDirNamesIn(articlesDir).map((dirName) =>
     parseMarkdownWithMeta(
-      fs.readFileSync(path.join(ARTICLES_DIR, fname)).toString()
+      fs.readFileSync(path.join(articlesDir, dirName, 'index.md')).toString()
     )
   );
 

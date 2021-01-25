@@ -1,4 +1,5 @@
 export type ArticleAttribute = {
+  id: string;
   title: string;
   publishedAt: Date;
   updatedAt: Date;
