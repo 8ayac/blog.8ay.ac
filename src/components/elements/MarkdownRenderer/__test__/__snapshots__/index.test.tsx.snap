@@ -107,6 +107,7 @@ exports[`MarkdownRender is rendered correctly to match the snapshot 1`] = `
           ]
         }
         source="test"
+        transformImageUri={[Function]}
         transformLinkUri={[Function]}
       >
         <Root
