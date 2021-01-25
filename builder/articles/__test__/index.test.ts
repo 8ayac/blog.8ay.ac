@@ -46,11 +46,12 @@ describe('parseMarkdownWithMeta', () => {
 });
 
 describe('build', () => {
-  const outputDir = 'testdata/.contents';
+  const articlesDir = path.join(__dirname, 'testdata/articles');
+  const outputDir = path.join(__dirname, 'testdata/.contents');
   const outputFileName = 'articles.test.json';
 
   beforeAll(() => {
-    build(outputDir, outputFileName);
+    build(articlesDir, outputDir, outputFileName);
   });
 
   afterAll(() => {
