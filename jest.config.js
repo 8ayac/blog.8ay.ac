@@ -4,6 +4,7 @@ module.exports = {
   testEnvironment: 'jsdom',
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/$1',
+    '\\.(css|scss)$': '<rootDir>/src/shared/__mocks__/styleMock.ts',
   },
   transform: {
     '^.+\\.[jt]sx?$': 'babel-jest',
