@@ -60,7 +60,7 @@ export const copyImagesToPublic = (
   }
 };
 
-export const build = (
+export const generateArticlesJson = (
   articlesDir: string,
   outputDir: string,
   outputFileName: string
@@ -80,5 +80,5 @@ export const build = (
 };
 
 (async () => {
-  build(ARTICLES_DIR, CONTENT_OUTPUT_DIR, 'articles.json');
+  generateArticlesJson(ARTICLES_DIR, CONTENT_OUTPUT_DIR, 'articles.json');
 })();
