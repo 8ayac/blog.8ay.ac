@@ -84,5 +84,8 @@ export const generateArticlesJson = (
 };
 
 (async () => {
+  getDirNamesIn(ARTICLES_DIR).map((dirName) =>
+    copyImagesToPublic(path.join(ARTICLES_DIR, dirName))
+  );
   generateArticlesJson(ARTICLES_DIR, CONTENT_OUTPUT_DIR, 'articles.json');
 })();
