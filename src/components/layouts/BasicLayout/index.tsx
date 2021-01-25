@@ -1,4 +1,4 @@
-import { Footer } from '@/src/components/widgets/Footer';
+import { SiteFooter } from '@/src/components/widgets/SiteFooter';
 import { SiteHeader } from '@/src/components/widgets/SiteHeader';
 import styled from '@emotion/styled';
 import React, { ReactNode } from 'react';
@@ -20,7 +20,7 @@ export const BasicLayout: React.FC<{ children?: ReactNode }> = ({
     <SiteHeader />
     <S.ContentWrapperDiv>
       {children}
-      <Footer />
+      <SiteFooter />
     </S.ContentWrapperDiv>
   </>
 );
