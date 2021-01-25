@@ -1,17 +1,17 @@
-import { Header } from '@/src/components/widgets/Header';
+import { SiteHeader } from '@/src/components/widgets/SiteHeader';
 import { theme } from '@/src/constants/theme';
 import { shallow } from 'enzyme';
 import React from 'react';
 
 describe('Header', () => {
-  const wrapper = shallow(<Header />);
+  const wrapper = shallow(<SiteHeader />);
 
   it('is rendered correctly to match the snapshot', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
   describe('has proper style rules', () => {
-    test('in Header', () => {
+    test('in SiteHeader', () => {
       const wHeader = wrapper.find('Header');
 
       expect(wHeader).toHaveStyleRule('position', 'sticky');
