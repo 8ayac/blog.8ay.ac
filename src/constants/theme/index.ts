@@ -16,5 +16,10 @@ export const theme = {
       secondary: colors.blue.dark2,
       accent: colors.green.dark,
     },
+
+    border: {
+      primary: 'hsla(0, 0%, 50%)',
+      primaryLight: 'hsla(0, 0%, 75%)',
+    },
   },
 };

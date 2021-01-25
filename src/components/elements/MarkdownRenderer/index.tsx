@@ -14,7 +14,7 @@ const S = {
     h2 {
       padding-bottom: 0.3em;
       margin-top: 2em;
-      border-bottom: 1px solid hsla(0, 0%, 75%);
+      border-bottom: 1px solid ${theme.color.border.primaryLight};
     }
 
     h3,
