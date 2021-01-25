@@ -1,6 +1,6 @@
 import path from 'path';
 import { ARTICLES_DIR, CONTENT_OUTPUT_DIR } from '@/src/constants/forBuilder';
-import { Article, ArticleAttribute } from '@/src/types';
+import { Article, ArticleAttribute } from '@/src/types/article';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import fm from 'front-matter';
 // eslint-disable-next-line import/no-extraneous-dependencies
