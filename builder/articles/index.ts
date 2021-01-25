@@ -1,5 +1,5 @@
 import path from 'path';
-import { ARTICLES_DIR } from '@/src/constants/forBuilder';
+import { ARTICLES_DIR, CONTENT_OUTPUT_DIR } from '@/src/constants/forBuilder';
 import { Article, ArticleAttribute } from '@/src/types';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import fm from 'front-matter';
@@ -30,8 +30,12 @@ export const parseMarkdownWithMeta = (rawMdContent: string): Article => {
   } as Article;
 };
 
-export const build = (outputDir: string, outputFileName: string): void => {
-  const allArticleData = getFileNamesIn(ARTICLES_DIR).map((fname) =>
+export const build = (
+  articlesDir: string,
+  outputDir: string,
+  outputFileName: string
+): void => {
+  const allArticleData = getFileNamesIn(articlesDir).map((fname) =>
     parseMarkdownWithMeta(
       fs.readFileSync(path.join(ARTICLES_DIR, fname)).toString()
     )
@@ -46,8 +50,5 @@ export const build = (outputDir: string, outputFileName: string): void => {
 };
 
 (async () => {
-  const outputDir = 'src/shared/.content';
-  const outputFileName = 'articles.json';
-
-  build(outputDir, outputFileName);
+  build(ARTICLES_DIR, CONTENT_OUTPUT_DIR, 'articles.json');
 })();
