@@ -65,10 +65,11 @@ export const generateArticlesJson = (
   outputDir: string,
   outputFileName: string
 ): void => {
-  const allArticleData = getDirNamesIn(articlesDir).map((dirName) =>
-    parseMarkdownWithMeta(
-      fs.readFileSync(path.join(articlesDir, dirName, 'index.md')).toString()
-    )
+  const eachArticlePath = getDirNamesIn(articlesDir).map((dirName) =>
+    path.join(articlesDir, dirName)
+  );
+  const allArticleData = eachArticlePath.map((p) =>
+    parseMarkdownWithMeta(fs.readFileSync(path.join(p, 'index.md')).toString())
   );
 
   allArticleData.sort(
