@@ -16,7 +16,7 @@ const S = {
   `,
 };
 
-export const Footer: React.FC = () => (
+export const SiteFooter: React.FC = () => (
   <S.Footer>
     <S.CopyRightParagraph>
       © 2021 blog.8ay.ac All Rights Reserved.

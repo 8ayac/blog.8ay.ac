@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Footer is rendered correctly to match the snapshot 1`] = `
+exports[`SiteFooter is rendered correctly to match the snapshot 1`] = `
 <Footer>
   <CopyRightParagraph>
     © 2021 blog.8ay.ac All Rights Reserved.

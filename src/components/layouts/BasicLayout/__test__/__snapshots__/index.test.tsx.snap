@@ -2,10 +2,10 @@
 
 exports[`BasicLayout is rendered correctly to match the snapshot 1`] = `
 <Fragment>
-  <Header />
+  <SiteHeader />
   <ContentWrapperDiv>
     &lt;b&gt;children&lt;/b&gt;
-    <Footer />
+    <SiteFooter />
   </ContentWrapperDiv>
 </Fragment>
 `;

@@ -1,10 +1,10 @@
-import { Footer } from '@/src/components/widgets/Footer';
+import { SiteFooter } from '@/src/components/widgets/SiteFooter';
 import { theme } from '@/src/constants/theme';
 import { shallow } from 'enzyme';
 import React from 'react';
 
-describe('Footer', () => {
-  const wrapper = shallow(<Footer />);
+describe('SiteFooter', () => {
+  const wrapper = shallow(<SiteFooter />);
   it('is rendered correctly to match the snapshot', () => {
     expect(wrapper).toMatchSnapshot();
   });
