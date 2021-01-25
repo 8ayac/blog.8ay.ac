@@ -2,7 +2,6 @@
 
 exports[`MarkdownRender is rendered correctly to match the snapshot 1`] = `
 .emotion-0 {
-  font-size: 1.6rem;
   overflow-wrap: break-word;
 }
 
