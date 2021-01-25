@@ -35,6 +35,31 @@ export const parseMarkdownWithMeta = (rawMdContent: string): Article => {
   } as Article;
 };
 
+export const copyImagesToPublic = (
+  articleDir: string,
+  publicDir?: string
+): void => {
+  const articleId = parseMarkdownWithMeta(
+    fs.readFileSync(path.join(articleDir, 'index.md')).toString()
+  ).id;
+  const srcDir = path.join(articleDir, 'img', articleId);
+  const outputDir = path.join(
+    publicDir ?? 'public',
+    'img',
+    'article',
+    articleId
+  );
+
+  try {
+    fs.ensureDirSync(outputDir);
+    fs.copySync(srcDir, outputDir);
+  } catch (e) {
+    // eslint-disable-next-line no-console
+    console.error(e);
+    process.exit(1);
+  }
+};
+
 export const build = (
   articlesDir: string,
   outputDir: string,

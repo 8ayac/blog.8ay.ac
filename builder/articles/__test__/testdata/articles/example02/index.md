@@ -17,5 +17,5 @@ bluhbluhbluh
 
 ## image
 
-![blue](img/blue02.png)
-![red](img/red02.png)
+![blue](img/example02/blue02.png)
+![red](img/example02/red02.png)

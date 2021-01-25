@@ -2,6 +2,7 @@ import * as fs from 'fs';
 import path from 'path';
 import {
   build,
+  copyImagesToPublic,
   getDirNamesIn,
   parseMarkdownWithMeta,
 } from '@/builder/articles';
@@ -38,6 +39,30 @@ describe('parseMarkdownWithMeta', () => {
         /^##\sexample1-1(\r?\n){2}bluhbluhbluh(\r?\n){2}##\slink(\r?\n){2}-\s<https:\/\/8ay\.ac>(\r?\n){2}##\simage(\r?\n){2}!\[blue]\(img\/blue\.png\)(\r?\n)!\[red]\(img\/red\.png\)(\r?\n)+$/
       ),
     });
+  });
+});
+
+describe('copyImageDirectories', () => {
+  const testArticleDir = path.join(TEST_ARTICLES_DIR, 'example01');
+  const testPublicRoot = path.join(TEST_ARTICLES_DIR, '..', '.public');
+
+  const testArticleId = parseMarkdownWithMeta(
+    fs.readFileSync(path.join(testArticleDir, 'index.md')).toString()
+  ).id;
+  const expectOutputDir = path.join(
+    testPublicRoot,
+    'img',
+    'article',
+    testArticleId
+  );
+
+  afterEach(() => {
+    fs.rmdirSync(testPublicRoot, { recursive: true });
+  });
+
+  it('can copy all images to proper directory', () => {
+    copyImagesToPublic(testArticleDir, testPublicRoot);
+    expect(fs.readdirSync(expectOutputDir)).toEqual(['blue.png', 'red.png']);
   });
 });
 
