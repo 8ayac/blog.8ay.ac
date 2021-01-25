@@ -50,13 +50,16 @@ export const copyImagesToPublic = (
     articleId
   );
 
+  if (!fs.existsSync(srcDir) || fs.readdirSync(srcDir).length < 1) {
+    return;
+  }
+
   try {
     fs.ensureDirSync(outputDir);
     fs.copySync(srcDir, outputDir);
   } catch (e) {
     // eslint-disable-next-line no-console
-    console.error(e);
-    process.exit(1);
+    console.error(e.toString());
   }
 };
 
