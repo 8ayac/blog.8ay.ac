@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
 
-export const FlexContainer = styled.div`
+export const FlexContainerDiv = styled.div`
   display: flex;
 `;

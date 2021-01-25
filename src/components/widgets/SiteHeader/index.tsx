@@ -2,7 +2,7 @@ import { BlogTitle } from '@/src/components/elements/BlogTitle';
 import { SocialLinkWithIcon } from '@/src/components/elements/SocialLinkWithIcon';
 import { BLOG_SUBTITLE, BLOG_TITLE } from '@/src/constants/site';
 import { theme } from '@/src/constants/theme';
-import { FlexContainer } from '@/src/shared/styles/abstractStyledComponents';
+import { FlexContainerDiv } from '@/src/shared/styles/abstractStyledComponents';
 import styled from '@emotion/styled';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import React from 'react';
@@ -26,11 +26,11 @@ const S = {
     color: white;
   `,
 
-  TitleWrapper: styled(FlexContainer)`
+  TitleWrapper: styled(FlexContainerDiv)`
     align-items: center;
   `,
 
-  NavWrapper: styled(FlexContainer)`
+  NavWrapper: styled(FlexContainerDiv)`
     align-items: center;
   `,
 };

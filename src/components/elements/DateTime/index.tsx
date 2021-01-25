@@ -1,11 +1,11 @@
 import { theme } from '@/src/constants/theme';
-import { FlexContainer } from '@/src/shared/styles/abstractStyledComponents';
+import { FlexContainerDiv } from '@/src/shared/styles/abstractStyledComponents';
 import styled from '@emotion/styled';
 import moment from 'moment';
 import React from 'react';
 
 const S = {
-  ComponentWrapperDiv: styled(FlexContainer)`
+  ComponentWrapperDiv: styled(FlexContainerDiv)`
     flex-flow: row wrap;
   `,
 
