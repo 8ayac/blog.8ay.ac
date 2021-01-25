@@ -7,7 +7,6 @@ import remarkGfm from 'remark-gfm';
 
 const S = {
   ConvertedMdBody: styled.div`
-    font-size: 1.6rem;
     overflow-wrap: break-word;
 
     h1,
