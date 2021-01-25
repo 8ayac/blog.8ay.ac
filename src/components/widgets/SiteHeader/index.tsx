@@ -35,7 +35,7 @@ const S = {
   `,
 };
 
-export const Header: React.FC = () => (
+export const SiteHeader: React.FC = () => (
   <S.Header>
     <S.HeaderInner>
       <S.TitleWrapper>
