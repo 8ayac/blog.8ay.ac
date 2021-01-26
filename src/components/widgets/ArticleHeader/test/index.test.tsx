@@ -8,8 +8,8 @@ describe('ArticleHeader', () => {
   const testArticleData: Article = {
     id: 'test-article',
     title: 'Test Title',
-    publishedAt: new Date('2000-01-01 00:00:00 +0900'),
-    updatedAt: new Date('2000-02-02 00:00:00 +0900'),
+    publishedAt: '2000-01-01 00:00:00 +0900',
+    updatedAt: '2000-02-02 00:00:00 +0900',
     tags: ['test-tag1', 'test-tag2', 'test-tag3'],
     body: `Test Body`,
   };

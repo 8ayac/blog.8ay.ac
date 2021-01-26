@@ -4,11 +4,11 @@ exports[`ArticleHeader is rendered correctly  to match the snapshot 1`] = `
 <WrapperHeader>
   <DateTimeWrapperDiv>
     <DateTime
-      date={1999-12-31T15:00:00.000Z}
+      date="2000-01-01 00:00:00 +0900"
       description="Published At"
     />
     <DateTime
-      date={2000-02-01T15:00:00.000Z}
+      date="2000-02-02 00:00:00 +0900"
       description="Updated At"
     />
   </DateTimeWrapperDiv>

@@ -1,8 +1,8 @@
 export type ArticleAttribute = {
   id: string;
   title: string;
-  publishedAt: Date;
-  updatedAt: Date;
+  publishedAt: string;
+  updatedAt: string;
   tags?: string[];
 };
 
