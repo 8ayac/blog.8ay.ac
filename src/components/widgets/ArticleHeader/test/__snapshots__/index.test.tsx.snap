@@ -23,6 +23,7 @@ exports[`ArticleHeader is rendered correctly  to match the snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-bottom: 1rem;
 }
 
 .emotion-4>* {
@@ -61,6 +62,7 @@ exports[`ArticleHeader is rendered correctly  to match the snapshot 1`] = `
 
 .emotion-22 {
   margin-top: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .emotion-24 {

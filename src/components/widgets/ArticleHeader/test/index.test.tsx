@@ -33,6 +33,10 @@ describe('ArticleHeader', () => {
         'flex-flow',
         'row wrap'
       );
+      expect(wrapper.find('DateTimeWrapperDiv')).toHaveStyleRule(
+        'margin-bottom',
+        '1rem'
+      );
 
       expect(wrapper.find('DateTimeWrapperDiv')).toHaveStyleRule(
         'margin-right',
@@ -47,6 +51,10 @@ describe('ArticleHeader', () => {
       expect(wrapper.find('CategoryListWrapperDiv')).toHaveStyleRule(
         'margin-top',
         '2rem'
+      );
+      expect(wrapper.find('CategoryListWrapperDiv')).toHaveStyleRule(
+        'margin-bottom',
+        '0.5rem'
       );
     });
 
