@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CategoryTag is rendered correctly to match the snapshot 1`] = `
+.emotion-0 {
+  padding: 3% 1rem 4%;
+  margin: 0;
+  font-size: 0.8em;
+  font-weight: 600;
+  color: white;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: hsla(212, 72%, 50%);
+  border-radius: 3px;
+}
+
+.emotion-0:hover {
+  color: white;
+  background-color: hsla(212, 72%, 60%);
+}
+
+<CategoryTag
+  name="test-cat"
+>
+  <Link
+    href="/category/test-cat"
+    passHref={true}
+  >
+    <Anchor
+      href="/category/test-cat"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      <a
+        className="emotion-0 emotion-1"
+        href="/category/test-cat"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        test-cat
+      </a>
+    </Anchor>
+  </Link>
+</CategoryTag>
+`;
