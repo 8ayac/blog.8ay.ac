@@ -26,6 +26,10 @@ describe('BasicLayout', () => {
       expect(wContentWrapperDiv).toHaveStyleRule('margin', '3rem auto');
       expect(wContentWrapperDiv).toHaveStyleRule('background-color', 'white');
       expect(wContentWrapperDiv).toHaveStyleRule('border-radius', '5px');
+
+      expect(wContentWrapperDiv).toHaveStyleRule('max-width', '100%', {
+        target: 'img',
+      });
     });
   });
 });
