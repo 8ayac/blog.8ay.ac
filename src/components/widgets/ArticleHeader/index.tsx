@@ -22,20 +22,19 @@ const S = {
 };
 
 export const ArticleHeader: React.FC<{ article: Article }> = ({ article }) => {
+  const date = (
+    <S.DateTimeWrapperDiv>
+      <DateTime date={article.publishedAt} description="Published At" />
+      <DateTime date={article.updatedAt} description="Updated At" />
+    </S.DateTimeWrapperDiv>
+  );
+  const tags = (
+    <S.CategoryListWrapperDiv>
+      <CategoryTagList tags={article.tags as string[]} />
+    </S.CategoryListWrapperDiv>
+  );
+
   return (
-    <BodyHeader
-      title={article.title}
-      beforeTitle={
-        <S.DateTimeWrapperDiv>
-          <DateTime date={article.publishedAt} description="Published At" />
-          <DateTime date={article.updatedAt} description="Updated At" />
-        </S.DateTimeWrapperDiv>
-      }
-      afterTitle={
-        <S.CategoryListWrapperDiv>
-          <CategoryTagList tags={article.tags as string[]} />
-        </S.CategoryListWrapperDiv>
-      }
-    />
+    <BodyHeader title={article.title} beforeTitle={date} afterTitle={tags} />
   );
 };
