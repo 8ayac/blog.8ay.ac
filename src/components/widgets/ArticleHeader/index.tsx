@@ -7,8 +7,8 @@ import React from 'react';
 
 const S = {
   DateTimeWrapperDiv: styled(FlexContainerDiv)`
-    align-items: center;
     flex-flow: row wrap;
+    align-items: center;
 
     > * {
       margin-right: 1rem;
