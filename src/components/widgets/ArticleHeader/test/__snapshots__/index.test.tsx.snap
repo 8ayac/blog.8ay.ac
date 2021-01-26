@@ -1,19 +1,166 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ArticleHeader is rendered correctly  to match the snapshot 1`] = `
-<WrapperHeader>
-  <DateTimeWrapperDiv>
-    <DateTime
-      date="2000-01-01 00:00:00 +0900"
-      description="Published At"
-    />
-    <DateTime
-      date="2000-02-02 00:00:00 +0900"
-      description="Updated At"
-    />
-  </DateTimeWrapperDiv>
-  <ArticleTitleH1>
-    Test Title
-  </ArticleTitleH1>
-</WrapperHeader>
+.emotion-0 {
+  margin-bottom: 3rem;
+  border-bottom: 0.25rem solid hsla(0, 0%, 75%);
+}
+
+.emotion-2 {
+  margin-bottom: 0.3rem;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.emotion-4>* {
+  margin-right: 1rem;
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.emotion-8 {
+  margin-right: 0.5rem;
+  font-weight: 600;
+}
+
+.emotion-10 {
+  font-weight: bolder;
+  color: hsla(212, 72%, 40%);
+}
+
+.emotion-18 {
+  font-size: 2.16em;
+  margin: 0 0 1rem;
+}
+
+<ArticleHeader
+  article={
+    Object {
+      "body": "Test Body",
+      "id": "test-article",
+      "publishedAt": "2000-01-01 00:00:00 +0900",
+      "tags": Array [
+        "test-tag1",
+        "test-tag2",
+        "test-tag3",
+      ],
+      "title": "Test Title",
+      "updatedAt": "2000-02-02 00:00:00 +0900",
+    }
+  }
+>
+  <BodyHeader
+    beforeTitle={
+      <DateTimeWrapperDiv>
+        <DateTime
+          date="2000-01-01 00:00:00 +0900"
+          description="Published At"
+        />
+        <DateTime
+          date="2000-02-02 00:00:00 +0900"
+          description="Updated At"
+        />
+      </DateTimeWrapperDiv>
+    }
+    title="Test Title"
+  >
+    <WrapperHeader>
+      <header
+        className="emotion-0 emotion-1"
+      >
+        <BeforeTitleDiv>
+          <div
+            className="emotion-2 emotion-3"
+          >
+            <DateTimeWrapperDiv>
+              <div
+                className="emotion-4 emotion-5"
+              >
+                <DateTime
+                  date="2000-01-01 00:00:00 +0900"
+                  description="Published At"
+                >
+                  <ComponentWrapperDiv>
+                    <div
+                      className="emotion-6 emotion-7"
+                    >
+                      <DescriptionSpan>
+                        <span
+                          className="emotion-8 emotion-9"
+                        >
+                          Published At:
+                        </span>
+                      </DescriptionSpan>
+                      <DateTime>
+                        <time
+                          className="emotion-10 emotion-11"
+                        >
+                          1999-12-31T15:00:00.000Z
+                        </time>
+                      </DateTime>
+                    </div>
+                  </ComponentWrapperDiv>
+                </DateTime>
+                <DateTime
+                  date="2000-02-02 00:00:00 +0900"
+                  description="Updated At"
+                >
+                  <ComponentWrapperDiv>
+                    <div
+                      className="emotion-6 emotion-7"
+                    >
+                      <DescriptionSpan>
+                        <span
+                          className="emotion-8 emotion-9"
+                        >
+                          Updated At:
+                        </span>
+                      </DescriptionSpan>
+                      <DateTime>
+                        <time
+                          className="emotion-10 emotion-11"
+                        >
+                          2000-02-01T15:00:00.000Z
+                        </time>
+                      </DateTime>
+                    </div>
+                  </ComponentWrapperDiv>
+                </DateTime>
+              </div>
+            </DateTimeWrapperDiv>
+          </div>
+        </BeforeTitleDiv>
+        <TitleH1>
+          <h1
+            className="emotion-18 emotion-19"
+          >
+            Test Title
+          </h1>
+        </TitleH1>
+      </header>
+    </WrapperHeader>
+  </BodyHeader>
+</ArticleHeader>
 `;

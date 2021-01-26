@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BodyHeader is rendered correctly to match the snapshot 1`] = `
+.emotion-0 {
+  margin-bottom: 3rem;
+  border-bottom: 0.25rem solid hsla(0, 0%, 75%);
+}
+
+.emotion-2 {
+  margin-bottom: 0.3rem;
+}
+
+.emotion-4 {
+  font-size: 2.16em;
+  margin: 0 0 1rem;
+}
+
+.emotion-6 {
+  margin-top: 0.3rem;
+}
+
+<BodyHeader
+  afterTitle={
+    <div>
+      AFTER
+    </div>
+  }
+  beforeTitle={
+    <div>
+      BEFORE
+    </div>
+  }
+  title="Test Title"
+>
+  <WrapperHeader>
+    <header
+      className="emotion-0 emotion-1"
+    >
+      <BeforeTitleDiv>
+        <div
+          className="emotion-2 emotion-3"
+        >
+          <div>
+            BEFORE
+          </div>
+        </div>
+      </BeforeTitleDiv>
+      <TitleH1>
+        <h1
+          className="emotion-4 emotion-5"
+        >
+          Test Title
+        </h1>
+      </TitleH1>
+      <AfterTitleDiv>
+        <div
+          className="emotion-6 emotion-7"
+        >
+          <div>
+            AFTER
+          </div>
+        </div>
+      </AfterTitleDiv>
+    </header>
+  </WrapperHeader>
+</BodyHeader>
+`;
