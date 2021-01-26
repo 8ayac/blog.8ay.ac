@@ -1,4 +1,4 @@
-import ArticlePage, { S } from '@/src/pages/articles/[date]/[id]';
+import ArticlePage from '@/src/pages/articles/[date]/[id]';
 import { shallow } from 'enzyme';
 import React from 'react';
 
@@ -14,25 +14,5 @@ describe('ArticlePage', () => {
 
   it('is rendered correctly to match the snapshot', () => {
     expect(wrapper).toMatchSnapshot();
-  });
-
-  test('has proper style rules', () => {
-    expect(wrapper.find('ArticleWrapperDiv')).toHaveStyleRule(
-      'font-size',
-      '1.6rem'
-    );
-    expect(wrapper.find('ArticleWrapperDiv')).toHaveStyleRule(
-      'word-break',
-      'break-all'
-    );
-  });
-});
-
-describe('Styled component used in ArticlePage', () => {
-  describe('to match the snapshot', () => {
-    test('S.ArticleWrapperDiv', () => {
-      const wrapper = shallow(<S.ArticleWrapperDiv />);
-      expect(wrapper).toMatchSnapshot();
-    });
   });
 });
