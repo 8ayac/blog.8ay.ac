@@ -1,5 +1,6 @@
 import { BodyHeader } from '@/src/components/elements/BodyHeader';
 import { DateTime } from '@/src/components/elements/DateTime';
+import { CategoryTagList } from '@/src/components/widgets/CategoryTagList';
 import { FlexContainerDiv } from '@/src/shared/styles/abstractStyledComponents';
 import { Article } from '@/src/types';
 import styled from '@emotion/styled';
@@ -14,6 +15,10 @@ const S = {
       margin-right: 1rem;
     }
   `,
+
+  CategoryListWrapperDiv: styled.div`
+    margin-top: 2rem;
+  `,
 };
 
 export const ArticleHeader: React.FC<{ article: Article }> = ({ article }) => {
@@ -25,6 +30,11 @@ export const ArticleHeader: React.FC<{ article: Article }> = ({ article }) => {
           <DateTime date={article.publishedAt} description="Published At" />
           <DateTime date={article.updatedAt} description="Updated At" />
         </S.DateTimeWrapperDiv>
+      }
+      afterTitle={
+        <S.CategoryListWrapperDiv>
+          <CategoryTagList tags={article.tags as string[]} />
+        </S.CategoryListWrapperDiv>
       }
     />
   );

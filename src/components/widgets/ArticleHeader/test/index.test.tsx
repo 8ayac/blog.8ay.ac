@@ -41,5 +41,12 @@ describe('ArticleHeader', () => {
         }
       );
     });
+
+    test('in CategoryListWrapperDiv', () => {
+      expect(wrapper.find('CategoryListWrapperDiv')).toHaveStyleRule(
+        'margin-top',
+        '2rem'
+      );
+    });
   });
 });
