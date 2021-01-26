@@ -9,8 +9,8 @@ export const S = {
   `,
 
   TitleH1: styled.h1`
-    font-size: 2.16em;
     margin: 0 0 1rem;
+    font-size: 2.16em;
   `,
 
   BeforeTitleDiv: styled.div`
