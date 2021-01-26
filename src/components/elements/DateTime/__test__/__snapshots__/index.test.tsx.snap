@@ -23,7 +23,7 @@ exports[`DateTime is rendered correctly to match the snapshot in case with descr
 }
 
 <DateTime
-  date={2021-01-01T18:04:56.000Z}
+  date="2021-01-02 03:04:56 +0000"
   description="TEST DESCRIPTION"
 >
   <ComponentWrapperDiv>
@@ -41,7 +41,7 @@ exports[`DateTime is rendered correctly to match the snapshot in case with descr
         <time
           className="emotion-4 emotion-5"
         >
-          2021-01-01T18:04:56.000Z
+          2021-01-02T03:04:56.000Z
         </time>
       </DateTime>
     </div>
@@ -67,7 +67,7 @@ exports[`DateTime is rendered correctly to match the snapshot in case without de
 }
 
 <DateTime
-  date={2021-01-01T18:04:56.000Z}
+  date="2021-01-02 03:04:56 +0000"
 >
   <ComponentWrapperDiv>
     <div
@@ -77,7 +77,7 @@ exports[`DateTime is rendered correctly to match the snapshot in case without de
         <time
           className="emotion-2 emotion-3"
         >
-          2021-01-01T18:04:56.000Z
+          2021-01-02T03:04:56.000Z
         </time>
       </DateTime>
     </div>

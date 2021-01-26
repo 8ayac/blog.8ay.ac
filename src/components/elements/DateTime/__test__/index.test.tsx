@@ -4,7 +4,7 @@ import { mount, shallow } from 'enzyme';
 import React from 'react';
 
 describe('DateTime', () => {
-  const testDate = new Date('2021-01-02 03:04:56 +0900');
+  const testDate = '2021-01-02 03:04:56 +0000';
   const testDescription = 'TEST DESCRIPTION';
 
   describe('is rendered correctly to match the snapshot', () => {
@@ -26,7 +26,9 @@ describe('DateTime', () => {
       const wrapper = shallow(
         <DateTime date={testDate} description={testDescription} />
       );
-      expect(wrapper.find('DateTime').text()).toEqual(testDate.toISOString());
+      expect(wrapper.find('DateTime').text()).toEqual(
+        '2021-01-02T03:04:56.000Z'
+      );
       expect(wrapper.find('DescriptionSpan').text()).toEqual(
         `${testDescription}:`
       );
@@ -34,7 +36,9 @@ describe('DateTime', () => {
 
     test('in case without description', () => {
       const wrapper = shallow(<DateTime date={testDate} />);
-      expect(wrapper.find('DateTime').text()).toEqual(testDate.toISOString());
+      expect(wrapper.find('DateTime').text()).toEqual(
+        '2021-01-02T03:04:56.000Z'
+      );
       expect(wrapper.find('DescriptionSpan')).toHaveLength(0);
     });
   });
