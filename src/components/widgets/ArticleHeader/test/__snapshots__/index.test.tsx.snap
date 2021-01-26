@@ -55,6 +55,39 @@ exports[`ArticleHeader is rendered correctly  to match the snapshot 1`] = `
   font-size: 2.16em;
 }
 
+.emotion-20 {
+  margin-top: 0.3rem;
+}
+
+.emotion-22 {
+  margin-top: 2rem;
+}
+
+.emotion-24 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0 0.5rem 0.5rem 0;
+}
+
+.emotion-26 {
+  padding: 3% 1rem 4%;
+  margin: 0;
+  font-size: 0.8em;
+  font-weight: 600;
+  color: white;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: hsla(212, 72%, 50%);
+  border-radius: 3px;
+}
+
+.emotion-26:hover {
+  color: white;
+  background-color: hsla(212, 72%, 60%);
+}
+
 <ArticleHeader
   article={
     Object {
@@ -72,6 +105,19 @@ exports[`ArticleHeader is rendered correctly  to match the snapshot 1`] = `
   }
 >
   <BodyHeader
+    afterTitle={
+      <CategoryListWrapperDiv>
+        <CategoryTagList
+          tags={
+            Array [
+              "test-tag1",
+              "test-tag2",
+              "test-tag3",
+            ]
+          }
+        />
+      </CategoryListWrapperDiv>
+    }
     beforeTitle={
       <DateTimeWrapperDiv>
         <DateTime
@@ -159,6 +205,121 @@ exports[`ArticleHeader is rendered correctly  to match the snapshot 1`] = `
             Test Title
           </h1>
         </TitleH1>
+        <AfterTitleDiv>
+          <div
+            className="emotion-20 emotion-21"
+          >
+            <CategoryListWrapperDiv>
+              <div
+                className="emotion-22 emotion-23"
+              >
+                <CategoryTagList
+                  tags={
+                    Array [
+                      "test-tag1",
+                      "test-tag2",
+                      "test-tag3",
+                    ]
+                  }
+                >
+                  <ComponentWrapperDiv
+                    key="test-tag1"
+                  >
+                    <div
+                      className="emotion-24 emotion-25"
+                    >
+                      <CategoryTag
+                        name="test-tag1"
+                      >
+                        <Link
+                          href="/category/test-tag1"
+                          passHref={true}
+                        >
+                          <Anchor
+                            href="/category/test-tag1"
+                            onClick={[Function]}
+                            onMouseEnter={[Function]}
+                          >
+                            <a
+                              className="emotion-26 emotion-27"
+                              href="/category/test-tag1"
+                              onClick={[Function]}
+                              onMouseEnter={[Function]}
+                            >
+                              test-tag1
+                            </a>
+                          </Anchor>
+                        </Link>
+                      </CategoryTag>
+                    </div>
+                  </ComponentWrapperDiv>
+                  <ComponentWrapperDiv
+                    key="test-tag2"
+                  >
+                    <div
+                      className="emotion-24 emotion-25"
+                    >
+                      <CategoryTag
+                        name="test-tag2"
+                      >
+                        <Link
+                          href="/category/test-tag2"
+                          passHref={true}
+                        >
+                          <Anchor
+                            href="/category/test-tag2"
+                            onClick={[Function]}
+                            onMouseEnter={[Function]}
+                          >
+                            <a
+                              className="emotion-26 emotion-27"
+                              href="/category/test-tag2"
+                              onClick={[Function]}
+                              onMouseEnter={[Function]}
+                            >
+                              test-tag2
+                            </a>
+                          </Anchor>
+                        </Link>
+                      </CategoryTag>
+                    </div>
+                  </ComponentWrapperDiv>
+                  <ComponentWrapperDiv
+                    key="test-tag3"
+                  >
+                    <div
+                      className="emotion-24 emotion-25"
+                    >
+                      <CategoryTag
+                        name="test-tag3"
+                      >
+                        <Link
+                          href="/category/test-tag3"
+                          passHref={true}
+                        >
+                          <Anchor
+                            href="/category/test-tag3"
+                            onClick={[Function]}
+                            onMouseEnter={[Function]}
+                          >
+                            <a
+                              className="emotion-26 emotion-27"
+                              href="/category/test-tag3"
+                              onClick={[Function]}
+                              onMouseEnter={[Function]}
+                            >
+                              test-tag3
+                            </a>
+                          </Anchor>
+                        </Link>
+                      </CategoryTag>
+                    </div>
+                  </ComponentWrapperDiv>
+                </CategoryTagList>
+              </div>
+            </CategoryListWrapperDiv>
+          </div>
+        </AfterTitleDiv>
       </header>
     </WrapperHeader>
   </BodyHeader>
