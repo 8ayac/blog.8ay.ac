@@ -1,0 +1,165 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CategoryTagList is rendered correctly to match the snapshot 1`] = `
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0 0.5rem 0.5rem 0;
+}
+
+.emotion-2 {
+  padding: 3% 1rem 4%;
+  margin: 0;
+  font-size: 0.8em;
+  font-weight: 600;
+  color: white;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: hsla(212, 72%, 50%);
+  border-radius: 3px;
+}
+
+.emotion-2:hover {
+  color: white;
+  background-color: hsla(212, 72%, 60%);
+}
+
+<CategoryTagList
+  tags={
+    Array [
+      "A",
+      "B",
+      "C",
+      "DUPLICATE",
+      "DUPLICATE",
+    ]
+  }
+>
+  <ComponentWrapperDiv
+    key="A"
+  >
+    <div
+      className="emotion-0 emotion-1"
+    >
+      <CategoryTag
+        name="A"
+      >
+        <Link
+          href="/category/A"
+          passHref={true}
+        >
+          <Anchor
+            href="/category/A"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            <a
+              className="emotion-2 emotion-3"
+              href="/category/A"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              A
+            </a>
+          </Anchor>
+        </Link>
+      </CategoryTag>
+    </div>
+  </ComponentWrapperDiv>
+  <ComponentWrapperDiv
+    key="B"
+  >
+    <div
+      className="emotion-0 emotion-1"
+    >
+      <CategoryTag
+        name="B"
+      >
+        <Link
+          href="/category/B"
+          passHref={true}
+        >
+          <Anchor
+            href="/category/B"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            <a
+              className="emotion-2 emotion-3"
+              href="/category/B"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              B
+            </a>
+          </Anchor>
+        </Link>
+      </CategoryTag>
+    </div>
+  </ComponentWrapperDiv>
+  <ComponentWrapperDiv
+    key="C"
+  >
+    <div
+      className="emotion-0 emotion-1"
+    >
+      <CategoryTag
+        name="C"
+      >
+        <Link
+          href="/category/C"
+          passHref={true}
+        >
+          <Anchor
+            href="/category/C"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            <a
+              className="emotion-2 emotion-3"
+              href="/category/C"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              C
+            </a>
+          </Anchor>
+        </Link>
+      </CategoryTag>
+    </div>
+  </ComponentWrapperDiv>
+  <ComponentWrapperDiv
+    key="DUPLICATE"
+  >
+    <div
+      className="emotion-0 emotion-1"
+    >
+      <CategoryTag
+        name="DUPLICATE"
+      >
+        <Link
+          href="/category/DUPLICATE"
+          passHref={true}
+        >
+          <Anchor
+            href="/category/DUPLICATE"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            <a
+              className="emotion-2 emotion-3"
+              href="/category/DUPLICATE"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              DUPLICATE
+            </a>
+          </Anchor>
+        </Link>
+      </CategoryTag>
+    </div>
+  </ComponentWrapperDiv>
+</CategoryTagList>
+`;
