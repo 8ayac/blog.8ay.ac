@@ -1,9 +1,13 @@
 import { BodyHeader } from '@/src/components/elements/BodyHeader';
 import { DateTime } from '@/src/components/elements/DateTime';
 import { CategoryTagList } from '@/src/components/widgets/CategoryTagList';
+import { theme } from '@/src/constants/theme';
 import { FlexContainerDiv } from '@/src/shared/styles/abstractStyledComponents';
 import { Article } from '@/src/types';
+import { css } from '@emotion/react';
 import styled from '@emotion/styled';
+import { faTags } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
 const S = {
@@ -30,6 +34,15 @@ export const ArticleHeader: React.FC<{ article: Article }> = ({ article }) => {
   );
   const tags = (
     <S.CategoryListWrapperDiv>
+      <FontAwesomeIcon
+        icon={faTags}
+        css={css`
+          margin-right: 1rem;
+          margin-left: 0.5rem;
+          font-size: 1em;
+          color: ${theme.color.text.primaryLight};
+        `}
+      />
       <CategoryTagList tags={article.tags as string[]} />
     </S.CategoryListWrapperDiv>
   );
