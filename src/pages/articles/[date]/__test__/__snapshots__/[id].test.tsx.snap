@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticlePage is rendered correctly to match the snapshot 1`] = `
+<Fragment>
+  <ArticleWrapperDiv>
+    <ArticleHeader
+      article={
+        Object {
+          "body": "## test
+
+bluhbluhbluh",
+          "id": "example-id",
+          "publishedAt": "2021-01-02 03:04:56 +0900",
+          "title": "Example01",
+          "updatedAt": "2021-01-02 03:04:56 +0900",
+        }
+      }
+    />
+    <MarkdownRender
+      content="## test
+
+bluhbluhbluh"
+    />
+  </ArticleWrapperDiv>
+</Fragment>
+`;
+
+exports[`Styled component used in ArticlePage to match the snapshot S.ArticleWrapperDiv 1`] = `
+.emotion-0 {
+  font-size: 1.6rem;
+  word-break: break-all;
+}
+
+<div
+  className="emotion-0 emotion-1"
+/>
+`;
