@@ -12,6 +12,10 @@ const S = {
     word-break: break-all;
     background-color: white;
     border-radius: 5px;
+
+    img {
+      max-width: 100%;
+    }
   `,
 };
 
