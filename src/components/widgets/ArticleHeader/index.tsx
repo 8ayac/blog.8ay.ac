@@ -14,6 +14,7 @@ const S = {
   DateTimeWrapperDiv: styled(FlexContainerDiv)`
     flex-flow: row wrap;
     align-items: center;
+    margin-bottom: 1rem;
 
     > * {
       margin-right: 1rem;
@@ -22,6 +23,7 @@ const S = {
 
   CategoryListWrapperDiv: styled.div`
     margin-top: 2rem;
+    margin-bottom: 0.5rem;
   `,
 };
 
