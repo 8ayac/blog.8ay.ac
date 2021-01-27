@@ -19,6 +19,14 @@ describe('ArticleHeader', () => {
       const wrapper = mount(<ArticleHeader article={testArticleData} />);
       expect(wrapper).toMatchSnapshot();
     });
+
+    test('have proper link title', () => {
+      const wrapper = mount(<ArticleHeader article={testArticleData} />);
+
+      expect(wrapper.find('a').first().prop('href')).toBe(
+        `/articles/1999-12-31/test-article`
+      );
+    });
   });
 
   describe('has proper style rules', () => {
