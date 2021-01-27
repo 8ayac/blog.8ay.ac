@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CategoryPage is rendered correctly to match the snapshot 1`] = `
+<Fragment>
+  <BodyHeader
+    title="Tag: test-cat"
+  />
+  <ArticleListWrapperDiv>
+    <ArticleHeaderList
+      articles={
+        Array [
+          Object {
+            "body": "bluhbluhbluh",
+            "id": "test-article-01",
+            "publishedAt": "2021-01-01 00:00:00 +0000",
+            "tags": Array [
+              "test-cat",
+            ],
+            "title": "Test Title 01",
+            "updatedAt": "2021-01-01 00:00:00 +0000",
+          },
+          Object {
+            "body": "bluhbluhbluh",
+            "id": "test-article-02",
+            "publishedAt": "2021-02-02 00:00:00 +0000",
+            "tags": Array [
+              "test-cat",
+            ],
+            "title": "Test Title 02",
+            "updatedAt": "2021-02-02 00:00:00 +0000",
+          },
+          Object {
+            "body": "bluhbluhbluh",
+            "id": "test-article-03",
+            "publishedAt": "2021-03-03 00:00:00 +0000",
+            "tags": Array [
+              "test-cat",
+            ],
+            "title": "Test Title 03",
+            "updatedAt": "2021-03-03 00:00:00 +0000",
+          },
+        ]
+      }
+    />
+  </ArticleListWrapperDiv>
+</Fragment>
+`;
