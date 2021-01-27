@@ -61,7 +61,7 @@ describe('ArticleHeaderList', () => {
     test('in ComponentWrapperDiv', () => {
       expect(wrapper.find('ComponentWrapperDiv')).toHaveStyleRule(
         'margin',
-        '5rem auto 10rem'
+        '0 auto'
       );
 
       expect(wrapper.find('ComponentWrapperDiv')).toHaveStyleRule(

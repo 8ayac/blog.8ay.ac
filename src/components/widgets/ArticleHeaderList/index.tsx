@@ -8,7 +8,7 @@ const S = {
   ComponentWrapperDiv: styled.div`
     display: grid;
     grid-gap: 5%;
-    margin: 5rem auto 10rem;
+    margin: 0 auto;
   `,
 
   ArticleHeaderWrapperDiv: styled.div`
