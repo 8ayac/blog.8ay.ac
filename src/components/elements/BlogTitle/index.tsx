@@ -1,9 +1,16 @@
+import { theme } from '@/src/constants/theme';
 import styled from '@emotion/styled';
+import Link from 'next/link';
 import React from 'react';
 
 const S = {
   ComponentWrapperDiv: styled.div`
+    cursor: pointer;
     user-select: none;
+
+    &:hover {
+      color: ${theme.color.yellow.base};
+    }
   `,
 
   TitleSpan: styled.span`
@@ -16,13 +23,21 @@ const S = {
   `,
 };
 
-export const BlogTitle: React.FC<{ title: string; subtitle: string }> = ({
-  title,
-  subtitle,
-}) => (
+export const BlogTitle: React.FC<{
+  title: string;
+  subtitle: string;
+  linkToTopPage?: boolean;
+}> = ({ title, subtitle, linkToTopPage = true }) => (
   <>
     <S.ComponentWrapperDiv>
-      <S.TitleSpan>{title}</S.TitleSpan>
+      {linkToTopPage ? (
+        <Link href="/">
+          <S.TitleSpan>{title}</S.TitleSpan>
+        </Link>
+      ) : (
+        <S.TitleSpan>{title}</S.TitleSpan>
+      )}
+
       <S.SubtitleSpan>{subtitle}</S.SubtitleSpan>
     </S.ComponentWrapperDiv>
   </>

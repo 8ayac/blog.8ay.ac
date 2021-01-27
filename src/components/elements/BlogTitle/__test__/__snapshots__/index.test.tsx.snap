@@ -1,14 +1,109 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`BlogTitle is rendered correctly to match the snapshot 1`] = `
-<Fragment>
+exports[`BlogTitle is rendered correctly to match the snapshot default 1`] = `
+.emotion-0 {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-0:hover {
+  color: hsla(60, 72%, 60%);
+}
+
+.emotion-2 {
+  font-size: 2.2rem;
+}
+
+.emotion-4 {
+  margin-left: 0.5rem;
+  font-size: 1.4rem;
+}
+
+<BlogTitle
+  subtitle="Test Subtitle"
+  title="Test Title"
+>
   <ComponentWrapperDiv>
-    <TitleSpan>
-      Test Title
-    </TitleSpan>
-    <SubtitleSpan>
-      Test Subtitle
-    </SubtitleSpan>
+    <div
+      className="emotion-0 emotion-1"
+    >
+      <Link
+        href="/"
+      >
+        <TitleSpan
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          <span
+            className="emotion-2 emotion-3"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            Test Title
+          </span>
+        </TitleSpan>
+      </Link>
+      <SubtitleSpan>
+        <span
+          className="emotion-4 emotion-5"
+        >
+          Test Subtitle
+        </span>
+      </SubtitleSpan>
+    </div>
   </ComponentWrapperDiv>
-</Fragment>
+</BlogTitle>
+`;
+
+exports[`BlogTitle is rendered correctly to match the snapshot when set linkToTopPage option to false 1`] = `
+.emotion-0 {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-0:hover {
+  color: hsla(60, 72%, 60%);
+}
+
+.emotion-2 {
+  font-size: 2.2rem;
+}
+
+.emotion-4 {
+  margin-left: 0.5rem;
+  font-size: 1.4rem;
+}
+
+<BlogTitle
+  linkToTopPage={false}
+  subtitle="Test Subtitle"
+  title="Test Title"
+>
+  <ComponentWrapperDiv>
+    <div
+      className="emotion-0 emotion-1"
+    >
+      <TitleSpan>
+        <span
+          className="emotion-2 emotion-3"
+        >
+          Test Title
+        </span>
+      </TitleSpan>
+      <SubtitleSpan>
+        <span
+          className="emotion-4 emotion-5"
+        >
+          Test Subtitle
+        </span>
+      </SubtitleSpan>
+    </div>
+  </ComponentWrapperDiv>
+</BlogTitle>
 `;
