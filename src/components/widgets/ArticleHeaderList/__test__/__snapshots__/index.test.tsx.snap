@@ -2,9 +2,9 @@
 
 exports[`ArticleHeaderList is rendered correctly to match the snapshot 1`] = `
 .emotion-0 {
-  margin: 5rem auto 10rem;
   display: grid;
   grid-gap: 5%;
+  margin: 5rem auto 10rem;
 }
 
 .emotion-2 h1 {

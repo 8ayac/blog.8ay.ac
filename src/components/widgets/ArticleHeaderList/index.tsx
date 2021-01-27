@@ -6,9 +6,9 @@ import React from 'react';
 
 const S = {
   ComponentWrapperDiv: styled.div`
-    margin: 5rem auto 10rem;
     display: grid;
     grid-gap: 5%;
+    margin: 5rem auto 10rem;
   `,
 
   ArticleHeaderWrapperDiv: styled.div`
