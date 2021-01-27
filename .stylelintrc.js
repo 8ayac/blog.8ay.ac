@@ -22,6 +22,7 @@ module.exports = {
                     "mixin",
                 ]
             }
-        ]
+        ],
+        "no-empty-source": null
     }
 }
