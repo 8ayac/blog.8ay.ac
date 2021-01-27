@@ -13,3 +13,10 @@ export const getArticlePagePath = (article: Article): string => {
 export const getCategoryPagePath = (categoryName: string): string => {
   return `/category/${encodeURIComponent(categoryName)}`;
 };
+
+export const getNumberOfArticlesWithATag = (
+  tagName: string,
+  articles: Article[]
+): number => {
+  return articles.filter((article) => article.tags.includes(tagName)).length;
+};
