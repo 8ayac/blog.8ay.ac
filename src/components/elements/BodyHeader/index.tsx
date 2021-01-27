@@ -1,5 +1,6 @@
 import { theme } from '@/src/constants/theme';
 import styled from '@emotion/styled';
+import Link from 'next/link';
 import React, { ReactNode } from 'react';
 
 export const S = {
@@ -13,6 +14,12 @@ export const S = {
     font-size: 2.16em;
   `,
 
+  TitleAnchor: styled.a`
+    margin: 0;
+    color: ${theme.color.text.primary};
+    text-decoration: none;
+  `,
+
   BeforeTitleDiv: styled.div`
     margin-bottom: 0.3rem;
   `,
@@ -24,13 +31,22 @@ export const S = {
 
 export const BodyHeader: React.FC<{
   title: string;
+  linkTo?: string;
   beforeTitle?: ReactNode;
   afterTitle?: ReactNode;
-}> = ({ title, beforeTitle, afterTitle }) => (
+}> = ({ title, linkTo, beforeTitle, afterTitle }) => (
   <>
     <S.WrapperHeader>
       {beforeTitle && <S.BeforeTitleDiv>{beforeTitle}</S.BeforeTitleDiv>}
-      <S.TitleH1>{title}</S.TitleH1>
+      {linkTo ? (
+        <S.TitleH1>
+          <Link href={linkTo} passHref>
+            <S.TitleAnchor>{title}</S.TitleAnchor>
+          </Link>
+        </S.TitleH1>
+      ) : (
+        <S.TitleH1>{title}</S.TitleH1>
+      )}
       {afterTitle && <S.AfterTitleDiv>{afterTitle}</S.AfterTitleDiv>}
     </S.WrapperHeader>
   </>
