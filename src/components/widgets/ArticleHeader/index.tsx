@@ -3,6 +3,7 @@ import { DateTime } from '@/src/components/elements/DateTime';
 import { CategoryTagList } from '@/src/components/widgets/CategoryTagList';
 import { theme } from '@/src/constants/theme';
 import { FlexContainerDiv } from '@/src/shared/styles/abstractStyledComponents';
+import { getArticlePagePath } from '@/src/shared/utils';
 import { Article } from '@/src/types';
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
@@ -50,6 +51,11 @@ export const ArticleHeader: React.FC<{ article: Article }> = ({ article }) => {
   );
 
   return (
-    <BodyHeader title={article.title} beforeTitle={date} afterTitle={tags} />
+    <BodyHeader
+      title={article.title}
+      linkTo={getArticlePagePath(article)}
+      beforeTitle={date}
+      afterTitle={tags}
+    />
   );
 };
