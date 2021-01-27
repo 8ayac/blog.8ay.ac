@@ -5,6 +5,7 @@ import React from 'react';
 const S = {
   Footer: styled.footer`
     padding: 3rem 0;
+    margin-top: 10rem;
     font-size: 1.5rem;
     text-align: center;
   `,

@@ -1,12 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SiteFooter is rendered correctly to match the snapshot 1`] = `
-<Footer>
-  <CopyRightParagraph>
-    © 2021 blog.8ay.ac All Rights Reserved.
-  </CopyRightParagraph>
-  <AboutGAParagraph>
-    This website uses Google Analytics, a web analytics service by Google. Google Analytics uses cookies, which are placed on your computer to help the website analyze how you use the site. You can prevent the the collection of your data by disabling cookies in your browser.
-  </AboutGAParagraph>
-</Footer>
+.emotion-0 {
+  padding: 3rem 0;
+  margin-top: 10rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.emotion-4 {
+  color: hsla(0, 0%, 40%);
+}
+
+<SiteFooter>
+  <Footer>
+    <footer
+      className="emotion-0 emotion-1"
+    >
+      <CopyRightParagraph>
+        <p
+          className="emotion-2 emotion-3"
+        >
+          © 2021 blog.8ay.ac All Rights Reserved.
+        </p>
+      </CopyRightParagraph>
+      <AboutGAParagraph>
+        <p
+          className="emotion-4 emotion-5"
+        >
+          This website uses Google Analytics, a web analytics service by Google. Google Analytics uses cookies, which are placed on your computer to help the website analyze how you use the site. You can prevent the the collection of your data by disabling cookies in your browser.
+        </p>
+      </AboutGAParagraph>
+    </footer>
+  </Footer>
+</SiteFooter>
 `;

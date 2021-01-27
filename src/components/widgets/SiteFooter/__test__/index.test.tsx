@@ -1,10 +1,10 @@
 import { SiteFooter } from '@/src/components/widgets/SiteFooter';
 import { theme } from '@/src/constants/theme';
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import React from 'react';
 
 describe('SiteFooter', () => {
-  const wrapper = shallow(<SiteFooter />);
+  const wrapper = mount(<SiteFooter />);
   it('is rendered correctly to match the snapshot', () => {
     expect(wrapper).toMatchSnapshot();
   });
@@ -12,6 +12,7 @@ describe('SiteFooter', () => {
   describe('has proper style rules', () => {
     test('in Footer', () => {
       expect(wrapper.find('Footer')).toHaveStyleRule('padding', '3rem 0');
+      expect(wrapper.find('Footer')).toHaveStyleRule('margin-top', '10rem');
       expect(wrapper.find('Footer')).toHaveStyleRule('font-size', '1.5rem');
       expect(wrapper.find('Footer')).toHaveStyleRule('text-align', 'center');
     });
