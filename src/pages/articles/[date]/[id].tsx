@@ -1,6 +1,6 @@
 import { MarkdownRender } from '@/src/components/elements/MarkdownRenderer';
 import { ArticleHeader } from '@/src/components/widgets/ArticleHeader';
-import articles from '@/src/shared/.content/articles.json';
+import jsonArticles from '@/src/shared/.content/articles.json';
 import { Article } from '@/src/types';
 import moment from 'moment';
 import {
@@ -12,7 +12,7 @@ import {
 import React from 'react';
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = (articles as Article[]).map((article) => {
+  const paths = (jsonArticles as Article[]).map((article) => {
     return {
       params: {
         date: moment(article.publishedAt).utc().format('YYYY-MM-DD'),
@@ -30,7 +30,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   return {
     props: {
-      article: (articles as Article[]).find((v) => v.id === params?.id),
+      article: (jsonArticles as Article[]).find((v) => v.id === params?.id),
     },
   };
 };

@@ -1,6 +1,6 @@
 import { BodyHeader } from '@/src/components/elements/BodyHeader';
 import { ArticleHeaderList } from '@/src/components/widgets/ArticleHeaderList';
-import articles from '@/src/shared/.content/articles.json';
+import jsonArticles from '@/src/shared/.content/articles.json';
 import { Article } from '@/src/types';
 import styled from '@emotion/styled';
 import {
@@ -12,7 +12,7 @@ import {
 import React from 'react';
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const tagsList = (articles as Article[]).map((article) => {
+  const tagsList = (jsonArticles as Article[]).map((article) => {
     return article.tags;
   });
   const tmp = tagsList.flat();
@@ -36,7 +36,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   return {
     props: {
       name,
-      filteredArticles: (articles as Article[]).filter((v) =>
+      filteredArticles: (jsonArticles as Article[]).filter((v) =>
         v.tags?.includes(name)
       ),
     },
