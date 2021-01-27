@@ -46,7 +46,7 @@ export const ArticleHeader: React.FC<{ article: Article }> = ({ article }) => {
           color: ${theme.color.text.primaryLight};
         `}
       />
-      <CategoryTagList tags={article.tags as string[]} />
+      <CategoryTagList tags={article.tags} />
     </S.CategoryListWrapperDiv>
   );
 
