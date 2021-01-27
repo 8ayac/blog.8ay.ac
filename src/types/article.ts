@@ -3,7 +3,7 @@ export type ArticleAttribute = {
   title: string;
   publishedAt: string;
   updatedAt: string;
-  tags?: string[];
+  tags: string[];
 };
 
 export type Article = ArticleAttribute & {
