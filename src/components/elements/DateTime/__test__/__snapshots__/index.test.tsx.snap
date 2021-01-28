@@ -23,7 +23,7 @@ exports[`DateTime is rendered correctly to match the snapshot in case with descr
 }
 
 <DateTime
-  date="2021-01-02 03:04:56 +0000"
+  date={2021-01-02T03:04:56.000Z}
   description="TEST DESCRIPTION"
 >
   <ComponentWrapperDiv>
@@ -67,7 +67,7 @@ exports[`DateTime is rendered correctly to match the snapshot in case without de
 }
 
 <DateTime
-  date="2021-01-02 03:04:56 +0000"
+  date={2021-01-02T03:04:56.000Z}
 >
   <ComponentWrapperDiv>
     <div

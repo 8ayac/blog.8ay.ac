@@ -8,8 +8,8 @@ describe('ArticleHeader', () => {
   const testArticleData: Article = {
     id: 'test-article',
     title: 'Test Title',
-    publishedAt: '2000-01-01 00:00:00 +0900',
-    updatedAt: '2000-02-02 00:00:00 +0900',
+    publishedAt: new Date('2000-01-01T00:00:00.000Z'),
+    updatedAt: new Date('2000-02-02T00:00:00.000Z'),
     tags: ['test-tag1', 'test-tag2', 'test-tag3'],
     body: `Test Body`,
   };
@@ -24,7 +24,7 @@ describe('ArticleHeader', () => {
       const wrapper = mount(<ArticleHeader article={testArticleData} />);
 
       expect(wrapper.find('a').first().prop('href')).toBe(
-        `/articles/1999-12-31/test-article`
+        `/articles/2000-01-01/test-article`
       );
     });
   });

@@ -181,9 +181,9 @@ exports[`ArticlePage is rendered correctly to match the snapshot 1`] = `
 
 bluhbluhbluh",
       "id": "example-id",
-      "publishedAt": "2021-01-02 03:04:56 +0900",
+      "publishedAt": 2021-01-02T03:04:56.000Z,
       "title": "Example01",
-      "updatedAt": "2021-01-02 03:04:56 +0900",
+      "updatedAt": 2021-01-02T03:04:56.000Z,
     }
   }
 >
@@ -194,9 +194,9 @@ bluhbluhbluh",
 
 bluhbluhbluh",
         "id": "example-id",
-        "publishedAt": "2021-01-02 03:04:56 +0900",
+        "publishedAt": 2021-01-02T03:04:56.000Z,
         "title": "Example01",
-        "updatedAt": "2021-01-02 03:04:56 +0900",
+        "updatedAt": 2021-01-02T03:04:56.000Z,
       }
     }
   >
@@ -225,16 +225,16 @@ bluhbluhbluh",
       beforeTitle={
         <DateTimeWrapperDiv>
           <DateTime
-            date="2021-01-02 03:04:56 +0900"
+            date={2021-01-02T03:04:56.000Z}
             description="Published At"
           />
           <DateTime
-            date="2021-01-02 03:04:56 +0900"
+            date={2021-01-02T03:04:56.000Z}
             description="Updated At"
           />
         </DateTimeWrapperDiv>
       }
-      linkTo="/articles/2021-01-01/example-id"
+      linkTo="/articles/2021-01-02/example-id"
       title="Example01"
     >
       <WrapperHeader>
@@ -250,7 +250,7 @@ bluhbluhbluh",
                   className="emotion-4 emotion-5"
                 >
                   <DateTime
-                    date="2021-01-02 03:04:56 +0900"
+                    date={2021-01-02T03:04:56.000Z}
                     description="Published At"
                   >
                     <ComponentWrapperDiv>
@@ -268,14 +268,14 @@ bluhbluhbluh",
                           <time
                             className="emotion-10 emotion-11"
                           >
-                            2021-01-01T18:04:56.000Z
+                            2021-01-02T03:04:56.000Z
                           </time>
                         </DateTime>
                       </div>
                     </ComponentWrapperDiv>
                   </DateTime>
                   <DateTime
-                    date="2021-01-02 03:04:56 +0900"
+                    date={2021-01-02T03:04:56.000Z}
                     description="Updated At"
                   >
                     <ComponentWrapperDiv>
@@ -293,7 +293,7 @@ bluhbluhbluh",
                           <time
                             className="emotion-10 emotion-11"
                           >
-                            2021-01-01T18:04:56.000Z
+                            2021-01-02T03:04:56.000Z
                           </time>
                         </DateTime>
                       </div>
@@ -308,17 +308,17 @@ bluhbluhbluh",
               className="emotion-18 emotion-19"
             >
               <Link
-                href="/articles/2021-01-01/example-id"
+                href="/articles/2021-01-02/example-id"
                 passHref={true}
               >
                 <TitleAnchor
-                  href="/articles/2021-01-01/example-id"
+                  href="/articles/2021-01-02/example-id"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                 >
                   <a
                     className="emotion-20 emotion-21"
-                    href="/articles/2021-01-01/example-id"
+                    href="/articles/2021-01-02/example-id"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                   >

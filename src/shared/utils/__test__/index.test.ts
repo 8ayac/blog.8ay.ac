@@ -11,8 +11,8 @@ describe('getArticlePagePath', () => {
       id: 'test01',
       title: 'test title',
       tags: [],
-      publishedAt: '2000-01-01 00:00:00 +0000',
-      updatedAt: '2000-12-31 00:00:00 +0000',
+      publishedAt: new Date('2000-01-01T00:00:00.000Z'),
+      updatedAt: new Date('2000-12-31T00:00:00.000Z'),
       body: 'bluhbluhbluh',
     };
     expect(getArticlePagePath(testArticle)).toEqual(
@@ -25,12 +25,12 @@ describe('getArticlePagePath', () => {
       id: 'test01',
       title: 'test title',
       tags: [],
-      publishedAt: '2000-01-01 00:00:00 +0900',
-      updatedAt: '2000-12-31 00:00:00 +0900',
+      publishedAt: new Date('2000-01-01T00:00:00.000Z'),
+      updatedAt: new Date('2000-12-31T00:00:00.000Z'),
       body: 'bluhbluhbluh',
     };
     expect(getArticlePagePath(testArticle)).toEqual(
-      '/articles/1999-12-31/test01'
+      '/articles/2000-01-01/test01'
     );
   });
 });
@@ -59,24 +59,24 @@ describe('getNumberOfArticlesWithATag', () => {
       id: 'test-article-01',
       title: 'Test Title 01',
       tags: testCategories.slice(0, 3),
-      publishedAt: '2021-01-01 00:00:00 +0000',
-      updatedAt: '2021-01-01 00:00:00 +0000',
+      publishedAt: new Date('2021-01-01T00:00:00.000Z'),
+      updatedAt: new Date('2021-01-01T00:00:00.000Z'),
       body: 'bluhbluhbluh',
     },
     {
       id: 'test-article-02',
       title: 'Test Title 02',
       tags: testCategories.slice(0, 2),
-      publishedAt: '2021-02-02 00:00:00 +0000',
-      updatedAt: '2021-02-02 00:00:00 +0000',
+      publishedAt: new Date('2021-02-02T00:00:00.000Z'),
+      updatedAt: new Date('2021-02-02T00:00:00.000Z'),
       body: 'bluhbluhbluh',
     },
     {
       id: 'test-article-03',
       title: 'Test Title 03',
       tags: testCategories.slice(0, 1),
-      publishedAt: '2021-03-03 00:00:00 +0000',
-      updatedAt: '2021-03-03 00:00:00 +0000',
+      publishedAt: new Date('2021-03-03T00:00:00.000Z'),
+      updatedAt: new Date('2021-03-03T00:00:00.000Z'),
       body: 'bluhbluhbluh',
     },
   ];
@@ -115,24 +115,24 @@ describe('getArticlesWithATag', () => {
       id: 'test-article-01',
       title: 'Test Title 01',
       tags: testCategories.slice(0, 3),
-      publishedAt: '2021-01-01 00:00:00 +0000',
-      updatedAt: '2021-01-01 00:00:00 +0000',
+      publishedAt: new Date('2021-01-01T00:00:00.000Z'),
+      updatedAt: new Date('2021-01-01T00:00:00.000Z'),
       body: 'bluhbluhbluh',
     },
     {
       id: 'test-article-02',
       title: 'Test Title 02',
       tags: testCategories.slice(0, 2),
-      publishedAt: '2021-02-02 00:00:00 +0000',
-      updatedAt: '2021-02-02 00:00:00 +0000',
+      publishedAt: new Date('2021-02-02T00:00:00.000Z'),
+      updatedAt: new Date('2021-02-02T00:00:00.000Z'),
       body: 'bluhbluhbluh',
     },
     {
       id: 'test-article-03',
       title: 'Test Title 03',
       tags: testCategories.slice(0, 1),
-      publishedAt: '2021-03-03 00:00:00 +0000',
-      updatedAt: '2021-03-03 00:00:00 +0000',
+      publishedAt: new Date('2021-03-03T00:00:00.000Z'),
+      updatedAt: new Date('2021-03-03T00:00:00.000Z'),
       body: 'bluhbluhbluh',
     },
   ];

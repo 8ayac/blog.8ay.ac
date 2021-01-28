@@ -134,35 +134,35 @@ exports[`TagsIndexPage is rendered correctly to match the snapshot 1`] = `
       Object {
         "body": "bluhbluhbluh",
         "id": "test-article-01",
-        "publishedAt": "2021-01-01 00:00:00 +0000",
+        "publishedAt": 2021-01-01T00:00:00.000Z,
         "tags": Array [
           "test-cat01",
           "test-cat02",
           "test-cat03",
         ],
         "title": "Test Title 01",
-        "updatedAt": "2021-01-01 00:00:00 +0000",
+        "updatedAt": 2021-01-01T00:00:00.000Z,
       },
       Object {
         "body": "bluhbluhbluh",
         "id": "test-article-02",
-        "publishedAt": "2021-02-02 00:00:00 +0000",
+        "publishedAt": 2021-02-02T00:00:00.000Z,
         "tags": Array [
           "test-cat01",
           "test-cat02",
         ],
         "title": "Test Title 02",
-        "updatedAt": "2021-02-02 00:00:00 +0000",
+        "updatedAt": 2021-02-02T00:00:00.000Z,
       },
       Object {
         "body": "bluhbluhbluh",
         "id": "test-article-03",
-        "publishedAt": "2021-03-03 00:00:00 +0000",
+        "publishedAt": 2021-03-03T00:00:00.000Z,
         "tags": Array [
           "test-cat01",
         ],
         "title": "Test Title 03",
-        "updatedAt": "2021-03-03 00:00:00 +0000",
+        "updatedAt": 2021-03-03T00:00:00.000Z,
       },
     ]
   }
@@ -350,35 +350,35 @@ exports[`TagsIndexPage is rendered correctly to match the snapshot 1`] = `
             Object {
               "body": "bluhbluhbluh",
               "id": "test-article-01",
-              "publishedAt": "2021-01-01 00:00:00 +0000",
+              "publishedAt": 2021-01-01T00:00:00.000Z,
               "tags": Array [
                 "test-cat01",
                 "test-cat02",
                 "test-cat03",
               ],
               "title": "Test Title 01",
-              "updatedAt": "2021-01-01 00:00:00 +0000",
+              "updatedAt": 2021-01-01T00:00:00.000Z,
             },
             Object {
               "body": "bluhbluhbluh",
               "id": "test-article-02",
-              "publishedAt": "2021-02-02 00:00:00 +0000",
+              "publishedAt": 2021-02-02T00:00:00.000Z,
               "tags": Array [
                 "test-cat01",
                 "test-cat02",
               ],
               "title": "Test Title 02",
-              "updatedAt": "2021-02-02 00:00:00 +0000",
+              "updatedAt": 2021-02-02T00:00:00.000Z,
             },
             Object {
               "body": "bluhbluhbluh",
               "id": "test-article-03",
-              "publishedAt": "2021-03-03 00:00:00 +0000",
+              "publishedAt": 2021-03-03T00:00:00.000Z,
               "tags": Array [
                 "test-cat01",
               ],
               "title": "Test Title 03",
-              "updatedAt": "2021-03-03 00:00:00 +0000",
+              "updatedAt": 2021-03-03T00:00:00.000Z,
             },
           ]
         }
@@ -396,14 +396,14 @@ exports[`TagsIndexPage is rendered correctly to match the snapshot 1`] = `
                     Object {
                       "body": "bluhbluhbluh",
                       "id": "test-article-01",
-                      "publishedAt": "2021-01-01 00:00:00 +0000",
+                      "publishedAt": 2021-01-01T00:00:00.000Z,
                       "tags": Array [
                         "test-cat01",
                         "test-cat02",
                         "test-cat03",
                       ],
                       "title": "Test Title 01",
-                      "updatedAt": "2021-01-01 00:00:00 +0000",
+                      "updatedAt": 2021-01-01T00:00:00.000Z,
                     }
                   }
                   key="test-article-01"
@@ -441,11 +441,11 @@ exports[`TagsIndexPage is rendered correctly to match the snapshot 1`] = `
                     beforeTitle={
                       <DateTimeWrapperDiv>
                         <DateTime
-                          date="2021-01-01 00:00:00 +0000"
+                          date={2021-01-01T00:00:00.000Z}
                           description="Published At"
                         />
                         <DateTime
-                          date="2021-01-01 00:00:00 +0000"
+                          date={2021-01-01T00:00:00.000Z}
                           description="Updated At"
                         />
                       </DateTimeWrapperDiv>
@@ -466,7 +466,7 @@ exports[`TagsIndexPage is rendered correctly to match the snapshot 1`] = `
                                 className="emotion-34 emotion-35"
                               >
                                 <DateTime
-                                  date="2021-01-01 00:00:00 +0000"
+                                  date={2021-01-01T00:00:00.000Z}
                                   description="Published At"
                                 >
                                   <ComponentWrapperDiv>
@@ -491,7 +491,7 @@ exports[`TagsIndexPage is rendered correctly to match the snapshot 1`] = `
                                   </ComponentWrapperDiv>
                                 </DateTime>
                                 <DateTime
-                                  date="2021-01-01 00:00:00 +0000"
+                                  date={2021-01-01T00:00:00.000Z}
                                   description="Updated At"
                                 >
                                   <ComponentWrapperDiv>
@@ -717,13 +717,13 @@ exports[`TagsIndexPage is rendered correctly to match the snapshot 1`] = `
                     Object {
                       "body": "bluhbluhbluh",
                       "id": "test-article-02",
-                      "publishedAt": "2021-02-02 00:00:00 +0000",
+                      "publishedAt": 2021-02-02T00:00:00.000Z,
                       "tags": Array [
                         "test-cat01",
                         "test-cat02",
                       ],
                       "title": "Test Title 02",
-                      "updatedAt": "2021-02-02 00:00:00 +0000",
+                      "updatedAt": 2021-02-02T00:00:00.000Z,
                     }
                   }
                   key="test-article-02"
@@ -760,11 +760,11 @@ exports[`TagsIndexPage is rendered correctly to match the snapshot 1`] = `
                     beforeTitle={
                       <DateTimeWrapperDiv>
                         <DateTime
-                          date="2021-02-02 00:00:00 +0000"
+                          date={2021-02-02T00:00:00.000Z}
                           description="Published At"
                         />
                         <DateTime
-                          date="2021-02-02 00:00:00 +0000"
+                          date={2021-02-02T00:00:00.000Z}
                           description="Updated At"
                         />
                       </DateTimeWrapperDiv>
@@ -785,7 +785,7 @@ exports[`TagsIndexPage is rendered correctly to match the snapshot 1`] = `
                                 className="emotion-34 emotion-35"
                               >
                                 <DateTime
-                                  date="2021-02-02 00:00:00 +0000"
+                                  date={2021-02-02T00:00:00.000Z}
                                   description="Published At"
                                 >
                                   <ComponentWrapperDiv>
@@ -810,7 +810,7 @@ exports[`TagsIndexPage is rendered correctly to match the snapshot 1`] = `
                                   </ComponentWrapperDiv>
                                 </DateTime>
                                 <DateTime
-                                  date="2021-02-02 00:00:00 +0000"
+                                  date={2021-02-02T00:00:00.000Z}
                                   description="Updated At"
                                 >
                                   <ComponentWrapperDiv>
@@ -1004,12 +1004,12 @@ exports[`TagsIndexPage is rendered correctly to match the snapshot 1`] = `
                     Object {
                       "body": "bluhbluhbluh",
                       "id": "test-article-03",
-                      "publishedAt": "2021-03-03 00:00:00 +0000",
+                      "publishedAt": 2021-03-03T00:00:00.000Z,
                       "tags": Array [
                         "test-cat01",
                       ],
                       "title": "Test Title 03",
-                      "updatedAt": "2021-03-03 00:00:00 +0000",
+                      "updatedAt": 2021-03-03T00:00:00.000Z,
                     }
                   }
                   key="test-article-03"
@@ -1045,11 +1045,11 @@ exports[`TagsIndexPage is rendered correctly to match the snapshot 1`] = `
                     beforeTitle={
                       <DateTimeWrapperDiv>
                         <DateTime
-                          date="2021-03-03 00:00:00 +0000"
+                          date={2021-03-03T00:00:00.000Z}
                           description="Published At"
                         />
                         <DateTime
-                          date="2021-03-03 00:00:00 +0000"
+                          date={2021-03-03T00:00:00.000Z}
                           description="Updated At"
                         />
                       </DateTimeWrapperDiv>
@@ -1070,7 +1070,7 @@ exports[`TagsIndexPage is rendered correctly to match the snapshot 1`] = `
                                 className="emotion-34 emotion-35"
                               >
                                 <DateTime
-                                  date="2021-03-03 00:00:00 +0000"
+                                  date={2021-03-03T00:00:00.000Z}
                                   description="Published At"
                                 >
                                   <ComponentWrapperDiv>
@@ -1095,7 +1095,7 @@ exports[`TagsIndexPage is rendered correctly to match the snapshot 1`] = `
                                   </ComponentWrapperDiv>
                                 </DateTime>
                                 <DateTime
-                                  date="2021-03-03 00:00:00 +0000"
+                                  date={2021-03-03T00:00:00.000Z}
                                   description="Updated At"
                                 >
                                   <ComponentWrapperDiv>
@@ -1309,25 +1309,25 @@ exports[`TagsIndexPage is rendered correctly to match the snapshot 1`] = `
             Object {
               "body": "bluhbluhbluh",
               "id": "test-article-01",
-              "publishedAt": "2021-01-01 00:00:00 +0000",
+              "publishedAt": 2021-01-01T00:00:00.000Z,
               "tags": Array [
                 "test-cat01",
                 "test-cat02",
                 "test-cat03",
               ],
               "title": "Test Title 01",
-              "updatedAt": "2021-01-01 00:00:00 +0000",
+              "updatedAt": 2021-01-01T00:00:00.000Z,
             },
             Object {
               "body": "bluhbluhbluh",
               "id": "test-article-02",
-              "publishedAt": "2021-02-02 00:00:00 +0000",
+              "publishedAt": 2021-02-02T00:00:00.000Z,
               "tags": Array [
                 "test-cat01",
                 "test-cat02",
               ],
               "title": "Test Title 02",
-              "updatedAt": "2021-02-02 00:00:00 +0000",
+              "updatedAt": 2021-02-02T00:00:00.000Z,
             },
           ]
         }
@@ -1345,14 +1345,14 @@ exports[`TagsIndexPage is rendered correctly to match the snapshot 1`] = `
                     Object {
                       "body": "bluhbluhbluh",
                       "id": "test-article-01",
-                      "publishedAt": "2021-01-01 00:00:00 +0000",
+                      "publishedAt": 2021-01-01T00:00:00.000Z,
                       "tags": Array [
                         "test-cat01",
                         "test-cat02",
                         "test-cat03",
                       ],
                       "title": "Test Title 01",
-                      "updatedAt": "2021-01-01 00:00:00 +0000",
+                      "updatedAt": 2021-01-01T00:00:00.000Z,
                     }
                   }
                   key="test-article-01"
@@ -1390,11 +1390,11 @@ exports[`TagsIndexPage is rendered correctly to match the snapshot 1`] = `
                     beforeTitle={
                       <DateTimeWrapperDiv>
                         <DateTime
-                          date="2021-01-01 00:00:00 +0000"
+                          date={2021-01-01T00:00:00.000Z}
                           description="Published At"
                         />
                         <DateTime
-                          date="2021-01-01 00:00:00 +0000"
+                          date={2021-01-01T00:00:00.000Z}
                           description="Updated At"
                         />
                       </DateTimeWrapperDiv>
@@ -1415,7 +1415,7 @@ exports[`TagsIndexPage is rendered correctly to match the snapshot 1`] = `
                                 className="emotion-34 emotion-35"
                               >
                                 <DateTime
-                                  date="2021-01-01 00:00:00 +0000"
+                                  date={2021-01-01T00:00:00.000Z}
                                   description="Published At"
                                 >
                                   <ComponentWrapperDiv>
@@ -1440,7 +1440,7 @@ exports[`TagsIndexPage is rendered correctly to match the snapshot 1`] = `
                                   </ComponentWrapperDiv>
                                 </DateTime>
                                 <DateTime
-                                  date="2021-01-01 00:00:00 +0000"
+                                  date={2021-01-01T00:00:00.000Z}
                                   description="Updated At"
                                 >
                                   <ComponentWrapperDiv>
@@ -1666,13 +1666,13 @@ exports[`TagsIndexPage is rendered correctly to match the snapshot 1`] = `
                     Object {
                       "body": "bluhbluhbluh",
                       "id": "test-article-02",
-                      "publishedAt": "2021-02-02 00:00:00 +0000",
+                      "publishedAt": 2021-02-02T00:00:00.000Z,
                       "tags": Array [
                         "test-cat01",
                         "test-cat02",
                       ],
                       "title": "Test Title 02",
-                      "updatedAt": "2021-02-02 00:00:00 +0000",
+                      "updatedAt": 2021-02-02T00:00:00.000Z,
                     }
                   }
                   key="test-article-02"
@@ -1709,11 +1709,11 @@ exports[`TagsIndexPage is rendered correctly to match the snapshot 1`] = `
                     beforeTitle={
                       <DateTimeWrapperDiv>
                         <DateTime
-                          date="2021-02-02 00:00:00 +0000"
+                          date={2021-02-02T00:00:00.000Z}
                           description="Published At"
                         />
                         <DateTime
-                          date="2021-02-02 00:00:00 +0000"
+                          date={2021-02-02T00:00:00.000Z}
                           description="Updated At"
                         />
                       </DateTimeWrapperDiv>
@@ -1734,7 +1734,7 @@ exports[`TagsIndexPage is rendered correctly to match the snapshot 1`] = `
                                 className="emotion-34 emotion-35"
                               >
                                 <DateTime
-                                  date="2021-02-02 00:00:00 +0000"
+                                  date={2021-02-02T00:00:00.000Z}
                                   description="Published At"
                                 >
                                   <ComponentWrapperDiv>
@@ -1759,7 +1759,7 @@ exports[`TagsIndexPage is rendered correctly to match the snapshot 1`] = `
                                   </ComponentWrapperDiv>
                                 </DateTime>
                                 <DateTime
-                                  date="2021-02-02 00:00:00 +0000"
+                                  date={2021-02-02T00:00:00.000Z}
                                   description="Updated At"
                                 >
                                   <ComponentWrapperDiv>
@@ -2005,14 +2005,14 @@ exports[`TagsIndexPage is rendered correctly to match the snapshot 1`] = `
             Object {
               "body": "bluhbluhbluh",
               "id": "test-article-01",
-              "publishedAt": "2021-01-01 00:00:00 +0000",
+              "publishedAt": 2021-01-01T00:00:00.000Z,
               "tags": Array [
                 "test-cat01",
                 "test-cat02",
                 "test-cat03",
               ],
               "title": "Test Title 01",
-              "updatedAt": "2021-01-01 00:00:00 +0000",
+              "updatedAt": 2021-01-01T00:00:00.000Z,
             },
           ]
         }
@@ -2030,14 +2030,14 @@ exports[`TagsIndexPage is rendered correctly to match the snapshot 1`] = `
                     Object {
                       "body": "bluhbluhbluh",
                       "id": "test-article-01",
-                      "publishedAt": "2021-01-01 00:00:00 +0000",
+                      "publishedAt": 2021-01-01T00:00:00.000Z,
                       "tags": Array [
                         "test-cat01",
                         "test-cat02",
                         "test-cat03",
                       ],
                       "title": "Test Title 01",
-                      "updatedAt": "2021-01-01 00:00:00 +0000",
+                      "updatedAt": 2021-01-01T00:00:00.000Z,
                     }
                   }
                   key="test-article-01"
@@ -2075,11 +2075,11 @@ exports[`TagsIndexPage is rendered correctly to match the snapshot 1`] = `
                     beforeTitle={
                       <DateTimeWrapperDiv>
                         <DateTime
-                          date="2021-01-01 00:00:00 +0000"
+                          date={2021-01-01T00:00:00.000Z}
                           description="Published At"
                         />
                         <DateTime
-                          date="2021-01-01 00:00:00 +0000"
+                          date={2021-01-01T00:00:00.000Z}
                           description="Updated At"
                         />
                       </DateTimeWrapperDiv>
@@ -2100,7 +2100,7 @@ exports[`TagsIndexPage is rendered correctly to match the snapshot 1`] = `
                                 className="emotion-34 emotion-35"
                               >
                                 <DateTime
-                                  date="2021-01-01 00:00:00 +0000"
+                                  date={2021-01-01T00:00:00.000Z}
                                   description="Published At"
                                 >
                                   <ComponentWrapperDiv>
@@ -2125,7 +2125,7 @@ exports[`TagsIndexPage is rendered correctly to match the snapshot 1`] = `
                                   </ComponentWrapperDiv>
                                 </DateTime>
                                 <DateTime
-                                  date="2021-01-01 00:00:00 +0000"
+                                  date={2021-01-01T00:00:00.000Z}
                                   description="Updated At"
                                 >
                                   <ComponentWrapperDiv>
