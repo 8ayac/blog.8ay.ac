@@ -28,10 +28,12 @@ const S = {
 
   TitleWrapper: styled(FlexContainerDiv)`
     align-items: center;
+    filter: drop-shadow(2px 2px 1px ${theme.color.green.dark3});
   `,
 
   NavWrapper: styled(FlexContainerDiv)`
     align-items: center;
+    filter: drop-shadow(2px 2px 1px ${theme.color.green.dark3});
   `,
 };
 

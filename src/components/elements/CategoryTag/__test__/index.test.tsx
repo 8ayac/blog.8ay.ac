@@ -34,6 +34,10 @@ describe('CategoryTag', () => {
         'background-color',
         theme.color.blue.dark
       );
+      expect(wrapper.find('Anchor')).toHaveStyleRule(
+        'filter',
+        `drop-shadow(2px 2px 1px ${theme.color.blue.light2})`
+      );
       expect(wrapper.find('Anchor')).toHaveStyleRule('border-radius', '3px');
 
       expect(wrapper.find('Anchor')).toHaveStyleRule('color', 'white', {

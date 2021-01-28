@@ -27,7 +27,7 @@ describe('CategoryTagList', () => {
       );
       expect(wrapper.find('ComponentWrapperDiv').first()).toHaveStyleRule(
         'margin',
-        '0 0.5rem 0.5rem 0'
+        '0 0.7rem 0.7rem 0'
       );
     });
   });
