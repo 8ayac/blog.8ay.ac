@@ -46,7 +46,6 @@ exports[`TagsIndexPage is rendered correctly to match the snapshot 1`] = `
 
 .emotion-18 {
   margin-bottom: 3rem;
-  font-size: 0.85em;
 }
 
 .emotion-24 {
