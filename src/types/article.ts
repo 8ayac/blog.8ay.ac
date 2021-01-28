@@ -2,7 +2,7 @@ export type ArticleAttribute = {
   id: string;
   title: string;
   publishedAt: Date | string;
-  updatedAt: Date;
+  updatedAt: Date | string;
   tags: string[];
 };
 
