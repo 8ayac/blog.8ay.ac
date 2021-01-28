@@ -2,7 +2,6 @@ import { BodyHeader } from '@/src/components/elements/BodyHeader';
 import { ArticleHeaderList } from '@/src/components/widgets/ArticleHeaderList';
 import { CategoryTagList } from '@/src/components/widgets/CategoryTagList';
 import jsonArticles from '@/src/shared/.content/articles.json';
-import { getNumberOfArticlesWithATag } from '@/src/shared/utils';
 import { Article } from '@/src/types';
 import styled, { StyledComponent } from '@emotion/styled';
 import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
@@ -37,12 +36,7 @@ const TopPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
       <S.CategoryListSection>
         <BodyHeader title="Tags" />
         <CategoryTagList
-          tags={(articles as Article[])
-            .map((article) => article.tags)
-            .flat()
-            .map(
-              (tag) => `${tag} (${getNumberOfArticlesWithATag(tag, articles)})`
-            )}
+          tags={(articles as Article[]).map((article) => article.tags).flat()}
         />
       </S.CategoryListSection>
     </>
