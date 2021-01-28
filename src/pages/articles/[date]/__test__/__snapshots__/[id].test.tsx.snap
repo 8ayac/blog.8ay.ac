@@ -1,7 +1,189 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ArticlePage is rendered correctly to match the snapshot 1`] = `
-<Fragment>
+.emotion-0 {
+  margin-bottom: 3rem;
+  border-bottom: 0.25rem solid hsla(0, 0%, 75%);
+}
+
+.emotion-2 {
+  margin-bottom: 0.3rem;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.emotion-4>* {
+  margin-right: 1rem;
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.emotion-8 {
+  margin-right: 0.5rem;
+  font-weight: 600;
+}
+
+.emotion-10 {
+  font-weight: bolder;
+  color: hsla(212, 72%, 40%);
+}
+
+.emotion-18 {
+  margin: 0 0 1rem;
+  font-size: 2.16em;
+}
+
+.emotion-20 {
+  margin: 0;
+  color: hsla(0, 0%, 15%);
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-22 {
+  margin-top: 0.3rem;
+}
+
+.emotion-24 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.emotion-26 {
+  margin-right: 1rem;
+  margin-left: 0.5rem;
+  font-size: 1em;
+  color: hsla(0, 0%, 40%);
+}
+
+.emotion-28 {
+  overflow-wrap: break-word;
+}
+
+.emotion-28 h1,
+.emotion-28 h2 {
+  padding-bottom: 0.3em;
+  margin-top: 2em;
+  border-bottom: 1px solid hsla(0, 0%, 75%);
+}
+
+.emotion-28 h3,
+.emotion-28 h4,
+.emotion-28 h5,
+.emotion-28 h6 {
+  margin-top: 1em;
+}
+
+.emotion-28 a {
+  font-weight: 600;
+}
+
+.emotion-28 code,
+.emotion-28 pre {
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+  word-break: normal;
+}
+
+.emotion-28 pre {
+  white-space: pre-wrap;
+}
+
+.emotion-28 code:not([class]) {
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 0.85em;
+  background-color: hsla(0, 0%, 92.5%);
+  border-radius: 3px;
+}
+
+.emotion-28 blockquote,
+.emotion-28 details,
+.emotion-28 dl,
+.emotion-28 ol,
+.emotion-28 p,
+.emotion-28 pre,
+.emotion-28 table,
+.emotion-28 ul {
+  margin-top: 0;
+  margin-bottom: 1.8rem;
+}
+
+.emotion-28 ol ol,
+.emotion-28 ul ol {
+  list-style-type: lower-roman;
+}
+
+.emotion-28 li>p {
+  margin-top: 1.6rem;
+}
+
+.emotion-28 li+li {
+  margin-top: 0.25em;
+}
+
+.emotion-28 blockquote {
+  padding: 0 1em;
+  margin-left: 0;
+  color: hsla(0, 0%, 40%);
+  border-left: 0.25em solid hsla(212, 72%, 90%);
+}
+
+.emotion-28 blockquote:first-of-type {
+  margin-top: 0;
+}
+
+.emotion-28 blockquote:last-of-type {
+  margin-bottom: 0;
+}
+
+.emotion-28 div.code-toolbar>.toolbar {
+  top: 0.3em;
+  right: 0.3em;
+  -webkit-transition: none;
+  transition: none;
+}
+
+.emotion-28 div.code-toolbar>.toolbar span {
+  font-size: 0.85em;
+  border-radius: 10px;
+}
+
+<ArticlePage
+  article={
+    Object {
+      "body": "## test
+
+bluhbluhbluh",
+      "id": "example-id",
+      "publishedAt": "2021-01-02 03:04:56 +0900",
+      "title": "Example01",
+      "updatedAt": "2021-01-02 03:04:56 +0900",
+    }
+  }
+>
   <ArticleHeader
     article={
       Object {
@@ -14,11 +196,412 @@ bluhbluhbluh",
         "updatedAt": "2021-01-02 03:04:56 +0900",
       }
     }
-  />
+  >
+    <BodyHeader
+      afterTitle={
+        <CategoryListWrapperDiv>
+          <FontAwesomeIcon
+            css="unknown styles"
+            icon={
+              Object {
+                "icon": Array [
+                  640,
+                  512,
+                  Array [],
+                  "f02c",
+                  "M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z",
+                ],
+                "iconName": "tags",
+                "prefix": "fas",
+              }
+            }
+          />
+          <CategoryTagList />
+        </CategoryListWrapperDiv>
+      }
+      beforeTitle={
+        <DateTimeWrapperDiv>
+          <DateTime
+            date="2021-01-02 03:04:56 +0900"
+            description="Published At"
+          />
+          <DateTime
+            date="2021-01-02 03:04:56 +0900"
+            description="Updated At"
+          />
+        </DateTimeWrapperDiv>
+      }
+      linkTo="/articles/2021-01-01/example-id"
+      title="Example01"
+    >
+      <WrapperHeader>
+        <header
+          className="emotion-0 emotion-1"
+        >
+          <BeforeTitleDiv>
+            <div
+              className="emotion-2 emotion-3"
+            >
+              <DateTimeWrapperDiv>
+                <div
+                  className="emotion-4 emotion-5"
+                >
+                  <DateTime
+                    date="2021-01-02 03:04:56 +0900"
+                    description="Published At"
+                  >
+                    <ComponentWrapperDiv>
+                      <div
+                        className="emotion-6 emotion-7"
+                      >
+                        <DescriptionSpan>
+                          <span
+                            className="emotion-8 emotion-9"
+                          >
+                            Published At:
+                          </span>
+                        </DescriptionSpan>
+                        <DateTime>
+                          <time
+                            className="emotion-10 emotion-11"
+                          >
+                            2021-01-01T18:04:56.000Z
+                          </time>
+                        </DateTime>
+                      </div>
+                    </ComponentWrapperDiv>
+                  </DateTime>
+                  <DateTime
+                    date="2021-01-02 03:04:56 +0900"
+                    description="Updated At"
+                  >
+                    <ComponentWrapperDiv>
+                      <div
+                        className="emotion-6 emotion-7"
+                      >
+                        <DescriptionSpan>
+                          <span
+                            className="emotion-8 emotion-9"
+                          >
+                            Updated At:
+                          </span>
+                        </DescriptionSpan>
+                        <DateTime>
+                          <time
+                            className="emotion-10 emotion-11"
+                          >
+                            2021-01-01T18:04:56.000Z
+                          </time>
+                        </DateTime>
+                      </div>
+                    </ComponentWrapperDiv>
+                  </DateTime>
+                </div>
+              </DateTimeWrapperDiv>
+            </div>
+          </BeforeTitleDiv>
+          <TitleH1>
+            <h1
+              className="emotion-18 emotion-19"
+            >
+              <Link
+                href="/articles/2021-01-01/example-id"
+                passHref={true}
+              >
+                <TitleAnchor
+                  href="/articles/2021-01-01/example-id"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                >
+                  <a
+                    className="emotion-20 emotion-21"
+                    href="/articles/2021-01-01/example-id"
+                    onClick={[Function]}
+                    onMouseEnter={[Function]}
+                  >
+                    Example01
+                  </a>
+                </TitleAnchor>
+              </Link>
+            </h1>
+          </TitleH1>
+          <AfterTitleDiv>
+            <div
+              className="emotion-22 emotion-23"
+            >
+              <CategoryListWrapperDiv>
+                <div
+                  className="emotion-24 emotion-25"
+                >
+                  <FontAwesomeIcon
+                    border={false}
+                    className="emotion-26"
+                    fixedWidth={false}
+                    flip={null}
+                    icon={
+                      Object {
+                        "icon": Array [
+                          640,
+                          512,
+                          Array [],
+                          "f02c",
+                          "M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z",
+                        ],
+                        "iconName": "tags",
+                        "prefix": "fas",
+                      }
+                    }
+                    inverse={false}
+                    listItem={false}
+                    mask={null}
+                    pull={null}
+                    pulse={false}
+                    rotation={null}
+                    size={null}
+                    spin={false}
+                    swapOpacity={false}
+                    symbol={false}
+                    title=""
+                    transform={null}
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="svg-inline--fa fa-tags fa-w-20 emotion-26"
+                      data-icon="tags"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      style={Object {}}
+                      viewBox="0 0 640 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"
+                        fill="currentColor"
+                        style={Object {}}
+                      />
+                    </svg>
+                  </FontAwesomeIcon>
+                  <CategoryTagList />
+                </div>
+              </CategoryListWrapperDiv>
+            </div>
+          </AfterTitleDiv>
+        </header>
+      </WrapperHeader>
+    </BodyHeader>
+  </ArticleHeader>
   <MarkdownRender
     content="## test
 
 bluhbluhbluh"
-  />
-</Fragment>
+  >
+    <ConvertedMdBody>
+      <div
+        className="emotion-28 emotion-29"
+      >
+        <ReactMarkdown
+          plugins={
+            Array [
+              [Function],
+            ]
+          }
+          source="## test
+
+bluhbluhbluh"
+          transformImageUri={[Function]}
+          transformLinkUri={[Function]}
+        >
+          <Root
+            key="root-1-1-0"
+            node={
+              Object {
+                "children": Array [
+                  Object {
+                    "children": Array [
+                      Object {
+                        "position": Object {
+                          "end": Object {
+                            "column": 8,
+                            "line": 1,
+                            "offset": 7,
+                          },
+                          "start": Object {
+                            "column": 4,
+                            "line": 1,
+                            "offset": 3,
+                          },
+                        },
+                        "type": "text",
+                        "value": "test",
+                      },
+                    ],
+                    "depth": 2,
+                    "position": Object {
+                      "end": Object {
+                        "column": 8,
+                        "line": 1,
+                        "offset": 7,
+                      },
+                      "start": Object {
+                        "column": 1,
+                        "line": 1,
+                        "offset": 0,
+                      },
+                    },
+                    "type": "heading",
+                  },
+                  Object {
+                    "children": Array [
+                      Object {
+                        "position": Object {
+                          "end": Object {
+                            "column": 13,
+                            "line": 3,
+                            "offset": 23,
+                          },
+                          "start": Object {
+                            "column": 1,
+                            "line": 3,
+                            "offset": 11,
+                          },
+                        },
+                        "type": "text",
+                        "value": "bluhbluhbluh",
+                      },
+                    ],
+                    "position": Object {
+                      "end": Object {
+                        "column": 13,
+                        "line": 3,
+                        "offset": 23,
+                      },
+                      "start": Object {
+                        "column": 1,
+                        "line": 3,
+                        "offset": 11,
+                      },
+                    },
+                    "type": "paragraph",
+                  },
+                ],
+                "position": Object {
+                  "end": Object {
+                    "column": 13,
+                    "line": 3,
+                    "offset": 23,
+                  },
+                  "start": Object {
+                    "column": 1,
+                    "line": 1,
+                    "offset": 0,
+                  },
+                },
+                "type": "root",
+              }
+            }
+          >
+            <Heading
+              key="heading-1-1-0"
+              level={2}
+              node={
+                Object {
+                  "children": Array [
+                    Object {
+                      "position": Object {
+                        "end": Object {
+                          "column": 8,
+                          "line": 1,
+                          "offset": 7,
+                        },
+                        "start": Object {
+                          "column": 4,
+                          "line": 1,
+                          "offset": 3,
+                        },
+                      },
+                      "type": "text",
+                      "value": "test",
+                    },
+                  ],
+                  "depth": 2,
+                  "position": Object {
+                    "end": Object {
+                      "column": 8,
+                      "line": 1,
+                      "offset": 7,
+                    },
+                    "start": Object {
+                      "column": 1,
+                      "line": 1,
+                      "offset": 0,
+                    },
+                  },
+                  "type": "heading",
+                }
+              }
+            >
+              <h2>
+                <TextRenderer
+                  key="text-1-4-0"
+                  node={
+                    Object {
+                      "position": Object {
+                        "end": Object {
+                          "column": 8,
+                          "line": 1,
+                          "offset": 7,
+                        },
+                        "start": Object {
+                          "column": 4,
+                          "line": 1,
+                          "offset": 3,
+                        },
+                      },
+                      "type": "text",
+                      "value": "test",
+                    }
+                  }
+                  nodeKey="text-1-4-0"
+                  value="test"
+                >
+                  test
+                </TextRenderer>
+              </h2>
+            </Heading>
+            <p
+              key="paragraph-3-1-1"
+            >
+              <TextRenderer
+                key="text-3-1-0"
+                node={
+                  Object {
+                    "position": Object {
+                      "end": Object {
+                        "column": 13,
+                        "line": 3,
+                        "offset": 23,
+                      },
+                      "start": Object {
+                        "column": 1,
+                        "line": 3,
+                        "offset": 11,
+                      },
+                    },
+                    "type": "text",
+                    "value": "bluhbluhbluh",
+                  }
+                }
+                nodeKey="text-3-1-0"
+                value="bluhbluhbluh"
+              >
+                bluhbluhbluh
+              </TextRenderer>
+            </p>
+          </Root>
+        </ReactMarkdown>
+      </div>
+    </ConvertedMdBody>
+  </MarkdownRender>
+</ArticlePage>
 `;

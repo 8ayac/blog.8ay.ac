@@ -1,7 +1,7 @@
 import { SocialLinkWithIcon } from '@/src/components/elements/SocialLinkWithIcon';
 import { theme } from '@/src/constants/theme';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import React from 'react';
 
 describe('SocialLinkWithIcon', () => {
@@ -11,7 +11,7 @@ describe('SocialLinkWithIcon', () => {
     icon: undefined,
     color: undefined,
   };
-  const wrapper = shallow(<SocialLinkWithIcon {...defaultProps} />);
+  const wrapper = mount(<SocialLinkWithIcon {...defaultProps} />);
 
   afterEach(() => {
     wrapper.setProps(defaultProps);
@@ -37,16 +37,16 @@ describe('SocialLinkWithIcon', () => {
         ...defaultProps,
         icon: faTwitter,
       });
-      expect(wrapper.find('[icon]')).toHaveLength(1);
-      expect(wrapper.find('[icon]').prop('icon')).toHaveProperty(
+      expect(wrapper.find('FontAwesomeIcon')).toHaveLength(1);
+      expect(wrapper.find('FontAwesomeIcon').prop('icon')).toHaveProperty(
         'iconName',
         'twitter'
       );
     });
 
     test('without the specified icon', () => {
-      expect(wrapper.find('[icon]')).toHaveLength(1);
-      expect(wrapper.find('[icon]').prop('icon')).toHaveProperty(
+      expect(wrapper.find('FontAwesomeIcon')).toHaveLength(1);
+      expect(wrapper.find('FontAwesomeIcon').prop('icon')).toHaveProperty(
         'iconName',
         'link'
       );
