@@ -381,17 +381,17 @@ exports[`ArticleHeaderList is rendered correctly to match the snapshot 1`] = `
                                   name="test01"
                                 >
                                   <Link
-                                    href="/category/test01"
+                                    href="/tags/test01"
                                     passHref={true}
                                   >
                                     <Anchor
-                                      href="/category/test01"
+                                      href="/tags/test01"
                                       onClick={[Function]}
                                       onMouseEnter={[Function]}
                                     >
                                       <a
                                         className="emotion-34 emotion-35"
-                                        href="/category/test01"
+                                        href="/tags/test01"
                                         onClick={[Function]}
                                         onMouseEnter={[Function]}
                                       >
@@ -634,17 +634,17 @@ exports[`ArticleHeaderList is rendered correctly to match the snapshot 1`] = `
                                   name="test02"
                                 >
                                   <Link
-                                    href="/category/test02"
+                                    href="/tags/test02"
                                     passHref={true}
                                   >
                                     <Anchor
-                                      href="/category/test02"
+                                      href="/tags/test02"
                                       onClick={[Function]}
                                       onMouseEnter={[Function]}
                                     >
                                       <a
                                         className="emotion-34 emotion-35"
-                                        href="/category/test02"
+                                        href="/tags/test02"
                                         onClick={[Function]}
                                         onMouseEnter={[Function]}
                                       >
@@ -887,17 +887,17 @@ exports[`ArticleHeaderList is rendered correctly to match the snapshot 1`] = `
                                   name="test03"
                                 >
                                   <Link
-                                    href="/category/test03"
+                                    href="/tags/test03"
                                     passHref={true}
                                   >
                                     <Anchor
-                                      href="/category/test03"
+                                      href="/tags/test03"
                                       onClick={[Function]}
                                       onMouseEnter={[Function]}
                                     >
                                       <a
                                         className="emotion-34 emotion-35"
-                                        href="/category/test03"
+                                        href="/tags/test03"
                                         onClick={[Function]}
                                         onMouseEnter={[Function]}
                                       >

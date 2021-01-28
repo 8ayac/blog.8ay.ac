@@ -47,17 +47,17 @@ exports[`CategoryTagList is rendered correctly to match the snapshot 1`] = `
         name="A"
       >
         <Link
-          href="/category/A"
+          href="/tags/A"
           passHref={true}
         >
           <Anchor
-            href="/category/A"
+            href="/tags/A"
             onClick={[Function]}
             onMouseEnter={[Function]}
           >
             <a
               className="emotion-2 emotion-3"
-              href="/category/A"
+              href="/tags/A"
               onClick={[Function]}
               onMouseEnter={[Function]}
             >
@@ -78,17 +78,17 @@ exports[`CategoryTagList is rendered correctly to match the snapshot 1`] = `
         name="B"
       >
         <Link
-          href="/category/B"
+          href="/tags/B"
           passHref={true}
         >
           <Anchor
-            href="/category/B"
+            href="/tags/B"
             onClick={[Function]}
             onMouseEnter={[Function]}
           >
             <a
               className="emotion-2 emotion-3"
-              href="/category/B"
+              href="/tags/B"
               onClick={[Function]}
               onMouseEnter={[Function]}
             >
@@ -109,17 +109,17 @@ exports[`CategoryTagList is rendered correctly to match the snapshot 1`] = `
         name="C"
       >
         <Link
-          href="/category/C"
+          href="/tags/C"
           passHref={true}
         >
           <Anchor
-            href="/category/C"
+            href="/tags/C"
             onClick={[Function]}
             onMouseEnter={[Function]}
           >
             <a
               className="emotion-2 emotion-3"
-              href="/category/C"
+              href="/tags/C"
               onClick={[Function]}
               onMouseEnter={[Function]}
             >
@@ -140,17 +140,17 @@ exports[`CategoryTagList is rendered correctly to match the snapshot 1`] = `
         name="DUPLICATE"
       >
         <Link
-          href="/category/DUPLICATE"
+          href="/tags/DUPLICATE"
           passHref={true}
         >
           <Anchor
-            href="/category/DUPLICATE"
+            href="/tags/DUPLICATE"
             onClick={[Function]}
             onMouseEnter={[Function]}
           >
             <a
               className="emotion-2 emotion-3"
-              href="/category/DUPLICATE"
+              href="/tags/DUPLICATE"
               onClick={[Function]}
               onMouseEnter={[Function]}
             >

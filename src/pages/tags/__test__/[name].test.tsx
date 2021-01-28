@@ -1,4 +1,4 @@
-import CategoryPage from '@/src/pages/category/[name]';
+import CategoryPage from '@/src/pages/tags/[name]';
 import { mount, shallow } from 'enzyme';
 import React from 'react';
 
