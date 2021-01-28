@@ -102,10 +102,6 @@ describe('TagsIndexPage', () => {
         'margin-bottom',
         '3rem' // inherited from S.Section component.
       );
-      expect(wrapper.find('S-EachTagSection')).toHaveStyleRule(
-        'font-size',
-        '0.85em'
-      );
     });
   });
 });

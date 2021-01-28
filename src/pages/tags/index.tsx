@@ -34,9 +34,7 @@ S.TagListSection = styled(S.Section)`
   margin-bottom: 7.5rem;
   font-size: 1.25em;
 `;
-S.EachTagSection = styled(S.Section)`
-  font-size: 0.85em;
-`;
+S.EachTagSection = styled(S.Section)``;
 
 const TagsIndexPage: NextPage<
   InferGetStaticPropsType<typeof getStaticProps>
