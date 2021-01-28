@@ -16,9 +16,9 @@ describe('CategoryTag', () => {
     expect(wrapper.find('a').text()).toBe(testCategoryName);
   });
 
-  test('links properly to `/category/:name`', () => {
+  test('links properly to `/tags/:name`', () => {
     const wrapper = mount(<CategoryTag name={testCategoryName} />);
-    expect(wrapper.find('a').prop('href')).toEqual('/category/test-cat');
+    expect(wrapper.find('a').prop('href')).toEqual('/tags/test-cat');
   });
 
   describe('has proper style rules', () => {

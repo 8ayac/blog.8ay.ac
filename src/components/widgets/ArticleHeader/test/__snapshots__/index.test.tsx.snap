@@ -332,17 +332,17 @@ exports[`ArticleHeader is rendered correctly  to match the snapshot 1`] = `
                         name="test-tag1"
                       >
                         <Link
-                          href="/category/test-tag1"
+                          href="/tags/test-tag1"
                           passHref={true}
                         >
                           <Anchor
-                            href="/category/test-tag1"
+                            href="/tags/test-tag1"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
                           >
                             <a
                               className="emotion-30 emotion-31"
-                              href="/category/test-tag1"
+                              href="/tags/test-tag1"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
                             >
@@ -363,17 +363,17 @@ exports[`ArticleHeader is rendered correctly  to match the snapshot 1`] = `
                         name="test-tag2"
                       >
                         <Link
-                          href="/category/test-tag2"
+                          href="/tags/test-tag2"
                           passHref={true}
                         >
                           <Anchor
-                            href="/category/test-tag2"
+                            href="/tags/test-tag2"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
                           >
                             <a
                               className="emotion-30 emotion-31"
-                              href="/category/test-tag2"
+                              href="/tags/test-tag2"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
                             >
@@ -394,17 +394,17 @@ exports[`ArticleHeader is rendered correctly  to match the snapshot 1`] = `
                         name="test-tag3"
                       >
                         <Link
-                          href="/category/test-tag3"
+                          href="/tags/test-tag3"
                           passHref={true}
                         >
                           <Anchor
-                            href="/category/test-tag3"
+                            href="/tags/test-tag3"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
                           >
                             <a
                               className="emotion-30 emotion-31"
-                              href="/category/test-tag3"
+                              href="/tags/test-tag3"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
                             >

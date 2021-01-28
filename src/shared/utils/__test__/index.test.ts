@@ -37,17 +37,17 @@ describe('getArticlePagePath', () => {
 describe('getCategoryPagePath', () => {
   it('returns a proper path', () => {
     const testCategoryName = 'test-cat';
-    expect(getCategoryPagePath(testCategoryName)).toBe('/category/test-cat');
+    expect(getCategoryPagePath(testCategoryName)).toBe('/tags/test-cat');
   });
 
   it('returns a proper path when given the string contains `/`', () => {
     const testCategoryName = 'test/cat';
-    expect(getCategoryPagePath(testCategoryName)).toBe('/category/test%2Fcat');
+    expect(getCategoryPagePath(testCategoryName)).toBe('/tags/test%2Fcat');
   });
 
   it('returns a proper path when given the string contains multibyte characters', () => {
     const testCategoryName = '亜';
-    expect(getCategoryPagePath(testCategoryName)).toBe('/category/%E4%BA%9C');
+    expect(getCategoryPagePath(testCategoryName)).toBe('/tags/%E4%BA%9C');
   });
 });
 

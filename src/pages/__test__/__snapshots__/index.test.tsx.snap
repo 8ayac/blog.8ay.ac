@@ -458,17 +458,17 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
                                         name="test-cat01"
                                       >
                                         <Link
-                                          href="/category/test-cat01"
+                                          href="/tags/test-cat01"
                                           passHref={true}
                                         >
                                           <Anchor
-                                            href="/category/test-cat01"
+                                            href="/tags/test-cat01"
                                             onClick={[Function]}
                                             onMouseEnter={[Function]}
                                           >
                                             <a
                                               className="emotion-40 emotion-41"
-                                              href="/category/test-cat01"
+                                              href="/tags/test-cat01"
                                               onClick={[Function]}
                                               onMouseEnter={[Function]}
                                             >
@@ -489,17 +489,17 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
                                         name="test-cat02"
                                       >
                                         <Link
-                                          href="/category/test-cat02"
+                                          href="/tags/test-cat02"
                                           passHref={true}
                                         >
                                           <Anchor
-                                            href="/category/test-cat02"
+                                            href="/tags/test-cat02"
                                             onClick={[Function]}
                                             onMouseEnter={[Function]}
                                           >
                                             <a
                                               className="emotion-40 emotion-41"
-                                              href="/category/test-cat02"
+                                              href="/tags/test-cat02"
                                               onClick={[Function]}
                                               onMouseEnter={[Function]}
                                             >
@@ -520,17 +520,17 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
                                         name="test-cat03"
                                       >
                                         <Link
-                                          href="/category/test-cat03"
+                                          href="/tags/test-cat03"
                                           passHref={true}
                                         >
                                           <Anchor
-                                            href="/category/test-cat03"
+                                            href="/tags/test-cat03"
                                             onClick={[Function]}
                                             onMouseEnter={[Function]}
                                           >
                                             <a
                                               className="emotion-40 emotion-41"
-                                              href="/category/test-cat03"
+                                              href="/tags/test-cat03"
                                               onClick={[Function]}
                                               onMouseEnter={[Function]}
                                             >
@@ -776,17 +776,17 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
                                         name="test-cat01"
                                       >
                                         <Link
-                                          href="/category/test-cat01"
+                                          href="/tags/test-cat01"
                                           passHref={true}
                                         >
                                           <Anchor
-                                            href="/category/test-cat01"
+                                            href="/tags/test-cat01"
                                             onClick={[Function]}
                                             onMouseEnter={[Function]}
                                           >
                                             <a
                                               className="emotion-40 emotion-41"
-                                              href="/category/test-cat01"
+                                              href="/tags/test-cat01"
                                               onClick={[Function]}
                                               onMouseEnter={[Function]}
                                             >
@@ -807,17 +807,17 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
                                         name="test-cat02"
                                       >
                                         <Link
-                                          href="/category/test-cat02"
+                                          href="/tags/test-cat02"
                                           passHref={true}
                                         >
                                           <Anchor
-                                            href="/category/test-cat02"
+                                            href="/tags/test-cat02"
                                             onClick={[Function]}
                                             onMouseEnter={[Function]}
                                           >
                                             <a
                                               className="emotion-40 emotion-41"
-                                              href="/category/test-cat02"
+                                              href="/tags/test-cat02"
                                               onClick={[Function]}
                                               onMouseEnter={[Function]}
                                             >
@@ -1060,17 +1060,17 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
                                         name="test-cat01"
                                       >
                                         <Link
-                                          href="/category/test-cat01"
+                                          href="/tags/test-cat01"
                                           passHref={true}
                                         >
                                           <Anchor
-                                            href="/category/test-cat01"
+                                            href="/tags/test-cat01"
                                             onClick={[Function]}
                                             onMouseEnter={[Function]}
                                           >
                                             <a
                                               className="emotion-40 emotion-41"
-                                              href="/category/test-cat01"
+                                              href="/tags/test-cat01"
                                               onClick={[Function]}
                                               onMouseEnter={[Function]}
                                             >
@@ -1140,17 +1140,17 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
               name="test-cat01 (3)"
             >
               <Link
-                href="/category/test-cat01%20(3)"
+                href="/tags/test-cat01%20(3)"
                 passHref={true}
               >
                 <Anchor
-                  href="/category/test-cat01%20(3)"
+                  href="/tags/test-cat01%20(3)"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                 >
                   <a
                     className="emotion-40 emotion-41"
-                    href="/category/test-cat01%20(3)"
+                    href="/tags/test-cat01%20(3)"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                   >
@@ -1171,17 +1171,17 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
               name="test-cat02 (2)"
             >
               <Link
-                href="/category/test-cat02%20(2)"
+                href="/tags/test-cat02%20(2)"
                 passHref={true}
               >
                 <Anchor
-                  href="/category/test-cat02%20(2)"
+                  href="/tags/test-cat02%20(2)"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                 >
                   <a
                     className="emotion-40 emotion-41"
-                    href="/category/test-cat02%20(2)"
+                    href="/tags/test-cat02%20(2)"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                   >
@@ -1202,17 +1202,17 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
               name="test-cat03 (1)"
             >
               <Link
-                href="/category/test-cat03%20(1)"
+                href="/tags/test-cat03%20(1)"
                 passHref={true}
               >
                 <Anchor
-                  href="/category/test-cat03%20(1)"
+                  href="/tags/test-cat03%20(1)"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                 >
                   <a
                     className="emotion-40 emotion-41"
-                    href="/category/test-cat03%20(1)"
+                    href="/tags/test-cat03%20(1)"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                   >

@@ -414,17 +414,17 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
                                     name="test01"
                                   >
                                     <Link
-                                      href="/category/test01"
+                                      href="/tags/test01"
                                       passHref={true}
                                     >
                                       <Anchor
-                                        href="/category/test01"
+                                        href="/tags/test01"
                                         onClick={[Function]}
                                         onMouseEnter={[Function]}
                                       >
                                         <a
                                           className="emotion-38 emotion-39"
-                                          href="/category/test01"
+                                          href="/tags/test01"
                                           onClick={[Function]}
                                           onMouseEnter={[Function]}
                                         >
@@ -667,17 +667,17 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
                                     name="test02"
                                   >
                                     <Link
-                                      href="/category/test02"
+                                      href="/tags/test02"
                                       passHref={true}
                                     >
                                       <Anchor
-                                        href="/category/test02"
+                                        href="/tags/test02"
                                         onClick={[Function]}
                                         onMouseEnter={[Function]}
                                       >
                                         <a
                                           className="emotion-38 emotion-39"
-                                          href="/category/test02"
+                                          href="/tags/test02"
                                           onClick={[Function]}
                                           onMouseEnter={[Function]}
                                         >

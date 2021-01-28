@@ -444,17 +444,17 @@ exports[`CategoryPage is rendered correctly to match the snapshot 1`] = `
                                         name="test-cat"
                                       >
                                         <Link
-                                          href="/category/test-cat"
+                                          href="/tags/test-cat"
                                           passHref={true}
                                         >
                                           <Anchor
-                                            href="/category/test-cat"
+                                            href="/tags/test-cat"
                                             onClick={[Function]}
                                             onMouseEnter={[Function]}
                                           >
                                             <a
                                               className="emotion-40 emotion-41"
-                                              href="/category/test-cat"
+                                              href="/tags/test-cat"
                                               onClick={[Function]}
                                               onMouseEnter={[Function]}
                                             >
@@ -697,17 +697,17 @@ exports[`CategoryPage is rendered correctly to match the snapshot 1`] = `
                                         name="test-cat"
                                       >
                                         <Link
-                                          href="/category/test-cat"
+                                          href="/tags/test-cat"
                                           passHref={true}
                                         >
                                           <Anchor
-                                            href="/category/test-cat"
+                                            href="/tags/test-cat"
                                             onClick={[Function]}
                                             onMouseEnter={[Function]}
                                           >
                                             <a
                                               className="emotion-40 emotion-41"
-                                              href="/category/test-cat"
+                                              href="/tags/test-cat"
                                               onClick={[Function]}
                                               onMouseEnter={[Function]}
                                             >
@@ -950,17 +950,17 @@ exports[`CategoryPage is rendered correctly to match the snapshot 1`] = `
                                         name="test-cat"
                                       >
                                         <Link
-                                          href="/category/test-cat"
+                                          href="/tags/test-cat"
                                           passHref={true}
                                         >
                                           <Anchor
-                                            href="/category/test-cat"
+                                            href="/tags/test-cat"
                                             onClick={[Function]}
                                             onMouseEnter={[Function]}
                                           >
                                             <a
                                               className="emotion-40 emotion-41"
-                                              href="/category/test-cat"
+                                              href="/tags/test-cat"
                                               onClick={[Function]}
                                               onMouseEnter={[Function]}
                                             >
