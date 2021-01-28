@@ -33,7 +33,7 @@ describe('CategoryPage', () => {
 
   describe('is rendered correctly', () => {
     test('to match the snapshot', () => {
-      const wrapper = shallow(
+      const wrapper = mount(
         <CategoryPage name={testCategoryName} filteredArticles={testArticles} />
       );
       expect(wrapper).toMatchSnapshot();

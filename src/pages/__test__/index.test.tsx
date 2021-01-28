@@ -1,5 +1,5 @@
 import TopPage from '@/src/pages';
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import React from 'react';
 
 describe('TopPage', () => {
@@ -32,12 +32,12 @@ describe('TopPage', () => {
   ];
 
   test('is rendered correctly to match the snapshot', () => {
-    const wrapper = shallow(<TopPage articles={testArticles} />);
+    const wrapper = mount(<TopPage articles={testArticles} />);
     expect(wrapper).toMatchSnapshot();
   });
 
   describe('has proper style rules', () => {
-    const wrapper = shallow(<TopPage articles={testArticles} />);
+    const wrapper = mount(<TopPage articles={testArticles} />);
 
     test('in ArticleListSection', () => {
       expect(wrapper.find('S-ArticleListSection')).toHaveStyleRule(

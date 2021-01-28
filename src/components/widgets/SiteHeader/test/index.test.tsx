@@ -1,10 +1,10 @@
 import { SiteHeader } from '@/src/components/widgets/SiteHeader';
 import { theme } from '@/src/constants/theme';
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import React from 'react';
 
 describe('Header', () => {
-  const wrapper = shallow(<SiteHeader />);
+  const wrapper = mount(<SiteHeader />);
 
   it('is rendered correctly to match the snapshot', () => {
     expect(wrapper).toMatchSnapshot();
