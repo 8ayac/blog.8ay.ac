@@ -1,7 +1,7 @@
 import {
   getArticlePagePath,
   getArticlesWithATag,
-  getCategoryPagePath,
+  getTagsPagePath,
   getNumberOfArticlesWithATag,
 } from '@/src/shared/utils';
 
@@ -35,20 +35,20 @@ describe('getArticlePagePath', () => {
   });
 });
 
-describe('getCategoryPagePath', () => {
+describe('getTagPagePath', () => {
   it('returns a proper path', () => {
-    const testCategoryName = 'test-cat';
-    expect(getCategoryPagePath(testCategoryName)).toBe('/tags/test-cat');
+    const testTagName = 'test-cat';
+    expect(getTagsPagePath(testTagName)).toBe('/tags/test-cat');
   });
 
   it('returns a proper path when given the string contains `/`', () => {
-    const testCategoryName = 'test/cat';
-    expect(getCategoryPagePath(testCategoryName)).toBe('/tags/test%2Fcat');
+    const testTagName = 'test/cat';
+    expect(getTagsPagePath(testTagName)).toBe('/tags/test%2Fcat');
   });
 
   it('returns a proper path when given the string contains multibyte characters', () => {
-    const testCategoryName = '亜';
-    expect(getCategoryPagePath(testCategoryName)).toBe('/tags/%E4%BA%9C');
+    const testTagName = '亜';
+    expect(getTagsPagePath(testTagName)).toBe('/tags/%E4%BA%9C');
   });
 });
 

@@ -208,7 +208,7 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
             >
               <BodyHeader
                 afterTitle={
-                  <CategoryListWrapperDiv>
+                  <TagListWrapperDiv>
                     <FontAwesomeIcon
                       css="unknown styles"
                       icon={
@@ -232,7 +232,7 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
                         ]
                       }
                     />
-                  </CategoryListWrapperDiv>
+                  </TagListWrapperDiv>
                 }
                 beforeTitle={
                   <DateTimeWrapperDiv>
@@ -344,7 +344,7 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
                       <div
                         className="emotion-30 emotion-31"
                       >
-                        <CategoryListWrapperDiv>
+                        <TagListWrapperDiv>
                           <div
                             className="emotion-32 emotion-33"
                           >
@@ -437,7 +437,7 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
                               </ComponentWrapperDiv>
                             </CategoryTagList>
                           </div>
-                        </CategoryListWrapperDiv>
+                        </TagListWrapperDiv>
                       </div>
                     </AfterTitleDiv>
                   </header>
@@ -461,7 +461,7 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
             >
               <BodyHeader
                 afterTitle={
-                  <CategoryListWrapperDiv>
+                  <TagListWrapperDiv>
                     <FontAwesomeIcon
                       css="unknown styles"
                       icon={
@@ -485,7 +485,7 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
                         ]
                       }
                     />
-                  </CategoryListWrapperDiv>
+                  </TagListWrapperDiv>
                 }
                 beforeTitle={
                   <DateTimeWrapperDiv>
@@ -597,7 +597,7 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
                       <div
                         className="emotion-30 emotion-31"
                       >
-                        <CategoryListWrapperDiv>
+                        <TagListWrapperDiv>
                           <div
                             className="emotion-32 emotion-33"
                           >
@@ -690,7 +690,7 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
                               </ComponentWrapperDiv>
                             </CategoryTagList>
                           </div>
-                        </CategoryListWrapperDiv>
+                        </TagListWrapperDiv>
                       </div>
                     </AfterTitleDiv>
                   </header>

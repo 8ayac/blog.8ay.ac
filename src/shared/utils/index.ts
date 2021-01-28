@@ -10,8 +10,8 @@ export const getArticlePagePath = (article: Article): string => {
   return `/articles/${date}/${id}`;
 };
 
-export const getCategoryPagePath = (categoryName: string): string => {
-  return `/tags/${encodeURIComponent(categoryName)}`;
+export const getTagsPagePath = (tagName: string): string => {
+  return `/tags/${encodeURIComponent(tagName)}`;
 };
 
 export const getArticlesWithATag = (

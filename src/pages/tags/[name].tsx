@@ -42,9 +42,10 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   };
 };
 
-const CategoryPage: NextPage<
-  InferGetStaticPropsType<typeof getStaticProps>
-> = ({ name, filteredArticles }) => {
+const TagsPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
+  name,
+  filteredArticles,
+}) => {
   return (
     <>
       <BodyHeader title={`Tag: ${name}`} />
@@ -53,4 +54,4 @@ const CategoryPage: NextPage<
   );
 };
 
-export default CategoryPage;
+export default TagsPage;

@@ -248,7 +248,7 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
                 >
                   <BodyHeader
                     afterTitle={
-                      <CategoryListWrapperDiv>
+                      <TagListWrapperDiv>
                         <FontAwesomeIcon
                           css="unknown styles"
                           icon={
@@ -274,7 +274,7 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
                             ]
                           }
                         />
-                      </CategoryListWrapperDiv>
+                      </TagListWrapperDiv>
                     }
                     beforeTitle={
                       <DateTimeWrapperDiv>
@@ -386,7 +386,7 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
                           <div
                             className="emotion-32 emotion-33"
                           >
-                            <CategoryListWrapperDiv>
+                            <TagListWrapperDiv>
                               <div
                                 className="emotion-34 emotion-35"
                               >
@@ -543,7 +543,7 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
                                   </ComponentWrapperDiv>
                                 </CategoryTagList>
                               </div>
-                            </CategoryListWrapperDiv>
+                            </TagListWrapperDiv>
                           </div>
                         </AfterTitleDiv>
                       </header>
@@ -568,7 +568,7 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
                 >
                   <BodyHeader
                     afterTitle={
-                      <CategoryListWrapperDiv>
+                      <TagListWrapperDiv>
                         <FontAwesomeIcon
                           css="unknown styles"
                           icon={
@@ -593,7 +593,7 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
                             ]
                           }
                         />
-                      </CategoryListWrapperDiv>
+                      </TagListWrapperDiv>
                     }
                     beforeTitle={
                       <DateTimeWrapperDiv>
@@ -705,7 +705,7 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
                           <div
                             className="emotion-32 emotion-33"
                           >
-                            <CategoryListWrapperDiv>
+                            <TagListWrapperDiv>
                               <div
                                 className="emotion-34 emotion-35"
                               >
@@ -830,7 +830,7 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
                                   </ComponentWrapperDiv>
                                 </CategoryTagList>
                               </div>
-                            </CategoryListWrapperDiv>
+                            </TagListWrapperDiv>
                           </div>
                         </AfterTitleDiv>
                       </header>
@@ -854,7 +854,7 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
                 >
                   <BodyHeader
                     afterTitle={
-                      <CategoryListWrapperDiv>
+                      <TagListWrapperDiv>
                         <FontAwesomeIcon
                           css="unknown styles"
                           icon={
@@ -878,7 +878,7 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
                             ]
                           }
                         />
-                      </CategoryListWrapperDiv>
+                      </TagListWrapperDiv>
                     }
                     beforeTitle={
                       <DateTimeWrapperDiv>
@@ -990,7 +990,7 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
                           <div
                             className="emotion-32 emotion-33"
                           >
-                            <CategoryListWrapperDiv>
+                            <TagListWrapperDiv>
                               <div
                                 className="emotion-34 emotion-35"
                               >
@@ -1083,7 +1083,7 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
                                   </ComponentWrapperDiv>
                                 </CategoryTagList>
                               </div>
-                            </CategoryListWrapperDiv>
+                            </TagListWrapperDiv>
                           </div>
                         </AfterTitleDiv>
                       </header>
@@ -1097,7 +1097,7 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
       </ArticleHeaderList>
     </section>
   </S-ArticleListSection>
-  <S-CategoryListSection>
+  <S-TagListSection>
     <section
       className="emotion-118 emotion-119"
     >
@@ -1225,6 +1225,6 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
         </ComponentWrapperDiv>
       </CategoryTagList>
     </section>
-  </S-CategoryListSection>
+  </S-TagListSection>
 </TopPage>
 `;

@@ -4,7 +4,7 @@ import { CategoryTagList } from '@/src/components/widgets/CategoryTagList';
 import jsonArticles from '@/src/shared/.content/articles.json';
 import {
   getArticlesWithATag,
-  getCategoryPagePath,
+  getTagsPagePath,
   getNumberOfArticlesWithATag,
 } from '@/src/shared/utils';
 import { Article } from '@/src/types';
@@ -53,7 +53,7 @@ const TagsIndexPage: NextPage<
         <S.EachTagSection id={encodeURIComponent(tag)} key={`${tag}`}>
           <BodyHeader
             title={`${tag} (${getNumberOfArticlesWithATag(tag, articles)})`}
-            linkTo={getCategoryPagePath(tag)}
+            linkTo={getTagsPagePath(tag)}
           />
           <ArticleHeaderList articles={getArticlesWithATag(tag, articles)} />
         </S.EachTagSection>

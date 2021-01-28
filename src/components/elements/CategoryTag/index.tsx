@@ -1,5 +1,5 @@
 import { theme } from '@/src/constants/theme';
-import { getCategoryPagePath } from '@/src/shared/utils';
+import { getTagsPagePath } from '@/src/shared/utils';
 import styled from '@emotion/styled';
 import Link from 'next/link';
 import React from 'react';
@@ -24,7 +24,7 @@ const S = {
 
 export const CategoryTag: React.FC<{ name: string }> = ({ name }) => (
   <>
-    <Link href={getCategoryPagePath(name)} passHref>
+    <Link href={getTagsPagePath(name)} passHref>
       <S.Anchor>{name}</S.Anchor>
     </Link>
   </>

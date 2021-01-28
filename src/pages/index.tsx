@@ -13,7 +13,7 @@ const S: { [key: string]: StyledComponent<any> } = {
   `,
 };
 S.ArticleListSection = styled(S.Section)``;
-S.CategoryListSection = styled(S.Section)``;
+S.TagListSection = styled(S.Section)``;
 
 export const getStaticProps: GetStaticProps = async () => {
   return {
@@ -33,12 +33,12 @@ const TopPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
         <ArticleHeaderList articles={articles} />
       </S.ArticleListSection>
 
-      <S.CategoryListSection>
+      <S.TagListSection>
         <BodyHeader title="Tags" />
         <CategoryTagList
           tags={(articles as Article[]).map((article) => article.tags).flat()}
         />
-      </S.CategoryListSection>
+      </S.TagListSection>
     </>
   );
 };
