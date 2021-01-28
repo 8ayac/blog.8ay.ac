@@ -43,10 +43,14 @@ exports[`SocialLinkWithIcon is rendered correctly to match the snapshot with the
     >
       <SocialLinkAnchor
         href="http://example.com/"
+        rel="noopener"
+        target="_blank"
       >
         <a
           className="emotion-2 emotion-3"
           href="http://example.com/"
+          rel="noopener"
+          target="_blank"
         >
           <FontAwesomeIcon
             border={false}
@@ -140,10 +144,14 @@ exports[`SocialLinkWithIcon is rendered correctly to match the snapshot without 
     >
       <SocialLinkAnchor
         href="http://example.com/"
+        rel="noopener"
+        target="_blank"
       >
         <a
           className="emotion-2 emotion-3"
           href="http://example.com/"
+          rel="noopener"
+          target="_blank"
         >
           <FontAwesomeIcon
             border={false}

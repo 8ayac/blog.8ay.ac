@@ -196,10 +196,14 @@ exports[`BasicLayout is rendered correctly to match the snapshot 1`] = `
                     >
                       <SocialLinkAnchor
                         href="http://twitter.com/8ayac"
+                        rel="noopener"
+                        target="_blank"
                       >
                         <a
                           className="emotion-16 emotion-17"
                           href="http://twitter.com/8ayac"
+                          rel="noopener"
+                          target="_blank"
                         >
                           <FontAwesomeIcon
                             border={false}
