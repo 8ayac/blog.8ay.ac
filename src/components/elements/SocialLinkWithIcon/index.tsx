@@ -32,7 +32,12 @@ export const SocialLinkWithIcon: React.FC<{
 }> = ({ url, description, icon = faLink, color }) => (
   <>
     <S.ComponentWrapperDiv>
-      <S.SocialLinkAnchor href={url} color={color}>
+      <S.SocialLinkAnchor
+        href={url}
+        color={color}
+        target="_blank"
+        rel="noopener"
+      >
         <FontAwesomeIcon icon={icon} />
         <S.LinkDescriptionSpan>{description}</S.LinkDescriptionSpan>
       </S.SocialLinkAnchor>

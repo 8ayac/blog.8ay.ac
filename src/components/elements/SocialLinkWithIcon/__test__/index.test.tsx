@@ -31,6 +31,11 @@ describe('SocialLinkWithIcon', () => {
     });
   });
 
+  test('specified \'target="_blank"\' and \'rel="noopener"\'', () => {
+    expect(wrapper.find('a').prop('target')).toBe('_blank');
+    expect(wrapper.find('a').prop('rel')).toBe('noopener');
+  });
+
   describe('is rendered with the proper icon', () => {
     test('with the specified icon', () => {
       wrapper.setProps({
