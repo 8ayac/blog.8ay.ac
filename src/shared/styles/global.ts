@@ -4,6 +4,7 @@ import { css } from '@emotion/react';
 const gHtmlStyle = css`
   html {
     font-size: 62.5%;
+    scroll-padding-top: 6rem;
   }
 `;
 
