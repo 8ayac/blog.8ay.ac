@@ -1121,40 +1121,40 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
       <CategoryTagList
         tags={
           Array [
-            "test-cat01 (3)",
-            "test-cat02 (2)",
-            "test-cat03 (1)",
-            "test-cat01 (3)",
-            "test-cat02 (2)",
-            "test-cat01 (3)",
+            "test-cat01",
+            "test-cat02",
+            "test-cat03",
+            "test-cat01",
+            "test-cat02",
+            "test-cat01",
           ]
         }
       >
         <ComponentWrapperDiv
-          key="test-cat01 (3)"
+          key="test-cat01"
         >
           <div
             className="emotion-38 emotion-39"
           >
             <CategoryTag
-              name="test-cat01 (3)"
+              name="test-cat01"
             >
               <Link
-                href="/tags/test-cat01%20(3)"
+                href="/tags/test-cat01"
                 passHref={true}
               >
                 <Anchor
-                  href="/tags/test-cat01%20(3)"
+                  href="/tags/test-cat01"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                 >
                   <a
                     className="emotion-40 emotion-41"
-                    href="/tags/test-cat01%20(3)"
+                    href="/tags/test-cat01"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                   >
-                    test-cat01 (3)
+                    test-cat01
                   </a>
                 </Anchor>
               </Link>
@@ -1162,30 +1162,30 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
           </div>
         </ComponentWrapperDiv>
         <ComponentWrapperDiv
-          key="test-cat02 (2)"
+          key="test-cat02"
         >
           <div
             className="emotion-38 emotion-39"
           >
             <CategoryTag
-              name="test-cat02 (2)"
+              name="test-cat02"
             >
               <Link
-                href="/tags/test-cat02%20(2)"
+                href="/tags/test-cat02"
                 passHref={true}
               >
                 <Anchor
-                  href="/tags/test-cat02%20(2)"
+                  href="/tags/test-cat02"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                 >
                   <a
                     className="emotion-40 emotion-41"
-                    href="/tags/test-cat02%20(2)"
+                    href="/tags/test-cat02"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                   >
-                    test-cat02 (2)
+                    test-cat02
                   </a>
                 </Anchor>
               </Link>
@@ -1193,30 +1193,30 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
           </div>
         </ComponentWrapperDiv>
         <ComponentWrapperDiv
-          key="test-cat03 (1)"
+          key="test-cat03"
         >
           <div
             className="emotion-38 emotion-39"
           >
             <CategoryTag
-              name="test-cat03 (1)"
+              name="test-cat03"
             >
               <Link
-                href="/tags/test-cat03%20(1)"
+                href="/tags/test-cat03"
                 passHref={true}
               >
                 <Anchor
-                  href="/tags/test-cat03%20(1)"
+                  href="/tags/test-cat03"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                 >
                   <a
                     className="emotion-40 emotion-41"
-                    href="/tags/test-cat03%20(1)"
+                    href="/tags/test-cat03"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                   >
-                    test-cat03 (1)
+                    test-cat03
                   </a>
                 </Anchor>
               </Link>
