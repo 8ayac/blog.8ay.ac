@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FootnoteDefinition is rendered correctly to match the snapshot 1`] = `
+.emotion-0 {
+  margin-bottom: 1rem!important;
+}
+
+.emotion-0 * {
+  display: inline;
+  font-size: 1.6rem;
+}
+
+.emotion-2 {
+  margin-right: 1rem;
+  font-weight: 600;
+}
+
+.emotion-4 {
+  margin: 0 0.2rem!important;
+}
+
+<FootnoteDefinition
+  identifier="1"
+  label="1"
+>
+  <FootnoteWrapperDiv
+    id="fn:1"
+  >
+    <div
+      className="emotion-0 emotion-1"
+      id="fn:1"
+    >
+      <LabelSpan>
+        <span
+          className="emotion-2 emotion-3"
+        >
+          ^
+          1
+          :
+        </span>
+      </LabelSpan>
+      <p>
+        bluhbluhbluh
+      </p>
+      <ReturnAnchor
+        href="#fnref:1"
+      >
+        <a
+          className="emotion-4 emotion-5"
+          href="#fnref:1"
+        >
+          ↵
+        </a>
+      </ReturnAnchor>
+    </div>
+  </FootnoteWrapperDiv>
+</FootnoteDefinition>
+`;

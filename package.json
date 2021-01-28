@@ -38,6 +38,7 @@
     "react": "16.14.0",
     "react-dom": "16.14.0",
     "react-markdown": "^5.0.3",
+    "remark-footnotes": "^3.0.0",
     "remark-gfm": "^1.0.0"
   },
   "devDependencies": {
