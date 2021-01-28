@@ -2,7 +2,6 @@ import { BodyHeader } from '@/src/components/elements/BodyHeader';
 import { ArticleHeaderList } from '@/src/components/widgets/ArticleHeaderList';
 import jsonArticles from '@/src/shared/.content/articles.json';
 import { Article } from '@/src/types';
-import styled from '@emotion/styled';
 import {
   GetStaticPaths,
   GetStaticProps,
@@ -43,22 +42,13 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   };
 };
 
-const S = {
-  ArticleListWrapperDiv: styled.div`
-    max-width: 90%;
-    margin: 0 auto;
-  `,
-};
-
 const CategoryPage: NextPage<
   InferGetStaticPropsType<typeof getStaticProps>
 > = ({ name, filteredArticles }) => {
   return (
     <>
       <BodyHeader title={`Tag: ${name}`} />
-      <S.ArticleListWrapperDiv>
-        <ArticleHeaderList articles={filteredArticles} />
-      </S.ArticleListWrapperDiv>
+      <ArticleHeaderList articles={filteredArticles} />
     </>
   );
 };
