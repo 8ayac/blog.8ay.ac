@@ -1,7 +1,6 @@
 import { theme } from '@/src/constants/theme';
 import { FlexContainerDiv } from '@/src/shared/styles/abstractStyledComponents';
 import styled from '@emotion/styled';
-import moment from 'moment';
 import React from 'react';
 
 const S = {
@@ -29,7 +28,7 @@ export const DateTime: React.FC<{
       {description && (
         <S.DescriptionSpan>{`${description}:`}</S.DescriptionSpan>
       )}
-      <S.DateTime>{moment(date).toISOString()}</S.DateTime>
+      <S.DateTime>{new Date(date).toISOString()}</S.DateTime>
     </S.ComponentWrapperDiv>
   </>
 );

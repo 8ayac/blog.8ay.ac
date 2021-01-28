@@ -15,7 +15,9 @@ export const getStaticPaths: GetStaticPaths = async () => {
   const paths = (jsonArticles as Article[]).map((article) => {
     return {
       params: {
-        date: moment(article.publishedAt).utc().format('YYYY-MM-DD'),
+        date: moment(new Date(article.publishedAt).toISOString())
+          .utc()
+          .format('YYYY-MM-DD'),
         id: article.id,
       },
     };
