@@ -75,6 +75,8 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
   color: hsla(0, 0%, 15%);
   -webkit-text-decoration: none;
   text-decoration: none;
+  -webkit-filter: drop-shadow(2px 2px 1px hsla(148, 72%, 80%));
+  filter: drop-shadow(2px 2px 1px hsla(148, 72%, 80%));
 }
 
 .emotion-32 {
@@ -98,7 +100,7 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin: 0 0.5rem 0.5rem 0;
+  margin: 0 0.7rem 0.7rem 0;
 }
 
 .emotion-40 {
@@ -110,6 +112,8 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: hsla(212, 72%, 50%);
+  -webkit-filter: drop-shadow(2px 2px 1px hsla(212, 72%, 80%));
+  filter: drop-shadow(2px 2px 1px hsla(212, 72%, 80%));
   border-radius: 3px;
 }
 

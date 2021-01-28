@@ -20,6 +20,8 @@ exports[`BodyHeader is rendered correctly to match the snapshot when linkTo is g
   color: hsla(0, 0%, 15%);
   -webkit-text-decoration: none;
   text-decoration: none;
+  -webkit-filter: drop-shadow(2px 2px 1px hsla(148, 72%, 80%));
+  filter: drop-shadow(2px 2px 1px hsla(148, 72%, 80%));
 }
 
 .emotion-8 {

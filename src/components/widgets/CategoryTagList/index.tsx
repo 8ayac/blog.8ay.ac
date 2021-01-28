@@ -5,7 +5,7 @@ import React from 'react';
 const S = {
   ComponentWrapperDiv: styled.div`
     display: inline-flex;
-    margin: 0 0.5rem 0.5rem 0;
+    margin: 0 0.7rem 0.7rem 0;
   `,
 };
 

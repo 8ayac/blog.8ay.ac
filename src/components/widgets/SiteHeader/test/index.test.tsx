@@ -44,6 +44,10 @@ describe('Header', () => {
 
       expect(wTitleWrapper).toHaveStyleRule('display', 'flex');
       expect(wTitleWrapper).toHaveStyleRule('align-items', 'center');
+      expect(wTitleWrapper).toHaveStyleRule(
+        'filter',
+        `drop-shadow(2px 2px 1px ${theme.color.green.dark3})`
+      );
     });
 
     test('in NavWrapper', () => {
@@ -51,6 +55,10 @@ describe('Header', () => {
 
       expect(wNavWrapper).toHaveStyleRule('display', 'flex');
       expect(wNavWrapper).toHaveStyleRule('align-items', 'center');
+      expect(wNavWrapper).toHaveStyleRule(
+        'filter',
+        `drop-shadow(2px 2px 1px ${theme.color.green.dark3})`
+      );
     });
   });
 });

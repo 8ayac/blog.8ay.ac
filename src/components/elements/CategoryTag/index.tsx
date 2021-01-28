@@ -13,6 +13,7 @@ const S = {
     color: white;
     text-decoration: none;
     background-color: ${theme.color.blue.dark};
+    filter: drop-shadow(2px 2px 1px ${theme.color.blue.light2});
     border-radius: 3px;
 
     &:hover {

@@ -18,6 +18,7 @@ export const S = {
     margin: 0;
     color: ${theme.color.text.primary};
     text-decoration: none;
+    filter: drop-shadow(2px 2px 1px ${theme.color.green.light2});
   `,
 
   BeforeTitleDiv: styled.div`

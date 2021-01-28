@@ -139,6 +139,10 @@ describe('BodyHeader', () => {
         'text-decoration',
         'none'
       );
+      expect(wrapper.find('TitleAnchor')).toHaveStyleRule(
+        'filter',
+        `drop-shadow(2px 2px 1px ${theme.color.green.light2})`
+      );
     });
 
     test('in BeforeTitleDiv', () => {
