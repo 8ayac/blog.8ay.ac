@@ -6,8 +6,8 @@ describe('ArticlePage', () => {
   const testArticleData = {
     id: 'example-id',
     title: 'Example01',
-    publishedAt: '2021-01-02 03:04:56 +0900',
-    updatedAt: '2021-01-02 03:04:56 +0900',
+    publishedAt: new Date('2021-01-02T03:04:56.000Z'),
+    updatedAt: new Date('2021-01-02T03:04:56.000Z'),
     body: '## test\r\n\r\nbluhbluhbluh',
   };
 

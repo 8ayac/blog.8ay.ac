@@ -20,7 +20,7 @@ const S = {
 };
 
 export const DateTime: React.FC<{
-  date: string;
+  date: Date | string;
   description?: string;
 }> = ({ date, description }) => (
   <>

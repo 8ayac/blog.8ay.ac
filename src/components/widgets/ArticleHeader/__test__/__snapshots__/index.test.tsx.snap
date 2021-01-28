@@ -113,14 +113,14 @@ exports[`ArticleHeader is rendered correctly  to match the snapshot 1`] = `
     Object {
       "body": "Test Body",
       "id": "test-article",
-      "publishedAt": "2000-01-01 00:00:00 +0900",
+      "publishedAt": 2000-01-01T00:00:00.000Z,
       "tags": Array [
         "test-tag1",
         "test-tag2",
         "test-tag3",
       ],
       "title": "Test Title",
-      "updatedAt": "2000-02-02 00:00:00 +0900",
+      "updatedAt": 2000-02-02T00:00:00.000Z,
     }
   }
 >
@@ -157,16 +157,16 @@ exports[`ArticleHeader is rendered correctly  to match the snapshot 1`] = `
     beforeTitle={
       <DateTimeWrapperDiv>
         <DateTime
-          date="2000-01-01 00:00:00 +0900"
+          date={2000-01-01T00:00:00.000Z}
           description="Published At"
         />
         <DateTime
-          date="2000-02-02 00:00:00 +0900"
+          date={2000-02-02T00:00:00.000Z}
           description="Updated At"
         />
       </DateTimeWrapperDiv>
     }
-    linkTo="/articles/1999-12-31/test-article"
+    linkTo="/articles/2000-01-01/test-article"
     title="Test Title"
   >
     <WrapperHeader>
@@ -182,7 +182,7 @@ exports[`ArticleHeader is rendered correctly  to match the snapshot 1`] = `
                 className="emotion-4 emotion-5"
               >
                 <DateTime
-                  date="2000-01-01 00:00:00 +0900"
+                  date={2000-01-01T00:00:00.000Z}
                   description="Published At"
                 >
                   <ComponentWrapperDiv>
@@ -200,14 +200,14 @@ exports[`ArticleHeader is rendered correctly  to match the snapshot 1`] = `
                         <time
                           className="emotion-10 emotion-11"
                         >
-                          1999-12-31T15:00:00.000Z
+                          2000-01-01T00:00:00.000Z
                         </time>
                       </DateTime>
                     </div>
                   </ComponentWrapperDiv>
                 </DateTime>
                 <DateTime
-                  date="2000-02-02 00:00:00 +0900"
+                  date={2000-02-02T00:00:00.000Z}
                   description="Updated At"
                 >
                   <ComponentWrapperDiv>
@@ -225,7 +225,7 @@ exports[`ArticleHeader is rendered correctly  to match the snapshot 1`] = `
                         <time
                           className="emotion-10 emotion-11"
                         >
-                          2000-02-01T15:00:00.000Z
+                          2000-02-02T00:00:00.000Z
                         </time>
                       </DateTime>
                     </div>
@@ -240,17 +240,17 @@ exports[`ArticleHeader is rendered correctly  to match the snapshot 1`] = `
             className="emotion-18 emotion-19"
           >
             <Link
-              href="/articles/1999-12-31/test-article"
+              href="/articles/2000-01-01/test-article"
               passHref={true}
             >
               <TitleAnchor
-                href="/articles/1999-12-31/test-article"
+                href="/articles/2000-01-01/test-article"
                 onClick={[Function]}
                 onMouseEnter={[Function]}
               >
                 <a
                   className="emotion-20 emotion-21"
-                  href="/articles/1999-12-31/test-article"
+                  href="/articles/2000-01-01/test-article"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                 >

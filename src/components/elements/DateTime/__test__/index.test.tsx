@@ -4,7 +4,7 @@ import { mount, shallow } from 'enzyme';
 import React from 'react';
 
 describe('DateTime', () => {
-  const testDate = '2021-01-02 03:04:56 +0000';
+  const testDate = new Date('2021-01-02T03:04:56.000Z');
   const testDescription = 'TEST DESCRIPTION';
 
   describe('is rendered correctly to match the snapshot', () => {

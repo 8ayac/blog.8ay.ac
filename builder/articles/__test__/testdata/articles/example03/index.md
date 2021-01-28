@@ -1,8 +1,8 @@
 ---
 id: example03
 title: Example03
-publishedAt: 2000-01-03 00:00:00 +0900
-updatedAt: 2000-01-03 00:00:00 +0900
+publishedAt: 2000-01-03T00:00:00.000Z
+updatedAt: 2000-01-03T00:00:00.000Z
 tags: [example3-1, example3-2, example3-3]
 ---
 
