@@ -1,5 +1,5 @@
 import CategoryPage from '@/src/pages/tags/[name]';
-import { mount, shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import React from 'react';
 
 describe('CategoryPage', () => {
@@ -45,23 +45,6 @@ describe('CategoryPage', () => {
       );
       expect(wrapper.find('BodyHeader').first().text()).toBe(
         `Tag: ${testCategoryName}`
-      );
-    });
-  });
-
-  describe('has proper style rules', () => {
-    const wrapper = shallow(
-      <CategoryPage name={testCategoryName} filteredArticles={testArticles} />
-    );
-
-    test('in ArticleListWrapperDiv', () => {
-      expect(wrapper.find('ArticleListWrapperDiv')).toHaveStyleRule(
-        'max-width',
-        '90%'
-      );
-      expect(wrapper.find('ArticleListWrapperDiv')).toHaveStyleRule(
-        'margin',
-        '0 auto'
       );
     });
   });
