@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FootnoteReference is rendered correctly to match the snapshot 1`] = `
+.emotion-0 {
+  margin: 0.2rem;
+}
+
+<FootnoteReference
+  identifier="1"
+  label="1"
+>
+  <IdentifierSup
+    id="fnref:1"
+  >
+    <sup
+      className="emotion-0 emotion-1"
+      id="fnref:1"
+    >
+      <a
+        href="#fn:1"
+      >
+        1
+      </a>
+    </sup>
+  </IdentifierSup>
+</FootnoteReference>
+`;

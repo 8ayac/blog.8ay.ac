@@ -1,8 +1,10 @@
+import { customRenderers } from '@/src/components/elements/MarkdownRenderer/CustomRenderers';
 import { theme } from '@/src/constants/theme';
 import styled from '@emotion/styled';
 import Prism from 'prismjs';
 import React, { useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
+import remarkFootnotes from 'remark-footnotes';
 import remarkGfm from 'remark-gfm';
 
 const S = {
@@ -24,6 +26,7 @@ const S = {
     }
 
     a {
+      margin-left: 0;
       font-weight: 600;
     }
 
@@ -116,8 +119,9 @@ export const MarkdownRender: React.FC<{ content: string }> = ({ content }) => {
       <S.ConvertedMdBody>
         <ReactMarkdown
           source={content}
-          plugins={[remarkGfm]}
+          plugins={[remarkGfm, remarkFootnotes]}
           transformImageUri={imageUriTransformer}
+          renderers={customRenderers}
         />
       </S.ConvertedMdBody>
     </>

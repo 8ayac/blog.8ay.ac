@@ -100,6 +100,7 @@ exports[`ArticlePage is rendered correctly to match the snapshot 1`] = `
 }
 
 .emotion-28 a {
+  margin-left: 0;
   font-weight: 600;
 }
 
@@ -406,7 +407,14 @@ bluhbluhbluh"
           plugins={
             Array [
               [Function],
+              [Function],
             ]
+          }
+          renderers={
+            Object {
+              "footnoteDefinition": [Function],
+              "footnoteReference": [Function],
+            }
           }
           source="## test
 
