@@ -46,8 +46,8 @@ describe('TopPage', () => {
       );
     });
 
-    test('in CategoryListSection', () => {
-      expect(wrapper.find('S-CategoryListSection')).toHaveStyleRule(
+    test('in TagListSection', () => {
+      expect(wrapper.find('S-TagListSection')).toHaveStyleRule(
         'margin-bottom',
         '4rem'
       );

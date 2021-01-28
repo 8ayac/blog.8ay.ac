@@ -199,7 +199,7 @@ bluhbluhbluh",
   >
     <BodyHeader
       afterTitle={
-        <CategoryListWrapperDiv>
+        <TagListWrapperDiv>
           <FontAwesomeIcon
             css="unknown styles"
             icon={
@@ -217,7 +217,7 @@ bluhbluhbluh",
             }
           />
           <CategoryTagList />
-        </CategoryListWrapperDiv>
+        </TagListWrapperDiv>
       }
       beforeTitle={
         <DateTimeWrapperDiv>
@@ -329,7 +329,7 @@ bluhbluhbluh",
             <div
               className="emotion-22 emotion-23"
             >
-              <CategoryListWrapperDiv>
+              <TagListWrapperDiv>
                 <div
                   className="emotion-24 emotion-25"
                 >
@@ -384,7 +384,7 @@ bluhbluhbluh",
                   </FontAwesomeIcon>
                   <CategoryTagList />
                 </div>
-              </CategoryListWrapperDiv>
+              </TagListWrapperDiv>
             </div>
           </AfterTitleDiv>
         </header>

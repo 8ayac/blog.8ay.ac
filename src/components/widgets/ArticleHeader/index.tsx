@@ -22,7 +22,7 @@ const S = {
     }
   `,
 
-  CategoryListWrapperDiv: styled.div`
+  TagListWrapperDiv: styled.div`
     margin-top: 2rem;
     margin-bottom: 0.5rem;
   `,
@@ -36,7 +36,7 @@ export const ArticleHeader: React.FC<{ article: Article }> = ({ article }) => {
     </S.DateTimeWrapperDiv>
   );
   const tags = (
-    <S.CategoryListWrapperDiv>
+    <S.TagListWrapperDiv>
       <FontAwesomeIcon
         icon={faTags}
         css={css`
@@ -47,7 +47,7 @@ export const ArticleHeader: React.FC<{ article: Article }> = ({ article }) => {
         `}
       />
       <CategoryTagList tags={article.tags} />
-    </S.CategoryListWrapperDiv>
+    </S.TagListWrapperDiv>
   );
 
   return (

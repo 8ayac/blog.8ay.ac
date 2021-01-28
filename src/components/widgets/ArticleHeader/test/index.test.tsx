@@ -55,12 +55,12 @@ describe('ArticleHeader', () => {
       );
     });
 
-    test('in CategoryListWrapperDiv', () => {
-      expect(wrapper.find('CategoryListWrapperDiv')).toHaveStyleRule(
+    test('in TagListWrapperDiv', () => {
+      expect(wrapper.find('TagListWrapperDiv')).toHaveStyleRule(
         'margin-top',
         '2rem'
       );
-      expect(wrapper.find('CategoryListWrapperDiv')).toHaveStyleRule(
+      expect(wrapper.find('TagListWrapperDiv')).toHaveStyleRule(
         'margin-bottom',
         '0.5rem'
       );

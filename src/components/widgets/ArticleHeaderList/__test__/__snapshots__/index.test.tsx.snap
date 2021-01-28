@@ -175,7 +175,7 @@ exports[`ArticleHeaderList is rendered correctly to match the snapshot 1`] = `
           >
             <BodyHeader
               afterTitle={
-                <CategoryListWrapperDiv>
+                <TagListWrapperDiv>
                   <FontAwesomeIcon
                     css="unknown styles"
                     icon={
@@ -199,7 +199,7 @@ exports[`ArticleHeaderList is rendered correctly to match the snapshot 1`] = `
                       ]
                     }
                   />
-                </CategoryListWrapperDiv>
+                </TagListWrapperDiv>
               }
               beforeTitle={
                 <DateTimeWrapperDiv>
@@ -311,7 +311,7 @@ exports[`ArticleHeaderList is rendered correctly to match the snapshot 1`] = `
                     <div
                       className="emotion-26 emotion-27"
                     >
-                      <CategoryListWrapperDiv>
+                      <TagListWrapperDiv>
                         <div
                           className="emotion-28 emotion-29"
                         >
@@ -404,7 +404,7 @@ exports[`ArticleHeaderList is rendered correctly to match the snapshot 1`] = `
                             </ComponentWrapperDiv>
                           </CategoryTagList>
                         </div>
-                      </CategoryListWrapperDiv>
+                      </TagListWrapperDiv>
                     </div>
                   </AfterTitleDiv>
                 </header>
@@ -428,7 +428,7 @@ exports[`ArticleHeaderList is rendered correctly to match the snapshot 1`] = `
           >
             <BodyHeader
               afterTitle={
-                <CategoryListWrapperDiv>
+                <TagListWrapperDiv>
                   <FontAwesomeIcon
                     css="unknown styles"
                     icon={
@@ -452,7 +452,7 @@ exports[`ArticleHeaderList is rendered correctly to match the snapshot 1`] = `
                       ]
                     }
                   />
-                </CategoryListWrapperDiv>
+                </TagListWrapperDiv>
               }
               beforeTitle={
                 <DateTimeWrapperDiv>
@@ -564,7 +564,7 @@ exports[`ArticleHeaderList is rendered correctly to match the snapshot 1`] = `
                     <div
                       className="emotion-26 emotion-27"
                     >
-                      <CategoryListWrapperDiv>
+                      <TagListWrapperDiv>
                         <div
                           className="emotion-28 emotion-29"
                         >
@@ -657,7 +657,7 @@ exports[`ArticleHeaderList is rendered correctly to match the snapshot 1`] = `
                             </ComponentWrapperDiv>
                           </CategoryTagList>
                         </div>
-                      </CategoryListWrapperDiv>
+                      </TagListWrapperDiv>
                     </div>
                   </AfterTitleDiv>
                 </header>
@@ -681,7 +681,7 @@ exports[`ArticleHeaderList is rendered correctly to match the snapshot 1`] = `
           >
             <BodyHeader
               afterTitle={
-                <CategoryListWrapperDiv>
+                <TagListWrapperDiv>
                   <FontAwesomeIcon
                     css="unknown styles"
                     icon={
@@ -705,7 +705,7 @@ exports[`ArticleHeaderList is rendered correctly to match the snapshot 1`] = `
                       ]
                     }
                   />
-                </CategoryListWrapperDiv>
+                </TagListWrapperDiv>
               }
               beforeTitle={
                 <DateTimeWrapperDiv>
@@ -817,7 +817,7 @@ exports[`ArticleHeaderList is rendered correctly to match the snapshot 1`] = `
                     <div
                       className="emotion-26 emotion-27"
                     >
-                      <CategoryListWrapperDiv>
+                      <TagListWrapperDiv>
                         <div
                           className="emotion-28 emotion-29"
                         >
@@ -910,7 +910,7 @@ exports[`ArticleHeaderList is rendered correctly to match the snapshot 1`] = `
                             </ComponentWrapperDiv>
                           </CategoryTagList>
                         </div>
-                      </CategoryListWrapperDiv>
+                      </TagListWrapperDiv>
                     </div>
                   </AfterTitleDiv>
                 </header>

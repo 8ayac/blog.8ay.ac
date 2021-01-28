@@ -4,26 +4,26 @@ import { mount, shallow } from 'enzyme';
 import React from 'react';
 
 describe('CategoryTag', () => {
-  const testCategoryName = 'test-cat';
+  const testTagName = 'test-cat';
 
   test('is rendered correctly to match the snapshot', () => {
-    const wrapper = mount(<CategoryTag name={testCategoryName} />);
+    const wrapper = mount(<CategoryTag name={testTagName} />);
     expect(wrapper).toMatchSnapshot();
   });
 
   test('has the correct text', () => {
-    const wrapper = mount(<CategoryTag name={testCategoryName} />);
-    expect(wrapper.find('a').text()).toBe(testCategoryName);
+    const wrapper = mount(<CategoryTag name={testTagName} />);
+    expect(wrapper.find('a').text()).toBe(testTagName);
   });
 
   test('links properly to `/tags/:name`', () => {
-    const wrapper = mount(<CategoryTag name={testCategoryName} />);
+    const wrapper = mount(<CategoryTag name={testTagName} />);
     expect(wrapper.find('a').prop('href')).toEqual('/tags/test-cat');
   });
 
   describe('has proper style rules', () => {
     test('in Anchor', () => {
-      const wrapper = shallow(<CategoryTag name={testCategoryName} />);
+      const wrapper = shallow(<CategoryTag name={testTagName} />);
       expect(wrapper.find('Anchor')).toHaveStyleRule('padding', '3% 1rem 4%');
       expect(wrapper.find('Anchor')).toHaveStyleRule('margin', '0');
       expect(wrapper.find('Anchor')).toHaveStyleRule('font-size', '0.8em');
