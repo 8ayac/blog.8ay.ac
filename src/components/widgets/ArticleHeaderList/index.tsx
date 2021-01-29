@@ -24,9 +24,16 @@ export const ArticleHeaderList: React.FC<{ articles: Article[] }> = ({
   <>
     <S.ComponentWrapperDiv>
       <S.ArticleHeaderWrapperDiv>
-        {articles.map((article) => (
-          <ArticleHeader key={article.id} article={article} />
-        ))}
+        {articles
+          .sort(
+            (a, b) =>
+              new Date(a.publishedAt).getTime() -
+              new Date(b.publishedAt).getTime()
+          )
+          .reverse()
+          .map((article) => (
+            <ArticleHeader key={article.id} article={article} />
+          ))}
       </S.ArticleHeaderWrapperDiv>
     </S.ComponentWrapperDiv>
   </>

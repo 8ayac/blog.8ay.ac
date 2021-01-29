@@ -190,16 +190,6 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
       Array [
         Object {
           "body": "bluhbluhbluh",
-          "id": "test-article-01",
-          "publishedAt": 2021-01-01T00:00:00.000Z,
-          "tags": Array [
-            "test01",
-          ],
-          "title": "Test Title 01",
-          "updatedAt": 2021-01-01T00:00:00.000Z,
-        },
-        Object {
-          "body": "bluhbluhbluh",
           "id": "test-article-02",
           "publishedAt": 2021-02-02T00:00:00.000Z,
           "tags": Array [
@@ -207,6 +197,16 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
           ],
           "title": "Test Title 02",
           "updatedAt": 2021-02-02T00:00:00.000Z,
+        },
+        Object {
+          "body": "bluhbluhbluh",
+          "id": "test-article-01",
+          "publishedAt": 2021-01-01T00:00:00.000Z,
+          "tags": Array [
+            "test01",
+          ],
+          "title": "Test Title 01",
+          "updatedAt": 2021-01-01T00:00:00.000Z,
         },
       ]
     }
@@ -233,16 +233,6 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
         Array [
           Object {
             "body": "bluhbluhbluh",
-            "id": "test-article-01",
-            "publishedAt": 2021-01-01T00:00:00.000Z,
-            "tags": Array [
-              "test01",
-            ],
-            "title": "Test Title 01",
-            "updatedAt": 2021-01-01T00:00:00.000Z,
-          },
-          Object {
-            "body": "bluhbluhbluh",
             "id": "test-article-02",
             "publishedAt": 2021-02-02T00:00:00.000Z,
             "tags": Array [
@@ -250,6 +240,16 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
             ],
             "title": "Test Title 02",
             "updatedAt": 2021-02-02T00:00:00.000Z,
+          },
+          Object {
+            "body": "bluhbluhbluh",
+            "id": "test-article-01",
+            "publishedAt": 2021-01-01T00:00:00.000Z,
+            "tags": Array [
+              "test01",
+            ],
+            "title": "Test Title 01",
+            "updatedAt": 2021-01-01T00:00:00.000Z,
           },
         ]
       }
@@ -262,276 +262,6 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
             <div
               className="emotion-6 emotion-7"
             >
-              <ArticleHeader
-                article={
-                  Object {
-                    "body": "bluhbluhbluh",
-                    "id": "test-article-01",
-                    "publishedAt": 2021-01-01T00:00:00.000Z,
-                    "tags": Array [
-                      "test01",
-                    ],
-                    "title": "Test Title 01",
-                    "updatedAt": 2021-01-01T00:00:00.000Z,
-                  }
-                }
-                key="test-article-01"
-              >
-                <BodyHeader
-                  afterTitle={
-                    <TagListWrapperDiv>
-                      <FontAwesomeIcon
-                        css="unknown styles"
-                        icon={
-                          Object {
-                            "icon": Array [
-                              640,
-                              512,
-                              Array [],
-                              "f02c",
-                              "M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z",
-                            ],
-                            "iconName": "tags",
-                            "prefix": "fas",
-                          }
-                        }
-                      />
-                      <CategoryTagList
-                        tags={
-                          Array [
-                            "test01",
-                          ]
-                        }
-                      />
-                    </TagListWrapperDiv>
-                  }
-                  beforeTitle={
-                    <DateTimeWrapperDiv>
-                      <DateTime
-                        date={2021-01-01T00:00:00.000Z}
-                        description="Published At"
-                      />
-                      <DateTime
-                        date={2021-01-01T00:00:00.000Z}
-                        description="Updated At"
-                      />
-                    </DateTimeWrapperDiv>
-                  }
-                  linkTo="/articles/2021-01-01/test-article-01"
-                  title="Test Title 01"
-                >
-                  <WrapperHeader>
-                    <header
-                      className="emotion-0 emotion-1"
-                    >
-                      <BeforeTitleDiv>
-                        <div
-                          className="emotion-10 emotion-11"
-                        >
-                          <DateTimeWrapperDiv>
-                            <div
-                              className="emotion-12 emotion-13"
-                            >
-                              <DateTime
-                                date={2021-01-01T00:00:00.000Z}
-                                description="Published At"
-                              >
-                                <ComponentWrapperDiv>
-                                  <div
-                                    className="emotion-14 emotion-15"
-                                  >
-                                    <DescriptionSpan>
-                                      <span
-                                        className="emotion-16 emotion-17"
-                                      >
-                                        Published At:
-                                      </span>
-                                    </DescriptionSpan>
-                                    <ISODateTime>
-                                      <time
-                                        className="emotion-18 emotion-19"
-                                      >
-                                        2021-01-01T00:00:00.000Z
-                                      </time>
-                                    </ISODateTime>
-                                  </div>
-                                </ComponentWrapperDiv>
-                              </DateTime>
-                              <DateTime
-                                date={2021-01-01T00:00:00.000Z}
-                                description="Updated At"
-                              >
-                                <ComponentWrapperDiv>
-                                  <div
-                                    className="emotion-14 emotion-15"
-                                  >
-                                    <DescriptionSpan>
-                                      <span
-                                        className="emotion-16 emotion-17"
-                                      >
-                                        Updated At:
-                                      </span>
-                                    </DescriptionSpan>
-                                    <ISODateTime>
-                                      <time
-                                        className="emotion-18 emotion-19"
-                                      >
-                                        2021-01-01T00:00:00.000Z
-                                      </time>
-                                    </ISODateTime>
-                                  </div>
-                                </ComponentWrapperDiv>
-                              </DateTime>
-                            </div>
-                          </DateTimeWrapperDiv>
-                        </div>
-                      </BeforeTitleDiv>
-                      <TitleH1>
-                        <h1
-                          className="emotion-2 emotion-3"
-                        >
-                          <Link
-                            href="/articles/2021-01-01/test-article-01"
-                            passHref={true}
-                          >
-                            <TitleAnchor
-                              href="/articles/2021-01-01/test-article-01"
-                              onClick={[Function]}
-                              onMouseEnter={[Function]}
-                            >
-                              <a
-                                className="emotion-28 emotion-29"
-                                href="/articles/2021-01-01/test-article-01"
-                                onClick={[Function]}
-                                onMouseEnter={[Function]}
-                              >
-                                Test Title 01
-                              </a>
-                            </TitleAnchor>
-                          </Link>
-                        </h1>
-                      </TitleH1>
-                      <AfterTitleDiv>
-                        <div
-                          className="emotion-30 emotion-31"
-                        >
-                          <TagListWrapperDiv>
-                            <div
-                              className="emotion-32 emotion-33"
-                            >
-                              <FontAwesomeIcon
-                                className="emotion-34"
-                                icon={
-                                  Object {
-                                    "icon": Array [
-                                      640,
-                                      512,
-                                      Array [],
-                                      "f02c",
-                                      "M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z",
-                                    ],
-                                    "iconName": "tags",
-                                    "prefix": "fas",
-                                  }
-                                }
-                              >
-                                <FontAwesomeIcon
-                                  border={false}
-                                  className="emotion-35"
-                                  fixedWidth={false}
-                                  flip={null}
-                                  icon={
-                                    Object {
-                                      "icon": Array [
-                                        640,
-                                        512,
-                                        Array [],
-                                        "f02c",
-                                        "M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z",
-                                      ],
-                                      "iconName": "tags",
-                                      "prefix": "fas",
-                                    }
-                                  }
-                                  inverse={false}
-                                  listItem={false}
-                                  mask={null}
-                                  pull={null}
-                                  pulse={false}
-                                  rotation={null}
-                                  size={null}
-                                  spin={false}
-                                  swapOpacity={false}
-                                  symbol={false}
-                                  title=""
-                                  transform={null}
-                                >
-                                  <svg
-                                    aria-hidden="true"
-                                    className="svg-inline--fa fa-tags fa-w-20 emotion-35"
-                                    data-icon="tags"
-                                    data-prefix="fas"
-                                    focusable="false"
-                                    role="img"
-                                    style={Object {}}
-                                    viewBox="0 0 640 512"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <path
-                                      d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                  </svg>
-                                </FontAwesomeIcon>
-                              </FontAwesomeIcon>
-                              <CategoryTagList
-                                tags={
-                                  Array [
-                                    "test01",
-                                  ]
-                                }
-                              >
-                                <ComponentWrapperDiv
-                                  key="test01"
-                                >
-                                  <div
-                                    className="emotion-37 emotion-38"
-                                  >
-                                    <CategoryTag
-                                      name="test01"
-                                    >
-                                      <Link
-                                        href="/tags/test01"
-                                        passHref={true}
-                                      >
-                                        <Anchor
-                                          href="/tags/test01"
-                                          onClick={[Function]}
-                                          onMouseEnter={[Function]}
-                                        >
-                                          <a
-                                            className="emotion-39 emotion-40"
-                                            href="/tags/test01"
-                                            onClick={[Function]}
-                                            onMouseEnter={[Function]}
-                                          >
-                                            test01
-                                          </a>
-                                        </Anchor>
-                                      </Link>
-                                    </CategoryTag>
-                                  </div>
-                                </ComponentWrapperDiv>
-                              </CategoryTagList>
-                            </div>
-                          </TagListWrapperDiv>
-                        </div>
-                      </AfterTitleDiv>
-                    </header>
-                  </WrapperHeader>
-                </BodyHeader>
-              </ArticleHeader>
               <ArticleHeader
                 article={
                   Object {
@@ -787,6 +517,276 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
                                             onMouseEnter={[Function]}
                                           >
                                             test02
+                                          </a>
+                                        </Anchor>
+                                      </Link>
+                                    </CategoryTag>
+                                  </div>
+                                </ComponentWrapperDiv>
+                              </CategoryTagList>
+                            </div>
+                          </TagListWrapperDiv>
+                        </div>
+                      </AfterTitleDiv>
+                    </header>
+                  </WrapperHeader>
+                </BodyHeader>
+              </ArticleHeader>
+              <ArticleHeader
+                article={
+                  Object {
+                    "body": "bluhbluhbluh",
+                    "id": "test-article-01",
+                    "publishedAt": 2021-01-01T00:00:00.000Z,
+                    "tags": Array [
+                      "test01",
+                    ],
+                    "title": "Test Title 01",
+                    "updatedAt": 2021-01-01T00:00:00.000Z,
+                  }
+                }
+                key="test-article-01"
+              >
+                <BodyHeader
+                  afterTitle={
+                    <TagListWrapperDiv>
+                      <FontAwesomeIcon
+                        css="unknown styles"
+                        icon={
+                          Object {
+                            "icon": Array [
+                              640,
+                              512,
+                              Array [],
+                              "f02c",
+                              "M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z",
+                            ],
+                            "iconName": "tags",
+                            "prefix": "fas",
+                          }
+                        }
+                      />
+                      <CategoryTagList
+                        tags={
+                          Array [
+                            "test01",
+                          ]
+                        }
+                      />
+                    </TagListWrapperDiv>
+                  }
+                  beforeTitle={
+                    <DateTimeWrapperDiv>
+                      <DateTime
+                        date={2021-01-01T00:00:00.000Z}
+                        description="Published At"
+                      />
+                      <DateTime
+                        date={2021-01-01T00:00:00.000Z}
+                        description="Updated At"
+                      />
+                    </DateTimeWrapperDiv>
+                  }
+                  linkTo="/articles/2021-01-01/test-article-01"
+                  title="Test Title 01"
+                >
+                  <WrapperHeader>
+                    <header
+                      className="emotion-0 emotion-1"
+                    >
+                      <BeforeTitleDiv>
+                        <div
+                          className="emotion-10 emotion-11"
+                        >
+                          <DateTimeWrapperDiv>
+                            <div
+                              className="emotion-12 emotion-13"
+                            >
+                              <DateTime
+                                date={2021-01-01T00:00:00.000Z}
+                                description="Published At"
+                              >
+                                <ComponentWrapperDiv>
+                                  <div
+                                    className="emotion-14 emotion-15"
+                                  >
+                                    <DescriptionSpan>
+                                      <span
+                                        className="emotion-16 emotion-17"
+                                      >
+                                        Published At:
+                                      </span>
+                                    </DescriptionSpan>
+                                    <ISODateTime>
+                                      <time
+                                        className="emotion-18 emotion-19"
+                                      >
+                                        2021-01-01T00:00:00.000Z
+                                      </time>
+                                    </ISODateTime>
+                                  </div>
+                                </ComponentWrapperDiv>
+                              </DateTime>
+                              <DateTime
+                                date={2021-01-01T00:00:00.000Z}
+                                description="Updated At"
+                              >
+                                <ComponentWrapperDiv>
+                                  <div
+                                    className="emotion-14 emotion-15"
+                                  >
+                                    <DescriptionSpan>
+                                      <span
+                                        className="emotion-16 emotion-17"
+                                      >
+                                        Updated At:
+                                      </span>
+                                    </DescriptionSpan>
+                                    <ISODateTime>
+                                      <time
+                                        className="emotion-18 emotion-19"
+                                      >
+                                        2021-01-01T00:00:00.000Z
+                                      </time>
+                                    </ISODateTime>
+                                  </div>
+                                </ComponentWrapperDiv>
+                              </DateTime>
+                            </div>
+                          </DateTimeWrapperDiv>
+                        </div>
+                      </BeforeTitleDiv>
+                      <TitleH1>
+                        <h1
+                          className="emotion-2 emotion-3"
+                        >
+                          <Link
+                            href="/articles/2021-01-01/test-article-01"
+                            passHref={true}
+                          >
+                            <TitleAnchor
+                              href="/articles/2021-01-01/test-article-01"
+                              onClick={[Function]}
+                              onMouseEnter={[Function]}
+                            >
+                              <a
+                                className="emotion-28 emotion-29"
+                                href="/articles/2021-01-01/test-article-01"
+                                onClick={[Function]}
+                                onMouseEnter={[Function]}
+                              >
+                                Test Title 01
+                              </a>
+                            </TitleAnchor>
+                          </Link>
+                        </h1>
+                      </TitleH1>
+                      <AfterTitleDiv>
+                        <div
+                          className="emotion-30 emotion-31"
+                        >
+                          <TagListWrapperDiv>
+                            <div
+                              className="emotion-32 emotion-33"
+                            >
+                              <FontAwesomeIcon
+                                className="emotion-34"
+                                icon={
+                                  Object {
+                                    "icon": Array [
+                                      640,
+                                      512,
+                                      Array [],
+                                      "f02c",
+                                      "M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z",
+                                    ],
+                                    "iconName": "tags",
+                                    "prefix": "fas",
+                                  }
+                                }
+                              >
+                                <FontAwesomeIcon
+                                  border={false}
+                                  className="emotion-35"
+                                  fixedWidth={false}
+                                  flip={null}
+                                  icon={
+                                    Object {
+                                      "icon": Array [
+                                        640,
+                                        512,
+                                        Array [],
+                                        "f02c",
+                                        "M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z",
+                                      ],
+                                      "iconName": "tags",
+                                      "prefix": "fas",
+                                    }
+                                  }
+                                  inverse={false}
+                                  listItem={false}
+                                  mask={null}
+                                  pull={null}
+                                  pulse={false}
+                                  rotation={null}
+                                  size={null}
+                                  spin={false}
+                                  swapOpacity={false}
+                                  symbol={false}
+                                  title=""
+                                  transform={null}
+                                >
+                                  <svg
+                                    aria-hidden="true"
+                                    className="svg-inline--fa fa-tags fa-w-20 emotion-35"
+                                    data-icon="tags"
+                                    data-prefix="fas"
+                                    focusable="false"
+                                    role="img"
+                                    style={Object {}}
+                                    viewBox="0 0 640 512"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"
+                                      fill="currentColor"
+                                      style={Object {}}
+                                    />
+                                  </svg>
+                                </FontAwesomeIcon>
+                              </FontAwesomeIcon>
+                              <CategoryTagList
+                                tags={
+                                  Array [
+                                    "test01",
+                                  ]
+                                }
+                              >
+                                <ComponentWrapperDiv
+                                  key="test01"
+                                >
+                                  <div
+                                    className="emotion-37 emotion-38"
+                                  >
+                                    <CategoryTag
+                                      name="test01"
+                                    >
+                                      <Link
+                                        href="/tags/test01"
+                                        passHref={true}
+                                      >
+                                        <Anchor
+                                          href="/tags/test01"
+                                          onClick={[Function]}
+                                          onMouseEnter={[Function]}
+                                        >
+                                          <a
+                                            className="emotion-39 emotion-40"
+                                            href="/tags/test01"
+                                            onClick={[Function]}
+                                            onMouseEnter={[Function]}
+                                          >
+                                            test01
                                           </a>
                                         </Anchor>
                                       </Link>

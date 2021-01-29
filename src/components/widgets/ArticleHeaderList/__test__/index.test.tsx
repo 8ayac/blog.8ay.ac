@@ -55,13 +55,13 @@ describe('ArticleHeaderList', () => {
       ).toHaveLength(3);
       expect(
         (wrapper.find('ArticleHeader').at(0).prop('article') as Article).id
-      ).toBe('test-article-01');
+      ).toBe('test-article-03');
       expect(
         (wrapper.find('ArticleHeader').at(1).prop('article') as Article).id
       ).toBe('test-article-02');
       expect(
         (wrapper.find('ArticleHeader').at(2).prop('article') as Article).id
-      ).toBe('test-article-03');
+      ).toBe('test-article-01');
     });
   });
 
