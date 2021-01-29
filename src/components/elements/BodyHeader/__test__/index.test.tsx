@@ -143,6 +143,12 @@ describe('BodyHeader', () => {
         'filter',
         `drop-shadow(2px 2px 1px ${theme.color.green.light2})`
       );
+
+      expect(wrapper.find('TitleAnchor')).toHaveStyleRule(
+        'color',
+        `${theme.color.text.primary}`,
+        { target: ':visited' }
+      );
     });
 
     test('in BeforeTitleDiv', () => {

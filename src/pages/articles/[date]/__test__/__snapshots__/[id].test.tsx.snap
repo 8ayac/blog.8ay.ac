@@ -65,6 +65,10 @@ exports[`ArticlePage is rendered correctly to match the snapshot 1`] = `
   filter: drop-shadow(2px 2px 1px hsla(148, 72%, 80%));
 }
 
+.emotion-20:visited {
+  color: hsla(0, 0%, 15%);
+}
+
 .emotion-22 {
   margin-top: 0.3rem;
 }

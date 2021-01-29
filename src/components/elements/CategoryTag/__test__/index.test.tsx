@@ -50,6 +50,10 @@ describe('CategoryTag', () => {
           target: ':hover',
         }
       );
+
+      expect(wrapper.find('Anchor')).toHaveStyleRule('color', 'white', {
+        target: ':visited',
+      });
     });
   });
 });
