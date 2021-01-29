@@ -1,6 +1,7 @@
 import { BlogTitle } from '@/src/components/elements/BlogTitle';
 import { theme } from '@/src/constants/theme';
-import { mount, shallow } from 'enzyme';
+import { ThemeProvider } from '@emotion/react';
+import { mount } from 'enzyme';
 import React from 'react';
 
 describe('BlogTitle', () => {
@@ -11,18 +12,22 @@ describe('BlogTitle', () => {
     describe('to match the snapshot', () => {
       test('default', () => {
         const wrapper = mount(
-          <BlogTitle title={testTitle} subtitle={testSubtitle} />
+          <ThemeProvider theme={theme}>
+            <BlogTitle title={testTitle} subtitle={testSubtitle} />
+          </ThemeProvider>
         );
         expect(wrapper).toMatchSnapshot();
       });
 
       test('when set linkToTopPage option to false', () => {
         const wrapper = mount(
-          <BlogTitle
-            title={testTitle}
-            subtitle={testSubtitle}
-            linkToTopPage={false}
-          />
+          <ThemeProvider theme={theme}>
+            <BlogTitle
+              title={testTitle}
+              subtitle={testSubtitle}
+              linkToTopPage={false}
+            />
+          </ThemeProvider>
         );
         expect(wrapper).toMatchSnapshot();
       });
@@ -30,20 +35,24 @@ describe('BlogTitle', () => {
 
     describe('under certain conditions', () => {
       test('title links to top page in default ', () => {
-        const wrapper = shallow(
-          <BlogTitle title={testTitle} subtitle={testSubtitle} />
+        const wrapper = mount(
+          <ThemeProvider theme={theme}>
+            <BlogTitle title={testTitle} subtitle={testSubtitle} />
+          </ThemeProvider>
         );
         expect(wrapper.find('Link')).toHaveLength(1);
         expect(wrapper.find('Link').prop('href')).toBe('/');
       });
 
       test('title is just a text when set linkToTopPage option to false', () => {
-        const wrapper = shallow(
-          <BlogTitle
-            title={testTitle}
-            subtitle={testSubtitle}
-            linkToTopPage={false}
-          />
+        const wrapper = mount(
+          <ThemeProvider theme={theme}>
+            <BlogTitle
+              title={testTitle}
+              subtitle={testSubtitle}
+              linkToTopPage={false}
+            />
+          </ThemeProvider>
         );
         expect(wrapper.find('Link')).toHaveLength(0);
       });
@@ -51,8 +60,10 @@ describe('BlogTitle', () => {
   });
 
   describe('has proper style rules', () => {
-    const wrapper = shallow(
-      <BlogTitle title={testTitle} subtitle={testSubtitle} />
+    const wrapper = mount(
+      <ThemeProvider theme={theme}>
+        <BlogTitle title={testTitle} subtitle={testSubtitle} />
+      </ThemeProvider>
     );
 
     test('in ComponentWrapperDiv', () => {

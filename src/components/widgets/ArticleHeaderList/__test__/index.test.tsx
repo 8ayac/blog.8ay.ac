@@ -1,6 +1,8 @@
 import { ArticleHeaderList } from '@/src/components/widgets/ArticleHeaderList';
+import { theme } from '@/src/constants/theme';
 import { Article } from '@/src/types';
-import { mount, shallow } from 'enzyme';
+import { ThemeProvider } from '@emotion/react';
+import { mount } from 'enzyme';
 import React from 'react';
 
 describe('ArticleHeaderList', () => {
@@ -33,12 +35,20 @@ describe('ArticleHeaderList', () => {
 
   describe('is rendered correctly', () => {
     test('to match the snapshot', () => {
-      const wrapper = mount(<ArticleHeaderList articles={testArticles} />);
+      const wrapper = mount(
+        <ThemeProvider theme={theme}>
+          <ArticleHeaderList articles={testArticles} />
+        </ThemeProvider>
+      );
       expect(wrapper).toMatchSnapshot();
     });
 
     test('to contain the correct ArticleHeader components', () => {
-      const wrapper = shallow(<ArticleHeaderList articles={testArticles} />);
+      const wrapper = mount(
+        <ThemeProvider theme={theme}>
+          <ArticleHeaderList articles={testArticles} />
+        </ThemeProvider>
+      );
 
       expect(
         wrapper.find('ArticleHeaderWrapperDiv').find('ArticleHeader')
@@ -56,7 +66,11 @@ describe('ArticleHeaderList', () => {
   });
 
   describe('has proper style rules', () => {
-    const wrapper = shallow(<ArticleHeaderList articles={testArticles} />);
+    const wrapper = mount(
+      <ThemeProvider theme={theme}>
+        <ArticleHeaderList articles={testArticles} />
+      </ThemeProvider>
+    );
 
     test('in ComponentWrapperDiv', () => {
       expect(wrapper.find('ComponentWrapperDiv')).toHaveStyleRule(

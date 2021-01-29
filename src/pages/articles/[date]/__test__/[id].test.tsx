@@ -1,4 +1,6 @@
+import { theme } from '@/src/constants/theme';
 import ArticlePage from '@/src/pages/articles/[date]/[id]';
+import { ThemeProvider } from '@emotion/react';
 import { mount } from 'enzyme';
 import React from 'react';
 
@@ -12,7 +14,11 @@ describe('ArticlePage', () => {
   };
 
   it('is rendered correctly to match the snapshot', () => {
-    const wrapper = mount(<ArticlePage article={testArticleData} />);
+    const wrapper = mount(
+      <ThemeProvider theme={theme}>
+        <ArticlePage article={testArticleData} />
+      </ThemeProvider>
+    );
     expect(wrapper).toMatchSnapshot();
   });
 });

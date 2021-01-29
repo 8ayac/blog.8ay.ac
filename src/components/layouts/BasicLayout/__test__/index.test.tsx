@@ -1,24 +1,43 @@
 import { BasicLayout } from '@/src/components/layouts/BasicLayout';
-import { mount } from 'enzyme';
+import { theme } from '@/src/constants/theme';
+import { ThemeProvider } from '@emotion/react';
+import { mount, shallow } from 'enzyme';
 import React from 'react';
 
 describe('BasicLayout', () => {
-  const wrapper = mount(<BasicLayout />);
-
   test('is rendered correctly to match the snapshot', () => {
-    wrapper.setProps({ children: <b>children</b> });
+    const wrapper = mount(
+      <ThemeProvider theme={theme}>
+        <BasicLayout>
+          <b>children</b>
+        </BasicLayout>
+      </ThemeProvider>
+    );
     expect(wrapper).toMatchSnapshot();
   });
 
   test('renders proper children', () => {
-    wrapper.setProps({ children: <h1>THIS IS A TEST</h1> });
-    expect(
-      wrapper.find('ContentWrapperDiv').children().first().find('h1').text()
-    ).toBe('THIS IS A TEST');
+    const wrapper = shallow(
+      <ThemeProvider theme={theme}>
+        <BasicLayout>
+          <h1>THIS IS A TEST</h1>
+        </BasicLayout>
+      </ThemeProvider>
+    );
+    expect(wrapper.find('BasicLayout').find('h1').text()).toBe(
+      'THIS IS A TEST'
+    );
   });
 
   describe('has proper style rules', () => {
     test('in ContentWrapperDiv', () => {
+      const wrapper = mount(
+        <ThemeProvider theme={theme}>
+          <BasicLayout>
+            <h1>THIS IS A TEST</h1>
+          </BasicLayout>
+        </ThemeProvider>
+      );
       const wContentWrapperDiv = wrapper.find('ContentWrapperDiv');
 
       expect(wContentWrapperDiv).toHaveStyleRule('max-width', '1000px');

@@ -1,4 +1,3 @@
-import { theme } from '@/src/constants/theme';
 import { FlexContainerDiv } from '@/src/shared/styles/abstractStyledComponents';
 import styled from '@emotion/styled';
 import React from 'react';
@@ -13,9 +12,9 @@ const S = {
     font-weight: 600;
   `,
 
-  DateTime: styled.time`
+  ISODateTime: styled.time`
     font-weight: bolder;
-    color: ${theme.color.text.secondary};
+    color: ${(props) => props.theme.color.text.secondary};
   `,
 };
 
@@ -28,7 +27,7 @@ export const DateTime: React.FC<{
       {description && (
         <S.DescriptionSpan>{`${description}:`}</S.DescriptionSpan>
       )}
-      <S.DateTime>{new Date(date).toISOString()}</S.DateTime>
+      <S.ISODateTime>{new Date(date).toISOString()}</S.ISODateTime>
     </S.ComponentWrapperDiv>
   </>
 );

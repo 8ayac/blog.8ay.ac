@@ -1,4 +1,6 @@
+import { theme } from '@/src/constants/theme';
 import ArticleIndexPage from '@/src/pages/articles';
+import { ThemeProvider } from '@emotion/react';
 import { mount } from 'enzyme';
 import React from 'react';
 
@@ -23,7 +25,11 @@ describe('ArticleIndexPage', () => {
   ];
 
   test('is rendered correctly to match the snapshot', () => {
-    const wrapper = mount(<ArticleIndexPage articles={testArticles} />);
+    const wrapper = mount(
+      <ThemeProvider theme={theme}>
+        <ArticleIndexPage articles={testArticles} />
+      </ThemeProvider>
+    );
     expect(wrapper).toMatchSnapshot();
   });
 });

@@ -1,6 +1,7 @@
 import { DateTime } from '@/src/components/elements/DateTime';
 import { theme } from '@/src/constants/theme';
-import { mount, shallow } from 'enzyme';
+import { ThemeProvider } from '@emotion/react';
+import { mount } from 'enzyme';
 import React from 'react';
 
 describe('DateTime', () => {
@@ -10,23 +11,32 @@ describe('DateTime', () => {
   describe('is rendered correctly to match the snapshot', () => {
     test('in case with description', () => {
       const wrapper = mount(
-        <DateTime date={testDate} description={testDescription} />
+        <ThemeProvider theme={theme}>
+          <DateTime date={testDate} description={testDescription} />
+        </ThemeProvider>
       );
       expect(wrapper).toMatchSnapshot();
     });
 
     test('in case without description', () => {
-      const wrapper = mount(<DateTime date={testDate} />);
+      const wrapper = mount(
+        <ThemeProvider theme={theme}>
+          <DateTime date={testDate} />
+        </ThemeProvider>
+      );
       expect(wrapper).toMatchSnapshot();
     });
   });
 
   describe('children are correctly rendered', () => {
     test('in case with description', () => {
-      const wrapper = shallow(
-        <DateTime date={testDate} description={testDescription} />
+      const wrapper = mount(
+        <ThemeProvider theme={theme}>
+          <DateTime date={testDate} description={testDescription} />
+        </ThemeProvider>
       );
-      expect(wrapper.find('DateTime').text()).toEqual(
+
+      expect(wrapper.find('DateTime').find('time').text()).toEqual(
         '2021-01-02T03:04:56.000Z'
       );
       expect(wrapper.find('DescriptionSpan').text()).toEqual(
@@ -35,8 +45,12 @@ describe('DateTime', () => {
     });
 
     test('in case without description', () => {
-      const wrapper = shallow(<DateTime date={testDate} />);
-      expect(wrapper.find('DateTime').text()).toEqual(
+      const wrapper = mount(
+        <ThemeProvider theme={theme}>
+          <DateTime date={testDate} />
+        </ThemeProvider>
+      );
+      expect(wrapper.find('DateTime').find('time').text()).toEqual(
         '2021-01-02T03:04:56.000Z'
       );
       expect(wrapper.find('DescriptionSpan')).toHaveLength(0);
@@ -44,8 +58,10 @@ describe('DateTime', () => {
   });
 
   describe('has proper style rules', () => {
-    const wrapper = shallow(
-      <DateTime date={testDate} description={testDescription} />
+    const wrapper = mount(
+      <ThemeProvider theme={theme}>
+        <DateTime date={testDate} description={testDescription} />
+      </ThemeProvider>
     );
 
     test('in ComponentWrapperDiv', () => {
@@ -70,9 +86,12 @@ describe('DateTime', () => {
       );
     });
 
-    test('in DateTime', () => {
-      expect(wrapper.find('DateTime')).toHaveStyleRule('font-weight', 'bolder');
-      expect(wrapper.find('DateTime')).toHaveStyleRule(
+    test('in ISODateTime', () => {
+      expect(wrapper.find('ISODateTime')).toHaveStyleRule(
+        'font-weight',
+        'bolder'
+      );
+      expect(wrapper.find('ISODateTime')).toHaveStyleRule(
         'color',
         `${theme.color.text.secondary}`
       );

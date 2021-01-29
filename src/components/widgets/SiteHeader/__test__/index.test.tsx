@@ -1,10 +1,15 @@
 import { SiteHeader } from '@/src/components/widgets/SiteHeader';
 import { theme } from '@/src/constants/theme';
+import { ThemeProvider } from '@emotion/react';
 import { mount } from 'enzyme';
 import React from 'react';
 
 describe('Header', () => {
-  const wrapper = mount(<SiteHeader />);
+  const wrapper = mount(
+    <ThemeProvider theme={theme}>
+      <SiteHeader />
+    </ThemeProvider>
+  );
 
   it('is rendered correctly to match the snapshot', () => {
     expect(wrapper).toMatchSnapshot();
@@ -46,7 +51,12 @@ describe('Header', () => {
       expect(wTitleWrapper).toHaveStyleRule('align-items', 'center');
       expect(wTitleWrapper).toHaveStyleRule(
         'filter',
-        `drop-shadow(2px 2px 1px ${theme.color.green.dark3})`
+        new RegExp(
+          `drop-shadow\\((\\r?\\n)?(\\s+)2px 2px 1px ${theme.color.green.dark3.replace(
+            /[()]/g,
+            '\\$&'
+          )}(\\r?\\n)?(\\s+)\\)`
+        )
       );
     });
 
@@ -57,7 +67,12 @@ describe('Header', () => {
       expect(wNavWrapper).toHaveStyleRule('align-items', 'center');
       expect(wNavWrapper).toHaveStyleRule(
         'filter',
-        `drop-shadow(2px 2px 1px ${theme.color.green.dark3})`
+        new RegExp(
+          `drop-shadow\\((\\r?\\n)?(\\s+)2px 2px 1px ${theme.color.green.dark3.replace(
+            /[()]/g,
+            '\\$&'
+          )}(\\r?\\n)?(\\s+)\\)`
+        )
       );
     });
   });

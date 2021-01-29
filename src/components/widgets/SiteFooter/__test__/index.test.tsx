@@ -1,10 +1,15 @@
 import { SiteFooter } from '@/src/components/widgets/SiteFooter';
 import { theme } from '@/src/constants/theme';
+import { ThemeProvider } from '@emotion/react';
 import { mount } from 'enzyme';
 import React from 'react';
 
 describe('SiteFooter', () => {
-  const wrapper = mount(<SiteFooter />);
+  const wrapper = mount(
+    <ThemeProvider theme={theme}>
+      <SiteFooter />
+    </ThemeProvider>
+  );
   it('is rendered correctly to match the snapshot', () => {
     expect(wrapper).toMatchSnapshot();
   });

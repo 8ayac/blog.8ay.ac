@@ -18,8 +18,12 @@ exports[`CategoryTagList is rendered correctly to match the snapshot 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: hsla(212, 72%, 50%);
-  -webkit-filter: drop-shadow(2px 2px 1px hsla(212, 72%, 80%));
-  filter: drop-shadow(2px 2px 1px hsla(212, 72%, 80%));
+  -webkit-filter: drop-shadow(
+        2px 2px 1px hsla(212, 72%, 80%)
+      );
+  filter: drop-shadow(
+        2px 2px 1px hsla(212, 72%, 80%)
+      );
   border-radius: 3px;
 }
 
@@ -32,140 +36,192 @@ exports[`CategoryTagList is rendered correctly to match the snapshot 1`] = `
   color: white;
 }
 
-<CategoryTagList
-  tags={
-    Array [
-      "A",
-      "B",
-      "C",
-      "DUPLICATE",
-      "DUPLICATE",
-    ]
+<ThemeProvider
+  theme={
+    Object {
+      "color": Object {
+        "blue": Object {
+          "base": "hsla(212, 72%, 60%)",
+          "dark": "hsla(212, 72%, 50%)",
+          "dark2": "hsla(212, 72%, 40%)",
+          "dark3": "hsla(212, 72%, 30%)",
+          "dark4": "hsla(212, 72%, 20%)",
+          "light": "hsla(212, 72%, 70%)",
+          "light2": "hsla(212, 72%, 80%)",
+          "light3": "hsla(212, 72%, 90%)",
+        },
+        "border": Object {
+          "primary": "hsla(0, 0%, 50%)",
+          "primaryLight": "hsla(0, 0%, 75%)",
+        },
+        "green": Object {
+          "base": "hsla(148, 72%, 60%)",
+          "dark": "hsla(148, 72%, 50%)",
+          "dark2": "hsla(148, 72%, 40%)",
+          "dark3": "hsla(148, 72%, 30%)",
+          "dark4": "hsla(148, 72%, 20%)",
+          "light": "hsla(148, 72%, 70%)",
+          "light2": "hsla(148, 72%, 80%)",
+          "light3": "hsla(148, 72%, 90%)",
+        },
+        "primary": "hsla(212, 72%, 60%)",
+        "primaryDark": "hsla(212, 72%, 50%)",
+        "primaryLight": "hsla(212, 72%, 70%)",
+        "text": Object {
+          "accent": "hsla(148, 72%, 50%)",
+          "primary": "hsla(0, 0%, 15%)",
+          "primaryLight": "hsla(0, 0%, 40%)",
+          "secondary": "hsla(212, 72%, 40%)",
+        },
+        "yellow": Object {
+          "base": "hsla(60, 72%, 60%)",
+          "dark": "hsla(60, 72%, 50%)",
+          "dark2": "hsla(60, 72%, 40%)",
+          "dark3": "hsla(60, 72%, 30%)",
+          "dark4": "hsla(60, 72%, 20%)",
+          "light": "hsla(60, 72%, 70%)",
+          "light2": "hsla(60, 72%, 80%)",
+          "light3": "hsla(60, 72%, 90%)",
+        },
+      },
+    }
   }
 >
-  <ComponentWrapperDiv
-    key="A"
+  <CategoryTagList
+    tags={
+      Array [
+        "A",
+        "B",
+        "C",
+        "DUPLICATE",
+        "DUPLICATE",
+      ]
+    }
   >
-    <div
-      className="emotion-0 emotion-1"
+    <ComponentWrapperDiv
+      key="A"
     >
-      <CategoryTag
-        name="A"
+      <div
+        className="emotion-0 emotion-1"
       >
-        <Link
-          href="/tags/A"
-          passHref={true}
+        <CategoryTag
+          name="A"
         >
-          <Anchor
+          <Link
             href="/tags/A"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
+            passHref={true}
           >
-            <a
-              className="emotion-2 emotion-3"
+            <Anchor
               href="/tags/A"
               onClick={[Function]}
               onMouseEnter={[Function]}
             >
-              A
-            </a>
-          </Anchor>
-        </Link>
-      </CategoryTag>
-    </div>
-  </ComponentWrapperDiv>
-  <ComponentWrapperDiv
-    key="B"
-  >
-    <div
-      className="emotion-0 emotion-1"
+              <a
+                className="emotion-2 emotion-3"
+                href="/tags/A"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+              >
+                A
+              </a>
+            </Anchor>
+          </Link>
+        </CategoryTag>
+      </div>
+    </ComponentWrapperDiv>
+    <ComponentWrapperDiv
+      key="B"
     >
-      <CategoryTag
-        name="B"
+      <div
+        className="emotion-0 emotion-1"
       >
-        <Link
-          href="/tags/B"
-          passHref={true}
+        <CategoryTag
+          name="B"
         >
-          <Anchor
+          <Link
             href="/tags/B"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
+            passHref={true}
           >
-            <a
-              className="emotion-2 emotion-3"
+            <Anchor
               href="/tags/B"
               onClick={[Function]}
               onMouseEnter={[Function]}
             >
-              B
-            </a>
-          </Anchor>
-        </Link>
-      </CategoryTag>
-    </div>
-  </ComponentWrapperDiv>
-  <ComponentWrapperDiv
-    key="C"
-  >
-    <div
-      className="emotion-0 emotion-1"
+              <a
+                className="emotion-2 emotion-3"
+                href="/tags/B"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+              >
+                B
+              </a>
+            </Anchor>
+          </Link>
+        </CategoryTag>
+      </div>
+    </ComponentWrapperDiv>
+    <ComponentWrapperDiv
+      key="C"
     >
-      <CategoryTag
-        name="C"
+      <div
+        className="emotion-0 emotion-1"
       >
-        <Link
-          href="/tags/C"
-          passHref={true}
+        <CategoryTag
+          name="C"
         >
-          <Anchor
+          <Link
             href="/tags/C"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
+            passHref={true}
           >
-            <a
-              className="emotion-2 emotion-3"
+            <Anchor
               href="/tags/C"
               onClick={[Function]}
               onMouseEnter={[Function]}
             >
-              C
-            </a>
-          </Anchor>
-        </Link>
-      </CategoryTag>
-    </div>
-  </ComponentWrapperDiv>
-  <ComponentWrapperDiv
-    key="DUPLICATE"
-  >
-    <div
-      className="emotion-0 emotion-1"
+              <a
+                className="emotion-2 emotion-3"
+                href="/tags/C"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+              >
+                C
+              </a>
+            </Anchor>
+          </Link>
+        </CategoryTag>
+      </div>
+    </ComponentWrapperDiv>
+    <ComponentWrapperDiv
+      key="DUPLICATE"
     >
-      <CategoryTag
-        name="DUPLICATE"
+      <div
+        className="emotion-0 emotion-1"
       >
-        <Link
-          href="/tags/DUPLICATE"
-          passHref={true}
+        <CategoryTag
+          name="DUPLICATE"
         >
-          <Anchor
+          <Link
             href="/tags/DUPLICATE"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
+            passHref={true}
           >
-            <a
-              className="emotion-2 emotion-3"
+            <Anchor
               href="/tags/DUPLICATE"
               onClick={[Function]}
               onMouseEnter={[Function]}
             >
-              DUPLICATE
-            </a>
-          </Anchor>
-        </Link>
-      </CategoryTag>
-    </div>
-  </ComponentWrapperDiv>
-</CategoryTagList>
+              <a
+                className="emotion-2 emotion-3"
+                href="/tags/DUPLICATE"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+              >
+                DUPLICATE
+              </a>
+            </Anchor>
+          </Link>
+        </CategoryTag>
+      </div>
+    </ComponentWrapperDiv>
+  </CategoryTagList>
+</ThemeProvider>
 `;

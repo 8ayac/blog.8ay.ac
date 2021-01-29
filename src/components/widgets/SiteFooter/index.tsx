@@ -1,4 +1,3 @@
-import { theme } from '@/src/constants/theme';
 import styled from '@emotion/styled';
 import React from 'react';
 
@@ -13,7 +12,7 @@ const S = {
   CopyRightParagraph: styled.p``,
 
   AboutGAParagraph: styled.p`
-    color: ${theme.color.text.primaryLight};
+    color: ${(props) => props.theme.color.text.primaryLight};
   `,
 };
 

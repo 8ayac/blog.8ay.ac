@@ -1,6 +1,7 @@
 import { ArticleHeader } from '@/src/components/widgets/ArticleHeader';
 import { theme } from '@/src/constants/theme';
 import { Article } from '@/src/types';
+import { ThemeProvider } from '@emotion/react';
 import { mount } from 'enzyme';
 import React from 'react';
 
@@ -16,12 +17,20 @@ describe('ArticleHeader', () => {
 
   describe('is rendered correctly', () => {
     test(' to match the snapshot', () => {
-      const wrapper = mount(<ArticleHeader article={testArticleData} />);
+      const wrapper = mount(
+        <ThemeProvider theme={theme}>
+          <ArticleHeader article={testArticleData} />
+        </ThemeProvider>
+      );
       expect(wrapper).toMatchSnapshot();
     });
 
     test('have proper link title', () => {
-      const wrapper = mount(<ArticleHeader article={testArticleData} />);
+      const wrapper = mount(
+        <ThemeProvider theme={theme}>
+          <ArticleHeader article={testArticleData} />
+        </ThemeProvider>
+      );
 
       expect(wrapper.find('a').first().prop('href')).toBe(
         `/articles/2000-01-01/test-article`
@@ -30,7 +39,11 @@ describe('ArticleHeader', () => {
   });
 
   describe('has proper style rules', () => {
-    const wrapper = mount(<ArticleHeader article={testArticleData} />);
+    const wrapper = mount(
+      <ThemeProvider theme={theme}>
+        <ArticleHeader article={testArticleData} />
+      </ThemeProvider>
+    );
 
     test('in DateTimeWrapperDiv', () => {
       expect(wrapper.find('DateTimeWrapperDiv')).toHaveStyleRule(

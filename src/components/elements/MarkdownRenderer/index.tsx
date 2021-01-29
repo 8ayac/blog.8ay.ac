@@ -1,5 +1,4 @@
 import { customRenderers } from '@/src/components/elements/MarkdownRenderer/CustomRenderers';
-import { theme } from '@/src/constants/theme';
 import styled from '@emotion/styled';
 import Prism from 'prismjs';
 import React, { useEffect } from 'react';
@@ -15,7 +14,8 @@ const S = {
     h2 {
       padding-bottom: 0.3em;
       margin-top: 2em;
-      border-bottom: 1px solid ${theme.color.border.primaryLight};
+      border-bottom: 1px solid
+        ${(props) => props.theme.color.border.primaryLight};
     }
 
     h3,
@@ -79,8 +79,8 @@ const S = {
     blockquote {
       padding: 0 1em;
       margin-left: 0;
-      color: ${theme.color.text.primaryLight};
-      border-left: 0.25em solid ${theme.color.blue.light3};
+      color: ${(props) => props.theme.color.text.primaryLight};
+      border-left: 0.25em solid ${(props) => props.theme.color.blue.light3};
 
       :first-of-type {
         margin-top: 0;
