@@ -24,6 +24,10 @@ exports[`BodyHeader is rendered correctly to match the snapshot when linkTo is g
   filter: drop-shadow(2px 2px 1px hsla(148, 72%, 80%));
 }
 
+.emotion-6:visited {
+  color: hsla(0, 0%, 15%);
+}
+
 .emotion-8 {
   margin-top: 0.3rem;
 }

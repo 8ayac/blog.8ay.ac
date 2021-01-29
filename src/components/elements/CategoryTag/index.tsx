@@ -20,6 +20,10 @@ const S = {
       color: white;
       background-color: ${theme.color.blue.base};
     }
+
+    &:visited {
+      color: white;
+    }
   `,
 };
 
