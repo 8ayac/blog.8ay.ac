@@ -105,7 +105,9 @@ const S = {
   `,
 };
 
-export const MarkdownRender: React.FC<{ content: string }> = ({ content }) => {
+export const MarkdownRenderer: React.FC<{ content: string }> = ({
+  content,
+}) => {
   useEffect(() => {
     Prism.highlightAll();
   });

@@ -1,4 +1,4 @@
-import { MarkdownRender } from '@/src/components/elements/MarkdownRenderer';
+import { MarkdownRenderer } from '@/src/components/elements/MarkdownRenderer';
 import { ArticleHeader } from '@/src/components/widgets/ArticleHeader';
 import jsonArticles from '@/src/shared/.content/articles.json';
 import { Article } from '@/src/types';
@@ -43,7 +43,7 @@ const ArticlePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   return (
     <>
       <ArticleHeader article={article} />
-      <MarkdownRender content={article.body} />
+      <MarkdownRenderer content={article.body} />
     </>
   );
 };

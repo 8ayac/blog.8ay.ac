@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`MarkdownRender is rendered correctly to match the snapshot 1`] = `
+exports[`MarkdownRenderer is rendered correctly to match the snapshot 1`] = `
 .emotion-0 {
   overflow-wrap: break-word;
 }
@@ -145,7 +145,7 @@ exports[`MarkdownRender is rendered correctly to match the snapshot 1`] = `
     }
   }
 >
-  <MarkdownRender
+  <MarkdownRenderer
     content="test"
   >
     <ConvertedMdBody>
@@ -257,6 +257,6 @@ exports[`MarkdownRender is rendered correctly to match the snapshot 1`] = `
         </ReactMarkdown>
       </div>
     </ConvertedMdBody>
-  </MarkdownRender>
+  </MarkdownRenderer>
 </ThemeProvider>
 `;
