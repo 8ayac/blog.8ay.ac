@@ -1,7 +1,6 @@
 import { BlogTitle } from '@/src/components/elements/BlogTitle';
 import { SocialLinkWithIcon } from '@/src/components/elements/SocialLinkWithIcon';
 import { BLOG_SUBTITLE, BLOG_TITLE } from '@/src/constants/site';
-import { theme } from '@/src/constants/theme';
 import { FlexContainerDiv } from '@/src/shared/styles/abstractStyledComponents';
 import styled from '@emotion/styled';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
@@ -14,8 +13,8 @@ const S = {
     z-index: 100;
     height: 3.7rem;
     padding: 0.5rem 1rem;
-    background-color: ${theme.color.green.dark2};
-    border-bottom: 1px solid ${theme.color.green.light};
+    background-color: ${(props) => props.theme.color.green.dark2};
+    border-bottom: 1px solid ${(props) => props.theme.color.green.light};
   `,
 
   HeaderInner: styled.div`
@@ -28,12 +27,16 @@ const S = {
 
   TitleWrapper: styled(FlexContainerDiv)`
     align-items: center;
-    filter: drop-shadow(2px 2px 1px ${theme.color.green.dark3});
+    filter: drop-shadow(
+      2px 2px 1px ${(props) => props.theme.color.green.dark3}
+    );
   `,
 
   NavWrapper: styled(FlexContainerDiv)`
     align-items: center;
-    filter: drop-shadow(2px 2px 1px ${theme.color.green.dark3});
+    filter: drop-shadow(
+      2px 2px 1px ${(props) => props.theme.color.green.dark3}
+    );
   `,
 };
 

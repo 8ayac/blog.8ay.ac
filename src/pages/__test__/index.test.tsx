@@ -1,4 +1,6 @@
+import { theme } from '@/src/constants/theme';
 import TopPage from '@/src/pages';
+import { ThemeProvider } from '@emotion/react';
 import { mount } from 'enzyme';
 import React from 'react';
 
@@ -32,12 +34,20 @@ describe('TopPage', () => {
   ];
 
   test('is rendered correctly to match the snapshot', () => {
-    const wrapper = mount(<TopPage articles={testArticles} />);
+    const wrapper = mount(
+      <ThemeProvider theme={theme}>
+        <TopPage articles={testArticles} />
+      </ThemeProvider>
+    );
     expect(wrapper).toMatchSnapshot();
   });
 
   describe('has proper style rules', () => {
-    const wrapper = mount(<TopPage articles={testArticles} />);
+    const wrapper = mount(
+      <ThemeProvider theme={theme}>
+        <TopPage articles={testArticles} />
+      </ThemeProvider>
+    );
 
     test('in ArticleListSection', () => {
       expect(wrapper.find('S-ArticleListSection')).toHaveStyleRule(

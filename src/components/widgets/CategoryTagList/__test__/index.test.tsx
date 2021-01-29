@@ -1,5 +1,7 @@
 import { CategoryTagList } from '@/src/components/widgets/CategoryTagList';
-import { mount, shallow } from 'enzyme';
+import { theme } from '@/src/constants/theme';
+import { ThemeProvider } from '@emotion/react';
+import { mount } from 'enzyme';
 import React from 'react';
 
 describe('CategoryTagList', () => {
@@ -7,19 +9,31 @@ describe('CategoryTagList', () => {
 
   describe('is rendered correctly', () => {
     test('to match the snapshot', () => {
-      const wrapper = mount(<CategoryTagList tags={testTags} />);
+      const wrapper = mount(
+        <ThemeProvider theme={theme}>
+          <CategoryTagList tags={testTags} />
+        </ThemeProvider>
+      );
       expect(wrapper).toMatchSnapshot();
     });
 
     test('to contain the correct count of children', () => {
-      const wrapper = shallow(<CategoryTagList tags={testTags} />);
+      const wrapper = mount(
+        <ThemeProvider theme={theme}>
+          <CategoryTagList tags={testTags} />
+        </ThemeProvider>
+      );
       expect(wrapper.find('CategoryTag')).toHaveLength(4);
     });
   });
 
   describe('has proper style rules', () => {
     test('in ComponentWrapperDiv', () => {
-      const wrapper = shallow(<CategoryTagList tags={testTags} />);
+      const wrapper = mount(
+        <ThemeProvider theme={theme}>
+          <CategoryTagList tags={testTags} />
+        </ThemeProvider>
+      );
 
       expect(wrapper.find('ComponentWrapperDiv').first()).toHaveStyleRule(
         'display',

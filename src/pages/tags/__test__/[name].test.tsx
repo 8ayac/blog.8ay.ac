@@ -1,4 +1,6 @@
+import { theme } from '@/src/constants/theme';
 import TagsPage from '@/src/pages/tags/[name]';
+import { ThemeProvider } from '@emotion/react';
 import { mount } from 'enzyme';
 import React from 'react';
 
@@ -34,14 +36,18 @@ describe('TagPage', () => {
   describe('is rendered correctly', () => {
     test('to match the snapshot', () => {
       const wrapper = mount(
-        <TagsPage name={testTagName} filteredArticles={testArticles} />
+        <ThemeProvider theme={theme}>
+          <TagsPage name={testTagName} filteredArticles={testArticles} />
+        </ThemeProvider>
       );
       expect(wrapper).toMatchSnapshot();
     });
 
     test('title header of the page', () => {
       const wrapper = mount(
-        <TagsPage name={testTagName} filteredArticles={testArticles} />
+        <ThemeProvider theme={theme}>
+          <TagsPage name={testTagName} filteredArticles={testArticles} />
+        </ThemeProvider>
       );
       expect(wrapper.find('BodyHeader').first().text()).toBe(
         `Tag: ${testTagName}`

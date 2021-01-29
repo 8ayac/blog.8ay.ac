@@ -1,6 +1,7 @@
 import { BodyHeader } from '@/src/components/elements/BodyHeader';
 import { theme } from '@/src/constants/theme';
-import { mount, shallow } from 'enzyme';
+import { ThemeProvider } from '@emotion/react';
+import { mount } from 'enzyme';
 import React from 'react';
 
 describe('BodyHeader', () => {
@@ -13,23 +14,27 @@ describe('BodyHeader', () => {
     describe('to match the snapshot', () => {
       test('when linkTo is not given', () => {
         const wrapper = mount(
-          <BodyHeader
-            title={testTitle}
-            beforeTitle={testBeforeTitle}
-            afterTitle={testAfterTitle}
-          />
+          <ThemeProvider theme={theme}>
+            <BodyHeader
+              title={testTitle}
+              beforeTitle={testBeforeTitle}
+              afterTitle={testAfterTitle}
+            />
+          </ThemeProvider>
         );
         expect(wrapper).toMatchSnapshot();
       });
 
       test('when linkTo is given', () => {
         const wrapper = mount(
-          <BodyHeader
-            title={testTitle}
-            linkTo={testLinkTo}
-            beforeTitle={testBeforeTitle}
-            afterTitle={testAfterTitle}
-          />
+          <ThemeProvider theme={theme}>
+            <BodyHeader
+              title={testTitle}
+              linkTo={testLinkTo}
+              beforeTitle={testBeforeTitle}
+              afterTitle={testAfterTitle}
+            />
+          </ThemeProvider>
         );
         expect(wrapper).toMatchSnapshot();
       });
@@ -37,35 +42,41 @@ describe('BodyHeader', () => {
 
     describe('under certain conditions', () => {
       test('linkTo: passed', () => {
-        const wrapper = shallow(
-          <BodyHeader
-            title={testTitle}
-            linkTo={testLinkTo}
-            beforeTitle={testBeforeTitle}
-            afterTitle={testAfterTitle}
-          />
+        const wrapper = mount(
+          <ThemeProvider theme={theme}>
+            <BodyHeader
+              title={testTitle}
+              linkTo={testLinkTo}
+              beforeTitle={testBeforeTitle}
+              afterTitle={testAfterTitle}
+            />
+          </ThemeProvider>
         );
         expect(wrapper.find('Link')).toHaveLength(1);
       });
 
       test('linkTo: NOT passed', () => {
-        const wrapper = shallow(
-          <BodyHeader
-            title={testTitle}
-            beforeTitle={testBeforeTitle}
-            afterTitle={testAfterTitle}
-          />
+        const wrapper = mount(
+          <ThemeProvider theme={theme}>
+            <BodyHeader
+              title={testTitle}
+              beforeTitle={testBeforeTitle}
+              afterTitle={testAfterTitle}
+            />
+          </ThemeProvider>
         );
         expect(wrapper.find('Link')).toHaveLength(0);
       });
 
       test('title: passed, beforeTitle: passed, afterTitle: passed', () => {
-        const wrapper = shallow(
-          <BodyHeader
-            title={testTitle}
-            beforeTitle={testBeforeTitle}
-            afterTitle={testAfterTitle}
-          />
+        const wrapper = mount(
+          <ThemeProvider theme={theme}>
+            <BodyHeader
+              title={testTitle}
+              beforeTitle={testBeforeTitle}
+              afterTitle={testAfterTitle}
+            />
+          </ThemeProvider>
         );
 
         expect(wrapper.find('TitleH1')).toHaveLength(1);
@@ -74,8 +85,10 @@ describe('BodyHeader', () => {
       });
 
       test('title: passed, beforeTitle: passed, afterTitle: NOT passed', () => {
-        const wrapper = shallow(
-          <BodyHeader title={testTitle} beforeTitle={testBeforeTitle} />
+        const wrapper = mount(
+          <ThemeProvider theme={theme}>
+            <BodyHeader title={testTitle} beforeTitle={testBeforeTitle} />
+          </ThemeProvider>
         );
 
         expect(wrapper.find('TitleH1')).toHaveLength(1);
@@ -84,8 +97,10 @@ describe('BodyHeader', () => {
       });
 
       test('title: passed, beforeTitle: NOT passed, afterTitle: passed', () => {
-        const wrapper = shallow(
-          <BodyHeader title={testTitle} afterTitle={testBeforeTitle} />
+        const wrapper = mount(
+          <ThemeProvider theme={theme}>
+            <BodyHeader title={testTitle} afterTitle={testBeforeTitle} />
+          </ThemeProvider>
         );
 
         expect(wrapper.find('TitleH1')).toHaveLength(1);
@@ -94,7 +109,11 @@ describe('BodyHeader', () => {
       });
 
       test('title: passed, beforeTitle: NOT passed, afterTitle: NOT passed', () => {
-        const wrapper = shallow(<BodyHeader title={testTitle} />);
+        const wrapper = mount(
+          <ThemeProvider theme={theme}>
+            <BodyHeader title={testTitle} />
+          </ThemeProvider>
+        );
 
         expect(wrapper.find('TitleH1')).toHaveLength(1);
         expect(wrapper.find('BeforeTitleDiv')).toHaveLength(0);
@@ -105,12 +124,14 @@ describe('BodyHeader', () => {
 
   describe('has proper style rules', () => {
     const wrapper = mount(
-      <BodyHeader
-        title={testTitle}
-        linkTo={testLinkTo}
-        beforeTitle={testBeforeTitle}
-        afterTitle={testAfterTitle}
-      />
+      <ThemeProvider theme={theme}>
+        <BodyHeader
+          title={testTitle}
+          linkTo={testLinkTo}
+          beforeTitle={testBeforeTitle}
+          afterTitle={testAfterTitle}
+        />
+      </ThemeProvider>
     );
 
     test('in WrapperHeader', () => {
@@ -141,7 +162,12 @@ describe('BodyHeader', () => {
       );
       expect(wrapper.find('TitleAnchor')).toHaveStyleRule(
         'filter',
-        `drop-shadow(2px 2px 1px ${theme.color.green.light2})`
+        new RegExp(
+          `drop-shadow\\((\\r?\\n)?(\\s+)2px 2px 1px ${theme.color.green.light2.replace(
+            /[()]/g,
+            '\\$&'
+          )}(\\r?\\n)?(\\s+)\\)`
+        )
       );
 
       expect(wrapper.find('TitleAnchor')).toHaveStyleRule(

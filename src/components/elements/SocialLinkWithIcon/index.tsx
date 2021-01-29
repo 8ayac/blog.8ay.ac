@@ -1,4 +1,3 @@
-import { theme } from '@/src/constants/theme';
 import styled from '@emotion/styled';
 import { faLink, IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -15,7 +14,7 @@ const S = {
     text-decoration: none;
 
     &:hover {
-      color: ${theme.color.yellow.base};
+      color: ${(props) => props.theme.color.yellow.base};
     }
   `,
 

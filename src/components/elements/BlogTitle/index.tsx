@@ -1,4 +1,3 @@
-import { theme } from '@/src/constants/theme';
 import styled from '@emotion/styled';
 import Link from 'next/link';
 import React from 'react';
@@ -9,7 +8,7 @@ const S = {
     user-select: none;
 
     &:hover {
-      color: ${theme.color.yellow.base};
+      color: ${(props) => props.theme.color.yellow.base};
     }
   `,
 

@@ -20,8 +20,12 @@ exports[`BodyHeader is rendered correctly to match the snapshot when linkTo is g
   color: hsla(0, 0%, 15%);
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-filter: drop-shadow(2px 2px 1px hsla(148, 72%, 80%));
-  filter: drop-shadow(2px 2px 1px hsla(148, 72%, 80%));
+  -webkit-filter: drop-shadow(
+        2px 2px 1px hsla(148, 72%, 80%)
+      );
+  filter: drop-shadow(
+        2px 2px 1px hsla(148, 72%, 80%)
+      );
 }
 
 .emotion-6:visited {
@@ -32,70 +36,122 @@ exports[`BodyHeader is rendered correctly to match the snapshot when linkTo is g
   margin-top: 0.3rem;
 }
 
-<BodyHeader
-  afterTitle={
-    <div>
-      AFTER
-    </div>
+<ThemeProvider
+  theme={
+    Object {
+      "color": Object {
+        "blue": Object {
+          "base": "hsla(212, 72%, 60%)",
+          "dark": "hsla(212, 72%, 50%)",
+          "dark2": "hsla(212, 72%, 40%)",
+          "dark3": "hsla(212, 72%, 30%)",
+          "dark4": "hsla(212, 72%, 20%)",
+          "light": "hsla(212, 72%, 70%)",
+          "light2": "hsla(212, 72%, 80%)",
+          "light3": "hsla(212, 72%, 90%)",
+        },
+        "border": Object {
+          "primary": "hsla(0, 0%, 50%)",
+          "primaryLight": "hsla(0, 0%, 75%)",
+        },
+        "green": Object {
+          "base": "hsla(148, 72%, 60%)",
+          "dark": "hsla(148, 72%, 50%)",
+          "dark2": "hsla(148, 72%, 40%)",
+          "dark3": "hsla(148, 72%, 30%)",
+          "dark4": "hsla(148, 72%, 20%)",
+          "light": "hsla(148, 72%, 70%)",
+          "light2": "hsla(148, 72%, 80%)",
+          "light3": "hsla(148, 72%, 90%)",
+        },
+        "primary": "hsla(212, 72%, 60%)",
+        "primaryDark": "hsla(212, 72%, 50%)",
+        "primaryLight": "hsla(212, 72%, 70%)",
+        "text": Object {
+          "accent": "hsla(148, 72%, 50%)",
+          "primary": "hsla(0, 0%, 15%)",
+          "primaryLight": "hsla(0, 0%, 40%)",
+          "secondary": "hsla(212, 72%, 40%)",
+        },
+        "yellow": Object {
+          "base": "hsla(60, 72%, 60%)",
+          "dark": "hsla(60, 72%, 50%)",
+          "dark2": "hsla(60, 72%, 40%)",
+          "dark3": "hsla(60, 72%, 30%)",
+          "dark4": "hsla(60, 72%, 20%)",
+          "light": "hsla(60, 72%, 70%)",
+          "light2": "hsla(60, 72%, 80%)",
+          "light3": "hsla(60, 72%, 90%)",
+        },
+      },
+    }
   }
-  beforeTitle={
-    <div>
-      BEFORE
-    </div>
-  }
-  linkTo="/"
-  title="Test Title"
 >
-  <WrapperHeader>
-    <header
-      className="emotion-0 emotion-1"
-    >
-      <BeforeTitleDiv>
-        <div
-          className="emotion-2 emotion-3"
-        >
-          <div>
-            BEFORE
-          </div>
-        </div>
-      </BeforeTitleDiv>
-      <TitleH1>
-        <h1
-          className="emotion-4 emotion-5"
-        >
-          <Link
-            href="/"
-            passHref={true}
+  <BodyHeader
+    afterTitle={
+      <div>
+        AFTER
+      </div>
+    }
+    beforeTitle={
+      <div>
+        BEFORE
+      </div>
+    }
+    linkTo="/"
+    title="Test Title"
+  >
+    <WrapperHeader>
+      <header
+        className="emotion-0 emotion-1"
+      >
+        <BeforeTitleDiv>
+          <div
+            className="emotion-2 emotion-3"
           >
-            <TitleAnchor
+            <div>
+              BEFORE
+            </div>
+          </div>
+        </BeforeTitleDiv>
+        <TitleH1>
+          <h1
+            className="emotion-4 emotion-5"
+          >
+            <Link
               href="/"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
+              passHref={true}
             >
-              <a
-                className="emotion-6 emotion-7"
+              <TitleAnchor
                 href="/"
                 onClick={[Function]}
                 onMouseEnter={[Function]}
               >
-                Test Title
-              </a>
-            </TitleAnchor>
-          </Link>
-        </h1>
-      </TitleH1>
-      <AfterTitleDiv>
-        <div
-          className="emotion-8 emotion-9"
-        >
-          <div>
-            AFTER
+                <a
+                  className="emotion-6 emotion-7"
+                  href="/"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                >
+                  Test Title
+                </a>
+              </TitleAnchor>
+            </Link>
+          </h1>
+        </TitleH1>
+        <AfterTitleDiv>
+          <div
+            className="emotion-8 emotion-9"
+          >
+            <div>
+              AFTER
+            </div>
           </div>
-        </div>
-      </AfterTitleDiv>
-    </header>
-  </WrapperHeader>
-</BodyHeader>
+        </AfterTitleDiv>
+      </header>
+    </WrapperHeader>
+  </BodyHeader>
+</ThemeProvider>
 `;
 
 exports[`BodyHeader is rendered correctly to match the snapshot when linkTo is not given 1`] = `
@@ -117,49 +173,101 @@ exports[`BodyHeader is rendered correctly to match the snapshot when linkTo is n
   margin-top: 0.3rem;
 }
 
-<BodyHeader
-  afterTitle={
-    <div>
-      AFTER
-    </div>
+<ThemeProvider
+  theme={
+    Object {
+      "color": Object {
+        "blue": Object {
+          "base": "hsla(212, 72%, 60%)",
+          "dark": "hsla(212, 72%, 50%)",
+          "dark2": "hsla(212, 72%, 40%)",
+          "dark3": "hsla(212, 72%, 30%)",
+          "dark4": "hsla(212, 72%, 20%)",
+          "light": "hsla(212, 72%, 70%)",
+          "light2": "hsla(212, 72%, 80%)",
+          "light3": "hsla(212, 72%, 90%)",
+        },
+        "border": Object {
+          "primary": "hsla(0, 0%, 50%)",
+          "primaryLight": "hsla(0, 0%, 75%)",
+        },
+        "green": Object {
+          "base": "hsla(148, 72%, 60%)",
+          "dark": "hsla(148, 72%, 50%)",
+          "dark2": "hsla(148, 72%, 40%)",
+          "dark3": "hsla(148, 72%, 30%)",
+          "dark4": "hsla(148, 72%, 20%)",
+          "light": "hsla(148, 72%, 70%)",
+          "light2": "hsla(148, 72%, 80%)",
+          "light3": "hsla(148, 72%, 90%)",
+        },
+        "primary": "hsla(212, 72%, 60%)",
+        "primaryDark": "hsla(212, 72%, 50%)",
+        "primaryLight": "hsla(212, 72%, 70%)",
+        "text": Object {
+          "accent": "hsla(148, 72%, 50%)",
+          "primary": "hsla(0, 0%, 15%)",
+          "primaryLight": "hsla(0, 0%, 40%)",
+          "secondary": "hsla(212, 72%, 40%)",
+        },
+        "yellow": Object {
+          "base": "hsla(60, 72%, 60%)",
+          "dark": "hsla(60, 72%, 50%)",
+          "dark2": "hsla(60, 72%, 40%)",
+          "dark3": "hsla(60, 72%, 30%)",
+          "dark4": "hsla(60, 72%, 20%)",
+          "light": "hsla(60, 72%, 70%)",
+          "light2": "hsla(60, 72%, 80%)",
+          "light3": "hsla(60, 72%, 90%)",
+        },
+      },
+    }
   }
-  beforeTitle={
-    <div>
-      BEFORE
-    </div>
-  }
-  title="Test Title"
 >
-  <WrapperHeader>
-    <header
-      className="emotion-0 emotion-1"
-    >
-      <BeforeTitleDiv>
-        <div
-          className="emotion-2 emotion-3"
-        >
-          <div>
-            BEFORE
+  <BodyHeader
+    afterTitle={
+      <div>
+        AFTER
+      </div>
+    }
+    beforeTitle={
+      <div>
+        BEFORE
+      </div>
+    }
+    title="Test Title"
+  >
+    <WrapperHeader>
+      <header
+        className="emotion-0 emotion-1"
+      >
+        <BeforeTitleDiv>
+          <div
+            className="emotion-2 emotion-3"
+          >
+            <div>
+              BEFORE
+            </div>
           </div>
-        </div>
-      </BeforeTitleDiv>
-      <TitleH1>
-        <h1
-          className="emotion-4 emotion-5"
-        >
-          Test Title
-        </h1>
-      </TitleH1>
-      <AfterTitleDiv>
-        <div
-          className="emotion-6 emotion-7"
-        >
-          <div>
-            AFTER
+        </BeforeTitleDiv>
+        <TitleH1>
+          <h1
+            className="emotion-4 emotion-5"
+          >
+            Test Title
+          </h1>
+        </TitleH1>
+        <AfterTitleDiv>
+          <div
+            className="emotion-6 emotion-7"
+          >
+            <div>
+              AFTER
+            </div>
           </div>
-        </div>
-      </AfterTitleDiv>
-    </header>
-  </WrapperHeader>
-</BodyHeader>
+        </AfterTitleDiv>
+      </header>
+    </WrapperHeader>
+  </BodyHeader>
+</ThemeProvider>
 `;

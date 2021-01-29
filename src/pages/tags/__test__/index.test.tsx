@@ -1,4 +1,6 @@
+import { theme } from '@/src/constants/theme';
 import TagsIndexPage from '@/src/pages/tags';
+import { ThemeProvider } from '@emotion/react';
 import { mount } from 'enzyme';
 import React from 'react';
 
@@ -32,12 +34,14 @@ describe('TagsIndexPage', () => {
   ];
 
   const wrapper = mount(
-    <TagsIndexPage
-      tags={[
-        ...new Set(testArticles.map((article) => article.tags).flat()),
-      ].sort()}
-      articles={testArticles}
-    />
+    <ThemeProvider theme={theme}>
+      <TagsIndexPage
+        tags={[
+          ...new Set(testArticles.map((article) => article.tags).flat()),
+        ].sort()}
+        articles={testArticles}
+      />
+    </ThemeProvider>
   );
 
   describe('is rendered correctly', () => {

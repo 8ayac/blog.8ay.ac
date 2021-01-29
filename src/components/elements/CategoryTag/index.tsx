@@ -1,4 +1,3 @@
-import { theme } from '@/src/constants/theme';
 import { getTagsPagePath } from '@/src/shared/utils';
 import styled from '@emotion/styled';
 import Link from 'next/link';
@@ -12,13 +11,15 @@ const S = {
     font-weight: 600;
     color: white;
     text-decoration: none;
-    background-color: ${theme.color.blue.dark};
-    filter: drop-shadow(2px 2px 1px ${theme.color.blue.light2});
+    background-color: ${(props) => props.theme.color.blue.dark};
+    filter: drop-shadow(
+      2px 2px 1px ${(props) => props.theme.color.blue.light2}
+    );
     border-radius: 3px;
 
     &:hover {
       color: white;
-      background-color: ${theme.color.blue.base};
+      background-color: ${(props) => props.theme.color.blue.base};
     }
 
     &:visited {

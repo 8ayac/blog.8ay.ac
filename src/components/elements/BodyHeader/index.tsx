@@ -1,4 +1,3 @@
-import { theme } from '@/src/constants/theme';
 import styled from '@emotion/styled';
 import Link from 'next/link';
 import React, { ReactNode } from 'react';
@@ -6,7 +5,8 @@ import React, { ReactNode } from 'react';
 export const S = {
   WrapperHeader: styled.header`
     margin-bottom: 3rem;
-    border-bottom: 0.25rem solid ${theme.color.border.primaryLight};
+    border-bottom: 0.25rem solid
+      ${(props) => props.theme.color.border.primaryLight};
   `,
 
   TitleH1: styled.h1`
@@ -16,12 +16,14 @@ export const S = {
 
   TitleAnchor: styled.a`
     margin: 0;
-    color: ${theme.color.text.primary};
+    color: ${(props) => props.theme.color.text.primary};
     text-decoration: none;
-    filter: drop-shadow(2px 2px 1px ${theme.color.green.light2});
+    filter: drop-shadow(
+      2px 2px 1px ${(props) => props.theme.color.green.light2}
+    );
 
     &:visited {
-      color: ${theme.color.text.primary};
+      color: ${(props) => props.theme.color.text.primary};
     }
   `,
 
