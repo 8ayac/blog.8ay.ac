@@ -470,7 +470,7 @@ bluhbluhbluh",
         </WrapperHeader>
       </BodyHeader>
     </ArticleHeader>
-    <MarkdownRender
+    <MarkdownRenderer
       content="## test
 
 bluhbluhbluh"
@@ -688,7 +688,7 @@ bluhbluhbluh"
           </ReactMarkdown>
         </div>
       </ConvertedMdBody>
-    </MarkdownRender>
+    </MarkdownRenderer>
   </ArticlePage>
 </ThemeProvider>
 `;
