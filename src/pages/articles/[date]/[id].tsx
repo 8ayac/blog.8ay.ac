@@ -45,7 +45,7 @@ const ArticlePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   return (
     <>
       <ArticleHeader article={article} />
-      <MarkdownRenderer content={article.attributes.body} />
+      <MarkdownRenderer content={article.body} />
     </>
   );
 };
