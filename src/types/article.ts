@@ -1,3 +1,10 @@
+export type ArticleChangeLog = {
+  id: string;
+  date: Date;
+  author: string;
+  description: string;
+};
+
 export type ArticleAttributes = {
   id: string;
   title: string;
@@ -9,4 +16,5 @@ export type ArticleAttributes = {
 export type Article = {
   attributes: ArticleAttributes;
   body: string;
+  changeLogs?: ArticleChangeLog[];
 };

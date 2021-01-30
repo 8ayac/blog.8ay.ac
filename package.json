@@ -32,6 +32,7 @@
     "@types/prismjs": "^1.16.2",
     "babel-plugin-prismjs": "^2.0.1",
     "dayjs": "^1.9.3",
+    "gitlog": "^4.0.4",
     "moment": "^2.29.1",
     "next": "^10.0.5",
     "prismjs": "^1.23.0",
