@@ -1,4 +1,4 @@
-export type ArticleAttribute = {
+export type ArticleAttributes = {
   id: string;
   title: string;
   publishedAt: Date | string;
@@ -6,6 +6,6 @@ export type ArticleAttribute = {
   tags: string[];
 };
 
-export type Article = ArticleAttribute & {
+export type Article = ArticleAttributes & {
   body: string;
 };
