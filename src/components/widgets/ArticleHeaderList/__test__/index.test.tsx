@@ -8,27 +8,33 @@ import React from 'react';
 describe('ArticleHeaderList', () => {
   const testArticles = [
     {
-      id: 'test-article-01',
-      title: 'Test Title 01',
-      tags: ['test01'],
-      publishedAt: new Date('2021-01-01T00:00:00.000Z'),
-      updatedAt: new Date('2021-01-01T00:00:00.000Z'),
+      attributes: {
+        id: 'test-article-01',
+        title: 'Test Title 01',
+        tags: ['test01'],
+        publishedAt: new Date('2021-01-01T00:00:00.000Z'),
+        updatedAt: new Date('2021-01-01T00:00:00.000Z'),
+      },
       body: 'bluhbluhbluh',
     },
     {
-      id: 'test-article-02',
-      title: 'Test Title 02',
-      tags: ['test02'],
-      publishedAt: new Date('2021-02-02T00:00:00.000Z'),
-      updatedAt: new Date('2021-02-02T00:00:00.000Z'),
+      attributes: {
+        id: 'test-article-02',
+        title: 'Test Title 02',
+        tags: ['test02'],
+        publishedAt: new Date('2021-02-02T00:00:00.000Z'),
+        updatedAt: new Date('2021-02-02T00:00:00.000Z'),
+      },
       body: 'bluhbluhbluh',
     },
     {
-      id: 'test-article-03',
-      title: 'Test Title 03',
-      tags: ['test03'],
-      publishedAt: new Date('2021-03-03T00:00:00.000Z'),
-      updatedAt: new Date('2021-03-03T00:00:00.000Z'),
+      attributes: {
+        id: 'test-article-03',
+        title: 'Test Title 03',
+        tags: ['test03'],
+        publishedAt: new Date('2021-03-03T00:00:00.000Z'),
+        updatedAt: new Date('2021-03-03T00:00:00.000Z'),
+      },
       body: 'bluhbluhbluh',
     },
   ];
@@ -54,13 +60,16 @@ describe('ArticleHeaderList', () => {
         wrapper.find('ArticleHeaderWrapperDiv').find('ArticleHeader')
       ).toHaveLength(3);
       expect(
-        (wrapper.find('ArticleHeader').at(0).prop('article') as Article).id
+        (wrapper.find('ArticleHeader').at(0).prop('article') as Article)
+          .attributes.id
       ).toBe('test-article-03');
       expect(
-        (wrapper.find('ArticleHeader').at(1).prop('article') as Article).id
+        (wrapper.find('ArticleHeader').at(1).prop('article') as Article)
+          .attributes.id
       ).toBe('test-article-02');
       expect(
-        (wrapper.find('ArticleHeader').at(2).prop('article') as Article).id
+        (wrapper.find('ArticleHeader').at(2).prop('article') as Article)
+          .attributes.id
       ).toBe('test-article-01');
     });
   });

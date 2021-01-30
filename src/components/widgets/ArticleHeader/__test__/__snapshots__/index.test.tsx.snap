@@ -178,16 +178,18 @@ exports[`ArticleHeader is rendered correctly  to match the snapshot 1`] = `
   <ArticleHeader
     article={
       Object {
+        "attributes": Object {
+          "id": "test-article",
+          "publishedAt": 2000-01-01T00:00:00.000Z,
+          "tags": Array [
+            "test-tag1",
+            "test-tag2",
+            "test-tag3",
+          ],
+          "title": "Test Title",
+          "updatedAt": 2000-02-02T00:00:00.000Z,
+        },
         "body": "Test Body",
-        "id": "test-article",
-        "publishedAt": 2000-01-01T00:00:00.000Z,
-        "tags": Array [
-          "test-tag1",
-          "test-tag2",
-          "test-tag3",
-        ],
-        "title": "Test Title",
-        "updatedAt": 2000-02-02T00:00:00.000Z,
       }
     }
   >

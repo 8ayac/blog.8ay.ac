@@ -7,11 +7,13 @@ import React from 'react';
 
 describe('ArticleHeader', () => {
   const testArticleData: Article = {
-    id: 'test-article',
-    title: 'Test Title',
-    publishedAt: new Date('2000-01-01T00:00:00.000Z'),
-    updatedAt: new Date('2000-02-02T00:00:00.000Z'),
-    tags: ['test-tag1', 'test-tag2', 'test-tag3'],
+    attributes: {
+      id: 'test-article',
+      title: 'Test Title',
+      publishedAt: new Date('2000-01-01T00:00:00.000Z'),
+      updatedAt: new Date('2000-02-02T00:00:00.000Z'),
+      tags: ['test-tag1', 'test-tag2', 'test-tag3'],
+    },
     body: `Test Body`,
   };
 

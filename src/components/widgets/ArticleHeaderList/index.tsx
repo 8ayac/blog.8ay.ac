@@ -32,7 +32,7 @@ export const ArticleHeaderList: React.FC<{ articles: Article[] }> = ({
           )
           .reverse()
           .map((article) => (
-            <ArticleHeader key={article.id} article={article} />
+            <ArticleHeader key={article.attributes.id} article={article} />
           ))}
       </S.ArticleHeaderWrapperDiv>
     </S.ComponentWrapperDiv>

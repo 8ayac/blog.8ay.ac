@@ -1,6 +1,6 @@
 import path from 'path';
 import { ARTICLES_DIR, CONTENT_OUTPUT_DIR } from '@/src/constants/forBuilder';
-import { Article, ArticleAttributes } from '@/src/types/article';
+import { ArticleAttributes } from '@/src/types/article';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import fm from 'front-matter';
 // eslint-disable-next-line import/no-extraneous-dependencies
@@ -13,26 +13,15 @@ export const getDirNamesIn = (dir: string): string[] => {
     .map((dirent) => dirent.name);
 };
 
-export const parseMarkdownWithMeta = (rawMdContent: string): Article => {
+export const parseMarkdownWithMeta = (
+  rawMdContent: string
+): { attributes: ArticleAttributes; body: string } => {
   const parsed = fm(rawMdContent);
 
-  const {
-    id,
-    title,
-    publishedAt,
-    updatedAt,
-    tags,
-  } = parsed.attributes as ArticleAttributes;
+  const attributes = parsed.attributes as ArticleAttributes;
   const { body } = parsed;
 
-  return {
-    id,
-    title,
-    publishedAt,
-    updatedAt,
-    tags,
-    body,
-  } as Article;
+  return { attributes, body };
 };
 
 export const copyImagesToPublic = (
@@ -41,7 +30,7 @@ export const copyImagesToPublic = (
 ): void => {
   const articleId = parseMarkdownWithMeta(
     fs.readFileSync(path.join(articleDir, 'index.md')).toString()
-  ).id;
+  ).attributes.id;
   const srcDir = path.join(articleDir, 'img', articleId);
   const outputDir = path.join(
     publicDir ?? 'public',
@@ -77,7 +66,8 @@ export const generateArticlesJson = (
 
   allArticleData.sort(
     (a, b) =>
-      new Date(a.publishedAt).getTime() - new Date(b.publishedAt).getTime()
+      new Date(a.attributes.publishedAt).getTime() -
+      new Date(b.attributes.publishedAt).getTime()
   );
   fs.ensureDirSync(outputDir);
   fs.writeJsonSync(path.join(outputDir, outputFileName), allArticleData);
