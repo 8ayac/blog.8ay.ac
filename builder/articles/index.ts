@@ -38,12 +38,18 @@ export const getChangeLog = (
   } as const;
   const gitCommits = gitlog(gitOption);
 
-  return gitCommits.map((commit) => ({
+  const log = gitCommits.map((commit) => ({
     id: commit.abbrevHash,
     date: new Date(commit.authorDate),
     description: commit.subject,
     author: commit.authorName,
   })) as ArticleChangeLog[];
+
+  if (/^(:.+?:\s*)?PUBLISH ARTICLE$/.test(log[0]?.description)) {
+    log.splice(0, 1);
+  }
+
+  return log;
 };
 
 export const copyImagesToPublic = (
