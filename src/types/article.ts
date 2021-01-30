@@ -1,6 +1,6 @@
 export type ArticleChangeLog = {
   id: string;
-  date: Date;
+  date: Date | string;
   author: string;
   description: string;
 };
