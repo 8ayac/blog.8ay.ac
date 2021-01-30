@@ -1,10 +1,11 @@
 import path from 'path';
 import { ARTICLES_DIR, CONTENT_OUTPUT_DIR } from '@/src/constants/forBuilder';
-import { ArticleAttributes } from '@/src/types/article';
+import { ArticleAttributes, ArticleChangeLog } from '@/src/types/article';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import fm from 'front-matter';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import fs from 'fs-extra';
+import gitlog from 'gitlog';
 
 export const getDirNamesIn = (dir: string): string[] => {
   return fs
@@ -22,6 +23,27 @@ export const parseMarkdownWithMeta = (
   const { body } = parsed;
 
   return { attributes, body };
+};
+
+export const getChangeLog = (
+  gitBranch: string,
+  articleDirPath: string
+): ArticleChangeLog[] => {
+  const gitOption = {
+    repo: '.',
+    branch: gitBranch,
+    file: articleDirPath,
+    fields: ['abbrevHash', 'authorDate', 'subject', 'authorName'],
+    nameStatus: false,
+  } as const;
+  const gitCommits = gitlog(gitOption);
+
+  return gitCommits.map((commit) => ({
+    id: commit.abbrevHash,
+    date: new Date(commit.authorDate),
+    description: commit.subject,
+    author: commit.authorName,
+  })) as ArticleChangeLog[];
 };
 
 export const copyImagesToPublic = (
@@ -60,9 +82,12 @@ export const generateArticlesJson = (
   const eachArticlePath = getDirNamesIn(articlesDir).map((dirName) =>
     path.join(articlesDir, dirName)
   );
-  const allArticleData = eachArticlePath.map((p) =>
-    parseMarkdownWithMeta(fs.readFileSync(path.join(p, 'index.md')).toString())
-  );
+  const allArticleData = eachArticlePath.map((p) => ({
+    ...parseMarkdownWithMeta(
+      fs.readFileSync(path.join(p, 'index.md')).toString()
+    ),
+    changeLogs: getChangeLog('main', p),
+  }));
 
   allArticleData.sort(
     (a, b) =>

@@ -1,11 +1,29 @@
 import * as fs from 'fs';
 import path from 'path';
 import {
-  generateArticlesJson,
   copyImagesToPublic,
+  generateArticlesJson,
   getDirNamesIn,
   parseMarkdownWithMeta,
 } from '@/builder/articles';
+
+jest.mock('gitlog', () => ({
+  __esModule: true,
+  default: jest.fn(() => [
+    {
+      abbrevHash: '0000001',
+      authorDate: '2021-01-02 03:04:05 +0000',
+      subject: 'this is a test commit 01',
+      authorName: '8ayac',
+    },
+    {
+      abbrevHash: '0000002',
+      authorDate: '2021-06-07 08:09:10 +000',
+      subject: 'this is a test commit 02',
+      authorName: '8ayac',
+    },
+  ]),
+}));
 
 const readFileSyncAsJSON = (fpath: string) => {
   return JSON.parse(fs.readFileSync(fpath, { encoding: 'utf8' }));
@@ -39,6 +57,12 @@ describe('parseMarkdownWithMeta', () => {
       },
       body: /^##\sexample1-1(\r?\n){2}bluhbluhbluh(\r?\n){2}##\slink(\r?\n){2}-\s<https:\/\/8ay\.ac>(\r?\n){2}##\simage(\r?\n){2}!\[blue]\(img\/blue\.png\)(\r?\n)!\[red]\(img\/red\.png\)(\r?\n)+$/,
     });
+  });
+});
+
+describe('getChangeLog', () => {
+  it.skip('can get the correct log', () => {
+    // TODO: Implement me!
   });
 });
 
@@ -92,6 +116,20 @@ describe('generateArticlesJson', () => {
           tags: ['example1-1', 'example1-2', 'example1-3'],
         },
         body: /^##\sexample1-1(\r?\n){2}bluhbluhbluh(\r?\n){2}##\slink(\r?\n){2}-\s<https:\/\/8ay\.ac>(\r?\n){2}##\simage(\r?\n){2}!\[blue]\(img\/blue\.png\)(\r?\n)!\[red]\(img\/red\.png\)(\r?\n)+$/,
+        changeLogs: [
+          {
+            author: '8ayac',
+            date: '2021-01-02T03:04:05.000Z',
+            description: 'this is a test commit 01',
+            id: '0000001',
+          },
+          {
+            author: '8ayac',
+            date: '2021-06-07T08:09:10.000Z',
+            description: 'this is a test commit 02',
+            id: '0000002',
+          },
+        ],
       },
       {
         attributes: {
@@ -102,6 +140,20 @@ describe('generateArticlesJson', () => {
           tags: ['example2-1', 'example2-2', 'example2-3'],
         },
         body: /^##\sexample2-1(\r?\n){2}bluhbluhbluh(\r?\n){2}##\slink(\r?\n){2}-\s<https:\/\/8ay\.ac>(\r?\n){2}##\simage(\r?\n){2}!\[blue]\(img\/blue02\.png\)(\r?\n)!\[red]\(img\/red02\.png\)(\r?\n)+$/,
+        changeLogs: [
+          {
+            author: '8ayac',
+            date: '2021-01-02T03:04:05.000Z',
+            description: 'this is a test commit 01',
+            id: '0000001',
+          },
+          {
+            author: '8ayac',
+            date: '2021-06-07T08:09:10.000Z',
+            description: 'this is a test commit 02',
+            id: '0000002',
+          },
+        ],
       },
       {
         attributes: {
@@ -112,6 +164,20 @@ describe('generateArticlesJson', () => {
           tags: ['example3-1', 'example3-2', 'example3-3'],
         },
         body: /^##\sexample3-1(\r?\n){2}bluhbluhbluh(\r?\n){2}##\slink(\r?\n){2}-\s<https:\/\/8ay\.ac>(\r?\n){2}##\simage(\r?\n){2}!\[blue]\(img\/blue03\.png\)(\r?\n)!\[red]\(img\/red03\.png\)(\r?\n)+$/,
+        changeLogs: [
+          {
+            author: '8ayac',
+            date: '2021-01-02T03:04:05.000Z',
+            description: 'this is a test commit 01',
+            id: '0000001',
+          },
+          {
+            author: '8ayac',
+            date: '2021-06-07T08:09:10.000Z',
+            description: 'this is a test commit 02',
+            id: '0000002',
+          },
+        ],
       },
     ]);
   });
