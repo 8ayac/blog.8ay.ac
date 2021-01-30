@@ -44,6 +44,7 @@ export const getChangeLog = (
     description: commit.subject,
     author: commit.authorName,
   })) as ArticleChangeLog[];
+  log.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
 
   if (/^(:.+?:\s*)?PUBLISH ARTICLE$/.test(log[0]?.description)) {
     log.splice(0, 1);
