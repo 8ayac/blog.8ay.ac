@@ -43,27 +43,31 @@ const getGitCommitUrl = (commitId: string): string => {
   return urljoin(REPOSITORY_URL, 'commit', commitId);
 };
 
-const LogList: React.FC<{ log: ArticleChangeLog[] }> = ({ log }) => (
-  <S.LogList>
-    {log.map((record) => (
-      <S.LogListItem key={record.id}>
-        <S.UpdateDateTime>{record.date.toISOString()}</S.UpdateDateTime>{' '}
-        <S.UpdateDescriptionSpan>
-          {removeGitCommitPrefix(record.description)}
-        </S.UpdateDescriptionSpan>{' '}
-        (
-        <S.ToGitHubCommitAnchor
-          href={getGitCommitUrl(record.id)}
-          target="_blank"
-          rel="noopener"
-        >
-          #{record.id}
-        </S.ToGitHubCommitAnchor>{' '}
-        by {record.author})
-      </S.LogListItem>
-    ))}
-  </S.LogList>
-);
+const LogList: React.FC<{ log: ArticleChangeLog[] }> = ({ log }) => {
+  return (
+    <S.LogList>
+      {log.map((record) => (
+        <S.LogListItem key={record.id}>
+          <S.UpdateDateTime>
+            {new Date(record.date).toISOString()}
+          </S.UpdateDateTime>{' '}
+          <S.UpdateDescriptionSpan>
+            {removeGitCommitPrefix(record.description)}
+          </S.UpdateDescriptionSpan>{' '}
+          (
+          <S.ToGitHubCommitAnchor
+            href={getGitCommitUrl(record.id)}
+            target="_blank"
+            rel="noopener"
+          >
+            #{record.id}
+          </S.ToGitHubCommitAnchor>{' '}
+          by {record.author})
+        </S.LogListItem>
+      ))}
+    </S.LogList>
+  );
+};
 
 export const ArticleRevisionRecordList: React.FC<{
   log: ArticleChangeLog[];
