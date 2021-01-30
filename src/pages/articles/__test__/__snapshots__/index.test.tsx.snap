@@ -189,24 +189,28 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
     articles={
       Array [
         Object {
-          "body": "bluhbluhbluh",
-          "id": "test-article-02",
-          "publishedAt": 2021-02-02T00:00:00.000Z,
-          "tags": Array [
-            "test02",
-          ],
-          "title": "Test Title 02",
-          "updatedAt": 2021-02-02T00:00:00.000Z,
+          "attributes": Object {
+            "body": "bluhbluhbluh",
+            "id": "test-article-02",
+            "publishedAt": 2021-02-02T00:00:00.000Z,
+            "tags": Array [
+              "test02",
+            ],
+            "title": "Test Title 02",
+            "updatedAt": 2021-02-02T00:00:00.000Z,
+          },
         },
         Object {
-          "body": "bluhbluhbluh",
-          "id": "test-article-01",
-          "publishedAt": 2021-01-01T00:00:00.000Z,
-          "tags": Array [
-            "test01",
-          ],
-          "title": "Test Title 01",
-          "updatedAt": 2021-01-01T00:00:00.000Z,
+          "attributes": Object {
+            "body": "bluhbluhbluh",
+            "id": "test-article-01",
+            "publishedAt": 2021-01-01T00:00:00.000Z,
+            "tags": Array [
+              "test01",
+            ],
+            "title": "Test Title 01",
+            "updatedAt": 2021-01-01T00:00:00.000Z,
+          },
         },
       ]
     }
@@ -232,24 +236,28 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
       articles={
         Array [
           Object {
-            "body": "bluhbluhbluh",
-            "id": "test-article-02",
-            "publishedAt": 2021-02-02T00:00:00.000Z,
-            "tags": Array [
-              "test02",
-            ],
-            "title": "Test Title 02",
-            "updatedAt": 2021-02-02T00:00:00.000Z,
+            "attributes": Object {
+              "body": "bluhbluhbluh",
+              "id": "test-article-02",
+              "publishedAt": 2021-02-02T00:00:00.000Z,
+              "tags": Array [
+                "test02",
+              ],
+              "title": "Test Title 02",
+              "updatedAt": 2021-02-02T00:00:00.000Z,
+            },
           },
           Object {
-            "body": "bluhbluhbluh",
-            "id": "test-article-01",
-            "publishedAt": 2021-01-01T00:00:00.000Z,
-            "tags": Array [
-              "test01",
-            ],
-            "title": "Test Title 01",
-            "updatedAt": 2021-01-01T00:00:00.000Z,
+            "attributes": Object {
+              "body": "bluhbluhbluh",
+              "id": "test-article-01",
+              "publishedAt": 2021-01-01T00:00:00.000Z,
+              "tags": Array [
+                "test01",
+              ],
+              "title": "Test Title 01",
+              "updatedAt": 2021-01-01T00:00:00.000Z,
+            },
           },
         ]
       }
@@ -265,14 +273,16 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
               <ArticleHeader
                 article={
                   Object {
-                    "body": "bluhbluhbluh",
-                    "id": "test-article-02",
-                    "publishedAt": 2021-02-02T00:00:00.000Z,
-                    "tags": Array [
-                      "test02",
-                    ],
-                    "title": "Test Title 02",
-                    "updatedAt": 2021-02-02T00:00:00.000Z,
+                    "attributes": Object {
+                      "body": "bluhbluhbluh",
+                      "id": "test-article-02",
+                      "publishedAt": 2021-02-02T00:00:00.000Z,
+                      "tags": Array [
+                        "test02",
+                      ],
+                      "title": "Test Title 02",
+                      "updatedAt": 2021-02-02T00:00:00.000Z,
+                    },
                   }
                 }
                 key="test-article-02"
@@ -535,14 +545,16 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
               <ArticleHeader
                 article={
                   Object {
-                    "body": "bluhbluhbluh",
-                    "id": "test-article-01",
-                    "publishedAt": 2021-01-01T00:00:00.000Z,
-                    "tags": Array [
-                      "test01",
-                    ],
-                    "title": "Test Title 01",
-                    "updatedAt": 2021-01-01T00:00:00.000Z,
+                    "attributes": Object {
+                      "body": "bluhbluhbluh",
+                      "id": "test-article-01",
+                      "publishedAt": 2021-01-01T00:00:00.000Z,
+                      "tags": Array [
+                        "test01",
+                      ],
+                      "title": "Test Title 01",
+                      "updatedAt": 2021-01-01T00:00:00.000Z,
+                    },
                   }
                 }
                 key="test-article-01"

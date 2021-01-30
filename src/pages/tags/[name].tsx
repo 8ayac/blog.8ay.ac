@@ -12,7 +12,7 @@ import React from 'react';
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const tagsList = (jsonArticles as Article[]).map((article) => {
-    return article.tags;
+    return article.attributes.tags;
   });
   const tmp = tagsList.flat();
   const paths = tmp.map((name) => {
@@ -35,8 +35,8 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   return {
     props: {
       name,
-      filteredArticles: (jsonArticles as Article[]).filter((v) =>
-        v.tags?.includes(name)
+      filteredArticles: (jsonArticles as Article[]).filter((article) =>
+        article.attributes.tags?.includes(name)
       ),
     },
   };

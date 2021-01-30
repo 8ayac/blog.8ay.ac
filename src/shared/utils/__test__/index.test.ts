@@ -8,11 +8,13 @@ import {
 describe('getArticlePagePath', () => {
   it('returns a proper path when given data with a UTC date.', () => {
     const testArticle = {
-      id: 'test01',
-      title: 'test title',
-      tags: [],
-      publishedAt: new Date('2000-01-01T00:00:00.000Z'),
-      updatedAt: new Date('2000-12-31T00:00:00.000Z'),
+      attributes: {
+        id: 'test01',
+        title: 'test title',
+        tags: [],
+        publishedAt: new Date('2000-01-01T00:00:00.000Z'),
+        updatedAt: new Date('2000-12-31T00:00:00.000Z'),
+      },
       body: 'bluhbluhbluh',
     };
     expect(getArticlePagePath(testArticle)).toEqual(
@@ -22,11 +24,13 @@ describe('getArticlePagePath', () => {
 
   it('returns a proper path when given data with a JST date.', () => {
     const testArticle = {
-      id: 'test01',
-      title: 'test title',
-      tags: [],
-      publishedAt: new Date('2000-01-01T00:00:00.000Z'),
-      updatedAt: new Date('2000-12-31T00:00:00.000Z'),
+      attributes: {
+        id: 'test01',
+        title: 'test title',
+        tags: [],
+        publishedAt: new Date('2000-01-01T00:00:00.000Z'),
+        updatedAt: new Date('2000-12-31T00:00:00.000Z'),
+      },
       body: 'bluhbluhbluh',
     };
     expect(getArticlePagePath(testArticle)).toEqual(
@@ -56,27 +60,33 @@ describe('getNumberOfArticlesWithATag', () => {
   const testCategories = ['test-cat01', 'test-cat02', 'test-cat03'];
   const testArticles = [
     {
-      id: 'test-article-01',
-      title: 'Test Title 01',
-      tags: testCategories.slice(0, 3),
-      publishedAt: new Date('2021-01-01T00:00:00.000Z'),
-      updatedAt: new Date('2021-01-01T00:00:00.000Z'),
+      attributes: {
+        id: 'test-article-01',
+        title: 'Test Title 01',
+        tags: testCategories.slice(0, 3),
+        publishedAt: new Date('2021-01-01T00:00:00.000Z'),
+        updatedAt: new Date('2021-01-01T00:00:00.000Z'),
+      },
       body: 'bluhbluhbluh',
     },
     {
-      id: 'test-article-02',
-      title: 'Test Title 02',
-      tags: testCategories.slice(0, 2),
-      publishedAt: new Date('2021-02-02T00:00:00.000Z'),
-      updatedAt: new Date('2021-02-02T00:00:00.000Z'),
+      attributes: {
+        id: 'test-article-02',
+        title: 'Test Title 02',
+        tags: testCategories.slice(0, 2),
+        publishedAt: new Date('2021-02-02T00:00:00.000Z'),
+        updatedAt: new Date('2021-02-02T00:00:00.000Z'),
+      },
       body: 'bluhbluhbluh',
     },
     {
-      id: 'test-article-03',
-      title: 'Test Title 03',
-      tags: testCategories.slice(0, 1),
-      publishedAt: new Date('2021-03-03T00:00:00.000Z'),
-      updatedAt: new Date('2021-03-03T00:00:00.000Z'),
+      attributes: {
+        id: 'test-article-03',
+        title: 'Test Title 03',
+        tags: testCategories.slice(0, 1),
+        publishedAt: new Date('2021-03-03T00:00:00.000Z'),
+        updatedAt: new Date('2021-03-03T00:00:00.000Z'),
+      },
       body: 'bluhbluhbluh',
     },
   ];
@@ -112,27 +122,33 @@ describe('getArticlesWithATag', () => {
   const testCategories = ['test-cat01', 'test-cat02', 'test-cat03'];
   const testArticles = [
     {
-      id: 'test-article-01',
-      title: 'Test Title 01',
-      tags: testCategories.slice(0, 3),
-      publishedAt: new Date('2021-01-01T00:00:00.000Z'),
-      updatedAt: new Date('2021-01-01T00:00:00.000Z'),
+      attributes: {
+        id: 'test-article-01',
+        title: 'Test Title 01',
+        tags: testCategories.slice(0, 3),
+        publishedAt: new Date('2021-01-01T00:00:00.000Z'),
+        updatedAt: new Date('2021-01-01T00:00:00.000Z'),
+      },
       body: 'bluhbluhbluh',
     },
     {
-      id: 'test-article-02',
-      title: 'Test Title 02',
-      tags: testCategories.slice(0, 2),
-      publishedAt: new Date('2021-02-02T00:00:00.000Z'),
-      updatedAt: new Date('2021-02-02T00:00:00.000Z'),
+      attributes: {
+        id: 'test-article-02',
+        title: 'Test Title 02',
+        tags: testCategories.slice(0, 2),
+        publishedAt: new Date('2021-02-02T00:00:00.000Z'),
+        updatedAt: new Date('2021-02-02T00:00:00.000Z'),
+      },
       body: 'bluhbluhbluh',
     },
     {
-      id: 'test-article-03',
-      title: 'Test Title 03',
-      tags: testCategories.slice(0, 1),
-      publishedAt: new Date('2021-03-03T00:00:00.000Z'),
-      updatedAt: new Date('2021-03-03T00:00:00.000Z'),
+      attributes: {
+        id: 'test-article-03',
+        title: 'Test Title 03',
+        tags: testCategories.slice(0, 1),
+        publishedAt: new Date('2021-03-03T00:00:00.000Z'),
+        updatedAt: new Date('2021-03-03T00:00:00.000Z'),
+      },
       body: 'bluhbluhbluh',
     },
   ];
@@ -142,16 +158,16 @@ describe('getArticlesWithATag', () => {
       const result = getArticlesWithATag(testCategories[0], testArticles);
 
       expect(result).toHaveLength(3);
-      expect(result[0].id).toBe('test-article-01');
-      expect(result[1].id).toBe('test-article-02');
-      expect(result[2].id).toBe('test-article-03');
+      expect(result[0].attributes.id).toBe('test-article-01');
+      expect(result[1].attributes.id).toBe('test-article-02');
+      expect(result[2].attributes.id).toBe('test-article-03');
     });
 
     test('returns only test-article01', () => {
       const result = getArticlesWithATag(testCategories[2], testArticles);
 
       expect(result).toHaveLength(1);
-      expect(result[0].id).toBe('test-article-01');
+      expect(result[0].attributes.id).toBe('test-article-01');
     });
 
     test('returns nothing', () => {

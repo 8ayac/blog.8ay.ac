@@ -30,8 +30,11 @@ const S = {
 export const ArticleHeader: React.FC<{ article: Article }> = ({ article }) => {
   const date = (
     <S.DateTimeWrapperDiv>
-      <DateTime date={article.publishedAt} description="Published At" />
-      <DateTime date={article.updatedAt} description="Updated At" />
+      <DateTime
+        date={article.attributes.publishedAt}
+        description="Published At"
+      />
+      <DateTime date={article.attributes.updatedAt} description="Updated At" />
     </S.DateTimeWrapperDiv>
   );
   const tags = (
@@ -45,13 +48,13 @@ export const ArticleHeader: React.FC<{ article: Article }> = ({ article }) => {
           color: ${theme.color.text.primaryLight};
         `}
       />
-      <CategoryTagList tags={article.tags} />
+      <CategoryTagList tags={article.attributes.tags} />
     </S.TagListWrapperDiv>
   );
 
   return (
     <BodyHeader
-      title={article.title}
+      title={article.attributes.title}
       linkTo={getArticlePagePath(article)}
       beforeTitle={date}
       afterTitle={tags}

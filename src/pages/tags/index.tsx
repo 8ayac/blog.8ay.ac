@@ -18,7 +18,9 @@ export const getStaticProps: GetStaticProps = async () => {
       articles: jsonArticles as Article[],
       tags: [
         ...new Set(
-          (jsonArticles as Article[]).map((article) => article.tags).flat()
+          (jsonArticles as Article[])
+            .map((article) => article.attributes.tags)
+            .flat()
         ),
       ].sort(),
     },

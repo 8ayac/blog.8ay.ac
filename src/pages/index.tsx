@@ -36,7 +36,9 @@ const TopPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
       <S.TagListSection>
         <BodyHeader title="Tags" />
         <CategoryTagList
-          tags={(articles as Article[]).map((article) => article.tags).flat()}
+          tags={(articles as Article[])
+            .map((article) => article.attributes.tags)
+            .flat()}
         />
       </S.TagListSection>
     </>

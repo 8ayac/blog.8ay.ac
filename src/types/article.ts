@@ -6,6 +6,7 @@ export type ArticleAttributes = {
   tags: string[];
 };
 
-export type Article = ArticleAttributes & {
+export type Article = {
+  attributes: ArticleAttributes;
   body: string;
 };

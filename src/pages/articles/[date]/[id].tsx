@@ -15,10 +15,10 @@ export const getStaticPaths: GetStaticPaths = async () => {
   const paths = (jsonArticles as Article[]).map((article) => {
     return {
       params: {
-        date: moment(new Date(article.publishedAt).toISOString())
+        date: moment(new Date(article.attributes.publishedAt).toISOString())
           .utc()
           .format('YYYY-MM-DD'),
-        id: article.id,
+        id: article.attributes.id,
       },
     };
   });
@@ -32,7 +32,9 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   return {
     props: {
-      article: (jsonArticles as Article[]).find((v) => v.id === params?.id),
+      article: (jsonArticles as Article[]).find(
+        (article) => article.attributes.id === params?.id
+      ),
     },
   };
 };
@@ -43,7 +45,7 @@ const ArticlePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   return (
     <>
       <ArticleHeader article={article} />
-      <MarkdownRenderer content={article.body} />
+      <MarkdownRenderer content={article.attributes.body} />
     </>
   );
 };
