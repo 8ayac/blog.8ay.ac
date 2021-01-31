@@ -66,17 +66,25 @@ describe('BlogTitle', () => {
       </ThemeProvider>
     );
 
-    test('in ComponentWrapperDiv', () => {
-      expect(wrapper.find('ComponentWrapperDiv')).toHaveStyleRule(
+    test('in LogoWrapperAnchor', () => {
+      expect(wrapper.find('LogoWrapperAnchor')).toHaveStyleRule(
+        'color',
+        'inherit'
+      );
+      expect(wrapper.find('LogoWrapperAnchor')).toHaveStyleRule(
+        'text-decoration',
+        'none'
+      );
+      expect(wrapper.find('LogoWrapperAnchor')).toHaveStyleRule(
         'cursor',
         'pointer'
       );
-      expect(wrapper.find('ComponentWrapperDiv')).toHaveStyleRule(
+      expect(wrapper.find('LogoWrapperAnchor')).toHaveStyleRule(
         'user-select',
         'none'
       );
 
-      expect(wrapper.find('ComponentWrapperDiv')).toHaveStyleRule(
+      expect(wrapper.find('LogoWrapperAnchor')).toHaveStyleRule(
         'color',
         `${theme.color.yellow.base}`,
         { target: ':hover' }
@@ -95,7 +103,7 @@ describe('BlogTitle', () => {
 
       expect(wrapper.find('SubtitleSpan')).toHaveStyleRule(
         'font-size',
-        '1.4rem'
+        '1.7rem'
       );
     });
   });

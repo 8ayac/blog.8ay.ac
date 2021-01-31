@@ -3,7 +3,9 @@ import Link from 'next/link';
 import React from 'react';
 
 const S = {
-  ComponentWrapperDiv: styled.div`
+  LogoWrapperAnchor: styled.a`
+    color: inherit;
+    text-decoration: none;
     cursor: pointer;
     user-select: none;
 
@@ -18,9 +20,19 @@ const S = {
 
   SubtitleSpan: styled.span`
     margin-left: 0.5rem;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
   `,
 };
+
+const Logo: React.FC<{ title: string; subtitle: string; color?: string }> = ({
+  title,
+  subtitle,
+}) => (
+  <>
+    <S.TitleSpan>{title}</S.TitleSpan>
+    <S.SubtitleSpan>{subtitle}</S.SubtitleSpan>
+  </>
+);
 
 export const BlogTitle: React.FC<{
   title: string;
@@ -28,16 +40,14 @@ export const BlogTitle: React.FC<{
   linkToTopPage?: boolean;
 }> = ({ title, subtitle, linkToTopPage = true }) => (
   <>
-    <S.ComponentWrapperDiv>
-      {linkToTopPage ? (
-        <Link href="/">
-          <S.TitleSpan>{title}</S.TitleSpan>
-        </Link>
-      ) : (
-        <S.TitleSpan>{title}</S.TitleSpan>
-      )}
-
-      <S.SubtitleSpan>{subtitle}</S.SubtitleSpan>
-    </S.ComponentWrapperDiv>
+    {linkToTopPage ? (
+      <Link href="/" passHref>
+        <S.LogoWrapperAnchor>
+          <Logo title={title} subtitle={subtitle} />
+        </S.LogoWrapperAnchor>
+      </Link>
+    ) : (
+      <Logo title={title} subtitle={subtitle} />
+    )}
   </>
 );
