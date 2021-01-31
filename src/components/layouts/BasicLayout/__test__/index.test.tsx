@@ -43,6 +43,7 @@ describe('BasicLayout', () => {
       expect(wContentWrapperDiv).toHaveStyleRule('max-width', '1000px');
       expect(wContentWrapperDiv).toHaveStyleRule('padding', '3rem 10%');
       expect(wContentWrapperDiv).toHaveStyleRule('margin', '3rem auto');
+      expect(wContentWrapperDiv).toHaveStyleRule('font-size', '1.6rem');
       expect(wContentWrapperDiv).toHaveStyleRule('word-break', 'break-word');
       expect(wContentWrapperDiv).toHaveStyleRule('background-color', 'white');
       expect(wContentWrapperDiv).toHaveStyleRule('border-radius', '5px');
