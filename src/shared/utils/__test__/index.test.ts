@@ -3,7 +3,9 @@ import {
   getArticlesWithATag,
   getTagsPagePath,
   getNumberOfArticlesWithATag,
+  getLastModifiedDate,
 } from '@/src/shared/utils';
+import { Article, ArticleAttributes } from '@/src/types';
 
 describe('getArticlePagePath', () => {
   it('returns a proper path when given data with a UTC date.', () => {
@@ -174,5 +176,49 @@ describe('getArticlesWithATag', () => {
       const result = getArticlesWithATag('NO_ONE_HAS_ME', testArticles);
       expect(result).toHaveLength(0);
     });
+  });
+});
+
+describe('getLastModifiedDate', () => {
+  const testArticleData: Article = {
+    attributes: {
+      id: 'example-id',
+      title: 'Example01',
+      publishedAt: new Date('2020-01-02T03:04:56.000Z'),
+      updatedAt: new Date('2021-11-12T13:14:15.000Z'),
+    } as ArticleAttributes,
+    body: '## test\r\n\r\nbluhbluhbluh',
+    changeLogs: [
+      {
+        id: '0000001',
+        date: new Date('2021-01-02T03:04:05.000Z'),
+        description: ':test_prefix: this is a test commit 01',
+        author: '8ayac',
+      },
+      {
+        id: '0000002',
+        date: new Date('2021-06-07T08:09:10.000Z'),
+        description: ':test_prefix: this is a test commit 02',
+        author: '8ayac',
+      },
+      {
+        id: '0000003',
+        date: new Date('2021-11-12T13:14:15.000Z'),
+        description: ':test_prefix: this is a test commit 03',
+        author: '8ayac',
+      },
+    ],
+  };
+
+  it('can get last modified date properly', () => {
+    expect(getLastModifiedDate(testArticleData)).toEqual(
+      new Date('2021-11-12T13:14:15.000Z')
+    );
+  });
+
+  it('returns published date when the log is empty', () => {
+    expect(getLastModifiedDate({ ...testArticleData, changeLogs: [] })).toEqual(
+      new Date('2020-01-02T03:04:56.000Z')
+    );
   });
 });

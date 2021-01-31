@@ -30,3 +30,10 @@ export const getNumberOfArticlesWithATag = (
   return articles.filter((article) => article.attributes.tags.includes(tagName))
     .length;
 };
+
+export const getLastModifiedDate = (article: Article): Date => {
+  const log = article.changeLogs;
+  if (!log || log.length < 1) return new Date(article.attributes.publishedAt);
+
+  return new Date(log[log.length - 1].date);
+};
