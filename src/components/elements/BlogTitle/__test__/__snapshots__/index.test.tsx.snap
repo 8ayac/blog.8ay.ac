@@ -2,6 +2,9 @@
 
 exports[`BlogTitle is rendered correctly to match the snapshot default 1`] = `
 .emotion-0 {
+  color: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -19,7 +22,7 @@ exports[`BlogTitle is rendered correctly to match the snapshot default 1`] = `
 
 .emotion-4 {
   margin-left: 0.5rem;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
 }
 
 <ThemeProvider
@@ -77,59 +80,55 @@ exports[`BlogTitle is rendered correctly to match the snapshot default 1`] = `
     subtitle="Test Subtitle"
     title="Test Title"
   >
-    <ComponentWrapperDiv>
-      <div
-        className="emotion-0 emotion-1"
+    <Link
+      href="/"
+      passHref={true}
+    >
+      <LogoWrapperAnchor
+        href="/"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
       >
-        <Link
+        <a
+          className="emotion-0 emotion-1"
           href="/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
         >
-          <TitleSpan
-            onClick={[Function]}
-            onMouseEnter={[Function]}
+          <Logo
+            subtitle="Test Subtitle"
+            title="Test Title"
           >
-            <span
-              className="emotion-2 emotion-3"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-            >
-              Test Title
-            </span>
-          </TitleSpan>
-        </Link>
-        <SubtitleSpan>
-          <span
-            className="emotion-4 emotion-5"
-          >
-            Test Subtitle
-          </span>
-        </SubtitleSpan>
-      </div>
-    </ComponentWrapperDiv>
+            <TitleSpan>
+              <span
+                className="emotion-2 emotion-3"
+              >
+                Test Title
+              </span>
+            </TitleSpan>
+            <SubtitleSpan>
+              <span
+                className="emotion-4 emotion-5"
+              >
+                Test Subtitle
+              </span>
+            </SubtitleSpan>
+          </Logo>
+        </a>
+      </LogoWrapperAnchor>
+    </Link>
   </BlogTitle>
 </ThemeProvider>
 `;
 
 exports[`BlogTitle is rendered correctly to match the snapshot when set linkToTopPage option to false 1`] = `
 .emotion-0 {
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.emotion-0:hover {
-  color: hsla(60, 72%, 60%);
-}
-
-.emotion-2 {
   font-size: 2.2rem;
 }
 
-.emotion-4 {
+.emotion-2 {
   margin-left: 0.5rem;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
 }
 
 <ThemeProvider
@@ -188,26 +187,25 @@ exports[`BlogTitle is rendered correctly to match the snapshot when set linkToTo
     subtitle="Test Subtitle"
     title="Test Title"
   >
-    <ComponentWrapperDiv>
-      <div
-        className="emotion-0 emotion-1"
-      >
-        <TitleSpan>
-          <span
-            className="emotion-2 emotion-3"
-          >
-            Test Title
-          </span>
-        </TitleSpan>
-        <SubtitleSpan>
-          <span
-            className="emotion-4 emotion-5"
-          >
-            Test Subtitle
-          </span>
-        </SubtitleSpan>
-      </div>
-    </ComponentWrapperDiv>
+    <Logo
+      subtitle="Test Subtitle"
+      title="Test Title"
+    >
+      <TitleSpan>
+        <span
+          className="emotion-0 emotion-1"
+        >
+          Test Title
+        </span>
+      </TitleSpan>
+      <SubtitleSpan>
+        <span
+          className="emotion-2 emotion-3"
+        >
+          Test Subtitle
+        </span>
+      </SubtitleSpan>
+    </Logo>
   </BlogTitle>
 </ThemeProvider>
 `;

@@ -46,6 +46,9 @@ exports[`BasicLayout is rendered correctly to match the snapshot 1`] = `
 }
 
 .emotion-6 {
+  color: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -63,7 +66,7 @@ exports[`BasicLayout is rendered correctly to match the snapshot 1`] = `
 
 .emotion-10 {
   margin-left: 0.5rem;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
 }
 
 .emotion-12 {
@@ -196,35 +199,43 @@ exports[`BasicLayout is rendered correctly to match the snapshot 1`] = `
                     subtitle="8ayac's blog"
                     title="もしくはこれ"
                   >
-                    <ComponentWrapperDiv>
-                      <div
-                        className="emotion-6 emotion-7"
+                    <Link
+                      href="/"
+                      passHref={true}
+                    >
+                      <LogoWrapperAnchor
+                        href="/"
+                        onClick={[Function]}
+                        onMouseEnter={[Function]}
                       >
-                        <Link
+                        <a
+                          className="emotion-6 emotion-7"
                           href="/"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
                         >
-                          <TitleSpan
-                            onClick={[Function]}
-                            onMouseEnter={[Function]}
+                          <Logo
+                            subtitle="8ayac's blog"
+                            title="もしくはこれ"
                           >
-                            <span
-                              className="emotion-8 emotion-9"
-                              onClick={[Function]}
-                              onMouseEnter={[Function]}
-                            >
-                              もしくはこれ
-                            </span>
-                          </TitleSpan>
-                        </Link>
-                        <SubtitleSpan>
-                          <span
-                            className="emotion-10 emotion-11"
-                          >
-                            8ayac's blog
-                          </span>
-                        </SubtitleSpan>
-                      </div>
-                    </ComponentWrapperDiv>
+                            <TitleSpan>
+                              <span
+                                className="emotion-8 emotion-9"
+                              >
+                                もしくはこれ
+                              </span>
+                            </TitleSpan>
+                            <SubtitleSpan>
+                              <span
+                                className="emotion-10 emotion-11"
+                              >
+                                8ayac's blog
+                              </span>
+                            </SubtitleSpan>
+                          </Logo>
+                        </a>
+                      </LogoWrapperAnchor>
+                    </Link>
                   </BlogTitle>
                 </div>
               </TitleWrapper>
