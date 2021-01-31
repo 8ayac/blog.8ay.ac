@@ -8,7 +8,6 @@ const S = {
     padding: 3% 1rem 4%;
     margin: 0;
     font-size: 0.8em;
-    font-weight: 600;
     color: white;
     text-decoration: none;
     background-color: ${(props) => props.theme.color.blue.dark};

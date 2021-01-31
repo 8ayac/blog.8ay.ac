@@ -30,9 +30,7 @@ const S = {
     font-weight: bolder;
   `,
 
-  ToGitHubCommitAnchor: styled.a`
-    font-weight: 600;
-  `,
+  ToGitHubCommitAnchor: styled.a``,
 };
 
 const removeGitCommitPrefix = (commitMessage: string): string => {

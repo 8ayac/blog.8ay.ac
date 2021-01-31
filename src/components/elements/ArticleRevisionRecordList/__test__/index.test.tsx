@@ -149,12 +149,5 @@ describe('ArticleRevisionRecordList', () => {
         'bolder'
       );
     });
-
-    test('in ToGitHubCommitAnchor', () => {
-      expect(wrapper.find('ToGitHubCommitAnchor')).toHaveStyleRule(
-        'font-weight',
-        '600'
-      );
-    });
   });
 });

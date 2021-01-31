@@ -44,7 +44,6 @@ describe('CategoryTag', () => {
       expect(wrapper.find('Anchor')).toHaveStyleRule('padding', '3% 1rem 4%');
       expect(wrapper.find('Anchor')).toHaveStyleRule('margin', '0');
       expect(wrapper.find('Anchor')).toHaveStyleRule('font-size', '0.8em');
-      expect(wrapper.find('Anchor')).toHaveStyleRule('font-weight', '600');
       expect(wrapper.find('Anchor')).toHaveStyleRule('color', 'white');
       expect(wrapper.find('Anchor')).toHaveStyleRule('text-decoration', 'none');
       expect(wrapper.find('Anchor')).toHaveStyleRule(

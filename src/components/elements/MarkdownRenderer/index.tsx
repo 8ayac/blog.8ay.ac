@@ -25,11 +25,6 @@ const S = {
       margin-top: 1em;
     }
 
-    a {
-      margin-left: 0;
-      font-weight: 600;
-    }
-
     code,
     pre {
       font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
