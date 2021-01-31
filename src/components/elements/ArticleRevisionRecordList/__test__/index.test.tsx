@@ -71,13 +71,13 @@ describe('ArticleRevisionRecordList', () => {
 
         expect(wrapper.find('LogListItem')).toHaveLength(3);
         expect(wrapper.find('UpdateDateTime').at(0).text()).toBe(
-          testLog[0].date.toISOString()
+          new Date(testLog[0].date).toISOString()
         );
         expect(wrapper.find('UpdateDateTime').at(1).text()).toBe(
-          testLog[1].date.toISOString()
+          new Date(testLog[1].date).toISOString()
         );
         expect(wrapper.find('UpdateDateTime').at(2).text()).toBe(
-          testLog[2].date.toISOString()
+          new Date(testLog[2].date).toISOString()
         );
       });
     });
