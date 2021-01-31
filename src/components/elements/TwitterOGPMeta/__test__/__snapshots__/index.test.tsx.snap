@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TwitterOGPMeta is rendered correctly to match the snapshot when ogImageUrl is empty 1`] = `
+<TwitterOGPMeta>
+  <meta
+    content="summary_large_image"
+    name="twitter:card"
+  />
+  <meta
+    content="@8ayac"
+    name="twitter:site"
+  />
+  <meta
+    content="@8ayac"
+    name="twitter:creator"
+  />
+  <meta
+    content="http://localhost:3000/og.png"
+    name="twitter:image"
+  />
+</TwitterOGPMeta>
+`;
+
+exports[`TwitterOGPMeta is rendered correctly to match the snapshot when ogImageUrl is specified 1`] = `
+<TwitterOGPMeta
+  ogImageUrl="https://blog.8ay.ac/favicon.png"
+>
+  <meta
+    content="summary_large_image"
+    name="twitter:card"
+  />
+  <meta
+    content="@8ayac"
+    name="twitter:site"
+  />
+  <meta
+    content="@8ayac"
+    name="twitter:creator"
+  />
+  <meta
+    content="https://blog.8ay.ac/favicon.png"
+    name="twitter:image"
+  />
+</TwitterOGPMeta>
+`;
