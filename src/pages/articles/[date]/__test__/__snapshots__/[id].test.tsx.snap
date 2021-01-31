@@ -118,10 +118,6 @@ exports[`ArticlePage is rendered correctly to match the snapshot 1`] = `
   font-weight: bolder;
 }
 
-.emotion-61 {
-  overflow-wrap: break-word;
-}
-
 .emotion-61 h1,
 .emotion-61 h2 {
   padding-bottom: 0.3em;
