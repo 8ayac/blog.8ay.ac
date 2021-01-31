@@ -80,10 +80,6 @@ exports[`ArticleRevisionRecordList is rendered correctly to match the snapshot w
   font-weight: bolder;
 }
 
-.emotion-12 {
-  font-weight: 600;
-}
-
 <ThemeProvider
   theme={
     Object {

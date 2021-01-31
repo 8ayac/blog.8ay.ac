@@ -70,7 +70,7 @@ const gH6Style = css`
 
 const gAnchorStyle = css`
   a {
-    margin-left: 0.5rem;
+    font-weight: 600;
     color: ${theme.color.text.secondary};
 
     &:hover {
