@@ -27,8 +27,8 @@ export const ArticleHeaderList: React.FC<{ articles: Article[] }> = ({
         {articles
           .sort(
             (a, b) =>
-              new Date(a.publishedAt).getTime() -
-              new Date(b.publishedAt).getTime()
+              new Date(a.attributes.publishedAt).getTime() -
+              new Date(b.attributes.publishedAt).getTime()
           )
           .reverse()
           .map((article) => (

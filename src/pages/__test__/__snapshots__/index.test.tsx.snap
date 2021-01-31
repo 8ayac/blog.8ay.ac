@@ -210,15 +210,13 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
         Object {
           "attributes": Object {
             "body": "bluhbluhbluh",
-            "id": "test-article-01",
-            "publishedAt": 2021-01-01T00:00:00.000Z,
+            "id": "test-article-03",
+            "publishedAt": 2021-03-03T00:00:00.000Z,
             "tags": Array [
               "test-cat01",
-              "test-cat02",
-              "test-cat03",
             ],
-            "title": "Test Title 01",
-            "updatedAt": 2021-01-01T00:00:00.000Z,
+            "title": "Test Title 03",
+            "updatedAt": 2021-03-03T00:00:00.000Z,
           },
         },
         Object {
@@ -237,13 +235,15 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
         Object {
           "attributes": Object {
             "body": "bluhbluhbluh",
-            "id": "test-article-03",
-            "publishedAt": 2021-03-03T00:00:00.000Z,
+            "id": "test-article-01",
+            "publishedAt": 2021-01-01T00:00:00.000Z,
             "tags": Array [
               "test-cat01",
+              "test-cat02",
+              "test-cat03",
             ],
-            "title": "Test Title 03",
-            "updatedAt": 2021-03-03T00:00:00.000Z,
+            "title": "Test Title 01",
+            "updatedAt": 2021-01-01T00:00:00.000Z,
           },
         },
       ]
@@ -276,15 +276,13 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
               Object {
                 "attributes": Object {
                   "body": "bluhbluhbluh",
-                  "id": "test-article-01",
-                  "publishedAt": 2021-01-01T00:00:00.000Z,
+                  "id": "test-article-03",
+                  "publishedAt": 2021-03-03T00:00:00.000Z,
                   "tags": Array [
                     "test-cat01",
-                    "test-cat02",
-                    "test-cat03",
                   ],
-                  "title": "Test Title 01",
-                  "updatedAt": 2021-01-01T00:00:00.000Z,
+                  "title": "Test Title 03",
+                  "updatedAt": 2021-03-03T00:00:00.000Z,
                 },
               },
               Object {
@@ -303,13 +301,15 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
               Object {
                 "attributes": Object {
                   "body": "bluhbluhbluh",
-                  "id": "test-article-03",
-                  "publishedAt": 2021-03-03T00:00:00.000Z,
+                  "id": "test-article-01",
+                  "publishedAt": 2021-01-01T00:00:00.000Z,
                   "tags": Array [
                     "test-cat01",
+                    "test-cat02",
+                    "test-cat03",
                   ],
-                  "title": "Test Title 03",
-                  "updatedAt": 2021-03-03T00:00:00.000Z,
+                  "title": "Test Title 01",
+                  "updatedAt": 2021-01-01T00:00:00.000Z,
                 },
               },
             ]
@@ -328,19 +328,17 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
                       Object {
                         "attributes": Object {
                           "body": "bluhbluhbluh",
-                          "id": "test-article-01",
-                          "publishedAt": 2021-01-01T00:00:00.000Z,
+                          "id": "test-article-03",
+                          "publishedAt": 2021-03-03T00:00:00.000Z,
                           "tags": Array [
                             "test-cat01",
-                            "test-cat02",
-                            "test-cat03",
                           ],
-                          "title": "Test Title 01",
-                          "updatedAt": 2021-01-01T00:00:00.000Z,
+                          "title": "Test Title 03",
+                          "updatedAt": 2021-03-03T00:00:00.000Z,
                         },
                       }
                     }
-                    key="test-article-01"
+                    key="test-article-03"
                   >
                     <BodyHeader
                       afterTitle={
@@ -349,8 +347,6 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
                             tags={
                               Array [
                                 "test-cat01",
-                                "test-cat02",
-                                "test-cat03",
                               ]
                             }
                             withPreIcon={true}
@@ -360,17 +356,17 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
                       beforeTitle={
                         <DateTimeWrapperDiv>
                           <DateTime
-                            date={2021-01-01T00:00:00.000Z}
+                            date={2021-03-03T00:00:00.000Z}
                             description="Published At"
                           />
                           <DateTime
-                            date={2021-01-01T00:00:00.000Z}
+                            date={2021-03-03T00:00:00.000Z}
                             description="Updated At"
                           />
                         </DateTimeWrapperDiv>
                       }
-                      linkTo="/articles/2021-01-01/test-article-01"
-                      title="Test Title 01"
+                      linkTo="/articles/2021-03-03/test-article-03"
+                      title="Test Title 03"
                     >
                       <WrapperHeader>
                         <header
@@ -385,7 +381,7 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
                                   className="emotion-14 emotion-15"
                                 >
                                   <DateTime
-                                    date={2021-01-01T00:00:00.000Z}
+                                    date={2021-03-03T00:00:00.000Z}
                                     description="Published At"
                                   >
                                     <ComponentWrapperDiv>
@@ -403,14 +399,14 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
                                           <time
                                             className="emotion-20 emotion-21"
                                           >
-                                            2021-01-01T00:00:00.000Z
+                                            2021-03-03T00:00:00.000Z
                                           </time>
                                         </ISODateTime>
                                       </div>
                                     </ComponentWrapperDiv>
                                   </DateTime>
                                   <DateTime
-                                    date={2021-01-01T00:00:00.000Z}
+                                    date={2021-03-03T00:00:00.000Z}
                                     description="Updated At"
                                   >
                                     <ComponentWrapperDiv>
@@ -428,7 +424,7 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
                                           <time
                                             className="emotion-20 emotion-21"
                                           >
-                                            2021-01-01T00:00:00.000Z
+                                            2021-03-03T00:00:00.000Z
                                           </time>
                                         </ISODateTime>
                                       </div>
@@ -443,21 +439,21 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
                               className="emotion-4 emotion-5"
                             >
                               <Link
-                                href="/articles/2021-01-01/test-article-01"
+                                href="/articles/2021-03-03/test-article-03"
                                 passHref={true}
                               >
                                 <TitleAnchor
-                                  href="/articles/2021-01-01/test-article-01"
+                                  href="/articles/2021-03-03/test-article-03"
                                   onClick={[Function]}
                                   onMouseEnter={[Function]}
                                 >
                                   <a
                                     className="emotion-30 emotion-31"
-                                    href="/articles/2021-01-01/test-article-01"
+                                    href="/articles/2021-03-03/test-article-03"
                                     onClick={[Function]}
                                     onMouseEnter={[Function]}
                                   >
-                                    Test Title 01
+                                    Test Title 03
                                   </a>
                                 </TitleAnchor>
                               </Link>
@@ -475,8 +471,6 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
                                     tags={
                                       Array [
                                         "test-cat01",
-                                        "test-cat02",
-                                        "test-cat03",
                                       ]
                                     }
                                     withPreIcon={true}
@@ -559,54 +553,6 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
                                                 onMouseEnter={[Function]}
                                               >
                                                 test-cat01
-                                              </a>
-                                            </Anchor>
-                                          </Link>
-                                        </CategoryTag>
-                                        <CategoryTag
-                                          key="test-cat02"
-                                          name="test-cat02"
-                                        >
-                                          <Link
-                                            href="/tags/test-cat02"
-                                            passHref={true}
-                                          >
-                                            <Anchor
-                                              href="/tags/test-cat02"
-                                              onClick={[Function]}
-                                              onMouseEnter={[Function]}
-                                            >
-                                              <a
-                                                className="emotion-40 emotion-41"
-                                                href="/tags/test-cat02"
-                                                onClick={[Function]}
-                                                onMouseEnter={[Function]}
-                                              >
-                                                test-cat02
-                                              </a>
-                                            </Anchor>
-                                          </Link>
-                                        </CategoryTag>
-                                        <CategoryTag
-                                          key="test-cat03"
-                                          name="test-cat03"
-                                        >
-                                          <Link
-                                            href="/tags/test-cat03"
-                                            passHref={true}
-                                          >
-                                            <Anchor
-                                              href="/tags/test-cat03"
-                                              onClick={[Function]}
-                                              onMouseEnter={[Function]}
-                                            >
-                                              <a
-                                                className="emotion-40 emotion-41"
-                                                href="/tags/test-cat03"
-                                                onClick={[Function]}
-                                                onMouseEnter={[Function]}
-                                              >
-                                                test-cat03
                                               </a>
                                             </Anchor>
                                           </Link>
@@ -899,17 +845,19 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
                       Object {
                         "attributes": Object {
                           "body": "bluhbluhbluh",
-                          "id": "test-article-03",
-                          "publishedAt": 2021-03-03T00:00:00.000Z,
+                          "id": "test-article-01",
+                          "publishedAt": 2021-01-01T00:00:00.000Z,
                           "tags": Array [
                             "test-cat01",
+                            "test-cat02",
+                            "test-cat03",
                           ],
-                          "title": "Test Title 03",
-                          "updatedAt": 2021-03-03T00:00:00.000Z,
+                          "title": "Test Title 01",
+                          "updatedAt": 2021-01-01T00:00:00.000Z,
                         },
                       }
                     }
-                    key="test-article-03"
+                    key="test-article-01"
                   >
                     <BodyHeader
                       afterTitle={
@@ -918,6 +866,8 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
                             tags={
                               Array [
                                 "test-cat01",
+                                "test-cat02",
+                                "test-cat03",
                               ]
                             }
                             withPreIcon={true}
@@ -927,17 +877,17 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
                       beforeTitle={
                         <DateTimeWrapperDiv>
                           <DateTime
-                            date={2021-03-03T00:00:00.000Z}
+                            date={2021-01-01T00:00:00.000Z}
                             description="Published At"
                           />
                           <DateTime
-                            date={2021-03-03T00:00:00.000Z}
+                            date={2021-01-01T00:00:00.000Z}
                             description="Updated At"
                           />
                         </DateTimeWrapperDiv>
                       }
-                      linkTo="/articles/2021-03-03/test-article-03"
-                      title="Test Title 03"
+                      linkTo="/articles/2021-01-01/test-article-01"
+                      title="Test Title 01"
                     >
                       <WrapperHeader>
                         <header
@@ -952,7 +902,7 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
                                   className="emotion-14 emotion-15"
                                 >
                                   <DateTime
-                                    date={2021-03-03T00:00:00.000Z}
+                                    date={2021-01-01T00:00:00.000Z}
                                     description="Published At"
                                   >
                                     <ComponentWrapperDiv>
@@ -970,14 +920,14 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
                                           <time
                                             className="emotion-20 emotion-21"
                                           >
-                                            2021-03-03T00:00:00.000Z
+                                            2021-01-01T00:00:00.000Z
                                           </time>
                                         </ISODateTime>
                                       </div>
                                     </ComponentWrapperDiv>
                                   </DateTime>
                                   <DateTime
-                                    date={2021-03-03T00:00:00.000Z}
+                                    date={2021-01-01T00:00:00.000Z}
                                     description="Updated At"
                                   >
                                     <ComponentWrapperDiv>
@@ -995,7 +945,7 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
                                           <time
                                             className="emotion-20 emotion-21"
                                           >
-                                            2021-03-03T00:00:00.000Z
+                                            2021-01-01T00:00:00.000Z
                                           </time>
                                         </ISODateTime>
                                       </div>
@@ -1010,21 +960,21 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
                               className="emotion-4 emotion-5"
                             >
                               <Link
-                                href="/articles/2021-03-03/test-article-03"
+                                href="/articles/2021-01-01/test-article-01"
                                 passHref={true}
                               >
                                 <TitleAnchor
-                                  href="/articles/2021-03-03/test-article-03"
+                                  href="/articles/2021-01-01/test-article-01"
                                   onClick={[Function]}
                                   onMouseEnter={[Function]}
                                 >
                                   <a
                                     className="emotion-30 emotion-31"
-                                    href="/articles/2021-03-03/test-article-03"
+                                    href="/articles/2021-01-01/test-article-01"
                                     onClick={[Function]}
                                     onMouseEnter={[Function]}
                                   >
-                                    Test Title 03
+                                    Test Title 01
                                   </a>
                                 </TitleAnchor>
                               </Link>
@@ -1042,6 +992,8 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
                                     tags={
                                       Array [
                                         "test-cat01",
+                                        "test-cat02",
+                                        "test-cat03",
                                       ]
                                     }
                                     withPreIcon={true}
@@ -1124,6 +1076,54 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
                                                 onMouseEnter={[Function]}
                                               >
                                                 test-cat01
+                                              </a>
+                                            </Anchor>
+                                          </Link>
+                                        </CategoryTag>
+                                        <CategoryTag
+                                          key="test-cat02"
+                                          name="test-cat02"
+                                        >
+                                          <Link
+                                            href="/tags/test-cat02"
+                                            passHref={true}
+                                          >
+                                            <Anchor
+                                              href="/tags/test-cat02"
+                                              onClick={[Function]}
+                                              onMouseEnter={[Function]}
+                                            >
+                                              <a
+                                                className="emotion-40 emotion-41"
+                                                href="/tags/test-cat02"
+                                                onClick={[Function]}
+                                                onMouseEnter={[Function]}
+                                              >
+                                                test-cat02
+                                              </a>
+                                            </Anchor>
+                                          </Link>
+                                        </CategoryTag>
+                                        <CategoryTag
+                                          key="test-cat03"
+                                          name="test-cat03"
+                                        >
+                                          <Link
+                                            href="/tags/test-cat03"
+                                            passHref={true}
+                                          >
+                                            <Anchor
+                                              href="/tags/test-cat03"
+                                              onClick={[Function]}
+                                              onMouseEnter={[Function]}
+                                            >
+                                              <a
+                                                className="emotion-40 emotion-41"
+                                                href="/tags/test-cat03"
+                                                onClick={[Function]}
+                                                onMouseEnter={[Function]}
+                                              >
+                                                test-cat03
                                               </a>
                                             </Anchor>
                                           </Link>
