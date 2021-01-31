@@ -33,10 +33,6 @@ exports[`BasicLayout is rendered correctly to match the snapshot 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   -webkit-filter: drop-shadow(
         2px 2px 1px hsla(148, 72%, 30%)
       );
@@ -74,10 +70,6 @@ exports[`BasicLayout is rendered correctly to match the snapshot 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   -webkit-filter: drop-shadow(
         2px 2px 1px hsla(148, 72%, 30%)
       );
@@ -188,10 +180,10 @@ exports[`BasicLayout is rendered correctly to match the snapshot 1`] = `
           className="emotion-0 emotion-1"
         >
           <HeaderInner>
-            <div
+            <nav
               className="emotion-2 emotion-3"
             >
-              <TitleWrapper>
+              <S-TitleWrapper>
                 <div
                   className="emotion-4 emotion-5"
                 >
@@ -238,8 +230,8 @@ exports[`BasicLayout is rendered correctly to match the snapshot 1`] = `
                     </Link>
                   </BlogTitle>
                 </div>
-              </TitleWrapper>
-              <NavWrapper>
+              </S-TitleWrapper>
+              <S-NavWrapper>
                 <div
                   className="emotion-12 emotion-13"
                 >
@@ -336,8 +328,8 @@ exports[`BasicLayout is rendered correctly to match the snapshot 1`] = `
                     </ComponentWrapperDiv>
                   </SocialLinkWithIcon>
                 </div>
-              </NavWrapper>
-            </div>
+              </S-NavWrapper>
+            </nav>
           </HeaderInner>
         </header>
       </Header>
