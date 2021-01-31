@@ -433,11 +433,11 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
                                 }
                                 withPreIcon={true}
                               >
-                                <ComponentWrapperDiv>
+                                <S-ComponentWrapperDiv>
                                   <div
                                     className="emotion-34 emotion-35"
                                   >
-                                    <PreIconWrapperDiv>
+                                    <S-PreIconWrapperDiv>
                                       <div
                                         className="emotion-36 emotion-37"
                                       >
@@ -490,7 +490,7 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
                                           </svg>
                                         </FontAwesomeIcon>
                                       </div>
-                                    </PreIconWrapperDiv>
+                                    </S-PreIconWrapperDiv>
                                     <CategoryTag
                                       key="test02"
                                       name="test02"
@@ -516,7 +516,7 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
                                       </Link>
                                     </CategoryTag>
                                   </div>
-                                </ComponentWrapperDiv>
+                                </S-ComponentWrapperDiv>
                               </CategoryTagList>
                             </div>
                           </TagListWrapperDiv>
@@ -678,11 +678,11 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
                                 }
                                 withPreIcon={true}
                               >
-                                <ComponentWrapperDiv>
+                                <S-ComponentWrapperDiv>
                                   <div
                                     className="emotion-34 emotion-35"
                                   >
-                                    <PreIconWrapperDiv>
+                                    <S-PreIconWrapperDiv>
                                       <div
                                         className="emotion-36 emotion-37"
                                       >
@@ -735,7 +735,7 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
                                           </svg>
                                         </FontAwesomeIcon>
                                       </div>
-                                    </PreIconWrapperDiv>
+                                    </S-PreIconWrapperDiv>
                                     <CategoryTag
                                       key="test01"
                                       name="test01"
@@ -761,7 +761,7 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
                                       </Link>
                                     </CategoryTag>
                                   </div>
-                                </ComponentWrapperDiv>
+                                </S-ComponentWrapperDiv>
                               </CategoryTagList>
                             </div>
                           </TagListWrapperDiv>

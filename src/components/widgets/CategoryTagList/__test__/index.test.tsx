@@ -43,7 +43,7 @@ describe('CategoryTagList', () => {
           <CategoryTagList tags={testTags} withPreIcon />
         </ThemeProvider>
       );
-      expect(wrapper.find('PreIconWrapperDiv')).toHaveLength(1);
+      expect(wrapper.find('S-PreIconWrapperDiv')).toHaveLength(1);
     });
 
     test("when NOT passed the optional prop 'withPreIcon' (default)", () => {
@@ -52,7 +52,7 @@ describe('CategoryTagList', () => {
           <CategoryTagList tags={testTags} />
         </ThemeProvider>
       );
-      expect(wrapper.find('PreIconWrapperDiv')).toHaveLength(0);
+      expect(wrapper.find('S-PreIconWrapperDiv')).toHaveLength(0);
     });
   });
 
@@ -64,28 +64,28 @@ describe('CategoryTagList', () => {
     );
 
     test('in ComponentWrapperDiv', () => {
-      expect(wrapper.find('ComponentWrapperDiv').first()).toHaveStyleRule(
+      expect(wrapper.find('S-ComponentWrapperDiv').first()).toHaveStyleRule(
         'display',
         'flex'
       );
       expect(
-        wrapper.find('ComponentWrapperDiv').first()
+        wrapper.find('S-ComponentWrapperDiv').first()
       ).toHaveStyleRule('margin-right', '0.7rem', { target: '*' });
       expect(
-        wrapper.find('ComponentWrapperDiv').first()
+        wrapper.find('S-ComponentWrapperDiv').first()
       ).toHaveStyleRule('margin-bottom', '0.7rem', { target: '*' });
     });
 
     test('in PreIconWrapperDiv', () => {
-      expect(wrapper.find('PreIconWrapperDiv').first()).toHaveStyleRule(
+      expect(wrapper.find('S-PreIconWrapperDiv').first()).toHaveStyleRule(
         'display',
         'flex'
       );
-      expect(wrapper.find('PreIconWrapperDiv').first()).toHaveStyleRule(
+      expect(wrapper.find('S-PreIconWrapperDiv').first()).toHaveStyleRule(
         'align-items',
         'center'
       );
-      expect(wrapper.find('PreIconWrapperDiv').first()).toHaveStyleRule(
+      expect(wrapper.find('S-PreIconWrapperDiv').first()).toHaveStyleRule(
         'color',
         `${theme.color.text.primaryLight}`
       );

@@ -1,9 +1,9 @@
-import { FlexContainerDiv } from '@/src/shared/styles/abstractStyledComponents';
 import styled from '@emotion/styled';
 import React from 'react';
 
 const S = {
-  ComponentWrapperDiv: styled(FlexContainerDiv)`
+  ComponentWrapperDiv: styled.div`
+    display: flex;
     flex-flow: row wrap;
   `,
 

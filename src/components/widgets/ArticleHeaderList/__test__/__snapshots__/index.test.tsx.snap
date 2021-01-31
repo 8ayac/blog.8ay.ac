@@ -398,11 +398,11 @@ exports[`ArticleHeaderList is rendered correctly to match the snapshot 1`] = `
                               }
                               withPreIcon={true}
                             >
-                              <ComponentWrapperDiv>
+                              <S-ComponentWrapperDiv>
                                 <div
                                   className="emotion-30 emotion-31"
                                 >
-                                  <PreIconWrapperDiv>
+                                  <S-PreIconWrapperDiv>
                                     <div
                                       className="emotion-32 emotion-33"
                                     >
@@ -455,7 +455,7 @@ exports[`ArticleHeaderList is rendered correctly to match the snapshot 1`] = `
                                         </svg>
                                       </FontAwesomeIcon>
                                     </div>
-                                  </PreIconWrapperDiv>
+                                  </S-PreIconWrapperDiv>
                                   <CategoryTag
                                     key="test03"
                                     name="test03"
@@ -481,7 +481,7 @@ exports[`ArticleHeaderList is rendered correctly to match the snapshot 1`] = `
                                     </Link>
                                   </CategoryTag>
                                 </div>
-                              </ComponentWrapperDiv>
+                              </S-ComponentWrapperDiv>
                             </CategoryTagList>
                           </div>
                         </TagListWrapperDiv>
@@ -643,11 +643,11 @@ exports[`ArticleHeaderList is rendered correctly to match the snapshot 1`] = `
                               }
                               withPreIcon={true}
                             >
-                              <ComponentWrapperDiv>
+                              <S-ComponentWrapperDiv>
                                 <div
                                   className="emotion-30 emotion-31"
                                 >
-                                  <PreIconWrapperDiv>
+                                  <S-PreIconWrapperDiv>
                                     <div
                                       className="emotion-32 emotion-33"
                                     >
@@ -700,7 +700,7 @@ exports[`ArticleHeaderList is rendered correctly to match the snapshot 1`] = `
                                         </svg>
                                       </FontAwesomeIcon>
                                     </div>
-                                  </PreIconWrapperDiv>
+                                  </S-PreIconWrapperDiv>
                                   <CategoryTag
                                     key="test02"
                                     name="test02"
@@ -726,7 +726,7 @@ exports[`ArticleHeaderList is rendered correctly to match the snapshot 1`] = `
                                     </Link>
                                   </CategoryTag>
                                 </div>
-                              </ComponentWrapperDiv>
+                              </S-ComponentWrapperDiv>
                             </CategoryTagList>
                           </div>
                         </TagListWrapperDiv>
@@ -888,11 +888,11 @@ exports[`ArticleHeaderList is rendered correctly to match the snapshot 1`] = `
                               }
                               withPreIcon={true}
                             >
-                              <ComponentWrapperDiv>
+                              <S-ComponentWrapperDiv>
                                 <div
                                   className="emotion-30 emotion-31"
                                 >
-                                  <PreIconWrapperDiv>
+                                  <S-PreIconWrapperDiv>
                                     <div
                                       className="emotion-32 emotion-33"
                                     >
@@ -945,7 +945,7 @@ exports[`ArticleHeaderList is rendered correctly to match the snapshot 1`] = `
                                         </svg>
                                       </FontAwesomeIcon>
                                     </div>
-                                  </PreIconWrapperDiv>
+                                  </S-PreIconWrapperDiv>
                                   <CategoryTag
                                     key="test01"
                                     name="test01"
@@ -971,7 +971,7 @@ exports[`ArticleHeaderList is rendered correctly to match the snapshot 1`] = `
                                     </Link>
                                   </CategoryTag>
                                 </div>
-                              </ComponentWrapperDiv>
+                              </S-ComponentWrapperDiv>
                             </CategoryTagList>
                           </div>
                         </TagListWrapperDiv>

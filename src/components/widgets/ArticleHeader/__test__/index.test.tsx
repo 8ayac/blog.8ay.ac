@@ -49,12 +49,16 @@ describe('ArticleHeader', () => {
 
     test('in DateTimeWrapperDiv', () => {
       expect(wrapper.find('DateTimeWrapperDiv')).toHaveStyleRule(
-        'align-items',
-        'center'
+        'display',
+        'flex'
       );
       expect(wrapper.find('DateTimeWrapperDiv')).toHaveStyleRule(
         'flex-flow',
         'row wrap'
+      );
+      expect(wrapper.find('DateTimeWrapperDiv')).toHaveStyleRule(
+        'align-items',
+        'center'
       );
       expect(wrapper.find('DateTimeWrapperDiv')).toHaveStyleRule(
         'margin-bottom',

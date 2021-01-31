@@ -117,11 +117,11 @@ exports[`CategoryTagList is rendered correctly to match the snapshot with preIco
     }
     withPreIcon={true}
   >
-    <ComponentWrapperDiv>
+    <S-ComponentWrapperDiv>
       <div
         className="emotion-0 emotion-1"
       >
-        <PreIconWrapperDiv>
+        <S-PreIconWrapperDiv>
           <div
             className="emotion-2 emotion-3"
           >
@@ -174,7 +174,7 @@ exports[`CategoryTagList is rendered correctly to match the snapshot with preIco
               </svg>
             </FontAwesomeIcon>
           </div>
-        </PreIconWrapperDiv>
+        </S-PreIconWrapperDiv>
         <CategoryTag
           key="A"
           name="A"
@@ -272,7 +272,7 @@ exports[`CategoryTagList is rendered correctly to match the snapshot with preIco
           </Link>
         </CategoryTag>
       </div>
-    </ComponentWrapperDiv>
+    </S-ComponentWrapperDiv>
   </CategoryTagList>
 </ThemeProvider>
 `;
@@ -381,7 +381,7 @@ exports[`CategoryTagList is rendered correctly to match the snapshot without pre
       ]
     }
   >
-    <ComponentWrapperDiv>
+    <S-ComponentWrapperDiv>
       <div
         className="emotion-0 emotion-1"
       >
@@ -482,7 +482,7 @@ exports[`CategoryTagList is rendered correctly to match the snapshot without pre
           </Link>
         </CategoryTag>
       </div>
-    </ComponentWrapperDiv>
+    </S-ComponentWrapperDiv>
   </CategoryTagList>
 </ThemeProvider>
 `;
