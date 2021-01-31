@@ -90,39 +90,72 @@ exports[`ArticlePage is rendered correctly to match the snapshot 1`] = `
 }
 
 .emotion-29 {
+  padding: 1rem 0 0.7rem;
+  margin: 0 0 5rem;
+  border-color: hsla(0, 0%, 75%);
+  border-style: dotted;
+  border-width: 2px 0;
+}
+
+.emotion-33 {
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+}
+
+.emotion-35 {
+  padding-left: 0;
+  margin: 0;
+}
+
+.emotion-37 {
+  margin-bottom: 0.75rem;
+  list-style: none;
+}
+
+.emotion-41 {
+  font-weight: bolder;
+}
+
+.emotion-43 {
+  font-weight: 600;
+}
+
+.emotion-61 {
   overflow-wrap: break-word;
 }
 
-.emotion-29 h1,
-.emotion-29 h2 {
+.emotion-61 h1,
+.emotion-61 h2 {
   padding-bottom: 0.3em;
   margin-top: 2em;
   border-bottom: 1px solid hsla(0, 0%, 75%);
 }
 
-.emotion-29 h3,
-.emotion-29 h4,
-.emotion-29 h5,
-.emotion-29 h6 {
+.emotion-61 h3,
+.emotion-61 h4,
+.emotion-61 h5,
+.emotion-61 h6 {
   margin-top: 1em;
 }
 
-.emotion-29 a {
+.emotion-61 a {
   margin-left: 0;
   font-weight: 600;
 }
 
-.emotion-29 code,
-.emotion-29 pre {
+.emotion-61 code,
+.emotion-61 pre {
   font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
   word-break: normal;
 }
 
-.emotion-29 pre {
+.emotion-61 pre {
   white-space: pre-wrap;
 }
 
-.emotion-29 code:not([class]) {
+.emotion-61 code:not([class]) {
   padding: 0.2em 0.4em;
   margin: 0;
   font-size: 0.85em;
@@ -130,54 +163,54 @@ exports[`ArticlePage is rendered correctly to match the snapshot 1`] = `
   border-radius: 3px;
 }
 
-.emotion-29 blockquote,
-.emotion-29 details,
-.emotion-29 dl,
-.emotion-29 ol,
-.emotion-29 p,
-.emotion-29 pre,
-.emotion-29 table,
-.emotion-29 ul {
+.emotion-61 blockquote,
+.emotion-61 details,
+.emotion-61 dl,
+.emotion-61 ol,
+.emotion-61 p,
+.emotion-61 pre,
+.emotion-61 table,
+.emotion-61 ul {
   margin-top: 0;
   margin-bottom: 1.8rem;
 }
 
-.emotion-29 ol ol,
-.emotion-29 ul ol {
+.emotion-61 ol ol,
+.emotion-61 ul ol {
   list-style-type: lower-roman;
 }
 
-.emotion-29 li>p {
+.emotion-61 li>p {
   margin-top: 1.6rem;
 }
 
-.emotion-29 li+li {
+.emotion-61 li+li {
   margin-top: 0.25em;
 }
 
-.emotion-29 blockquote {
+.emotion-61 blockquote {
   padding: 0 1em;
   margin-left: 0;
   color: hsla(0, 0%, 40%);
   border-left: 0.25em solid hsla(212, 72%, 90%);
 }
 
-.emotion-29 blockquote:first-of-type {
+.emotion-61 blockquote:first-of-type {
   margin-top: 0;
 }
 
-.emotion-29 blockquote:last-of-type {
+.emotion-61 blockquote:last-of-type {
   margin-bottom: 0;
 }
 
-.emotion-29 div.code-toolbar>.toolbar {
+.emotion-61 div.code-toolbar>.toolbar {
   top: 0.3em;
   right: 0.3em;
   -webkit-transition: none;
   transition: none;
 }
 
-.emotion-29 div.code-toolbar>.toolbar span {
+.emotion-61 div.code-toolbar>.toolbar span {
   font-size: 0.85em;
   border-radius: 10px;
 }
@@ -245,6 +278,26 @@ exports[`ArticlePage is rendered correctly to match the snapshot 1`] = `
         "body": "## test
 
 bluhbluhbluh",
+        "changeLogs": Array [
+          Object {
+            "author": "8ayac",
+            "date": 2021-01-02T03:04:05.000Z,
+            "description": ":test_prefix: this is a test commit 01",
+            "id": "0000001",
+          },
+          Object {
+            "author": "8ayac",
+            "date": 2021-06-07T08:09:10.000Z,
+            "description": ":test_prefix: this is a test commit 02",
+            "id": "0000002",
+          },
+          Object {
+            "author": "8ayac",
+            "date": 2021-11-12T13:14:15.000Z,
+            "description": ":test_prefix: this is a test commit 03",
+            "id": "0000003",
+          },
+        ],
       }
     }
   >
@@ -260,6 +313,26 @@ bluhbluhbluh",
           "body": "## test
 
 bluhbluhbluh",
+          "changeLogs": Array [
+            Object {
+              "author": "8ayac",
+              "date": 2021-01-02T03:04:05.000Z,
+              "description": ":test_prefix: this is a test commit 01",
+              "id": "0000001",
+            },
+            Object {
+              "author": "8ayac",
+              "date": 2021-06-07T08:09:10.000Z,
+              "description": ":test_prefix: this is a test commit 02",
+              "id": "0000002",
+            },
+            Object {
+              "author": "8ayac",
+              "date": 2021-11-12T13:14:15.000Z,
+              "description": ":test_prefix: this is a test commit 03",
+              "id": "0000003",
+            },
+          ],
         }
       }
     >
@@ -474,6 +547,216 @@ bluhbluhbluh",
         </WrapperHeader>
       </BodyHeader>
     </ArticleHeader>
+    <RevisionHistoryWrapperDiv>
+      <div
+        className="emotion-29 emotion-30"
+      >
+        <ArticleRevisionRecordList
+          log={
+            Array [
+              Object {
+                "author": "8ayac",
+                "date": 2021-01-02T03:04:05.000Z,
+                "description": ":test_prefix: this is a test commit 01",
+                "id": "0000001",
+              },
+              Object {
+                "author": "8ayac",
+                "date": 2021-06-07T08:09:10.000Z,
+                "description": ":test_prefix: this is a test commit 02",
+                "id": "0000002",
+              },
+              Object {
+                "author": "8ayac",
+                "date": 2021-11-12T13:14:15.000Z,
+                "description": ":test_prefix: this is a test commit 03",
+                "id": "0000003",
+              },
+            ]
+          }
+        >
+          <Details
+            open={true}
+          >
+            <details
+              className="emotion-31 emotion-32"
+              open={true}
+            >
+              <Summary>
+                <summary
+                  className="emotion-33 emotion-34"
+                >
+                  Revision History
+                </summary>
+              </Summary>
+              <LogList
+                log={
+                  Array [
+                    Object {
+                      "author": "8ayac",
+                      "date": 2021-01-02T03:04:05.000Z,
+                      "description": ":test_prefix: this is a test commit 01",
+                      "id": "0000001",
+                    },
+                    Object {
+                      "author": "8ayac",
+                      "date": 2021-06-07T08:09:10.000Z,
+                      "description": ":test_prefix: this is a test commit 02",
+                      "id": "0000002",
+                    },
+                    Object {
+                      "author": "8ayac",
+                      "date": 2021-11-12T13:14:15.000Z,
+                      "description": ":test_prefix: this is a test commit 03",
+                      "id": "0000003",
+                    },
+                  ]
+                }
+              >
+                <LogList>
+                  <ul
+                    className="emotion-35 emotion-36"
+                  >
+                    <LogListItem
+                      key="0000001"
+                    >
+                      <li
+                        className="emotion-37 emotion-38"
+                      >
+                        <UpdateDateTime>
+                          <time
+                            className="emotion-39 emotion-40"
+                          >
+                            2021-01-02T03:04:05.000Z
+                          </time>
+                        </UpdateDateTime>
+                         
+                        <UpdateDescriptionSpan>
+                          <span
+                            className="emotion-41 emotion-42"
+                          >
+                            this is a test commit 01
+                          </span>
+                        </UpdateDescriptionSpan>
+                         
+                        (
+                        <ToGitHubCommitAnchor
+                          href="https://github.com/8ayac/blog.8ay.ac/commit/0000001"
+                          rel="noopener"
+                          target="_blank"
+                        >
+                          <a
+                            className="emotion-43 emotion-44"
+                            href="https://github.com/8ayac/blog.8ay.ac/commit/0000001"
+                            rel="noopener"
+                            target="_blank"
+                          >
+                            #
+                            0000001
+                          </a>
+                        </ToGitHubCommitAnchor>
+                         
+                        by 
+                        8ayac
+                        )
+                      </li>
+                    </LogListItem>
+                    <LogListItem
+                      key="0000002"
+                    >
+                      <li
+                        className="emotion-37 emotion-38"
+                      >
+                        <UpdateDateTime>
+                          <time
+                            className="emotion-39 emotion-40"
+                          >
+                            2021-06-07T08:09:10.000Z
+                          </time>
+                        </UpdateDateTime>
+                         
+                        <UpdateDescriptionSpan>
+                          <span
+                            className="emotion-41 emotion-42"
+                          >
+                            this is a test commit 02
+                          </span>
+                        </UpdateDescriptionSpan>
+                         
+                        (
+                        <ToGitHubCommitAnchor
+                          href="https://github.com/8ayac/blog.8ay.ac/commit/0000002"
+                          rel="noopener"
+                          target="_blank"
+                        >
+                          <a
+                            className="emotion-43 emotion-44"
+                            href="https://github.com/8ayac/blog.8ay.ac/commit/0000002"
+                            rel="noopener"
+                            target="_blank"
+                          >
+                            #
+                            0000002
+                          </a>
+                        </ToGitHubCommitAnchor>
+                         
+                        by 
+                        8ayac
+                        )
+                      </li>
+                    </LogListItem>
+                    <LogListItem
+                      key="0000003"
+                    >
+                      <li
+                        className="emotion-37 emotion-38"
+                      >
+                        <UpdateDateTime>
+                          <time
+                            className="emotion-39 emotion-40"
+                          >
+                            2021-11-12T13:14:15.000Z
+                          </time>
+                        </UpdateDateTime>
+                         
+                        <UpdateDescriptionSpan>
+                          <span
+                            className="emotion-41 emotion-42"
+                          >
+                            this is a test commit 03
+                          </span>
+                        </UpdateDescriptionSpan>
+                         
+                        (
+                        <ToGitHubCommitAnchor
+                          href="https://github.com/8ayac/blog.8ay.ac/commit/0000003"
+                          rel="noopener"
+                          target="_blank"
+                        >
+                          <a
+                            className="emotion-43 emotion-44"
+                            href="https://github.com/8ayac/blog.8ay.ac/commit/0000003"
+                            rel="noopener"
+                            target="_blank"
+                          >
+                            #
+                            0000003
+                          </a>
+                        </ToGitHubCommitAnchor>
+                         
+                        by 
+                        8ayac
+                        )
+                      </li>
+                    </LogListItem>
+                  </ul>
+                </LogList>
+              </LogList>
+            </details>
+          </Details>
+        </ArticleRevisionRecordList>
+      </div>
+    </RevisionHistoryWrapperDiv>
     <MarkdownRenderer
       content="## test
 
@@ -481,7 +764,7 @@ bluhbluhbluh"
     >
       <ConvertedMdBody>
         <div
-          className="emotion-29 emotion-30"
+          className="emotion-61 emotion-62"
         >
           <ReactMarkdown
             plugins={
