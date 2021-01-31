@@ -1,7 +1,9 @@
+import { ArticleRevisionRecordList } from '@/src/components/elements/ArticleRevisionRecordList';
 import { MarkdownRenderer } from '@/src/components/elements/MarkdownRenderer';
 import { ArticleHeader } from '@/src/components/widgets/ArticleHeader';
 import jsonArticles from '@/src/shared/.content/articles.json';
 import { Article } from '@/src/types';
+import styled from '@emotion/styled';
 import moment from 'moment';
 import {
   GetStaticPaths,
@@ -39,12 +41,27 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   };
 };
 
+const S = {
+  RevisionHistoryWrapperDiv: styled.div`
+    padding: 1rem 0 0.7rem;
+    margin: 0 0 5rem;
+    border-color: ${(props) => props.theme.color.border.primaryLight};
+    border-style: dotted;
+    border-width: 2px 0;
+  `,
+};
+
 const ArticlePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   article,
 }) => {
   return (
     <>
       <ArticleHeader article={article} />
+      {article.changeLogs && (
+        <S.RevisionHistoryWrapperDiv>
+          <ArticleRevisionRecordList log={article.changeLogs} />
+        </S.RevisionHistoryWrapperDiv>
+      )}
       <MarkdownRenderer content={article.body} />
     </>
   );
