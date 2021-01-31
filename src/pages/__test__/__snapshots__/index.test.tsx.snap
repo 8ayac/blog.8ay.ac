@@ -475,11 +475,11 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
                                     }
                                     withPreIcon={true}
                                   >
-                                    <ComponentWrapperDiv>
+                                    <S-ComponentWrapperDiv>
                                       <div
                                         className="emotion-36 emotion-37"
                                       >
-                                        <PreIconWrapperDiv>
+                                        <S-PreIconWrapperDiv>
                                           <div
                                             className="emotion-38 emotion-39"
                                           >
@@ -532,7 +532,7 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
                                               </svg>
                                             </FontAwesomeIcon>
                                           </div>
-                                        </PreIconWrapperDiv>
+                                        </S-PreIconWrapperDiv>
                                         <CategoryTag
                                           key="test-cat01"
                                           name="test-cat01"
@@ -558,7 +558,7 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
                                           </Link>
                                         </CategoryTag>
                                       </div>
-                                    </ComponentWrapperDiv>
+                                    </S-ComponentWrapperDiv>
                                   </CategoryTagList>
                                 </div>
                               </TagListWrapperDiv>
@@ -723,11 +723,11 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
                                     }
                                     withPreIcon={true}
                                   >
-                                    <ComponentWrapperDiv>
+                                    <S-ComponentWrapperDiv>
                                       <div
                                         className="emotion-36 emotion-37"
                                       >
-                                        <PreIconWrapperDiv>
+                                        <S-PreIconWrapperDiv>
                                           <div
                                             className="emotion-38 emotion-39"
                                           >
@@ -780,7 +780,7 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
                                               </svg>
                                             </FontAwesomeIcon>
                                           </div>
-                                        </PreIconWrapperDiv>
+                                        </S-PreIconWrapperDiv>
                                         <CategoryTag
                                           key="test-cat01"
                                           name="test-cat01"
@@ -830,7 +830,7 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
                                           </Link>
                                         </CategoryTag>
                                       </div>
-                                    </ComponentWrapperDiv>
+                                    </S-ComponentWrapperDiv>
                                   </CategoryTagList>
                                 </div>
                               </TagListWrapperDiv>
@@ -998,11 +998,11 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
                                     }
                                     withPreIcon={true}
                                   >
-                                    <ComponentWrapperDiv>
+                                    <S-ComponentWrapperDiv>
                                       <div
                                         className="emotion-36 emotion-37"
                                       >
-                                        <PreIconWrapperDiv>
+                                        <S-PreIconWrapperDiv>
                                           <div
                                             className="emotion-38 emotion-39"
                                           >
@@ -1055,7 +1055,7 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
                                               </svg>
                                             </FontAwesomeIcon>
                                           </div>
-                                        </PreIconWrapperDiv>
+                                        </S-PreIconWrapperDiv>
                                         <CategoryTag
                                           key="test-cat01"
                                           name="test-cat01"
@@ -1129,7 +1129,7 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
                                           </Link>
                                         </CategoryTag>
                                       </div>
-                                    </ComponentWrapperDiv>
+                                    </S-ComponentWrapperDiv>
                                   </CategoryTagList>
                                 </div>
                               </TagListWrapperDiv>
@@ -1179,7 +1179,7 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
             ]
           }
         >
-          <ComponentWrapperDiv>
+          <S-ComponentWrapperDiv>
             <div
               className="emotion-36 emotion-37"
             >
@@ -1256,7 +1256,7 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
                 </Link>
               </CategoryTag>
             </div>
-          </ComponentWrapperDiv>
+          </S-ComponentWrapperDiv>
         </CategoryTagList>
       </section>
     </S-TagListSection>

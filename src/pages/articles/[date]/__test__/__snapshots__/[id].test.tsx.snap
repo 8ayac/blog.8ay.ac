@@ -469,11 +469,11 @@ bluhbluhbluh",
                     <CategoryTagList
                       withPreIcon={true}
                     >
-                      <ComponentWrapperDiv>
+                      <S-ComponentWrapperDiv>
                         <div
                           className="emotion-26 emotion-27"
                         >
-                          <PreIconWrapperDiv>
+                          <S-PreIconWrapperDiv>
                             <div
                               className="emotion-28 emotion-29"
                             >
@@ -526,9 +526,9 @@ bluhbluhbluh",
                                 </svg>
                               </FontAwesomeIcon>
                             </div>
-                          </PreIconWrapperDiv>
+                          </S-PreIconWrapperDiv>
                         </div>
-                      </ComponentWrapperDiv>
+                      </S-ComponentWrapperDiv>
                     </CategoryTagList>
                   </div>
                 </TagListWrapperDiv>

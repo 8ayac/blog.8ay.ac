@@ -1,14 +1,14 @@
 import { BodyHeader } from '@/src/components/elements/BodyHeader';
 import { DateTime } from '@/src/components/elements/DateTime';
 import { CategoryTagList } from '@/src/components/widgets/CategoryTagList';
-import { FlexContainerDiv } from '@/src/shared/styles/abstractStyledComponents';
 import { getArticlePagePath } from '@/src/shared/utils';
 import { Article } from '@/src/types';
 import styled from '@emotion/styled';
 import React from 'react';
 
 const S = {
-  DateTimeWrapperDiv: styled(FlexContainerDiv)`
+  DateTimeWrapperDiv: styled.div`
+    display: flex;
     flex-flow: row wrap;
     align-items: center;
     margin-bottom: 1rem;
