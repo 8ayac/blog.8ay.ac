@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleOGPMeta is rendered correctly to match the snapshot 1`] = `
+<ArticleOGPMeta
+  article={
+    Object {
+      "attributes": Object {
+        "id": "example-id",
+        "publishedAt": 2021-01-01T00:00:00.000Z,
+        "tags": Array [
+          "cat-1",
+          "cat-2",
+          "cat-3",
+        ],
+        "title": "Example01",
+        "updatedAt": 2021-04-04T00:00:00.000Z,
+      },
+      "body": "## test
+
+bluhbluhbluh",
+      "changeLogs": Array [
+        Object {
+          "author": "8ayac",
+          "date": 2021-02-02T00:00:00.000Z,
+          "description": ":test_prefix: this is a test commit 01",
+          "id": "0000001",
+        },
+        Object {
+          "author": "8ayac",
+          "date": 2021-03-03T00:00:00.000Z,
+          "description": ":test_prefix: this is a test commit 02",
+          "id": "0000002",
+        },
+        Object {
+          "author": "8ayac",
+          "date": 2021-04-04T00:00:00.000Z,
+          "description": ":test_prefix: this is a test commit 03",
+          "id": "0000003",
+        },
+      ],
+    }
+  }
+>
+  <meta
+    content="2021-01-01T00:00:00.000Z"
+    property="article:published_time"
+  />
+  <meta
+    content="2021-04-04T00:00:00.000Z"
+    property="article:modified_time"
+  />
+  <meta
+    content="8ayac"
+    property="article:author"
+  />
+  <meta
+    content="cat-1"
+    key="cat-1"
+    property="article:tag"
+  />
+  <meta
+    content="cat-2"
+    key="cat-2"
+    property="article:tag"
+  />
+  <meta
+    content="cat-3"
+    key="cat-3"
+    property="article:tag"
+  />
+</ArticleOGPMeta>
+`;
