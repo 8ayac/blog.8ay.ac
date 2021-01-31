@@ -35,13 +35,52 @@ describe('ArticlePage', () => {
     ],
   };
 
-  it('is rendered correctly to match the snapshot', () => {
-    const wrapper = mount(
-      <ThemeProvider theme={theme}>
-        <ArticlePage article={testArticleData} />
-      </ThemeProvider>
-    );
-    expect(wrapper).toMatchSnapshot();
+  describe('is rendered correctly', () => {
+    describe('to match the snapshot', () => {
+      test('with revision history', () => {
+        const wrapper = mount(
+          <ThemeProvider theme={theme}>
+            <ArticlePage article={testArticleData} />
+          </ThemeProvider>
+        );
+        expect(wrapper).toMatchSnapshot();
+      });
+
+      test('without revision history', () => {
+        const testArticleDataHasNoRevisionRecords = {
+          ...testArticleData,
+          changeLogs: [],
+        };
+        const wrapper = mount(
+          <ThemeProvider theme={theme}>
+            <ArticlePage article={testArticleDataHasNoRevisionRecords} />
+          </ThemeProvider>
+        );
+        expect(wrapper).toMatchSnapshot();
+      });
+    });
+
+    test('to render revision history of the article', () => {
+      const wrapper = mount(
+        <ThemeProvider theme={theme}>
+          <ArticlePage article={testArticleData} />
+        </ThemeProvider>
+      );
+      expect(wrapper.find('RevisionHistoryWrapperDiv')).toHaveLength(1);
+    });
+
+    test('not render revision history of the article', () => {
+      const testArticleDataHasNoRevisionRecords = {
+        ...testArticleData,
+        changeLogs: [],
+      };
+      const wrapper = mount(
+        <ThemeProvider theme={theme}>
+          <ArticlePage article={testArticleDataHasNoRevisionRecords} />
+        </ThemeProvider>
+      );
+      expect(wrapper.find('RevisionHistoryWrapperDiv')).toHaveLength(0);
+    });
   });
 
   describe('has proper style rules', () => {

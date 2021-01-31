@@ -57,7 +57,7 @@ const ArticlePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   return (
     <>
       <ArticleHeader article={article} />
-      {article.changeLogs && (
+      {article.changeLogs.length > 0 && (
         <S.RevisionHistoryWrapperDiv>
           <ArticleRevisionRecordList log={article.changeLogs} />
         </S.RevisionHistoryWrapperDiv>
