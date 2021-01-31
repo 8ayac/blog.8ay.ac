@@ -9,7 +9,7 @@ const S = {
     padding: 3rem 10%;
     margin: 3rem auto;
     font-size: 1.6rem;
-    word-break: break-all;
+    word-break: break-word;
     background-color: white;
     border-radius: 5px;
 

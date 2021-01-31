@@ -8,8 +8,6 @@ import remarkGfm from 'remark-gfm';
 
 const S = {
   ConvertedMdBody: styled.div`
-    overflow-wrap: break-word;
-
     h1,
     h2 {
       padding-bottom: 0.3em;
