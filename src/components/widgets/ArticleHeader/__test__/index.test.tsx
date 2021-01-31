@@ -80,24 +80,5 @@ describe('ArticleHeader', () => {
         '0.5rem'
       );
     });
-
-    test('in FontAwesomeIcon', () => {
-      expect(wrapper.find('FontAwesomeIcon')).toHaveStyleRule(
-        'margin-right',
-        '1rem'
-      );
-      expect(wrapper.find('FontAwesomeIcon')).toHaveStyleRule(
-        'margin-left',
-        '0.5rem'
-      );
-      expect(wrapper.find('FontAwesomeIcon')).toHaveStyleRule(
-        'font-size',
-        '1em'
-      );
-      expect(wrapper.find('FontAwesomeIcon')).toHaveStyleRule(
-        'color',
-        `${theme.color.text.primaryLight}`
-      );
-    });
   });
 });

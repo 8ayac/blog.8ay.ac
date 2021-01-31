@@ -92,24 +92,36 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
   margin-bottom: 0.5rem;
 }
 
-.emotion-35 {
-  margin-right: 1rem;
-  margin-left: 0.5rem;
-  font-size: 1em;
+.emotion-34 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.emotion-34>* {
+  margin-right: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+
+.emotion-36 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: hsla(0, 0%, 40%);
 }
 
-.emotion-37 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin: 0 0.7rem 0.7rem 0;
-}
-
-.emotion-39 {
-  padding: 3% 1rem 4%;
-  margin: 0;
+.emotion-38 {
+  padding: 0.2rem 1rem;
   font-size: 0.8em;
   color: white;
   -webkit-text-decoration: none;
@@ -124,12 +136,12 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
   border-radius: 3px;
 }
 
-.emotion-39:hover {
+.emotion-38:hover {
   color: white;
   background-color: hsla(212, 72%, 60%);
 }
 
-.emotion-39:visited {
+.emotion-38:visited {
   color: white;
 }
 
@@ -289,28 +301,13 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
                 <BodyHeader
                   afterTitle={
                     <TagListWrapperDiv>
-                      <FontAwesomeIcon
-                        css="unknown styles"
-                        icon={
-                          Object {
-                            "icon": Array [
-                              640,
-                              512,
-                              Array [],
-                              "f02c",
-                              "M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z",
-                            ],
-                            "iconName": "tags",
-                            "prefix": "fas",
-                          }
-                        }
-                      />
                       <CategoryTagList
                         tags={
                           Array [
                             "test02",
                           ]
                         }
+                        withPreIcon={true}
                       />
                     </TagListWrapperDiv>
                   }
@@ -428,86 +425,74 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
                             <div
                               className="emotion-32 emotion-33"
                             >
-                              <FontAwesomeIcon
-                                className="emotion-34"
-                                icon={
-                                  Object {
-                                    "icon": Array [
-                                      640,
-                                      512,
-                                      Array [],
-                                      "f02c",
-                                      "M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z",
-                                    ],
-                                    "iconName": "tags",
-                                    "prefix": "fas",
-                                  }
-                                }
-                              >
-                                <FontAwesomeIcon
-                                  border={false}
-                                  className="emotion-35"
-                                  fixedWidth={false}
-                                  flip={null}
-                                  icon={
-                                    Object {
-                                      "icon": Array [
-                                        640,
-                                        512,
-                                        Array [],
-                                        "f02c",
-                                        "M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z",
-                                      ],
-                                      "iconName": "tags",
-                                      "prefix": "fas",
-                                    }
-                                  }
-                                  inverse={false}
-                                  listItem={false}
-                                  mask={null}
-                                  pull={null}
-                                  pulse={false}
-                                  rotation={null}
-                                  size={null}
-                                  spin={false}
-                                  swapOpacity={false}
-                                  symbol={false}
-                                  title=""
-                                  transform={null}
-                                >
-                                  <svg
-                                    aria-hidden="true"
-                                    className="svg-inline--fa fa-tags fa-w-20 emotion-35"
-                                    data-icon="tags"
-                                    data-prefix="fas"
-                                    focusable="false"
-                                    role="img"
-                                    style={Object {}}
-                                    viewBox="0 0 640 512"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <path
-                                      d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                  </svg>
-                                </FontAwesomeIcon>
-                              </FontAwesomeIcon>
                               <CategoryTagList
                                 tags={
                                   Array [
                                     "test02",
                                   ]
                                 }
+                                withPreIcon={true}
                               >
-                                <ComponentWrapperDiv
-                                  key="test02"
-                                >
+                                <ComponentWrapperDiv>
                                   <div
-                                    className="emotion-37 emotion-38"
+                                    className="emotion-34 emotion-35"
                                   >
+                                    <PreIconWrapperDiv>
+                                      <div
+                                        className="emotion-36 emotion-37"
+                                      >
+                                        <FontAwesomeIcon
+                                          border={false}
+                                          fixedWidth={false}
+                                          flip={null}
+                                          icon={
+                                            Object {
+                                              "icon": Array [
+                                                640,
+                                                512,
+                                                Array [],
+                                                "f02c",
+                                                "M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z",
+                                              ],
+                                              "iconName": "tags",
+                                              "prefix": "fas",
+                                            }
+                                          }
+                                          inverse={false}
+                                          listItem={false}
+                                          mask={null}
+                                          pull={null}
+                                          pulse={false}
+                                          rotation={null}
+                                          size={null}
+                                          spin={false}
+                                          swapOpacity={false}
+                                          symbol={false}
+                                          title=""
+                                          transform={null}
+                                        >
+                                          <svg
+                                            aria-hidden="true"
+                                            className="svg-inline--fa fa-tags fa-w-20 "
+                                            data-icon="tags"
+                                            data-prefix="fas"
+                                            focusable="false"
+                                            role="img"
+                                            style={Object {}}
+                                            viewBox="0 0 640 512"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                          >
+                                            <path
+                                              d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"
+                                              fill="currentColor"
+                                              style={Object {}}
+                                            />
+                                          </svg>
+                                        </FontAwesomeIcon>
+                                      </div>
+                                    </PreIconWrapperDiv>
                                     <CategoryTag
+                                      key="test02"
                                       name="test02"
                                     >
                                       <Link
@@ -520,7 +505,7 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
                                           onMouseEnter={[Function]}
                                         >
                                           <a
-                                            className="emotion-39 emotion-40"
+                                            className="emotion-38 emotion-39"
                                             href="/tags/test02"
                                             onClick={[Function]}
                                             onMouseEnter={[Function]}
@@ -561,28 +546,13 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
                 <BodyHeader
                   afterTitle={
                     <TagListWrapperDiv>
-                      <FontAwesomeIcon
-                        css="unknown styles"
-                        icon={
-                          Object {
-                            "icon": Array [
-                              640,
-                              512,
-                              Array [],
-                              "f02c",
-                              "M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z",
-                            ],
-                            "iconName": "tags",
-                            "prefix": "fas",
-                          }
-                        }
-                      />
                       <CategoryTagList
                         tags={
                           Array [
                             "test01",
                           ]
                         }
+                        withPreIcon={true}
                       />
                     </TagListWrapperDiv>
                   }
@@ -700,86 +670,74 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
                             <div
                               className="emotion-32 emotion-33"
                             >
-                              <FontAwesomeIcon
-                                className="emotion-34"
-                                icon={
-                                  Object {
-                                    "icon": Array [
-                                      640,
-                                      512,
-                                      Array [],
-                                      "f02c",
-                                      "M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z",
-                                    ],
-                                    "iconName": "tags",
-                                    "prefix": "fas",
-                                  }
-                                }
-                              >
-                                <FontAwesomeIcon
-                                  border={false}
-                                  className="emotion-35"
-                                  fixedWidth={false}
-                                  flip={null}
-                                  icon={
-                                    Object {
-                                      "icon": Array [
-                                        640,
-                                        512,
-                                        Array [],
-                                        "f02c",
-                                        "M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z",
-                                      ],
-                                      "iconName": "tags",
-                                      "prefix": "fas",
-                                    }
-                                  }
-                                  inverse={false}
-                                  listItem={false}
-                                  mask={null}
-                                  pull={null}
-                                  pulse={false}
-                                  rotation={null}
-                                  size={null}
-                                  spin={false}
-                                  swapOpacity={false}
-                                  symbol={false}
-                                  title=""
-                                  transform={null}
-                                >
-                                  <svg
-                                    aria-hidden="true"
-                                    className="svg-inline--fa fa-tags fa-w-20 emotion-35"
-                                    data-icon="tags"
-                                    data-prefix="fas"
-                                    focusable="false"
-                                    role="img"
-                                    style={Object {}}
-                                    viewBox="0 0 640 512"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <path
-                                      d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                  </svg>
-                                </FontAwesomeIcon>
-                              </FontAwesomeIcon>
                               <CategoryTagList
                                 tags={
                                   Array [
                                     "test01",
                                   ]
                                 }
+                                withPreIcon={true}
                               >
-                                <ComponentWrapperDiv
-                                  key="test01"
-                                >
+                                <ComponentWrapperDiv>
                                   <div
-                                    className="emotion-37 emotion-38"
+                                    className="emotion-34 emotion-35"
                                   >
+                                    <PreIconWrapperDiv>
+                                      <div
+                                        className="emotion-36 emotion-37"
+                                      >
+                                        <FontAwesomeIcon
+                                          border={false}
+                                          fixedWidth={false}
+                                          flip={null}
+                                          icon={
+                                            Object {
+                                              "icon": Array [
+                                                640,
+                                                512,
+                                                Array [],
+                                                "f02c",
+                                                "M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z",
+                                              ],
+                                              "iconName": "tags",
+                                              "prefix": "fas",
+                                            }
+                                          }
+                                          inverse={false}
+                                          listItem={false}
+                                          mask={null}
+                                          pull={null}
+                                          pulse={false}
+                                          rotation={null}
+                                          size={null}
+                                          spin={false}
+                                          swapOpacity={false}
+                                          symbol={false}
+                                          title=""
+                                          transform={null}
+                                        >
+                                          <svg
+                                            aria-hidden="true"
+                                            className="svg-inline--fa fa-tags fa-w-20 "
+                                            data-icon="tags"
+                                            data-prefix="fas"
+                                            focusable="false"
+                                            role="img"
+                                            style={Object {}}
+                                            viewBox="0 0 640 512"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                          >
+                                            <path
+                                              d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"
+                                              fill="currentColor"
+                                              style={Object {}}
+                                            />
+                                          </svg>
+                                        </FontAwesomeIcon>
+                                      </div>
+                                    </PreIconWrapperDiv>
                                     <CategoryTag
+                                      key="test01"
                                       name="test01"
                                     >
                                       <Link
@@ -792,7 +750,7 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
                                           onMouseEnter={[Function]}
                                         >
                                           <a
-                                            className="emotion-39 emotion-40"
+                                            className="emotion-38 emotion-39"
                                             href="/tags/test01"
                                             onClick={[Function]}
                                             onMouseEnter={[Function]}

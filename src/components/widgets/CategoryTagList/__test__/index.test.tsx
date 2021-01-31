@@ -8,13 +8,24 @@ describe('CategoryTagList', () => {
   const testTags = ['A', 'B', 'C', 'DUPLICATE', 'DUPLICATE'];
 
   describe('is rendered correctly', () => {
-    test('to match the snapshot', () => {
-      const wrapper = mount(
-        <ThemeProvider theme={theme}>
-          <CategoryTagList tags={testTags} />
-        </ThemeProvider>
-      );
-      expect(wrapper).toMatchSnapshot();
+    describe('to match the snapshot', () => {
+      test('with preIcon', () => {
+        const wrapper = mount(
+          <ThemeProvider theme={theme}>
+            <CategoryTagList tags={testTags} withPreIcon />
+          </ThemeProvider>
+        );
+        expect(wrapper).toMatchSnapshot();
+      });
+
+      test('without preIcon (default)', () => {
+        const wrapper = mount(
+          <ThemeProvider theme={theme}>
+            <CategoryTagList tags={testTags} />
+          </ThemeProvider>
+        );
+        expect(wrapper).toMatchSnapshot();
+      });
     });
 
     test('to contain the correct count of children', () => {
@@ -25,23 +36,58 @@ describe('CategoryTagList', () => {
       );
       expect(wrapper.find('CategoryTag')).toHaveLength(4);
     });
-  });
 
-  describe('has proper style rules', () => {
-    test('in ComponentWrapperDiv', () => {
+    test("when passed the optional prop 'withPreIcon'", () => {
+      const wrapper = mount(
+        <ThemeProvider theme={theme}>
+          <CategoryTagList tags={testTags} withPreIcon />
+        </ThemeProvider>
+      );
+      expect(wrapper.find('PreIconWrapperDiv')).toHaveLength(1);
+    });
+
+    test("when NOT passed the optional prop 'withPreIcon' (default)", () => {
       const wrapper = mount(
         <ThemeProvider theme={theme}>
           <CategoryTagList tags={testTags} />
         </ThemeProvider>
       );
+      expect(wrapper.find('PreIconWrapperDiv')).toHaveLength(0);
+    });
+  });
 
+  describe('has proper style rules', () => {
+    const wrapper = mount(
+      <ThemeProvider theme={theme}>
+        <CategoryTagList tags={testTags} withPreIcon />
+      </ThemeProvider>
+    );
+
+    test('in ComponentWrapperDiv', () => {
       expect(wrapper.find('ComponentWrapperDiv').first()).toHaveStyleRule(
         'display',
-        'inline-flex'
+        'flex'
       );
-      expect(wrapper.find('ComponentWrapperDiv').first()).toHaveStyleRule(
-        'margin',
-        '0 0.7rem 0.7rem 0'
+      expect(
+        wrapper.find('ComponentWrapperDiv').first()
+      ).toHaveStyleRule('margin-right', '0.7rem', { target: '*' });
+      expect(
+        wrapper.find('ComponentWrapperDiv').first()
+      ).toHaveStyleRule('margin-bottom', '0.7rem', { target: '*' });
+    });
+
+    test('in PreIconWrapperDiv', () => {
+      expect(wrapper.find('PreIconWrapperDiv').first()).toHaveStyleRule(
+        'display',
+        'flex'
+      );
+      expect(wrapper.find('PreIconWrapperDiv').first()).toHaveStyleRule(
+        'align-items',
+        'center'
+      );
+      expect(wrapper.find('PreIconWrapperDiv').first()).toHaveStyleRule(
+        'color',
+        `${theme.color.text.primaryLight}`
       );
     });
   });
