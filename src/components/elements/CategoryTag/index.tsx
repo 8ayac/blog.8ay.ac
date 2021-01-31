@@ -5,8 +5,7 @@ import React from 'react';
 
 const S = {
   Anchor: styled.a`
-    padding: 3% 1rem 4%;
-    margin: 0;
+    padding: 0.2rem 1rem;
     font-size: 0.8em;
     color: white;
     text-decoration: none;

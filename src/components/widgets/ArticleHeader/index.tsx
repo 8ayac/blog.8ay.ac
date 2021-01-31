@@ -4,10 +4,7 @@ import { CategoryTagList } from '@/src/components/widgets/CategoryTagList';
 import { FlexContainerDiv } from '@/src/shared/styles/abstractStyledComponents';
 import { getArticlePagePath } from '@/src/shared/utils';
 import { Article } from '@/src/types';
-import { css } from '@emotion/react';
 import styled from '@emotion/styled';
-import { faTags } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
 const S = {
@@ -39,16 +36,7 @@ export const ArticleHeader: React.FC<{ article: Article }> = ({ article }) => {
   );
   const tags = (
     <S.TagListWrapperDiv>
-      <FontAwesomeIcon
-        icon={faTags}
-        css={(theme) => css`
-          margin-right: 1rem;
-          margin-left: 0.5rem;
-          font-size: 1em;
-          color: ${theme.color.text.primaryLight};
-        `}
-      />
-      <CategoryTagList tags={article.attributes.tags} />
+      <CategoryTagList tags={article.attributes.tags} withPreIcon />
     </S.TagListWrapperDiv>
   );
 
