@@ -1,53 +1,29 @@
+import { mockArticleData } from '@/src/shared/__mocks__/articleData';
 import {
   getArticlePagePath,
   getArticlesWithATag,
-  getTagsPagePath,
-  getNumberOfArticlesWithATag,
   getLastModifiedDate,
+  getNumberOfArticlesWithATag,
+  getTagsPagePath,
 } from '@/src/shared/utils';
-import { Article, ArticleAttributes } from '@/src/types';
 
 describe('getArticlePagePath', () => {
   it('returns a proper path when given data with a UTC date.', () => {
-    const testArticle = {
-      attributes: {
-        id: 'test01',
-        title: 'test title',
-        tags: [],
-        publishedAt: new Date('2000-01-01T00:00:00.000Z'),
-      },
-      body: 'bluhbluhbluh',
-    };
-    expect(getArticlePagePath(testArticle)).toEqual(
-      '/articles/2000-01-01/test01'
-    );
-  });
-
-  it('returns a proper path when given data with a JST date.', () => {
-    const testArticle = {
-      attributes: {
-        id: 'test01',
-        title: 'test title',
-        tags: [],
-        publishedAt: new Date('2000-01-01T00:00:00.000Z'),
-      },
-      body: 'bluhbluhbluh',
-    };
-    expect(getArticlePagePath(testArticle)).toEqual(
-      '/articles/2000-01-01/test01'
+    expect(getArticlePagePath(mockArticleData.t1)).toEqual(
+      '/articles/2021-01-01/test-article-id-1'
     );
   });
 });
 
 describe('getTagPagePath', () => {
   it('returns a proper path', () => {
-    const testTagName = 'test-cat';
-    expect(getTagsPagePath(testTagName)).toBe('/tags/test-cat');
+    const testTagName = 'test-custom-tag';
+    expect(getTagsPagePath(testTagName)).toBe('/tags/test-custom-tag');
   });
 
   it('returns a proper path when given the string contains `/`', () => {
-    const testTagName = 'test/cat';
-    expect(getTagsPagePath(testTagName)).toBe('/tags/test%2Fcat');
+    const testTagName = 'test/custom-tag';
+    expect(getTagsPagePath(testTagName)).toBe('/tags/test%2Fcustom-tag');
   });
 
   it('returns a proper path when given the string contains multibyte characters', () => {
@@ -57,52 +33,33 @@ describe('getTagPagePath', () => {
 });
 
 describe('getNumberOfArticlesWithATag', () => {
-  const testCategories = ['test-cat01', 'test-cat02', 'test-cat03'];
+  const testCategories = ['test-custom-tag-1', 'test-custom-tag-2'];
   const testArticles = [
     {
+      ...mockArticleData.t1,
       attributes: {
-        id: 'test-article-01',
-        title: 'Test Title 01',
-        tags: testCategories.slice(0, 3),
-        publishedAt: new Date('2021-01-01T00:00:00.000Z'),
+        ...mockArticleData.t1.attributes,
+        tags: testCategories,
       },
-      body: 'bluhbluhbluh',
     },
     {
+      ...mockArticleData.t1,
       attributes: {
-        id: 'test-article-02',
-        title: 'Test Title 02',
-        tags: testCategories.slice(0, 2),
-        publishedAt: new Date('2021-02-02T00:00:00.000Z'),
-      },
-      body: 'bluhbluhbluh',
-    },
-    {
-      attributes: {
-        id: 'test-article-03',
-        title: 'Test Title 03',
+        ...mockArticleData.t1.attributes,
         tags: testCategories.slice(0, 1),
-        publishedAt: new Date('2021-03-03T00:00:00.000Z'),
       },
-      body: 'bluhbluhbluh',
     },
   ];
 
   describe('returns a correct number of articles', () => {
-    it('returns 3', () => {
-      expect(getNumberOfArticlesWithATag(testCategories[0], testArticles)).toBe(
-        3
-      );
-    });
-
     it('returns 2', () => {
-      expect(getNumberOfArticlesWithATag(testCategories[1], testArticles)).toBe(
+      expect(getNumberOfArticlesWithATag(testCategories[0], testArticles)).toBe(
         2
       );
     });
 
     it('returns 1', () => {
-      expect(getNumberOfArticlesWithATag(testCategories[2], testArticles)).toBe(
+      expect(getNumberOfArticlesWithATag(testCategories[1], testArticles)).toBe(
         1
       );
     });
@@ -116,52 +73,38 @@ describe('getNumberOfArticlesWithATag', () => {
 });
 
 describe('getArticlesWithATag', () => {
-  const testCategories = ['test-cat01', 'test-cat02', 'test-cat03'];
+  const testCategories = ['test-custom-tag-1', 'test-custom-tag-2'];
   const testArticles = [
     {
+      ...mockArticleData.t1,
       attributes: {
-        id: 'test-article-01',
-        title: 'Test Title 01',
-        tags: testCategories.slice(0, 3),
-        publishedAt: new Date('2021-01-01T00:00:00.000Z'),
+        ...mockArticleData.t1.attributes,
+        tags: testCategories,
       },
-      body: 'bluhbluhbluh',
     },
     {
+      ...mockArticleData.t1,
       attributes: {
-        id: 'test-article-02',
-        title: 'Test Title 02',
-        tags: testCategories.slice(0, 2),
-        publishedAt: new Date('2021-02-02T00:00:00.000Z'),
-      },
-      body: 'bluhbluhbluh',
-    },
-    {
-      attributes: {
-        id: 'test-article-03',
-        title: 'Test Title 03',
+        ...mockArticleData.t1.attributes,
         tags: testCategories.slice(0, 1),
-        publishedAt: new Date('2021-03-03T00:00:00.000Z'),
       },
-      body: 'bluhbluhbluh',
     },
   ];
 
   describe('returns a correct articles', () => {
-    test('returns test-article{01..03}', () => {
+    test('returns test-article{01..02}', () => {
       const result = getArticlesWithATag(testCategories[0], testArticles);
 
-      expect(result).toHaveLength(3);
-      expect(result[0].attributes.id).toBe('test-article-01');
-      expect(result[1].attributes.id).toBe('test-article-02');
-      expect(result[2].attributes.id).toBe('test-article-03');
+      expect(result).toHaveLength(2);
+      expect(result[0].attributes.id).toBe(testArticles[0].attributes.id);
+      expect(result[1].attributes.id).toBe(testArticles[1].attributes.id);
     });
 
     test('returns only test-article01', () => {
-      const result = getArticlesWithATag(testCategories[2], testArticles);
+      const result = getArticlesWithATag(testCategories[1], testArticles);
 
       expect(result).toHaveLength(1);
-      expect(result[0].attributes.id).toBe('test-article-01');
+      expect(result[0].attributes.id).toBe(testArticles[0].attributes.id);
     });
 
     test('returns nothing', () => {
@@ -172,44 +115,17 @@ describe('getArticlesWithATag', () => {
 });
 
 describe('getLastModifiedDate', () => {
-  const testArticleData: Article = {
-    attributes: {
-      id: 'example-id',
-      title: 'Example01',
-      publishedAt: new Date('2020-01-02T03:04:56.000Z'),
-    } as ArticleAttributes,
-    body: '## test\r\n\r\nbluhbluhbluh',
-    changeLogs: [
-      {
-        id: '0000001',
-        date: new Date('2021-01-02T03:04:05.000Z'),
-        description: ':test_prefix: this is a test commit 01',
-        author: '8ayac',
-      },
-      {
-        id: '0000002',
-        date: new Date('2021-06-07T08:09:10.000Z'),
-        description: ':test_prefix: this is a test commit 02',
-        author: '8ayac',
-      },
-      {
-        id: '0000003',
-        date: new Date('2021-11-12T13:14:15.000Z'),
-        description: ':test_prefix: this is a test commit 03',
-        author: '8ayac',
-      },
-    ],
-  };
+  const testArticleData = mockArticleData.t1;
 
   it('can get last modified date properly', () => {
     expect(getLastModifiedDate(testArticleData)).toEqual(
-      new Date('2021-11-12T13:14:15.000Z')
+      new Date('2021-01-01T22:22:22.000Z')
     );
   });
 
   it('returns published date when the log is empty', () => {
     expect(getLastModifiedDate({ ...testArticleData, changeLogs: [] })).toEqual(
-      new Date('2020-01-02T03:04:56.000Z')
+      new Date('2021-01-01T00:00:00.000Z')
     );
   });
 });
