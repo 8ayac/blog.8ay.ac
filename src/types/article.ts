@@ -15,6 +15,6 @@ export type ArticleAttributes = {
 export type Article = {
   attributes: ArticleAttributes;
   body: string;
-  description: string;
+  description?: string;
   changeLogs?: ArticleChangeLog[];
 };
