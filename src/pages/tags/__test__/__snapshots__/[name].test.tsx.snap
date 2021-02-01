@@ -208,7 +208,6 @@ exports[`TagPage is rendered correctly to match the snapshot 1`] = `
               "test-cat",
             ],
             "title": "Test Title 03",
-            "updatedAt": 2021-03-03T00:00:00.000Z,
           },
         },
         Object {
@@ -220,7 +219,6 @@ exports[`TagPage is rendered correctly to match the snapshot 1`] = `
               "test-cat",
             ],
             "title": "Test Title 02",
-            "updatedAt": 2021-02-02T00:00:00.000Z,
           },
         },
         Object {
@@ -232,7 +230,6 @@ exports[`TagPage is rendered correctly to match the snapshot 1`] = `
               "test-cat",
             ],
             "title": "Test Title 01",
-            "updatedAt": 2021-01-01T00:00:00.000Z,
           },
         },
       ]
@@ -293,7 +290,6 @@ exports[`TagPage is rendered correctly to match the snapshot 1`] = `
                 "test-cat",
               ],
               "title": "Test Title 03",
-              "updatedAt": 2021-03-03T00:00:00.000Z,
             },
           },
           Object {
@@ -305,7 +301,6 @@ exports[`TagPage is rendered correctly to match the snapshot 1`] = `
                 "test-cat",
               ],
               "title": "Test Title 02",
-              "updatedAt": 2021-02-02T00:00:00.000Z,
             },
           },
           Object {
@@ -317,7 +312,6 @@ exports[`TagPage is rendered correctly to match the snapshot 1`] = `
                 "test-cat",
               ],
               "title": "Test Title 01",
-              "updatedAt": 2021-01-01T00:00:00.000Z,
             },
           },
         ]
@@ -342,7 +336,6 @@ exports[`TagPage is rendered correctly to match the snapshot 1`] = `
                         "test-cat",
                       ],
                       "title": "Test Title 03",
-                      "updatedAt": 2021-03-03T00:00:00.000Z,
                     },
                   }
                 }
@@ -587,7 +580,6 @@ exports[`TagPage is rendered correctly to match the snapshot 1`] = `
                         "test-cat",
                       ],
                       "title": "Test Title 02",
-                      "updatedAt": 2021-02-02T00:00:00.000Z,
                     },
                   }
                 }
@@ -832,7 +824,6 @@ exports[`TagPage is rendered correctly to match the snapshot 1`] = `
                         "test-cat",
                       ],
                       "title": "Test Title 01",
-                      "updatedAt": 2021-01-01T00:00:00.000Z,
                     },
                   }
                 }
