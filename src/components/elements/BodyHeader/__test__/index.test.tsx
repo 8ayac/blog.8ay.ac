@@ -1,11 +1,12 @@
 import { BodyHeader } from '@/src/components/elements/BodyHeader';
 import { theme } from '@/src/constants/theme';
+import { mockArticleData } from '@/src/shared/__mocks__/articleData';
 import { ThemeProvider } from '@emotion/react';
 import { mount } from 'enzyme';
 import React from 'react';
 
 describe('BodyHeader', () => {
-  const testTitle = 'Test Title';
+  const testTitle = mockArticleData.t1.attributes.title;
   const testLinkTo = '/';
   const testBeforeTitle = <div>BEFORE</div>;
   const testAfterTitle = <div>AFTER</div>;

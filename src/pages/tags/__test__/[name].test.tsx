@@ -1,37 +1,26 @@
 import { theme } from '@/src/constants/theme';
 import TagsPage from '@/src/pages/tags/[name]';
+import { mockArticleData } from '@/src/shared/__mocks__/articleData';
+import { Article } from '@/src/types';
 import { ThemeProvider } from '@emotion/react';
 import { mount } from 'enzyme';
 import React from 'react';
 
 describe('TagPage', () => {
-  const testTagName = 'test-cat';
-  const testArticles = [
+  const testTagName = 'custom-test-tag';
+  const testArticles: Article[] = [
     {
+      ...mockArticleData.t1,
       attributes: {
-        id: 'test-article-01',
-        title: 'Test Title 01',
+        ...mockArticleData.t1.attributes,
         tags: [testTagName],
-        publishedAt: new Date('2021-01-01T00:00:00.000Z'),
-        body: 'bluhbluhbluh',
       },
     },
     {
+      ...mockArticleData.t2,
       attributes: {
-        id: 'test-article-02',
-        title: 'Test Title 02',
+        ...mockArticleData.t2.attributes,
         tags: [testTagName],
-        publishedAt: new Date('2021-02-02T00:00:00.000Z'),
-        body: 'bluhbluhbluh',
-      },
-    },
-    {
-      attributes: {
-        id: 'test-article-03',
-        title: 'Test Title 03',
-        tags: [testTagName],
-        publishedAt: new Date('2021-03-03T00:00:00.000Z'),
-        body: 'bluhbluhbluh',
       },
     },
   ];

@@ -74,8 +74,12 @@ exports[`DateTime is rendered correctly to match the snapshot in case with descr
   }
 >
   <DateTime
-    date={2021-01-02T03:04:56.000Z}
-    description="TEST DESCRIPTION"
+    date="2021-01-01T00:00:00.000Z"
+    description="test h2
+
+this is a test paragraph of test-article-id-1.
+
+"
   >
     <ComponentWrapperDiv>
       <div
@@ -85,14 +89,18 @@ exports[`DateTime is rendered correctly to match the snapshot in case with descr
           <span
             className="emotion-2 emotion-3"
           >
-            TEST DESCRIPTION:
+            test h2
+
+this is a test paragraph of test-article-id-1.
+
+:
           </span>
         </DescriptionSpan>
         <ISODateTime>
           <time
             className="emotion-4 emotion-5"
           >
-            2021-01-02T03:04:56.000Z
+            2021-01-01T00:00:00.000Z
           </time>
         </ISODateTime>
       </div>
@@ -170,7 +178,7 @@ exports[`DateTime is rendered correctly to match the snapshot in case without de
   }
 >
   <DateTime
-    date={2021-01-02T03:04:56.000Z}
+    date="2021-01-01T00:00:00.000Z"
   >
     <ComponentWrapperDiv>
       <div
@@ -180,7 +188,7 @@ exports[`DateTime is rendered correctly to match the snapshot in case without de
           <time
             className="emotion-2 emotion-3"
           >
-            2021-01-02T03:04:56.000Z
+            2021-01-01T00:00:00.000Z
           </time>
         </ISODateTime>
       </div>

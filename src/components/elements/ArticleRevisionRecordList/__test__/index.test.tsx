@@ -1,6 +1,7 @@
 import { ArticleRevisionRecordList } from '@/src/components/elements/ArticleRevisionRecordList';
 import { REPOSITORY_URL } from '@/src/constants/site';
 import { theme } from '@/src/constants/theme';
+import { mockArticleData } from '@/src/shared/__mocks__/articleData';
 import { ArticleChangeLog } from '@/src/types';
 import { ThemeProvider } from '@emotion/react';
 import { mount } from 'enzyme';
@@ -8,26 +9,7 @@ import React from 'react';
 import urljoin from 'url-join';
 
 describe('ArticleRevisionRecordList', () => {
-  const testLog: ArticleChangeLog[] = [
-    {
-      id: '0000001',
-      date: new Date('2021-01-02T03:04:05.000Z'),
-      description: ':test_prefix: this is a test commit 01',
-      author: '8ayac',
-    },
-    {
-      id: '0000002',
-      date: new Date('2021-06-07T08:09:10.000Z'),
-      description: ':test_prefix: this is a test commit 02',
-      author: '8ayac',
-    },
-    {
-      id: '0000003',
-      date: new Date('2021-11-12T13:14:15.000Z'),
-      description: ':test_prefix: this is a test commit 03',
-      author: '8ayac',
-    },
-  ];
+  const testLog: ArticleChangeLog[] = mockArticleData.t1.changeLogs;
 
   describe('is rendered correctly', () => {
     describe('to match the snapshot', () => {
@@ -63,21 +45,16 @@ describe('ArticleRevisionRecordList', () => {
       it('should sort the log in descending order by date', () => {
         const wrapper = mount(
           <ThemeProvider theme={theme}>
-            <ArticleRevisionRecordList
-              log={[testLog[0], testLog[2], testLog[1]]}
-            />
+            <ArticleRevisionRecordList log={[testLog[1], testLog[0]]} />
           </ThemeProvider>
         );
 
-        expect(wrapper.find('LogListItem')).toHaveLength(3);
+        expect(wrapper.find('LogListItem')).toHaveLength(2);
         expect(wrapper.find('UpdateDateTime').at(0).text()).toBe(
           new Date(testLog[0].date).toISOString()
         );
         expect(wrapper.find('UpdateDateTime').at(1).text()).toBe(
           new Date(testLog[1].date).toISOString()
-        );
-        expect(wrapper.find('UpdateDateTime').at(2).text()).toBe(
-          new Date(testLog[2].date).toISOString()
         );
       });
     });
@@ -95,9 +72,6 @@ describe('ArticleRevisionRecordList', () => {
       expect(wrapper.find('ToGitHubCommitAnchor').at(1).prop('href')).toBe(
         urljoin(REPOSITORY_URL, 'commit', testLog[1].id)
       );
-      expect(wrapper.find('ToGitHubCommitAnchor').at(2).prop('href')).toBe(
-        urljoin(REPOSITORY_URL, 'commit', testLog[2].id)
-      );
     });
 
     test("removes the prefix 'like `:thinking:` from descriptions", () => {
@@ -108,7 +82,7 @@ describe('ArticleRevisionRecordList', () => {
       );
 
       expect(wrapper.find('UpdateDescriptionSpan').first().text()).toBe(
-        'this is a test commit 01'
+        'this is a test commit 1-1'
       );
     });
   });
