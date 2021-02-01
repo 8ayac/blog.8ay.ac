@@ -19,8 +19,8 @@ export const nextSEOConfig = {
     site_name: config.site.title,
   },
   twitter: {
-    handle: `@${config.site.maintainer}`,
-    site: `@${config.site.maintainer}`,
+    handle: `@${config.site.maintainer.screenName}`,
+    site: `@${config.site.maintainer.screenName}`,
     cardType: 'summary_large_image',
   },
 } as const;
