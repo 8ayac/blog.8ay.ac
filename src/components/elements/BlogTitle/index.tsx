@@ -9,6 +9,10 @@ const S = {
     cursor: pointer;
     user-select: none;
 
+    &:visited {
+      color: inherit;
+    }
+
     &:hover {
       color: ${(props) => props.theme.color.yellow.base};
     }

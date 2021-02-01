@@ -86,6 +86,11 @@ describe('BlogTitle', () => {
 
       expect(wrapper.find('LogoWrapperAnchor')).toHaveStyleRule(
         'color',
+        'inherit',
+        { target: ':visited' }
+      );
+      expect(wrapper.find('LogoWrapperAnchor')).toHaveStyleRule(
+        'color',
         `${theme.color.yellow.base}`,
         { target: ':hover' }
       );
