@@ -1,7 +1,7 @@
 import { BodyHeader } from '@/src/components/elements/BodyHeader';
 import { DateTime } from '@/src/components/elements/DateTime';
 import { CategoryTagList } from '@/src/components/widgets/CategoryTagList';
-import { getArticlePagePath } from '@/src/shared/utils';
+import { getArticlePagePath, getLastModifiedDate } from '@/src/shared/utils';
 import { Article } from '@/src/types';
 import styled from '@emotion/styled';
 import React from 'react';
@@ -31,7 +31,7 @@ export const ArticleHeader: React.FC<{ article: Article }> = ({ article }) => {
         date={article.attributes.publishedAt}
         description="Published At"
       />
-      <DateTime date={article.attributes.updatedAt} description="Updated At" />
+      <DateTime date={getLastModifiedDate(article)} description="Updated At" />
     </S.DateTimeWrapperDiv>
   );
   const tags = (

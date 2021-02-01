@@ -207,7 +207,6 @@ exports[`ArticleHeaderList is rendered correctly to match the snapshot 1`] = `
               "test03",
             ],
             "title": "Test Title 03",
-            "updatedAt": 2021-03-03T00:00:00.000Z,
           },
           "body": "bluhbluhbluh",
         },
@@ -219,7 +218,6 @@ exports[`ArticleHeaderList is rendered correctly to match the snapshot 1`] = `
               "test02",
             ],
             "title": "Test Title 02",
-            "updatedAt": 2021-02-02T00:00:00.000Z,
           },
           "body": "bluhbluhbluh",
         },
@@ -231,7 +229,6 @@ exports[`ArticleHeaderList is rendered correctly to match the snapshot 1`] = `
               "test01",
             ],
             "title": "Test Title 01",
-            "updatedAt": 2021-01-01T00:00:00.000Z,
           },
           "body": "bluhbluhbluh",
         },
@@ -256,7 +253,6 @@ exports[`ArticleHeaderList is rendered correctly to match the snapshot 1`] = `
                       "test03",
                     ],
                     "title": "Test Title 03",
-                    "updatedAt": 2021-03-03T00:00:00.000Z,
                   },
                   "body": "bluhbluhbluh",
                 }
@@ -501,7 +497,6 @@ exports[`ArticleHeaderList is rendered correctly to match the snapshot 1`] = `
                       "test02",
                     ],
                     "title": "Test Title 02",
-                    "updatedAt": 2021-02-02T00:00:00.000Z,
                   },
                   "body": "bluhbluhbluh",
                 }
@@ -746,7 +741,6 @@ exports[`ArticleHeaderList is rendered correctly to match the snapshot 1`] = `
                       "test01",
                     ],
                     "title": "Test Title 01",
-                    "updatedAt": 2021-01-01T00:00:00.000Z,
                   },
                   "body": "bluhbluhbluh",
                 }

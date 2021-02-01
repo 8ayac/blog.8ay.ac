@@ -281,7 +281,6 @@ exports[`ArticlePage is rendered correctly to match the snapshot with revision h
           "id": "example-id",
           "publishedAt": 2021-01-02T03:04:56.000Z,
           "title": "Example01",
-          "updatedAt": 2021-01-02T03:04:56.000Z,
         },
         "body": "## test
 
@@ -316,7 +315,6 @@ bluhbluhbluh",
             "id": "example-id",
             "publishedAt": 2021-01-02T03:04:56.000Z,
             "title": "Example01",
-            "updatedAt": 2021-01-02T03:04:56.000Z,
           },
           "body": "## test
 
@@ -377,7 +375,6 @@ bluhbluhbluh",
             "id": "example-id",
             "publishedAt": 2021-01-02T03:04:56.000Z,
             "title": "Example01",
-            "updatedAt": 2021-01-02T03:04:56.000Z,
           },
           "body": "## test
 
@@ -420,7 +417,7 @@ bluhbluhbluh",
               description="Published At"
             />
             <DateTime
-              date={2021-01-02T03:04:56.000Z}
+              date={2021-11-12T13:14:15.000Z}
               description="Updated At"
             />
           </DateTimeWrapperDiv>
@@ -466,7 +463,7 @@ bluhbluhbluh",
                       </ComponentWrapperDiv>
                     </DateTime>
                     <DateTime
-                      date={2021-01-02T03:04:56.000Z}
+                      date={2021-11-12T13:14:15.000Z}
                       description="Updated At"
                     >
                       <ComponentWrapperDiv>
@@ -484,7 +481,7 @@ bluhbluhbluh",
                             <time
                               className="emotion-10 emotion-11"
                             >
-                              2021-01-02T03:04:56.000Z
+                              2021-11-12T13:14:15.000Z
                             </time>
                           </ISODateTime>
                         </div>
@@ -1284,7 +1281,6 @@ exports[`ArticlePage is rendered correctly to match the snapshot without revisio
           "id": "example-id",
           "publishedAt": 2021-01-02T03:04:56.000Z,
           "title": "Example01",
-          "updatedAt": 2021-01-02T03:04:56.000Z,
         },
         "body": "## test
 
@@ -1300,7 +1296,6 @@ bluhbluhbluh",
             "id": "example-id",
             "publishedAt": 2021-01-02T03:04:56.000Z,
             "title": "Example01",
-            "updatedAt": 2021-01-02T03:04:56.000Z,
           },
           "body": "## test
 
@@ -1342,7 +1337,6 @@ bluhbluhbluh",
             "id": "example-id",
             "publishedAt": 2021-01-02T03:04:56.000Z,
             "title": "Example01",
-            "updatedAt": 2021-01-02T03:04:56.000Z,
           },
           "body": "## test
 

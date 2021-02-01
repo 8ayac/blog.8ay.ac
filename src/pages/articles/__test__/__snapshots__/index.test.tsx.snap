@@ -208,7 +208,6 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
               "test02",
             ],
             "title": "Test Title 02",
-            "updatedAt": 2021-02-02T00:00:00.000Z,
           },
         },
         Object {
@@ -220,7 +219,6 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
               "test01",
             ],
             "title": "Test Title 01",
-            "updatedAt": 2021-01-01T00:00:00.000Z,
           },
         },
       ]
@@ -278,7 +276,6 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
                 "test02",
               ],
               "title": "Test Title 02",
-              "updatedAt": 2021-02-02T00:00:00.000Z,
             },
           },
           Object {
@@ -290,7 +287,6 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
                 "test01",
               ],
               "title": "Test Title 01",
-              "updatedAt": 2021-01-01T00:00:00.000Z,
             },
           },
         ]
@@ -315,7 +311,6 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
                         "test02",
                       ],
                       "title": "Test Title 02",
-                      "updatedAt": 2021-02-02T00:00:00.000Z,
                     },
                   }
                 }
@@ -560,7 +555,6 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
                         "test01",
                       ],
                       "title": "Test Title 01",
-                      "updatedAt": 2021-01-01T00:00:00.000Z,
                     },
                   }
                 }

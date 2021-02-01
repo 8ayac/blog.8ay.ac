@@ -2,7 +2,6 @@
 id: example01
 title: Example01
 publishedAt: 2000-01-01T00:00:00.000Z
-updatedAt: 2000-01-01T00:00:00.000Z
 tags: [example1-1, example1-2, example1-3]
 ---
 
