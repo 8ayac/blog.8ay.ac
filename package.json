@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "run-s build:articles build:next",
+    "build": "run-s build:articles build:rss build:next",
     "build:articles": "ts-node --project tsconfig.builder.json -r tsconfig-paths/register ./builder/articles",
+    "build:rss": "ts-node --project tsconfig.builder.json -r tsconfig-paths/register ./builder/rss",
     "build:next": "next build",
     "test": "yarn jest",
     "test:update": "yarn jest --updateSnapshot",
@@ -71,6 +72,7 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-react-hooks": "^4.1.0",
+    "feed": "^4.2.2",
     "front-matter": "^4.0.2",
     "fs-extra": "^9.0.1",
     "jest": "^26.6.3",

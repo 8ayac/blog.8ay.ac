@@ -7,6 +7,7 @@ export const config = {
       lastName: 'Hayashi',
       screenName: '8ayac',
       mailAddress: '8ayac.y+blog.8ay.ac@gmail.com',
+      profileUrl: 'https://about.8ay.ac/',
     },
     rootUrl:
       process.env.NODE_ENV === 'production'
