@@ -1,13 +1,16 @@
+import { config } from '@/site.config';
 import { Article } from '@/src/types';
 import moment from 'moment';
+import urljoin from 'url-join';
 
 export const getArticlePagePath = (article: Article): string => {
-  const date = moment(new Date(article.attributes.publishedAt).toISOString())
-    .utc()
-    .format('YYYY-MM-DD');
-  const { id } = article.attributes;
-
-  return `/articles/${date}/${id}`;
+  return urljoin(
+    config.page.articles.root,
+    moment(new Date(article.attributes.publishedAt).toISOString())
+      .utc()
+      .format('YYYY-MM-DD'),
+    article.attributes.id
+  );
 };
 
 export const getTagsPagePath = (tagName: string): string => {
