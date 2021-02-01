@@ -5,6 +5,7 @@ import jsonArticles from '@/src/shared/.content/articles.json';
 import { Article } from '@/src/types';
 import styled, { StyledComponent } from '@emotion/styled';
 import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
+import { NextSeo } from 'next-seo';
 import React from 'react';
 
 const S: { [key: string]: StyledComponent<any> } = {
@@ -23,16 +24,19 @@ export const getStaticProps: GetStaticProps = async () => {
   };
 };
 
+const SEO: React.FC = () => <NextSeo />;
+
 const TopPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   articles,
 }) => {
   return (
     <>
+      <SEO />
+
       <S.ArticleListSection>
         <BodyHeader title="Articles" />
         <ArticleHeaderList articles={articles} />
       </S.ArticleListSection>
-
       <S.TagListSection>
         <BodyHeader title="Tags" />
         <CategoryTagList

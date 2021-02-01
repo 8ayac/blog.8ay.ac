@@ -249,6 +249,17 @@ exports[`TopPage is rendered correctly to match the snapshot 1`] = `
       ]
     }
   >
+    <SEO>
+      <_default>
+        <Head>
+          <_default
+            headManager={Object {}}
+            inAmpMode={false}
+            reduceComponentsToState={[Function]}
+          />
+        </Head>
+      </_default>
+    </SEO>
     <S-ArticleListSection>
       <section
         className="emotion-0 emotion-1"

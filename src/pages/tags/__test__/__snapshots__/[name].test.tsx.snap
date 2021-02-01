@@ -239,6 +239,31 @@ exports[`TagPage is rendered correctly to match the snapshot 1`] = `
     }
     name="test-cat"
   >
+    <SEO
+      tagName="test-cat"
+    >
+      <_default
+        openGraph={
+          Object {
+            "title": "#test-cat - もしくはこれ",
+          }
+        }
+        title="#test-cat"
+        twitter={
+          Object {
+            "cardType": "summary",
+          }
+        }
+      >
+        <Head>
+          <_default
+            headManager={Object {}}
+            inAmpMode={false}
+            reduceComponentsToState={[Function]}
+          />
+        </Head>
+      </_default>
+    </SEO>
     <BodyHeader
       title="Tag: test-cat"
     >

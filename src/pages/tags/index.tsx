@@ -1,3 +1,4 @@
+import { config } from '@/site.config';
 import { BodyHeader } from '@/src/components/elements/BodyHeader';
 import { ArticleHeaderList } from '@/src/components/widgets/ArticleHeaderList';
 import { CategoryTagList } from '@/src/components/widgets/CategoryTagList';
@@ -10,6 +11,7 @@ import {
 import { Article } from '@/src/types';
 import styled, { StyledComponent } from '@emotion/styled';
 import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
+import { NextSeo } from 'next-seo';
 import React from 'react';
 
 export const getStaticProps: GetStaticProps = async () => {
@@ -38,11 +40,19 @@ S.TagListSection = styled(S.Section)`
 `;
 S.EachTagSection = styled(S.Section)``;
 
+const SEO: React.FC = () => (
+  <NextSeo
+    title={config.page.tags.name}
+    openGraph={{ title: `${config.page.tags.name} ‐ ${config.site.title}` }}
+  />
+);
+
 const TagsIndexPage: NextPage<
   InferGetStaticPropsType<typeof getStaticProps>
 > = ({ tags, articles }) => {
   return (
     <>
+      <SEO />
       <BodyHeader title="Tags" />
 
       <S.TagListSection>

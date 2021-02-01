@@ -309,6 +309,67 @@ bluhbluhbluh",
       }
     }
   >
+    <SEO
+      article={
+        Object {
+          "attributes": Object {
+            "id": "example-id",
+            "publishedAt": 2021-01-02T03:04:56.000Z,
+            "title": "Example01",
+            "updatedAt": 2021-01-02T03:04:56.000Z,
+          },
+          "body": "## test
+
+bluhbluhbluh",
+          "changeLogs": Array [
+            Object {
+              "author": "8ayac",
+              "date": 2021-01-02T03:04:05.000Z,
+              "description": ":test_prefix: this is a test commit 01",
+              "id": "0000001",
+            },
+            Object {
+              "author": "8ayac",
+              "date": 2021-06-07T08:09:10.000Z,
+              "description": ":test_prefix: this is a test commit 02",
+              "id": "0000002",
+            },
+            Object {
+              "author": "8ayac",
+              "date": 2021-11-12T13:14:15.000Z,
+              "description": ":test_prefix: this is a test commit 03",
+              "id": "0000003",
+            },
+          ],
+        }
+      }
+    >
+      <_default
+        openGraph={
+          Object {
+            "article": Object {
+              "authors": Array [
+                "8ayac",
+              ],
+              "modifiedTime": "2021-11-12T13:14:15.000Z",
+              "publishedTime": "2021-01-02T03:04:56.000Z",
+              "tags": undefined,
+            },
+            "title": "Example01 - もしくはこれ",
+            "type": "article",
+          }
+        }
+        title="Example01"
+      >
+        <Head>
+          <_default
+            headManager={Object {}}
+            inAmpMode={false}
+            reduceComponentsToState={[Function]}
+          />
+        </Head>
+      </_default>
+    </SEO>
     <ArticleHeader
       article={
         Object {
@@ -1232,6 +1293,48 @@ bluhbluhbluh",
       }
     }
   >
+    <SEO
+      article={
+        Object {
+          "attributes": Object {
+            "id": "example-id",
+            "publishedAt": 2021-01-02T03:04:56.000Z,
+            "title": "Example01",
+            "updatedAt": 2021-01-02T03:04:56.000Z,
+          },
+          "body": "## test
+
+bluhbluhbluh",
+          "changeLogs": Array [],
+        }
+      }
+    >
+      <_default
+        openGraph={
+          Object {
+            "article": Object {
+              "authors": Array [
+                "8ayac",
+              ],
+              "modifiedTime": "2021-01-02T03:04:56.000Z",
+              "publishedTime": "2021-01-02T03:04:56.000Z",
+              "tags": undefined,
+            },
+            "title": "Example01 - もしくはこれ",
+            "type": "article",
+          }
+        }
+        title="Example01"
+      >
+        <Head>
+          <_default
+            headManager={Object {}}
+            inAmpMode={false}
+            reduceComponentsToState={[Function]}
+          />
+        </Head>
+      </_default>
+    </SEO>
     <ArticleHeader
       article={
         Object {
