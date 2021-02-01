@@ -1,11 +1,17 @@
 import path from 'path';
 import { ARTICLES_DIR, CONTENT_OUTPUT_DIR } from '@/src/constants/forBuilder';
-import { ArticleAttributes, ArticleChangeLog } from '@/src/types/article';
+import {
+  Article,
+  ArticleAttributes,
+  ArticleChangeLog,
+} from '@/src/types/article';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import fm from 'front-matter';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import fs from 'fs-extra';
 import gitlog from 'gitlog';
+import remark from 'remark';
+import strip from 'strip-markdown';
 
 export const getDirNamesIn = (dir: string): string[] => {
   return fs
@@ -81,6 +87,10 @@ export const copyImagesToPublic = (
   }
 };
 
+export const generateDescriptionFromMdBody = (mdBody: string): string => {
+  return remark().use(strip).processSync(mdBody).toString().slice(0, 300);
+};
+
 export const generateArticlesJson = (
   articlesDir: string,
   outputDir: string,
@@ -89,12 +99,18 @@ export const generateArticlesJson = (
   const eachArticlePath = getDirNamesIn(articlesDir).map((dirName) =>
     path.join(articlesDir, dirName)
   );
-  const allArticleData = eachArticlePath.map((p) => ({
-    ...parseMarkdownWithMeta(
+  const allArticleData: Article[] = [];
+  eachArticlePath.forEach((p) => {
+    const { body, attributes } = parseMarkdownWithMeta(
       fs.readFileSync(path.join(p, 'index.md')).toString()
-    ),
-    changeLogs: getChangeLog('main', p),
-  }));
+    );
+    allArticleData.push({
+      attributes,
+      body,
+      description: generateDescriptionFromMdBody(body),
+      changeLogs: getChangeLog('main', p),
+    });
+  });
 
   allArticleData.sort(
     (a, b) =>

@@ -2,6 +2,7 @@ import * as fs from 'fs';
 import path from 'path';
 import {
   copyImagesToPublic,
+  generateDescriptionFromMdBody,
   generateArticlesJson,
   getDirNamesIn,
   parseMarkdownWithMeta,
@@ -86,6 +87,13 @@ describe('copyImageDirectories', () => {
   it('can copy all images to proper directory', () => {
     copyImagesToPublic(testArticleDir, testPublicRoot);
     expect(fs.readdirSync(expectOutputDir)).toEqual(['blue.png', 'red.png']);
+  });
+});
+
+describe('generateDescriptionFromMdBody', () => {
+  const testMd = '## hoge\r\n\r\n**this is a test.**\r\n\r\n'.repeat(300);
+  test('returns the string whose length is 300 or lower.', () => {
+    expect(generateDescriptionFromMdBody(testMd).length).toBeLessThan(301);
   });
 });
 
