@@ -12,13 +12,17 @@ export const config = {
     notFound: {
       title: '404 not found',
     },
+    top: {
+      name: 'Top',
+      root: '/',
+    },
     articles: {
-      title: 'Articles',
-      href: '/articles',
+      name: 'Articles',
+      root: '/articles',
     },
     tags: {
-      title: 'Tags',
-      href: '/tags',
+      name: 'Tags',
+      root: '/tags',
     },
   },
 };

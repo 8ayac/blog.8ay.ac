@@ -226,6 +226,29 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
       ]
     }
   >
+    <SEO>
+      <_default
+        openGraph={
+          Object {
+            "title": "Articles - もしくはこれ",
+          }
+        }
+        title="Articles"
+        twitter={
+          Object {
+            "cardType": "summary",
+          }
+        }
+      >
+        <Head>
+          <_default
+            headManager={Object {}}
+            inAmpMode={false}
+            reduceComponentsToState={[Function]}
+          />
+        </Head>
+      </_default>
+    </SEO>
     <BodyHeader
       title="Articles"
     >

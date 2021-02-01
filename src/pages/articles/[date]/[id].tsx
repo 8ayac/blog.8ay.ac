@@ -1,7 +1,9 @@
+import { config } from '@/site.config';
 import { ArticleRevisionRecordList } from '@/src/components/elements/ArticleRevisionRecordList';
 import { MarkdownRenderer } from '@/src/components/elements/MarkdownRenderer';
 import { ArticleHeader } from '@/src/components/widgets/ArticleHeader';
 import jsonArticles from '@/src/shared/.content/articles.json';
+import { getLastModifiedDate } from '@/src/shared/utils';
 import { Article } from '@/src/types';
 import styled from '@emotion/styled';
 import moment from 'moment';
@@ -11,6 +13,7 @@ import {
   InferGetStaticPropsType,
   NextPage,
 } from 'next';
+import { NextSeo } from 'next-seo';
 import React from 'react';
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -51,11 +54,29 @@ const S = {
   `,
 };
 
+const SEO: React.FC<{ article: Article }> = ({ article }) => (
+  <NextSeo
+    title={article.attributes.title}
+    openGraph={{
+      title: `${article.attributes.title} - ${config.site.title}`,
+      type: 'article',
+      article: {
+        publishedTime: new Date(article.attributes.publishedAt).toISOString(),
+        modifiedTime: getLastModifiedDate(article).toISOString(),
+        authors: [config.site.maintainer],
+        tags: article.attributes.tags,
+      },
+    }}
+  />
+);
+
 const ArticlePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   article,
 }) => {
   return (
     <>
+      <SEO article={article} />
+
       <ArticleHeader article={article} />
       {article.changeLogs.length > 0 && (
         <S.RevisionHistoryWrapperDiv>

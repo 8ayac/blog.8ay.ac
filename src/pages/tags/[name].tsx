@@ -1,3 +1,4 @@
+import { config } from '@/site.config';
 import { BodyHeader } from '@/src/components/elements/BodyHeader';
 import { ArticleHeaderList } from '@/src/components/widgets/ArticleHeaderList';
 import jsonArticles from '@/src/shared/.content/articles.json';
@@ -8,6 +9,7 @@ import {
   InferGetStaticPropsType,
   NextPage,
 } from 'next';
+import { NextSeo } from 'next-seo';
 import React from 'react';
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -42,12 +44,21 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   };
 };
 
+const SEO: React.FC<{ tagName: string }> = ({ tagName }) => (
+  <NextSeo
+    title={`#${tagName}`}
+    openGraph={{ title: `#${tagName} - ${config.site.title}` }}
+    twitter={{ cardType: 'summary' }}
+  />
+);
+
 const TagsPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   name,
   filteredArticles,
 }) => {
   return (
     <>
+      <SEO tagName={name} />
       <BodyHeader title={`Tag: ${name}`} />
       <ArticleHeaderList articles={filteredArticles} />
     </>
