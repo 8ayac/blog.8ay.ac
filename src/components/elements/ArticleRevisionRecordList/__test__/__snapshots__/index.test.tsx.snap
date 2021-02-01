@@ -136,21 +136,15 @@ exports[`ArticleRevisionRecordList is rendered correctly to match the snapshot w
       Array [
         Object {
           "author": "8ayac",
-          "date": 2021-01-02T03:04:05.000Z,
-          "description": ":test_prefix: this is a test commit 01",
-          "id": "0000001",
+          "date": "2021-01-01T11:11:11.000Z",
+          "description": ":test_prefix: this is a test commit 1-1",
+          "id": "1000001",
         },
         Object {
           "author": "8ayac",
-          "date": 2021-06-07T08:09:10.000Z,
-          "description": ":test_prefix: this is a test commit 02",
-          "id": "0000002",
-        },
-        Object {
-          "author": "8ayac",
-          "date": 2021-11-12T13:14:15.000Z,
-          "description": ":test_prefix: this is a test commit 03",
-          "id": "0000003",
+          "date": "2021-01-01T22:22:22.000Z",
+          "description": ":test_prefix: this is a test commit 1-2",
+          "id": "1000002",
         },
       ]
     }
@@ -174,21 +168,15 @@ exports[`ArticleRevisionRecordList is rendered correctly to match the snapshot w
             Array [
               Object {
                 "author": "8ayac",
-                "date": 2021-01-02T03:04:05.000Z,
-                "description": ":test_prefix: this is a test commit 01",
-                "id": "0000001",
+                "date": "2021-01-01T11:11:11.000Z",
+                "description": ":test_prefix: this is a test commit 1-1",
+                "id": "1000001",
               },
               Object {
                 "author": "8ayac",
-                "date": 2021-06-07T08:09:10.000Z,
-                "description": ":test_prefix: this is a test commit 02",
-                "id": "0000002",
-              },
-              Object {
-                "author": "8ayac",
-                "date": 2021-11-12T13:14:15.000Z,
-                "description": ":test_prefix: this is a test commit 03",
-                "id": "0000003",
+                "date": "2021-01-01T22:22:22.000Z",
+                "description": ":test_prefix: this is a test commit 1-2",
+                "id": "1000002",
               },
             ]
           }
@@ -198,7 +186,7 @@ exports[`ArticleRevisionRecordList is rendered correctly to match the snapshot w
               className="emotion-4 emotion-5"
             >
               <LogListItem
-                key="0000001"
+                key="1000001"
               >
                 <li
                   className="emotion-6 emotion-7"
@@ -207,7 +195,7 @@ exports[`ArticleRevisionRecordList is rendered correctly to match the snapshot w
                     <time
                       className="emotion-8 emotion-9"
                     >
-                      2021-01-02T03:04:05.000Z
+                      2021-01-01T11:11:11.000Z
                     </time>
                   </UpdateDateTime>
                    
@@ -215,24 +203,24 @@ exports[`ArticleRevisionRecordList is rendered correctly to match the snapshot w
                     <span
                       className="emotion-10 emotion-11"
                     >
-                      this is a test commit 01
+                      this is a test commit 1-1
                     </span>
                   </UpdateDescriptionSpan>
                    
                   (
                   <ToGitHubCommitAnchor
-                    href="https://github.com/8ayac/blog.8ay.ac/commit/0000001"
+                    href="https://github.com/8ayac/blog.8ay.ac/commit/1000001"
                     rel="noopener"
                     target="_blank"
                   >
                     <a
                       className="emotion-12 emotion-13"
-                      href="https://github.com/8ayac/blog.8ay.ac/commit/0000001"
+                      href="https://github.com/8ayac/blog.8ay.ac/commit/1000001"
                       rel="noopener"
                       target="_blank"
                     >
                       #
-                      0000001
+                      1000001
                     </a>
                   </ToGitHubCommitAnchor>
                    
@@ -242,7 +230,7 @@ exports[`ArticleRevisionRecordList is rendered correctly to match the snapshot w
                 </li>
               </LogListItem>
               <LogListItem
-                key="0000002"
+                key="1000002"
               >
                 <li
                   className="emotion-6 emotion-7"
@@ -251,7 +239,7 @@ exports[`ArticleRevisionRecordList is rendered correctly to match the snapshot w
                     <time
                       className="emotion-8 emotion-9"
                     >
-                      2021-06-07T08:09:10.000Z
+                      2021-01-01T22:22:22.000Z
                     </time>
                   </UpdateDateTime>
                    
@@ -259,68 +247,24 @@ exports[`ArticleRevisionRecordList is rendered correctly to match the snapshot w
                     <span
                       className="emotion-10 emotion-11"
                     >
-                      this is a test commit 02
+                      this is a test commit 1-2
                     </span>
                   </UpdateDescriptionSpan>
                    
                   (
                   <ToGitHubCommitAnchor
-                    href="https://github.com/8ayac/blog.8ay.ac/commit/0000002"
+                    href="https://github.com/8ayac/blog.8ay.ac/commit/1000002"
                     rel="noopener"
                     target="_blank"
                   >
                     <a
                       className="emotion-12 emotion-13"
-                      href="https://github.com/8ayac/blog.8ay.ac/commit/0000002"
+                      href="https://github.com/8ayac/blog.8ay.ac/commit/1000002"
                       rel="noopener"
                       target="_blank"
                     >
                       #
-                      0000002
-                    </a>
-                  </ToGitHubCommitAnchor>
-                   
-                  by 
-                  8ayac
-                  )
-                </li>
-              </LogListItem>
-              <LogListItem
-                key="0000003"
-              >
-                <li
-                  className="emotion-6 emotion-7"
-                >
-                  <UpdateDateTime>
-                    <time
-                      className="emotion-8 emotion-9"
-                    >
-                      2021-11-12T13:14:15.000Z
-                    </time>
-                  </UpdateDateTime>
-                   
-                  <UpdateDescriptionSpan>
-                    <span
-                      className="emotion-10 emotion-11"
-                    >
-                      this is a test commit 03
-                    </span>
-                  </UpdateDescriptionSpan>
-                   
-                  (
-                  <ToGitHubCommitAnchor
-                    href="https://github.com/8ayac/blog.8ay.ac/commit/0000003"
-                    rel="noopener"
-                    target="_blank"
-                  >
-                    <a
-                      className="emotion-12 emotion-13"
-                      href="https://github.com/8ayac/blog.8ay.ac/commit/0000003"
-                      rel="noopener"
-                      target="_blank"
-                    >
-                      #
-                      0000003
+                      1000002
                     </a>
                   </ToGitHubCommitAnchor>
                    

@@ -1,11 +1,12 @@
 import { CategoryTag } from '@/src/components/elements/CategoryTag';
 import { theme } from '@/src/constants/theme';
+import { mockArticleData } from '@/src/shared/__mocks__/articleData';
 import { ThemeProvider } from '@emotion/react';
 import { mount } from 'enzyme';
 import React from 'react';
 
 describe('CategoryTag', () => {
-  const testTagName = 'test-cat';
+  const testTagName = mockArticleData.t1.attributes.tags[0];
 
   test('is rendered correctly to match the snapshot', () => {
     const wrapper = mount(
@@ -31,7 +32,7 @@ describe('CategoryTag', () => {
         <CategoryTag name={testTagName} />
       </ThemeProvider>
     );
-    expect(wrapper.find('a').prop('href')).toEqual('/tags/test-cat');
+    expect(wrapper.find('a').prop('href')).toEqual(`/tags/${testTagName}`);
   });
 
   describe('has proper style rules', () => {

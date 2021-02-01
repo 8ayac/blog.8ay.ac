@@ -111,6 +111,31 @@ exports[`ArticlePage is rendered correctly to match the snapshot with revision h
 }
 
 .emotion-30 {
+  padding: 0.2rem 1rem;
+  font-size: 0.8em;
+  color: white;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: hsla(212, 72%, 50%);
+  -webkit-filter: drop-shadow(
+        2px 2px 1px hsla(212, 72%, 80%)
+      );
+  filter: drop-shadow(
+        2px 2px 1px hsla(212, 72%, 80%)
+      );
+  border-radius: 3px;
+}
+
+.emotion-30:hover {
+  color: white;
+  background-color: hsla(212, 72%, 60%);
+}
+
+.emotion-30:visited {
+  color: white;
+}
+
+.emotion-34 {
   padding: 1rem 0 0.7rem;
   margin: 0 0 5rem;
   border-color: hsla(0, 0%, 75%);
@@ -118,52 +143,52 @@ exports[`ArticlePage is rendered correctly to match the snapshot with revision h
   border-width: 2px 0;
 }
 
-.emotion-34 {
+.emotion-38 {
   margin-bottom: 0.75rem;
   font-weight: 600;
   cursor: pointer;
   outline: none;
 }
 
-.emotion-36 {
+.emotion-40 {
   padding-left: 0;
   margin: 0;
 }
 
-.emotion-38 {
+.emotion-42 {
   margin-bottom: 0.75rem;
   list-style: none;
 }
 
-.emotion-42 {
+.emotion-46 {
   font-weight: bolder;
 }
 
-.emotion-62 h1,
-.emotion-62 h2 {
+.emotion-58 h1,
+.emotion-58 h2 {
   padding-bottom: 0.3em;
   margin-top: 2em;
   border-bottom: 1px solid hsla(0, 0%, 75%);
 }
 
-.emotion-62 h3,
-.emotion-62 h4,
-.emotion-62 h5,
-.emotion-62 h6 {
+.emotion-58 h3,
+.emotion-58 h4,
+.emotion-58 h5,
+.emotion-58 h6 {
   margin-top: 1em;
 }
 
-.emotion-62 code,
-.emotion-62 pre {
+.emotion-58 code,
+.emotion-58 pre {
   font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
   word-break: normal;
 }
 
-.emotion-62 pre {
+.emotion-58 pre {
   white-space: pre-wrap;
 }
 
-.emotion-62 code:not([class]) {
+.emotion-58 code:not([class]) {
   padding: 0.2em 0.4em;
   margin: 0;
   font-size: 0.85em;
@@ -171,54 +196,54 @@ exports[`ArticlePage is rendered correctly to match the snapshot with revision h
   border-radius: 3px;
 }
 
-.emotion-62 blockquote,
-.emotion-62 details,
-.emotion-62 dl,
-.emotion-62 ol,
-.emotion-62 p,
-.emotion-62 pre,
-.emotion-62 table,
-.emotion-62 ul {
+.emotion-58 blockquote,
+.emotion-58 details,
+.emotion-58 dl,
+.emotion-58 ol,
+.emotion-58 p,
+.emotion-58 pre,
+.emotion-58 table,
+.emotion-58 ul {
   margin-top: 0;
   margin-bottom: 1.8rem;
 }
 
-.emotion-62 ol ol,
-.emotion-62 ul ol {
+.emotion-58 ol ol,
+.emotion-58 ul ol {
   list-style-type: lower-roman;
 }
 
-.emotion-62 li>p {
+.emotion-58 li>p {
   margin-top: 1.6rem;
 }
 
-.emotion-62 li+li {
+.emotion-58 li+li {
   margin-top: 0.25em;
 }
 
-.emotion-62 blockquote {
+.emotion-58 blockquote {
   padding: 0 1em;
   margin-left: 0;
   color: hsla(0, 0%, 40%);
   border-left: 0.25em solid hsla(212, 72%, 90%);
 }
 
-.emotion-62 blockquote:first-of-type {
+.emotion-58 blockquote:first-of-type {
   margin-top: 0;
 }
 
-.emotion-62 blockquote:last-of-type {
+.emotion-58 blockquote:last-of-type {
   margin-bottom: 0;
 }
 
-.emotion-62 div.code-toolbar>.toolbar {
+.emotion-58 div.code-toolbar>.toolbar {
   top: 0.3em;
   right: 0.3em;
   -webkit-transition: none;
   transition: none;
 }
 
-.emotion-62 div.code-toolbar>.toolbar span {
+.emotion-58 div.code-toolbar>.toolbar span {
   font-size: 0.85em;
   border-radius: 10px;
 }
@@ -278,33 +303,37 @@ exports[`ArticlePage is rendered correctly to match the snapshot with revision h
     article={
       Object {
         "attributes": Object {
-          "id": "example-id",
-          "publishedAt": 2021-01-02T03:04:56.000Z,
-          "title": "Example01",
+          "id": "test-article-id-1",
+          "publishedAt": "2021-01-01T00:00:00.000Z",
+          "tags": Array [
+            "test-tag-1-1",
+            "test-tag-1-2",
+          ],
+          "title": "Test Article Title 1",
         },
-        "body": "## test
+        "body": "## test h2
 
-bluhbluhbluh",
+this is a test paragraph of test-article-id-1.
+",
         "changeLogs": Array [
           Object {
             "author": "8ayac",
-            "date": 2021-01-02T03:04:05.000Z,
-            "description": ":test_prefix: this is a test commit 01",
-            "id": "0000001",
+            "date": "2021-01-01T11:11:11.000Z",
+            "description": ":test_prefix: this is a test commit 1-1",
+            "id": "1000001",
           },
           Object {
             "author": "8ayac",
-            "date": 2021-06-07T08:09:10.000Z,
-            "description": ":test_prefix: this is a test commit 02",
-            "id": "0000002",
-          },
-          Object {
-            "author": "8ayac",
-            "date": 2021-11-12T13:14:15.000Z,
-            "description": ":test_prefix: this is a test commit 03",
-            "id": "0000003",
+            "date": "2021-01-01T22:22:22.000Z",
+            "description": ":test_prefix: this is a test commit 1-2",
+            "id": "1000002",
           },
         ],
+        "description": "test h2
+
+this is a test paragraph of test-article-id-1.
+
+",
       }
     }
   >
@@ -312,33 +341,37 @@ bluhbluhbluh",
       article={
         Object {
           "attributes": Object {
-            "id": "example-id",
-            "publishedAt": 2021-01-02T03:04:56.000Z,
-            "title": "Example01",
+            "id": "test-article-id-1",
+            "publishedAt": "2021-01-01T00:00:00.000Z",
+            "tags": Array [
+              "test-tag-1-1",
+              "test-tag-1-2",
+            ],
+            "title": "Test Article Title 1",
           },
-          "body": "## test
+          "body": "## test h2
 
-bluhbluhbluh",
+this is a test paragraph of test-article-id-1.
+",
           "changeLogs": Array [
             Object {
               "author": "8ayac",
-              "date": 2021-01-02T03:04:05.000Z,
-              "description": ":test_prefix: this is a test commit 01",
-              "id": "0000001",
+              "date": "2021-01-01T11:11:11.000Z",
+              "description": ":test_prefix: this is a test commit 1-1",
+              "id": "1000001",
             },
             Object {
               "author": "8ayac",
-              "date": 2021-06-07T08:09:10.000Z,
-              "description": ":test_prefix: this is a test commit 02",
-              "id": "0000002",
-            },
-            Object {
-              "author": "8ayac",
-              "date": 2021-11-12T13:14:15.000Z,
-              "description": ":test_prefix: this is a test commit 03",
-              "id": "0000003",
+              "date": "2021-01-01T22:22:22.000Z",
+              "description": ":test_prefix: this is a test commit 1-2",
+              "id": "1000002",
             },
           ],
+          "description": "test h2
+
+this is a test paragraph of test-article-id-1.
+
+",
         }
       }
     >
@@ -349,15 +382,18 @@ bluhbluhbluh",
               "authors": Array [
                 "8ayac",
               ],
-              "modifiedTime": "2021-11-12T13:14:15.000Z",
-              "publishedTime": "2021-01-02T03:04:56.000Z",
-              "tags": undefined,
+              "modifiedTime": "2021-01-01T22:22:22.000Z",
+              "publishedTime": "2021-01-01T00:00:00.000Z",
+              "tags": Array [
+                "test-tag-1-1",
+                "test-tag-1-2",
+              ],
             },
-            "title": "Example01 - もしくはこれ",
+            "title": "Test Article Title 1 - もしくはこれ",
             "type": "article",
           }
         }
-        title="Example01"
+        title="Test Article Title 1"
       >
         <Head>
           <_default
@@ -372,33 +408,37 @@ bluhbluhbluh",
       article={
         Object {
           "attributes": Object {
-            "id": "example-id",
-            "publishedAt": 2021-01-02T03:04:56.000Z,
-            "title": "Example01",
+            "id": "test-article-id-1",
+            "publishedAt": "2021-01-01T00:00:00.000Z",
+            "tags": Array [
+              "test-tag-1-1",
+              "test-tag-1-2",
+            ],
+            "title": "Test Article Title 1",
           },
-          "body": "## test
+          "body": "## test h2
 
-bluhbluhbluh",
+this is a test paragraph of test-article-id-1.
+",
           "changeLogs": Array [
             Object {
               "author": "8ayac",
-              "date": 2021-01-02T03:04:05.000Z,
-              "description": ":test_prefix: this is a test commit 01",
-              "id": "0000001",
+              "date": "2021-01-01T11:11:11.000Z",
+              "description": ":test_prefix: this is a test commit 1-1",
+              "id": "1000001",
             },
             Object {
               "author": "8ayac",
-              "date": 2021-06-07T08:09:10.000Z,
-              "description": ":test_prefix: this is a test commit 02",
-              "id": "0000002",
-            },
-            Object {
-              "author": "8ayac",
-              "date": 2021-11-12T13:14:15.000Z,
-              "description": ":test_prefix: this is a test commit 03",
-              "id": "0000003",
+              "date": "2021-01-01T22:22:22.000Z",
+              "description": ":test_prefix: this is a test commit 1-2",
+              "id": "1000002",
             },
           ],
+          "description": "test h2
+
+this is a test paragraph of test-article-id-1.
+
+",
         }
       }
     >
@@ -406,6 +446,12 @@ bluhbluhbluh",
         afterTitle={
           <TagListWrapperDiv>
             <CategoryTagList
+              tags={
+                Array [
+                  "test-tag-1-1",
+                  "test-tag-1-2",
+                ]
+              }
               withPreIcon={true}
             />
           </TagListWrapperDiv>
@@ -413,17 +459,17 @@ bluhbluhbluh",
         beforeTitle={
           <DateTimeWrapperDiv>
             <DateTime
-              date={2021-01-02T03:04:56.000Z}
+              date="2021-01-01T00:00:00.000Z"
               description="Published At"
             />
             <DateTime
-              date={2021-11-12T13:14:15.000Z}
+              date={2021-01-01T22:22:22.000Z}
               description="Updated At"
             />
           </DateTimeWrapperDiv>
         }
-        linkTo="/articles/2021-01-02/example-id"
-        title="Example01"
+        linkTo="/articles/2021-01-01/test-article-id-1"
+        title="Test Article Title 1"
       >
         <WrapperHeader>
           <header
@@ -438,7 +484,7 @@ bluhbluhbluh",
                     className="emotion-4 emotion-5"
                   >
                     <DateTime
-                      date={2021-01-02T03:04:56.000Z}
+                      date="2021-01-01T00:00:00.000Z"
                       description="Published At"
                     >
                       <ComponentWrapperDiv>
@@ -456,14 +502,14 @@ bluhbluhbluh",
                             <time
                               className="emotion-10 emotion-11"
                             >
-                              2021-01-02T03:04:56.000Z
+                              2021-01-01T00:00:00.000Z
                             </time>
                           </ISODateTime>
                         </div>
                       </ComponentWrapperDiv>
                     </DateTime>
                     <DateTime
-                      date={2021-11-12T13:14:15.000Z}
+                      date={2021-01-01T22:22:22.000Z}
                       description="Updated At"
                     >
                       <ComponentWrapperDiv>
@@ -481,7 +527,7 @@ bluhbluhbluh",
                             <time
                               className="emotion-10 emotion-11"
                             >
-                              2021-11-12T13:14:15.000Z
+                              2021-01-01T22:22:22.000Z
                             </time>
                           </ISODateTime>
                         </div>
@@ -496,21 +542,21 @@ bluhbluhbluh",
                 className="emotion-18 emotion-19"
               >
                 <Link
-                  href="/articles/2021-01-02/example-id"
+                  href="/articles/2021-01-01/test-article-id-1"
                   passHref={true}
                 >
                   <TitleAnchor
-                    href="/articles/2021-01-02/example-id"
+                    href="/articles/2021-01-01/test-article-id-1"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                   >
                     <a
                       className="emotion-20 emotion-21"
-                      href="/articles/2021-01-02/example-id"
+                      href="/articles/2021-01-01/test-article-id-1"
                       onClick={[Function]}
                       onMouseEnter={[Function]}
                     >
-                      Example01
+                      Test Article Title 1
                     </a>
                   </TitleAnchor>
                 </Link>
@@ -525,6 +571,12 @@ bluhbluhbluh",
                     className="emotion-24 emotion-25"
                   >
                     <CategoryTagList
+                      tags={
+                        Array [
+                          "test-tag-1-1",
+                          "test-tag-1-2",
+                        ]
+                      }
                       withPreIcon={true}
                     >
                       <S-ComponentWrapperDiv>
@@ -585,6 +637,54 @@ bluhbluhbluh",
                               </FontAwesomeIcon>
                             </div>
                           </S-PreIconWrapperDiv>
+                          <CategoryTag
+                            key="test-tag-1-1"
+                            name="test-tag-1-1"
+                          >
+                            <Link
+                              href="/tags/test-tag-1-1"
+                              passHref={true}
+                            >
+                              <Anchor
+                                href="/tags/test-tag-1-1"
+                                onClick={[Function]}
+                                onMouseEnter={[Function]}
+                              >
+                                <a
+                                  className="emotion-30 emotion-31"
+                                  href="/tags/test-tag-1-1"
+                                  onClick={[Function]}
+                                  onMouseEnter={[Function]}
+                                >
+                                  test-tag-1-1
+                                </a>
+                              </Anchor>
+                            </Link>
+                          </CategoryTag>
+                          <CategoryTag
+                            key="test-tag-1-2"
+                            name="test-tag-1-2"
+                          >
+                            <Link
+                              href="/tags/test-tag-1-2"
+                              passHref={true}
+                            >
+                              <Anchor
+                                href="/tags/test-tag-1-2"
+                                onClick={[Function]}
+                                onMouseEnter={[Function]}
+                              >
+                                <a
+                                  className="emotion-30 emotion-31"
+                                  href="/tags/test-tag-1-2"
+                                  onClick={[Function]}
+                                  onMouseEnter={[Function]}
+                                >
+                                  test-tag-1-2
+                                </a>
+                              </Anchor>
+                            </Link>
+                          </CategoryTag>
                         </div>
                       </S-ComponentWrapperDiv>
                     </CategoryTagList>
@@ -598,28 +698,22 @@ bluhbluhbluh",
     </ArticleHeader>
     <RevisionHistoryWrapperDiv>
       <div
-        className="emotion-30 emotion-31"
+        className="emotion-34 emotion-35"
       >
         <ArticleRevisionRecordList
           log={
             Array [
               Object {
                 "author": "8ayac",
-                "date": 2021-01-02T03:04:05.000Z,
-                "description": ":test_prefix: this is a test commit 01",
-                "id": "0000001",
+                "date": "2021-01-01T11:11:11.000Z",
+                "description": ":test_prefix: this is a test commit 1-1",
+                "id": "1000001",
               },
               Object {
                 "author": "8ayac",
-                "date": 2021-06-07T08:09:10.000Z,
-                "description": ":test_prefix: this is a test commit 02",
-                "id": "0000002",
-              },
-              Object {
-                "author": "8ayac",
-                "date": 2021-11-12T13:14:15.000Z,
-                "description": ":test_prefix: this is a test commit 03",
-                "id": "0000003",
+                "date": "2021-01-01T22:22:22.000Z",
+                "description": ":test_prefix: this is a test commit 1-2",
+                "id": "1000002",
               },
             ]
           }
@@ -628,12 +722,12 @@ bluhbluhbluh",
             open={true}
           >
             <details
-              className="emotion-32 emotion-33"
+              className="emotion-36 emotion-37"
               open={true}
             >
               <Summary>
                 <summary
-                  className="emotion-34 emotion-35"
+                  className="emotion-38 emotion-39"
                 >
                   Revision History
                 </summary>
@@ -643,65 +737,59 @@ bluhbluhbluh",
                   Array [
                     Object {
                       "author": "8ayac",
-                      "date": 2021-01-02T03:04:05.000Z,
-                      "description": ":test_prefix: this is a test commit 01",
-                      "id": "0000001",
+                      "date": "2021-01-01T11:11:11.000Z",
+                      "description": ":test_prefix: this is a test commit 1-1",
+                      "id": "1000001",
                     },
                     Object {
                       "author": "8ayac",
-                      "date": 2021-06-07T08:09:10.000Z,
-                      "description": ":test_prefix: this is a test commit 02",
-                      "id": "0000002",
-                    },
-                    Object {
-                      "author": "8ayac",
-                      "date": 2021-11-12T13:14:15.000Z,
-                      "description": ":test_prefix: this is a test commit 03",
-                      "id": "0000003",
+                      "date": "2021-01-01T22:22:22.000Z",
+                      "description": ":test_prefix: this is a test commit 1-2",
+                      "id": "1000002",
                     },
                   ]
                 }
               >
                 <LogList>
                   <ul
-                    className="emotion-36 emotion-37"
+                    className="emotion-40 emotion-41"
                   >
                     <LogListItem
-                      key="0000001"
+                      key="1000001"
                     >
                       <li
-                        className="emotion-38 emotion-39"
+                        className="emotion-42 emotion-43"
                       >
                         <UpdateDateTime>
                           <time
-                            className="emotion-40 emotion-41"
+                            className="emotion-44 emotion-45"
                           >
-                            2021-01-02T03:04:05.000Z
+                            2021-01-01T11:11:11.000Z
                           </time>
                         </UpdateDateTime>
                          
                         <UpdateDescriptionSpan>
                           <span
-                            className="emotion-42 emotion-43"
+                            className="emotion-46 emotion-47"
                           >
-                            this is a test commit 01
+                            this is a test commit 1-1
                           </span>
                         </UpdateDescriptionSpan>
                          
                         (
                         <ToGitHubCommitAnchor
-                          href="https://github.com/8ayac/blog.8ay.ac/commit/0000001"
+                          href="https://github.com/8ayac/blog.8ay.ac/commit/1000001"
                           rel="noopener"
                           target="_blank"
                         >
                           <a
-                            className="emotion-44 emotion-45"
-                            href="https://github.com/8ayac/blog.8ay.ac/commit/0000001"
+                            className="emotion-48 emotion-49"
+                            href="https://github.com/8ayac/blog.8ay.ac/commit/1000001"
                             rel="noopener"
                             target="_blank"
                           >
                             #
-                            0000001
+                            1000001
                           </a>
                         </ToGitHubCommitAnchor>
                          
@@ -711,85 +799,41 @@ bluhbluhbluh",
                       </li>
                     </LogListItem>
                     <LogListItem
-                      key="0000002"
+                      key="1000002"
                     >
                       <li
-                        className="emotion-38 emotion-39"
+                        className="emotion-42 emotion-43"
                       >
                         <UpdateDateTime>
                           <time
-                            className="emotion-40 emotion-41"
+                            className="emotion-44 emotion-45"
                           >
-                            2021-06-07T08:09:10.000Z
+                            2021-01-01T22:22:22.000Z
                           </time>
                         </UpdateDateTime>
                          
                         <UpdateDescriptionSpan>
                           <span
-                            className="emotion-42 emotion-43"
+                            className="emotion-46 emotion-47"
                           >
-                            this is a test commit 02
+                            this is a test commit 1-2
                           </span>
                         </UpdateDescriptionSpan>
                          
                         (
                         <ToGitHubCommitAnchor
-                          href="https://github.com/8ayac/blog.8ay.ac/commit/0000002"
+                          href="https://github.com/8ayac/blog.8ay.ac/commit/1000002"
                           rel="noopener"
                           target="_blank"
                         >
                           <a
-                            className="emotion-44 emotion-45"
-                            href="https://github.com/8ayac/blog.8ay.ac/commit/0000002"
+                            className="emotion-48 emotion-49"
+                            href="https://github.com/8ayac/blog.8ay.ac/commit/1000002"
                             rel="noopener"
                             target="_blank"
                           >
                             #
-                            0000002
-                          </a>
-                        </ToGitHubCommitAnchor>
-                         
-                        by 
-                        8ayac
-                        )
-                      </li>
-                    </LogListItem>
-                    <LogListItem
-                      key="0000003"
-                    >
-                      <li
-                        className="emotion-38 emotion-39"
-                      >
-                        <UpdateDateTime>
-                          <time
-                            className="emotion-40 emotion-41"
-                          >
-                            2021-11-12T13:14:15.000Z
-                          </time>
-                        </UpdateDateTime>
-                         
-                        <UpdateDescriptionSpan>
-                          <span
-                            className="emotion-42 emotion-43"
-                          >
-                            this is a test commit 03
-                          </span>
-                        </UpdateDescriptionSpan>
-                         
-                        (
-                        <ToGitHubCommitAnchor
-                          href="https://github.com/8ayac/blog.8ay.ac/commit/0000003"
-                          rel="noopener"
-                          target="_blank"
-                        >
-                          <a
-                            className="emotion-44 emotion-45"
-                            href="https://github.com/8ayac/blog.8ay.ac/commit/0000003"
-                            rel="noopener"
-                            target="_blank"
-                          >
-                            #
-                            0000003
+                            1000002
                           </a>
                         </ToGitHubCommitAnchor>
                          
@@ -807,13 +851,14 @@ bluhbluhbluh",
       </div>
     </RevisionHistoryWrapperDiv>
     <MarkdownRenderer
-      content="## test
+      content="## test h2
 
-bluhbluhbluh"
+this is a test paragraph of test-article-id-1.
+"
     >
       <ConvertedMdBody>
         <div
-          className="emotion-62 emotion-63"
+          className="emotion-58 emotion-59"
         >
           <ReactMarkdown
             plugins={
@@ -828,9 +873,10 @@ bluhbluhbluh"
                 "footnoteReference": [Function],
               }
             }
-            source="## test
+            source="## test h2
 
-bluhbluhbluh"
+this is a test paragraph of test-article-id-1.
+"
             transformImageUri={[Function]}
             transformLinkUri={[Function]}
           >
@@ -844,9 +890,9 @@ bluhbluhbluh"
                         Object {
                           "position": Object {
                             "end": Object {
-                              "column": 8,
+                              "column": 11,
                               "line": 1,
-                              "offset": 7,
+                              "offset": 10,
                             },
                             "start": Object {
                               "column": 4,
@@ -855,15 +901,15 @@ bluhbluhbluh"
                             },
                           },
                           "type": "text",
-                          "value": "test",
+                          "value": "test h2",
                         },
                       ],
                       "depth": 2,
                       "position": Object {
                         "end": Object {
-                          "column": 8,
+                          "column": 11,
                           "line": 1,
-                          "offset": 7,
+                          "offset": 10,
                         },
                         "start": Object {
                           "column": 1,
@@ -878,30 +924,30 @@ bluhbluhbluh"
                         Object {
                           "position": Object {
                             "end": Object {
-                              "column": 13,
+                              "column": 47,
                               "line": 3,
-                              "offset": 23,
+                              "offset": 60,
                             },
                             "start": Object {
                               "column": 1,
                               "line": 3,
-                              "offset": 11,
+                              "offset": 14,
                             },
                           },
                           "type": "text",
-                          "value": "bluhbluhbluh",
+                          "value": "this is a test paragraph of test-article-id-1.",
                         },
                       ],
                       "position": Object {
                         "end": Object {
-                          "column": 13,
+                          "column": 47,
                           "line": 3,
-                          "offset": 23,
+                          "offset": 60,
                         },
                         "start": Object {
                           "column": 1,
                           "line": 3,
-                          "offset": 11,
+                          "offset": 14,
                         },
                       },
                       "type": "paragraph",
@@ -909,9 +955,9 @@ bluhbluhbluh"
                   ],
                   "position": Object {
                     "end": Object {
-                      "column": 13,
-                      "line": 3,
-                      "offset": 23,
+                      "column": 1,
+                      "line": 4,
+                      "offset": 62,
                     },
                     "start": Object {
                       "column": 1,
@@ -932,9 +978,9 @@ bluhbluhbluh"
                       Object {
                         "position": Object {
                           "end": Object {
-                            "column": 8,
+                            "column": 11,
                             "line": 1,
-                            "offset": 7,
+                            "offset": 10,
                           },
                           "start": Object {
                             "column": 4,
@@ -943,15 +989,15 @@ bluhbluhbluh"
                           },
                         },
                         "type": "text",
-                        "value": "test",
+                        "value": "test h2",
                       },
                     ],
                     "depth": 2,
                     "position": Object {
                       "end": Object {
-                        "column": 8,
+                        "column": 11,
                         "line": 1,
-                        "offset": 7,
+                        "offset": 10,
                       },
                       "start": Object {
                         "column": 1,
@@ -970,9 +1016,9 @@ bluhbluhbluh"
                       Object {
                         "position": Object {
                           "end": Object {
-                            "column": 8,
+                            "column": 11,
                             "line": 1,
-                            "offset": 7,
+                            "offset": 10,
                           },
                           "start": Object {
                             "column": 4,
@@ -981,13 +1027,13 @@ bluhbluhbluh"
                           },
                         },
                         "type": "text",
-                        "value": "test",
+                        "value": "test h2",
                       }
                     }
                     nodeKey="text-1-4-0"
-                    value="test"
+                    value="test h2"
                   >
-                    test
+                    test h2
                   </TextRenderer>
                 </h2>
               </Heading>
@@ -1000,24 +1046,24 @@ bluhbluhbluh"
                     Object {
                       "position": Object {
                         "end": Object {
-                          "column": 13,
+                          "column": 47,
                           "line": 3,
-                          "offset": 23,
+                          "offset": 60,
                         },
                         "start": Object {
                           "column": 1,
                           "line": 3,
-                          "offset": 11,
+                          "offset": 14,
                         },
                       },
                       "type": "text",
-                      "value": "bluhbluhbluh",
+                      "value": "this is a test paragraph of test-article-id-1.",
                     }
                   }
                   nodeKey="text-3-1-0"
-                  value="bluhbluhbluh"
+                  value="this is a test paragraph of test-article-id-1."
                 >
-                  bluhbluhbluh
+                  this is a test paragraph of test-article-id-1.
                 </TextRenderer>
               </p>
             </Root>
@@ -1139,31 +1185,56 @@ exports[`ArticlePage is rendered correctly to match the snapshot without revisio
   color: hsla(0, 0%, 40%);
 }
 
-.emotion-30 h1,
-.emotion-30 h2 {
+.emotion-30 {
+  padding: 0.2rem 1rem;
+  font-size: 0.8em;
+  color: white;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: hsla(212, 72%, 50%);
+  -webkit-filter: drop-shadow(
+        2px 2px 1px hsla(212, 72%, 80%)
+      );
+  filter: drop-shadow(
+        2px 2px 1px hsla(212, 72%, 80%)
+      );
+  border-radius: 3px;
+}
+
+.emotion-30:hover {
+  color: white;
+  background-color: hsla(212, 72%, 60%);
+}
+
+.emotion-30:visited {
+  color: white;
+}
+
+.emotion-34 h1,
+.emotion-34 h2 {
   padding-bottom: 0.3em;
   margin-top: 2em;
   border-bottom: 1px solid hsla(0, 0%, 75%);
 }
 
-.emotion-30 h3,
-.emotion-30 h4,
-.emotion-30 h5,
-.emotion-30 h6 {
+.emotion-34 h3,
+.emotion-34 h4,
+.emotion-34 h5,
+.emotion-34 h6 {
   margin-top: 1em;
 }
 
-.emotion-30 code,
-.emotion-30 pre {
+.emotion-34 code,
+.emotion-34 pre {
   font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
   word-break: normal;
 }
 
-.emotion-30 pre {
+.emotion-34 pre {
   white-space: pre-wrap;
 }
 
-.emotion-30 code:not([class]) {
+.emotion-34 code:not([class]) {
   padding: 0.2em 0.4em;
   margin: 0;
   font-size: 0.85em;
@@ -1171,54 +1242,54 @@ exports[`ArticlePage is rendered correctly to match the snapshot without revisio
   border-radius: 3px;
 }
 
-.emotion-30 blockquote,
-.emotion-30 details,
-.emotion-30 dl,
-.emotion-30 ol,
-.emotion-30 p,
-.emotion-30 pre,
-.emotion-30 table,
-.emotion-30 ul {
+.emotion-34 blockquote,
+.emotion-34 details,
+.emotion-34 dl,
+.emotion-34 ol,
+.emotion-34 p,
+.emotion-34 pre,
+.emotion-34 table,
+.emotion-34 ul {
   margin-top: 0;
   margin-bottom: 1.8rem;
 }
 
-.emotion-30 ol ol,
-.emotion-30 ul ol {
+.emotion-34 ol ol,
+.emotion-34 ul ol {
   list-style-type: lower-roman;
 }
 
-.emotion-30 li>p {
+.emotion-34 li>p {
   margin-top: 1.6rem;
 }
 
-.emotion-30 li+li {
+.emotion-34 li+li {
   margin-top: 0.25em;
 }
 
-.emotion-30 blockquote {
+.emotion-34 blockquote {
   padding: 0 1em;
   margin-left: 0;
   color: hsla(0, 0%, 40%);
   border-left: 0.25em solid hsla(212, 72%, 90%);
 }
 
-.emotion-30 blockquote:first-of-type {
+.emotion-34 blockquote:first-of-type {
   margin-top: 0;
 }
 
-.emotion-30 blockquote:last-of-type {
+.emotion-34 blockquote:last-of-type {
   margin-bottom: 0;
 }
 
-.emotion-30 div.code-toolbar>.toolbar {
+.emotion-34 div.code-toolbar>.toolbar {
   top: 0.3em;
   right: 0.3em;
   -webkit-transition: none;
   transition: none;
 }
 
-.emotion-30 div.code-toolbar>.toolbar span {
+.emotion-34 div.code-toolbar>.toolbar span {
   font-size: 0.85em;
   border-radius: 10px;
 }
@@ -1278,14 +1349,24 @@ exports[`ArticlePage is rendered correctly to match the snapshot without revisio
     article={
       Object {
         "attributes": Object {
-          "id": "example-id",
-          "publishedAt": 2021-01-02T03:04:56.000Z,
-          "title": "Example01",
+          "id": "test-article-id-1",
+          "publishedAt": "2021-01-01T00:00:00.000Z",
+          "tags": Array [
+            "test-tag-1-1",
+            "test-tag-1-2",
+          ],
+          "title": "Test Article Title 1",
         },
-        "body": "## test
+        "body": "## test h2
 
-bluhbluhbluh",
+this is a test paragraph of test-article-id-1.
+",
         "changeLogs": Array [],
+        "description": "test h2
+
+this is a test paragraph of test-article-id-1.
+
+",
       }
     }
   >
@@ -1293,14 +1374,24 @@ bluhbluhbluh",
       article={
         Object {
           "attributes": Object {
-            "id": "example-id",
-            "publishedAt": 2021-01-02T03:04:56.000Z,
-            "title": "Example01",
+            "id": "test-article-id-1",
+            "publishedAt": "2021-01-01T00:00:00.000Z",
+            "tags": Array [
+              "test-tag-1-1",
+              "test-tag-1-2",
+            ],
+            "title": "Test Article Title 1",
           },
-          "body": "## test
+          "body": "## test h2
 
-bluhbluhbluh",
+this is a test paragraph of test-article-id-1.
+",
           "changeLogs": Array [],
+          "description": "test h2
+
+this is a test paragraph of test-article-id-1.
+
+",
         }
       }
     >
@@ -1311,15 +1402,18 @@ bluhbluhbluh",
               "authors": Array [
                 "8ayac",
               ],
-              "modifiedTime": "2021-01-02T03:04:56.000Z",
-              "publishedTime": "2021-01-02T03:04:56.000Z",
-              "tags": undefined,
+              "modifiedTime": "2021-01-01T00:00:00.000Z",
+              "publishedTime": "2021-01-01T00:00:00.000Z",
+              "tags": Array [
+                "test-tag-1-1",
+                "test-tag-1-2",
+              ],
             },
-            "title": "Example01 - もしくはこれ",
+            "title": "Test Article Title 1 - もしくはこれ",
             "type": "article",
           }
         }
-        title="Example01"
+        title="Test Article Title 1"
       >
         <Head>
           <_default
@@ -1334,14 +1428,24 @@ bluhbluhbluh",
       article={
         Object {
           "attributes": Object {
-            "id": "example-id",
-            "publishedAt": 2021-01-02T03:04:56.000Z,
-            "title": "Example01",
+            "id": "test-article-id-1",
+            "publishedAt": "2021-01-01T00:00:00.000Z",
+            "tags": Array [
+              "test-tag-1-1",
+              "test-tag-1-2",
+            ],
+            "title": "Test Article Title 1",
           },
-          "body": "## test
+          "body": "## test h2
 
-bluhbluhbluh",
+this is a test paragraph of test-article-id-1.
+",
           "changeLogs": Array [],
+          "description": "test h2
+
+this is a test paragraph of test-article-id-1.
+
+",
         }
       }
     >
@@ -1349,6 +1453,12 @@ bluhbluhbluh",
         afterTitle={
           <TagListWrapperDiv>
             <CategoryTagList
+              tags={
+                Array [
+                  "test-tag-1-1",
+                  "test-tag-1-2",
+                ]
+              }
               withPreIcon={true}
             />
           </TagListWrapperDiv>
@@ -1356,17 +1466,17 @@ bluhbluhbluh",
         beforeTitle={
           <DateTimeWrapperDiv>
             <DateTime
-              date={2021-01-02T03:04:56.000Z}
+              date="2021-01-01T00:00:00.000Z"
               description="Published At"
             />
             <DateTime
-              date={2021-01-02T03:04:56.000Z}
+              date={2021-01-01T00:00:00.000Z}
               description="Updated At"
             />
           </DateTimeWrapperDiv>
         }
-        linkTo="/articles/2021-01-02/example-id"
-        title="Example01"
+        linkTo="/articles/2021-01-01/test-article-id-1"
+        title="Test Article Title 1"
       >
         <WrapperHeader>
           <header
@@ -1381,7 +1491,7 @@ bluhbluhbluh",
                     className="emotion-4 emotion-5"
                   >
                     <DateTime
-                      date={2021-01-02T03:04:56.000Z}
+                      date="2021-01-01T00:00:00.000Z"
                       description="Published At"
                     >
                       <ComponentWrapperDiv>
@@ -1399,14 +1509,14 @@ bluhbluhbluh",
                             <time
                               className="emotion-10 emotion-11"
                             >
-                              2021-01-02T03:04:56.000Z
+                              2021-01-01T00:00:00.000Z
                             </time>
                           </ISODateTime>
                         </div>
                       </ComponentWrapperDiv>
                     </DateTime>
                     <DateTime
-                      date={2021-01-02T03:04:56.000Z}
+                      date={2021-01-01T00:00:00.000Z}
                       description="Updated At"
                     >
                       <ComponentWrapperDiv>
@@ -1424,7 +1534,7 @@ bluhbluhbluh",
                             <time
                               className="emotion-10 emotion-11"
                             >
-                              2021-01-02T03:04:56.000Z
+                              2021-01-01T00:00:00.000Z
                             </time>
                           </ISODateTime>
                         </div>
@@ -1439,21 +1549,21 @@ bluhbluhbluh",
                 className="emotion-18 emotion-19"
               >
                 <Link
-                  href="/articles/2021-01-02/example-id"
+                  href="/articles/2021-01-01/test-article-id-1"
                   passHref={true}
                 >
                   <TitleAnchor
-                    href="/articles/2021-01-02/example-id"
+                    href="/articles/2021-01-01/test-article-id-1"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                   >
                     <a
                       className="emotion-20 emotion-21"
-                      href="/articles/2021-01-02/example-id"
+                      href="/articles/2021-01-01/test-article-id-1"
                       onClick={[Function]}
                       onMouseEnter={[Function]}
                     >
-                      Example01
+                      Test Article Title 1
                     </a>
                   </TitleAnchor>
                 </Link>
@@ -1468,6 +1578,12 @@ bluhbluhbluh",
                     className="emotion-24 emotion-25"
                   >
                     <CategoryTagList
+                      tags={
+                        Array [
+                          "test-tag-1-1",
+                          "test-tag-1-2",
+                        ]
+                      }
                       withPreIcon={true}
                     >
                       <S-ComponentWrapperDiv>
@@ -1528,6 +1644,54 @@ bluhbluhbluh",
                               </FontAwesomeIcon>
                             </div>
                           </S-PreIconWrapperDiv>
+                          <CategoryTag
+                            key="test-tag-1-1"
+                            name="test-tag-1-1"
+                          >
+                            <Link
+                              href="/tags/test-tag-1-1"
+                              passHref={true}
+                            >
+                              <Anchor
+                                href="/tags/test-tag-1-1"
+                                onClick={[Function]}
+                                onMouseEnter={[Function]}
+                              >
+                                <a
+                                  className="emotion-30 emotion-31"
+                                  href="/tags/test-tag-1-1"
+                                  onClick={[Function]}
+                                  onMouseEnter={[Function]}
+                                >
+                                  test-tag-1-1
+                                </a>
+                              </Anchor>
+                            </Link>
+                          </CategoryTag>
+                          <CategoryTag
+                            key="test-tag-1-2"
+                            name="test-tag-1-2"
+                          >
+                            <Link
+                              href="/tags/test-tag-1-2"
+                              passHref={true}
+                            >
+                              <Anchor
+                                href="/tags/test-tag-1-2"
+                                onClick={[Function]}
+                                onMouseEnter={[Function]}
+                              >
+                                <a
+                                  className="emotion-30 emotion-31"
+                                  href="/tags/test-tag-1-2"
+                                  onClick={[Function]}
+                                  onMouseEnter={[Function]}
+                                >
+                                  test-tag-1-2
+                                </a>
+                              </Anchor>
+                            </Link>
+                          </CategoryTag>
                         </div>
                       </S-ComponentWrapperDiv>
                     </CategoryTagList>
@@ -1540,13 +1704,14 @@ bluhbluhbluh",
       </BodyHeader>
     </ArticleHeader>
     <MarkdownRenderer
-      content="## test
+      content="## test h2
 
-bluhbluhbluh"
+this is a test paragraph of test-article-id-1.
+"
     >
       <ConvertedMdBody>
         <div
-          className="emotion-30 emotion-31"
+          className="emotion-34 emotion-35"
         >
           <ReactMarkdown
             plugins={
@@ -1561,9 +1726,10 @@ bluhbluhbluh"
                 "footnoteReference": [Function],
               }
             }
-            source="## test
+            source="## test h2
 
-bluhbluhbluh"
+this is a test paragraph of test-article-id-1.
+"
             transformImageUri={[Function]}
             transformLinkUri={[Function]}
           >
@@ -1577,9 +1743,9 @@ bluhbluhbluh"
                         Object {
                           "position": Object {
                             "end": Object {
-                              "column": 8,
+                              "column": 11,
                               "line": 1,
-                              "offset": 7,
+                              "offset": 10,
                             },
                             "start": Object {
                               "column": 4,
@@ -1588,15 +1754,15 @@ bluhbluhbluh"
                             },
                           },
                           "type": "text",
-                          "value": "test",
+                          "value": "test h2",
                         },
                       ],
                       "depth": 2,
                       "position": Object {
                         "end": Object {
-                          "column": 8,
+                          "column": 11,
                           "line": 1,
-                          "offset": 7,
+                          "offset": 10,
                         },
                         "start": Object {
                           "column": 1,
@@ -1611,30 +1777,30 @@ bluhbluhbluh"
                         Object {
                           "position": Object {
                             "end": Object {
-                              "column": 13,
+                              "column": 47,
                               "line": 3,
-                              "offset": 23,
+                              "offset": 60,
                             },
                             "start": Object {
                               "column": 1,
                               "line": 3,
-                              "offset": 11,
+                              "offset": 14,
                             },
                           },
                           "type": "text",
-                          "value": "bluhbluhbluh",
+                          "value": "this is a test paragraph of test-article-id-1.",
                         },
                       ],
                       "position": Object {
                         "end": Object {
-                          "column": 13,
+                          "column": 47,
                           "line": 3,
-                          "offset": 23,
+                          "offset": 60,
                         },
                         "start": Object {
                           "column": 1,
                           "line": 3,
-                          "offset": 11,
+                          "offset": 14,
                         },
                       },
                       "type": "paragraph",
@@ -1642,9 +1808,9 @@ bluhbluhbluh"
                   ],
                   "position": Object {
                     "end": Object {
-                      "column": 13,
-                      "line": 3,
-                      "offset": 23,
+                      "column": 1,
+                      "line": 4,
+                      "offset": 62,
                     },
                     "start": Object {
                       "column": 1,
@@ -1665,9 +1831,9 @@ bluhbluhbluh"
                       Object {
                         "position": Object {
                           "end": Object {
-                            "column": 8,
+                            "column": 11,
                             "line": 1,
-                            "offset": 7,
+                            "offset": 10,
                           },
                           "start": Object {
                             "column": 4,
@@ -1676,15 +1842,15 @@ bluhbluhbluh"
                           },
                         },
                         "type": "text",
-                        "value": "test",
+                        "value": "test h2",
                       },
                     ],
                     "depth": 2,
                     "position": Object {
                       "end": Object {
-                        "column": 8,
+                        "column": 11,
                         "line": 1,
-                        "offset": 7,
+                        "offset": 10,
                       },
                       "start": Object {
                         "column": 1,
@@ -1703,9 +1869,9 @@ bluhbluhbluh"
                       Object {
                         "position": Object {
                           "end": Object {
-                            "column": 8,
+                            "column": 11,
                             "line": 1,
-                            "offset": 7,
+                            "offset": 10,
                           },
                           "start": Object {
                             "column": 4,
@@ -1714,13 +1880,13 @@ bluhbluhbluh"
                           },
                         },
                         "type": "text",
-                        "value": "test",
+                        "value": "test h2",
                       }
                     }
                     nodeKey="text-1-4-0"
-                    value="test"
+                    value="test h2"
                   >
-                    test
+                    test h2
                   </TextRenderer>
                 </h2>
               </Heading>
@@ -1733,24 +1899,24 @@ bluhbluhbluh"
                     Object {
                       "position": Object {
                         "end": Object {
-                          "column": 13,
+                          "column": 47,
                           "line": 3,
-                          "offset": 23,
+                          "offset": 60,
                         },
                         "start": Object {
                           "column": 1,
                           "line": 3,
-                          "offset": 11,
+                          "offset": 14,
                         },
                       },
                       "type": "text",
-                      "value": "bluhbluhbluh",
+                      "value": "this is a test paragraph of test-article-id-1.",
                     }
                   }
                   nodeKey="text-3-1-0"
-                  value="bluhbluhbluh"
+                  value="this is a test paragraph of test-article-id-1."
                 >
-                  bluhbluhbluh
+                  this is a test paragraph of test-article-id-1.
                 </TextRenderer>
               </p>
             </Root>

@@ -78,24 +78,24 @@ exports[`CategoryTag is rendered correctly to match the snapshot 1`] = `
   }
 >
   <CategoryTag
-    name="test-cat"
+    name="test-tag-1-1"
   >
     <Link
-      href="/tags/test-cat"
+      href="/tags/test-tag-1-1"
       passHref={true}
     >
       <Anchor
-        href="/tags/test-cat"
+        href="/tags/test-tag-1-1"
         onClick={[Function]}
         onMouseEnter={[Function]}
       >
         <a
           className="emotion-0 emotion-1"
-          href="/tags/test-cat"
+          href="/tags/test-tag-1-1"
           onClick={[Function]}
           onMouseEnter={[Function]}
         >
-          test-cat
+          test-tag-1-1
         </a>
       </Anchor>
     </Link>

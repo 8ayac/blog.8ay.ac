@@ -2,28 +2,23 @@ import * as fs from 'fs';
 import path from 'path';
 import {
   copyImagesToPublic,
-  generateDescriptionFromMdBody,
   generateArticlesJson,
+  generateDescriptionFromMdBody,
   getDirNamesIn,
   parseMarkdownWithMeta,
 } from '@/builder/articles';
+import { mockArticleData } from '@/src/shared/__mocks__/articleData';
 
 jest.mock('gitlog', () => ({
   __esModule: true,
-  default: jest.fn(() => [
-    {
-      abbrevHash: '0000001',
-      authorDate: '2021-01-02 03:04:05 +0000',
-      subject: 'this is a test commit 01',
-      authorName: '8ayac',
-    },
-    {
-      abbrevHash: '0000002',
-      authorDate: '2021-06-07 08:09:10 +000',
-      subject: 'this is a test commit 02',
-      authorName: '8ayac',
-    },
-  ]),
+  default: jest.fn(() =>
+    mockArticleData.t1.changeLogs.map((log) => ({
+      abbrevHash: log.id,
+      authorDate: log.date,
+      subject: log.description,
+      authorName: log.author,
+    }))
+  ),
 }));
 
 const readFileSyncAsJSON = (fpath: string) => {
@@ -43,19 +38,29 @@ describe('getDirNamesIn', () => {
 });
 
 describe('parseMarkdownWithMeta', () => {
-  const mdPath = path.join(TESTDATA_DIR, 'articles', 'example01', 'index.md');
-  const mdRawContent = fs.readFileSync(mdPath).toString();
-  const parsed = parseMarkdownWithMeta(mdRawContent);
+  const testArticleData = mockArticleData.t1;
+  const testMd = [
+    '---',
+    `${Object.keys(testArticleData.attributes)
+      .map((k: 'id' | 'title' | 'tags' | 'publishedAt') => {
+        if (k === 'tags')
+          return `${k}: [${testArticleData.attributes[k].join(',')}]`;
+
+        if (k === 'publishedAt')
+          return `${k}: "${testArticleData.attributes[k]}"`;
+
+        return `${k}: ${testArticleData.attributes[k]}`;
+      })
+      .join('\r\n')}`,
+    '---',
+    testArticleData.body,
+  ].join('\r\n');
+  const parsed = parseMarkdownWithMeta(testMd);
 
   it('can parse meta attributes and body from the Markdown file', () => {
-    expect(parsed).toMatchObject({
-      attributes: {
-        id: 'example01',
-        title: 'Example01',
-        publishedAt: new Date('2000-01-01T00:00:00.000Z'),
-        tags: ['example1-1', 'example1-2', 'example1-3'],
-      },
-      body: /^##\sexample1-1(\r?\n){2}bluhbluhbluh(\r?\n){2}##\slink(\r?\n){2}-\s<https:\/\/8ay\.ac>(\r?\n){2}##\simage(\r?\n){2}!\[blue]\(img\/blue\.png\)(\r?\n)!\[red]\(img\/red\.png\)(\r?\n)+$/,
+    expect(parsed).toEqual({
+      attributes: testArticleData.attributes,
+      body: testArticleData.body,
     });
   });
 });
@@ -115,73 +120,41 @@ describe('generateArticlesJson', () => {
       readFileSyncAsJSON(path.join(testOutputDir, testOutputFileName))
     ).toMatchObject([
       {
+        ...mockArticleData.t1,
         attributes: {
+          ...mockArticleData.t1.attributes,
           id: 'example01',
           title: 'Example01',
           publishedAt: '2000-01-01T00:00:00.000Z',
           tags: ['example1-1', 'example1-2', 'example1-3'],
         },
         body: /^##\sexample1-1(\r?\n){2}bluhbluhbluh(\r?\n){2}##\slink(\r?\n){2}-\s<https:\/\/8ay\.ac>(\r?\n){2}##\simage(\r?\n){2}!\[blue]\(img\/blue\.png\)(\r?\n)!\[red]\(img\/red\.png\)(\r?\n)+$/,
-        changeLogs: [
-          {
-            author: '8ayac',
-            date: '2021-01-02T03:04:05.000Z',
-            description: 'this is a test commit 01',
-            id: '0000001',
-          },
-          {
-            author: '8ayac',
-            date: '2021-06-07T08:09:10.000Z',
-            description: 'this is a test commit 02',
-            id: '0000002',
-          },
-        ],
+        description: `example1-1\n\nbluhbluhbluh\n\nlink\n\nhttps://8ay.ac\n\nimage\n\nblue\nred\n`,
+        changeLogs: mockArticleData.t1.changeLogs,
       },
       {
+        ...mockArticleData.t1,
         attributes: {
+          ...mockArticleData.t1.attributes,
           id: 'example02',
           title: 'Example02',
           publishedAt: '2000-01-02T00:00:00.000Z',
           tags: ['example2-1', 'example2-2', 'example2-3'],
         },
+        description: `example2-1\n\nbluhbluhbluh\n\nlink\n\nhttps://8ay.ac\n\nimage\n\nblue\nred\n`,
         body: /^##\sexample2-1(\r?\n){2}bluhbluhbluh(\r?\n){2}##\slink(\r?\n){2}-\s<https:\/\/8ay\.ac>(\r?\n){2}##\simage(\r?\n){2}!\[blue]\(img\/blue02\.png\)(\r?\n)!\[red]\(img\/red02\.png\)(\r?\n)+$/,
-        changeLogs: [
-          {
-            author: '8ayac',
-            date: '2021-01-02T03:04:05.000Z',
-            description: 'this is a test commit 01',
-            id: '0000001',
-          },
-          {
-            author: '8ayac',
-            date: '2021-06-07T08:09:10.000Z',
-            description: 'this is a test commit 02',
-            id: '0000002',
-          },
-        ],
       },
       {
+        ...mockArticleData.t1,
         attributes: {
+          ...mockArticleData.t1.attributes,
           id: 'example03',
           title: 'Example03',
           publishedAt: '2000-01-03T00:00:00.000Z',
           tags: ['example3-1', 'example3-2', 'example3-3'],
         },
         body: /^##\sexample3-1(\r?\n){2}bluhbluhbluh(\r?\n){2}##\slink(\r?\n){2}-\s<https:\/\/8ay\.ac>(\r?\n){2}##\simage(\r?\n){2}!\[blue]\(img\/blue03\.png\)(\r?\n)!\[red]\(img\/red03\.png\)(\r?\n)+$/,
-        changeLogs: [
-          {
-            author: '8ayac',
-            date: '2021-01-02T03:04:05.000Z',
-            description: 'this is a test commit 01',
-            id: '0000001',
-          },
-          {
-            author: '8ayac',
-            date: '2021-06-07T08:09:10.000Z',
-            description: 'this is a test commit 02',
-            id: '0000002',
-          },
-        ],
+        description: `example3-1\n\nbluhbluhbluh\n\nlink\n\nhttps://8ay.ac\n\nimage\n\nblue\nred\n`,
       },
     ]);
   });

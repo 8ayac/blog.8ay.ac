@@ -1,38 +1,26 @@
 import { theme } from '@/src/constants/theme';
 import TagsIndexPage from '@/src/pages/tags';
+import { mockArticleData } from '@/src/shared/__mocks__/articleData';
 import { ThemeProvider } from '@emotion/react';
 import { mount } from 'enzyme';
 import React from 'react';
 
 describe('TagsIndexPage', () => {
-  const testCategories = ['test-cat01', 'test-cat02', 'test-cat03'];
+  const testCategories = ['test-custom-tag-1', 'test-custom-tag-2'];
   const testArticles = [
     {
+      ...mockArticleData.t1,
       attributes: {
-        id: 'test-article-01',
-        title: 'Test Title 01',
-        tags: testCategories.slice(0, 3),
-        publishedAt: new Date('2021-01-01T00:00:00.000Z'),
+        ...mockArticleData.t1.attributes,
+        tags: testCategories,
       },
-      body: 'bluhbluhbluh',
     },
     {
+      ...mockArticleData.t2,
       attributes: {
-        id: 'test-article-02',
-        title: 'Test Title 02',
-        tags: testCategories.slice(0, 2),
-        publishedAt: new Date('2021-02-02T00:00:00.000Z'),
-      },
-      body: 'bluhbluhbluh',
-    },
-    {
-      attributes: {
-        id: 'test-article-03',
-        title: 'Test Title 03',
+        ...mockArticleData.t2.attributes,
         tags: testCategories.slice(0, 1),
-        publishedAt: new Date('2021-03-03T00:00:00.000Z'),
       },
-      body: 'bluhbluhbluh',
     },
   ];
 
@@ -60,13 +48,10 @@ describe('TagsIndexPage', () => {
 
     test('id attributes are properly specified', () => {
       expect(wrapper.find('S-EachTagSection').at(0).prop('id')).toBe(
-        'test-cat01'
+        testCategories[0]
       );
       expect(wrapper.find('S-EachTagSection').at(1).prop('id')).toBe(
-        'test-cat02'
-      );
-      expect(wrapper.find('S-EachTagSection').at(2).prop('id')).toBe(
-        'test-cat03'
+        testCategories[1]
       );
     });
 
@@ -74,11 +59,20 @@ describe('TagsIndexPage', () => {
       expect(
         wrapper
           .find('S-EachTagSection')
-          .first()
+          .at(0)
           .find('BodyHeader')
           .first()
           .prop('title')
-      ).toBe('test-cat01 (3)');
+      ).toBe('test-custom-tag-1 (2)');
+
+      expect(
+        wrapper
+          .find('S-EachTagSection')
+          .at(1)
+          .find('BodyHeader')
+          .first()
+          .prop('title')
+      ).toBe('test-custom-tag-2 (1)');
     });
 
     test('link destinations of each tag section title are correct', () => {
@@ -90,7 +84,7 @@ describe('TagsIndexPage', () => {
           .first()
           .find('a')
           .prop('href')
-      ).toBe('/tags/test-cat01');
+      ).toBe(`/tags/${testCategories[0]}`);
     });
   });
 

@@ -201,25 +201,71 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
       Array [
         Object {
           "attributes": Object {
-            "body": "bluhbluhbluh",
-            "id": "test-article-02",
-            "publishedAt": 2021-02-02T00:00:00.000Z,
+            "id": "test-article-id-2",
+            "publishedAt": "2021-02-01T00:00:00.000Z",
             "tags": Array [
-              "test02",
+              "test-tag-2-1",
+              "test-tag-2-2",
             ],
-            "title": "Test Title 02",
+            "title": "Test Article Title 2",
           },
+          "body": "## test h2
+
+this is a test paragraph of test-article-id-2.
+",
+          "changeLogs": Array [
+            Object {
+              "author": "8ayac",
+              "date": "2021-02-01T11:11:11.000Z",
+              "description": ":test_prefix: this is a test commit 2-1",
+              "id": "2000001",
+            },
+            Object {
+              "author": "8ayac",
+              "date": "2021-02-01T22:22:22.000Z",
+              "description": ":test_prefix: this is a test commit 2-2",
+              "id": "2000002",
+            },
+          ],
+          "description": "test h2
+
+this is a test paragraph of test-article-id-2.
+
+",
         },
         Object {
           "attributes": Object {
-            "body": "bluhbluhbluh",
-            "id": "test-article-01",
-            "publishedAt": 2021-01-01T00:00:00.000Z,
+            "id": "test-article-id-1",
+            "publishedAt": "2021-01-01T00:00:00.000Z",
             "tags": Array [
-              "test01",
+              "test-tag-1-1",
+              "test-tag-1-2",
             ],
-            "title": "Test Title 01",
+            "title": "Test Article Title 1",
           },
+          "body": "## test h2
+
+this is a test paragraph of test-article-id-1.
+",
+          "changeLogs": Array [
+            Object {
+              "author": "8ayac",
+              "date": "2021-01-01T11:11:11.000Z",
+              "description": ":test_prefix: this is a test commit 1-1",
+              "id": "1000001",
+            },
+            Object {
+              "author": "8ayac",
+              "date": "2021-01-01T22:22:22.000Z",
+              "description": ":test_prefix: this is a test commit 1-2",
+              "id": "1000002",
+            },
+          ],
+          "description": "test h2
+
+this is a test paragraph of test-article-id-1.
+
+",
         },
       ]
     }
@@ -269,25 +315,71 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
         Array [
           Object {
             "attributes": Object {
-              "body": "bluhbluhbluh",
-              "id": "test-article-02",
-              "publishedAt": 2021-02-02T00:00:00.000Z,
+              "id": "test-article-id-2",
+              "publishedAt": "2021-02-01T00:00:00.000Z",
               "tags": Array [
-                "test02",
+                "test-tag-2-1",
+                "test-tag-2-2",
               ],
-              "title": "Test Title 02",
+              "title": "Test Article Title 2",
             },
+            "body": "## test h2
+
+this is a test paragraph of test-article-id-2.
+",
+            "changeLogs": Array [
+              Object {
+                "author": "8ayac",
+                "date": "2021-02-01T11:11:11.000Z",
+                "description": ":test_prefix: this is a test commit 2-1",
+                "id": "2000001",
+              },
+              Object {
+                "author": "8ayac",
+                "date": "2021-02-01T22:22:22.000Z",
+                "description": ":test_prefix: this is a test commit 2-2",
+                "id": "2000002",
+              },
+            ],
+            "description": "test h2
+
+this is a test paragraph of test-article-id-2.
+
+",
           },
           Object {
             "attributes": Object {
-              "body": "bluhbluhbluh",
-              "id": "test-article-01",
-              "publishedAt": 2021-01-01T00:00:00.000Z,
+              "id": "test-article-id-1",
+              "publishedAt": "2021-01-01T00:00:00.000Z",
               "tags": Array [
-                "test01",
+                "test-tag-1-1",
+                "test-tag-1-2",
               ],
-              "title": "Test Title 01",
+              "title": "Test Article Title 1",
             },
+            "body": "## test h2
+
+this is a test paragraph of test-article-id-1.
+",
+            "changeLogs": Array [
+              Object {
+                "author": "8ayac",
+                "date": "2021-01-01T11:11:11.000Z",
+                "description": ":test_prefix: this is a test commit 1-1",
+                "id": "1000001",
+              },
+              Object {
+                "author": "8ayac",
+                "date": "2021-01-01T22:22:22.000Z",
+                "description": ":test_prefix: this is a test commit 1-2",
+                "id": "1000002",
+              },
+            ],
+            "description": "test h2
+
+this is a test paragraph of test-article-id-1.
+
+",
           },
         ]
       }
@@ -304,17 +396,40 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
                 article={
                   Object {
                     "attributes": Object {
-                      "body": "bluhbluhbluh",
-                      "id": "test-article-02",
-                      "publishedAt": 2021-02-02T00:00:00.000Z,
+                      "id": "test-article-id-2",
+                      "publishedAt": "2021-02-01T00:00:00.000Z",
                       "tags": Array [
-                        "test02",
+                        "test-tag-2-1",
+                        "test-tag-2-2",
                       ],
-                      "title": "Test Title 02",
+                      "title": "Test Article Title 2",
                     },
+                    "body": "## test h2
+
+this is a test paragraph of test-article-id-2.
+",
+                    "changeLogs": Array [
+                      Object {
+                        "author": "8ayac",
+                        "date": "2021-02-01T11:11:11.000Z",
+                        "description": ":test_prefix: this is a test commit 2-1",
+                        "id": "2000001",
+                      },
+                      Object {
+                        "author": "8ayac",
+                        "date": "2021-02-01T22:22:22.000Z",
+                        "description": ":test_prefix: this is a test commit 2-2",
+                        "id": "2000002",
+                      },
+                    ],
+                    "description": "test h2
+
+this is a test paragraph of test-article-id-2.
+
+",
                   }
                 }
-                key="test-article-02"
+                key="test-article-id-2"
               >
                 <BodyHeader
                   afterTitle={
@@ -322,7 +437,8 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
                       <CategoryTagList
                         tags={
                           Array [
-                            "test02",
+                            "test-tag-2-1",
+                            "test-tag-2-2",
                           ]
                         }
                         withPreIcon={true}
@@ -332,17 +448,17 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
                   beforeTitle={
                     <DateTimeWrapperDiv>
                       <DateTime
-                        date={2021-02-02T00:00:00.000Z}
+                        date="2021-02-01T00:00:00.000Z"
                         description="Published At"
                       />
                       <DateTime
-                        date={2021-02-02T00:00:00.000Z}
+                        date={2021-02-01T22:22:22.000Z}
                         description="Updated At"
                       />
                     </DateTimeWrapperDiv>
                   }
-                  linkTo="/articles/2021-02-02/test-article-02"
-                  title="Test Title 02"
+                  linkTo="/articles/2021-02-01/test-article-id-2"
+                  title="Test Article Title 2"
                 >
                   <WrapperHeader>
                     <header
@@ -357,7 +473,7 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
                               className="emotion-12 emotion-13"
                             >
                               <DateTime
-                                date={2021-02-02T00:00:00.000Z}
+                                date="2021-02-01T00:00:00.000Z"
                                 description="Published At"
                               >
                                 <ComponentWrapperDiv>
@@ -375,14 +491,14 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
                                       <time
                                         className="emotion-18 emotion-19"
                                       >
-                                        2021-02-02T00:00:00.000Z
+                                        2021-02-01T00:00:00.000Z
                                       </time>
                                     </ISODateTime>
                                   </div>
                                 </ComponentWrapperDiv>
                               </DateTime>
                               <DateTime
-                                date={2021-02-02T00:00:00.000Z}
+                                date={2021-02-01T22:22:22.000Z}
                                 description="Updated At"
                               >
                                 <ComponentWrapperDiv>
@@ -400,7 +516,7 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
                                       <time
                                         className="emotion-18 emotion-19"
                                       >
-                                        2021-02-02T00:00:00.000Z
+                                        2021-02-01T22:22:22.000Z
                                       </time>
                                     </ISODateTime>
                                   </div>
@@ -415,21 +531,21 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
                           className="emotion-2 emotion-3"
                         >
                           <Link
-                            href="/articles/2021-02-02/test-article-02"
+                            href="/articles/2021-02-01/test-article-id-2"
                             passHref={true}
                           >
                             <TitleAnchor
-                              href="/articles/2021-02-02/test-article-02"
+                              href="/articles/2021-02-01/test-article-id-2"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
                             >
                               <a
                                 className="emotion-28 emotion-29"
-                                href="/articles/2021-02-02/test-article-02"
+                                href="/articles/2021-02-01/test-article-id-2"
                                 onClick={[Function]}
                                 onMouseEnter={[Function]}
                               >
-                                Test Title 02
+                                Test Article Title 2
                               </a>
                             </TitleAnchor>
                           </Link>
@@ -446,7 +562,8 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
                               <CategoryTagList
                                 tags={
                                   Array [
-                                    "test02",
+                                    "test-tag-2-1",
+                                    "test-tag-2-2",
                                   ]
                                 }
                                 withPreIcon={true}
@@ -510,25 +627,49 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
                                       </div>
                                     </S-PreIconWrapperDiv>
                                     <CategoryTag
-                                      key="test02"
-                                      name="test02"
+                                      key="test-tag-2-1"
+                                      name="test-tag-2-1"
                                     >
                                       <Link
-                                        href="/tags/test02"
+                                        href="/tags/test-tag-2-1"
                                         passHref={true}
                                       >
                                         <Anchor
-                                          href="/tags/test02"
+                                          href="/tags/test-tag-2-1"
                                           onClick={[Function]}
                                           onMouseEnter={[Function]}
                                         >
                                           <a
                                             className="emotion-38 emotion-39"
-                                            href="/tags/test02"
+                                            href="/tags/test-tag-2-1"
                                             onClick={[Function]}
                                             onMouseEnter={[Function]}
                                           >
-                                            test02
+                                            test-tag-2-1
+                                          </a>
+                                        </Anchor>
+                                      </Link>
+                                    </CategoryTag>
+                                    <CategoryTag
+                                      key="test-tag-2-2"
+                                      name="test-tag-2-2"
+                                    >
+                                      <Link
+                                        href="/tags/test-tag-2-2"
+                                        passHref={true}
+                                      >
+                                        <Anchor
+                                          href="/tags/test-tag-2-2"
+                                          onClick={[Function]}
+                                          onMouseEnter={[Function]}
+                                        >
+                                          <a
+                                            className="emotion-38 emotion-39"
+                                            href="/tags/test-tag-2-2"
+                                            onClick={[Function]}
+                                            onMouseEnter={[Function]}
+                                          >
+                                            test-tag-2-2
                                           </a>
                                         </Anchor>
                                       </Link>
@@ -548,17 +689,40 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
                 article={
                   Object {
                     "attributes": Object {
-                      "body": "bluhbluhbluh",
-                      "id": "test-article-01",
-                      "publishedAt": 2021-01-01T00:00:00.000Z,
+                      "id": "test-article-id-1",
+                      "publishedAt": "2021-01-01T00:00:00.000Z",
                       "tags": Array [
-                        "test01",
+                        "test-tag-1-1",
+                        "test-tag-1-2",
                       ],
-                      "title": "Test Title 01",
+                      "title": "Test Article Title 1",
                     },
+                    "body": "## test h2
+
+this is a test paragraph of test-article-id-1.
+",
+                    "changeLogs": Array [
+                      Object {
+                        "author": "8ayac",
+                        "date": "2021-01-01T11:11:11.000Z",
+                        "description": ":test_prefix: this is a test commit 1-1",
+                        "id": "1000001",
+                      },
+                      Object {
+                        "author": "8ayac",
+                        "date": "2021-01-01T22:22:22.000Z",
+                        "description": ":test_prefix: this is a test commit 1-2",
+                        "id": "1000002",
+                      },
+                    ],
+                    "description": "test h2
+
+this is a test paragraph of test-article-id-1.
+
+",
                   }
                 }
-                key="test-article-01"
+                key="test-article-id-1"
               >
                 <BodyHeader
                   afterTitle={
@@ -566,7 +730,8 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
                       <CategoryTagList
                         tags={
                           Array [
-                            "test01",
+                            "test-tag-1-1",
+                            "test-tag-1-2",
                           ]
                         }
                         withPreIcon={true}
@@ -576,17 +741,17 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
                   beforeTitle={
                     <DateTimeWrapperDiv>
                       <DateTime
-                        date={2021-01-01T00:00:00.000Z}
+                        date="2021-01-01T00:00:00.000Z"
                         description="Published At"
                       />
                       <DateTime
-                        date={2021-01-01T00:00:00.000Z}
+                        date={2021-01-01T22:22:22.000Z}
                         description="Updated At"
                       />
                     </DateTimeWrapperDiv>
                   }
-                  linkTo="/articles/2021-01-01/test-article-01"
-                  title="Test Title 01"
+                  linkTo="/articles/2021-01-01/test-article-id-1"
+                  title="Test Article Title 1"
                 >
                   <WrapperHeader>
                     <header
@@ -601,7 +766,7 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
                               className="emotion-12 emotion-13"
                             >
                               <DateTime
-                                date={2021-01-01T00:00:00.000Z}
+                                date="2021-01-01T00:00:00.000Z"
                                 description="Published At"
                               >
                                 <ComponentWrapperDiv>
@@ -626,7 +791,7 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
                                 </ComponentWrapperDiv>
                               </DateTime>
                               <DateTime
-                                date={2021-01-01T00:00:00.000Z}
+                                date={2021-01-01T22:22:22.000Z}
                                 description="Updated At"
                               >
                                 <ComponentWrapperDiv>
@@ -644,7 +809,7 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
                                       <time
                                         className="emotion-18 emotion-19"
                                       >
-                                        2021-01-01T00:00:00.000Z
+                                        2021-01-01T22:22:22.000Z
                                       </time>
                                     </ISODateTime>
                                   </div>
@@ -659,21 +824,21 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
                           className="emotion-2 emotion-3"
                         >
                           <Link
-                            href="/articles/2021-01-01/test-article-01"
+                            href="/articles/2021-01-01/test-article-id-1"
                             passHref={true}
                           >
                             <TitleAnchor
-                              href="/articles/2021-01-01/test-article-01"
+                              href="/articles/2021-01-01/test-article-id-1"
                               onClick={[Function]}
                               onMouseEnter={[Function]}
                             >
                               <a
                                 className="emotion-28 emotion-29"
-                                href="/articles/2021-01-01/test-article-01"
+                                href="/articles/2021-01-01/test-article-id-1"
                                 onClick={[Function]}
                                 onMouseEnter={[Function]}
                               >
-                                Test Title 01
+                                Test Article Title 1
                               </a>
                             </TitleAnchor>
                           </Link>
@@ -690,7 +855,8 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
                               <CategoryTagList
                                 tags={
                                   Array [
-                                    "test01",
+                                    "test-tag-1-1",
+                                    "test-tag-1-2",
                                   ]
                                 }
                                 withPreIcon={true}
@@ -754,25 +920,49 @@ exports[`ArticleIndexPage is rendered correctly to match the snapshot 1`] = `
                                       </div>
                                     </S-PreIconWrapperDiv>
                                     <CategoryTag
-                                      key="test01"
-                                      name="test01"
+                                      key="test-tag-1-1"
+                                      name="test-tag-1-1"
                                     >
                                       <Link
-                                        href="/tags/test01"
+                                        href="/tags/test-tag-1-1"
                                         passHref={true}
                                       >
                                         <Anchor
-                                          href="/tags/test01"
+                                          href="/tags/test-tag-1-1"
                                           onClick={[Function]}
                                           onMouseEnter={[Function]}
                                         >
                                           <a
                                             className="emotion-38 emotion-39"
-                                            href="/tags/test01"
+                                            href="/tags/test-tag-1-1"
                                             onClick={[Function]}
                                             onMouseEnter={[Function]}
                                           >
-                                            test01
+                                            test-tag-1-1
+                                          </a>
+                                        </Anchor>
+                                      </Link>
+                                    </CategoryTag>
+                                    <CategoryTag
+                                      key="test-tag-1-2"
+                                      name="test-tag-1-2"
+                                    >
+                                      <Link
+                                        href="/tags/test-tag-1-2"
+                                        passHref={true}
+                                      >
+                                        <Anchor
+                                          href="/tags/test-tag-1-2"
+                                          onClick={[Function]}
+                                          onMouseEnter={[Function]}
+                                        >
+                                          <a
+                                            className="emotion-38 emotion-39"
+                                            href="/tags/test-tag-1-2"
+                                            onClick={[Function]}
+                                            onMouseEnter={[Function]}
+                                          >
+                                            test-tag-1-2
                                           </a>
                                         </Anchor>
                                       </Link>

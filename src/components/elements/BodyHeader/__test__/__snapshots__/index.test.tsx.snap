@@ -99,7 +99,7 @@ exports[`BodyHeader is rendered correctly to match the snapshot when linkTo is g
       </div>
     }
     linkTo="/"
-    title="Test Title"
+    title="Test Article Title 1"
   >
     <WrapperHeader>
       <header
@@ -133,7 +133,7 @@ exports[`BodyHeader is rendered correctly to match the snapshot when linkTo is g
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                 >
-                  Test Title
+                  Test Article Title 1
                 </a>
               </TitleAnchor>
             </Link>
@@ -235,7 +235,7 @@ exports[`BodyHeader is rendered correctly to match the snapshot when linkTo is n
         BEFORE
       </div>
     }
-    title="Test Title"
+    title="Test Article Title 1"
   >
     <WrapperHeader>
       <header
@@ -254,7 +254,7 @@ exports[`BodyHeader is rendered correctly to match the snapshot when linkTo is n
           <h1
             className="emotion-4 emotion-5"
           >
-            Test Title
+            Test Article Title 1
           </h1>
         </TitleH1>
         <AfterTitleDiv>

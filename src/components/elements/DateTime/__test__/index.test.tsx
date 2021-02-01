@@ -1,12 +1,13 @@
 import { DateTime } from '@/src/components/elements/DateTime';
 import { theme } from '@/src/constants/theme';
+import { mockArticleData } from '@/src/shared/__mocks__/articleData';
 import { ThemeProvider } from '@emotion/react';
 import { mount } from 'enzyme';
 import React from 'react';
 
 describe('DateTime', () => {
-  const testDate = new Date('2021-01-02T03:04:56.000Z');
-  const testDescription = 'TEST DESCRIPTION';
+  const testDate = mockArticleData.t1.attributes.publishedAt;
+  const testDescription = mockArticleData.t1.description;
 
   describe('is rendered correctly to match the snapshot', () => {
     test('in case with description', () => {
@@ -37,7 +38,7 @@ describe('DateTime', () => {
       );
 
       expect(wrapper.find('DateTime').find('time').text()).toEqual(
-        '2021-01-02T03:04:56.000Z'
+        '2021-01-01T00:00:00.000Z'
       );
       expect(wrapper.find('DescriptionSpan').text()).toEqual(
         `${testDescription}:`
@@ -51,7 +52,7 @@ describe('DateTime', () => {
         </ThemeProvider>
       );
       expect(wrapper.find('DateTime').find('time').text()).toEqual(
-        '2021-01-02T03:04:56.000Z'
+        '2021-01-01T00:00:00.000Z'
       );
       expect(wrapper.find('DescriptionSpan')).toHaveLength(0);
     });
