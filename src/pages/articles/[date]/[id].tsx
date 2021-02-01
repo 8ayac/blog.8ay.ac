@@ -63,7 +63,7 @@ const SEO: React.FC<{ article: Article }> = ({ article }) => (
       article: {
         publishedTime: new Date(article.attributes.publishedAt).toISOString(),
         modifiedTime: getLastModifiedDate(article).toISOString(),
-        authors: [config.site.maintainer],
+        authors: [config.site.maintainer.screenName],
         tags: article.attributes.tags,
       },
     }}
