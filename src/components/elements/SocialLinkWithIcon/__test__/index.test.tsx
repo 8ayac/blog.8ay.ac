@@ -100,6 +100,10 @@ describe('SocialLinkWithIcon', () => {
         expect(wSocialLinkAnchor).toHaveStyleRule('color', 'inherit');
         expect(wSocialLinkAnchor).toHaveStyleRule('font-size', '2.2rem');
         expect(wSocialLinkAnchor).toHaveStyleRule('text-decoration', 'none');
+
+        expect(wSocialLinkAnchor).toHaveStyleRule('color', 'inherit', {
+          target: ':visited',
+        });
         expect(wSocialLinkAnchor).toHaveStyleRule(
           'color',
           `${theme.color.yellow.base}`,

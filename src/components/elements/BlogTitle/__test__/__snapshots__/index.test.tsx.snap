@@ -12,6 +12,10 @@ exports[`BlogTitle is rendered correctly to match the snapshot default 1`] = `
   user-select: none;
 }
 
+.emotion-0:visited {
+  color: inherit;
+}
+
 .emotion-0:hover {
   color: hsla(60, 72%, 60%);
 }

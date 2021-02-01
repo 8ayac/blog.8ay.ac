@@ -13,6 +13,10 @@ const S = {
     color: ${(props) => props.color || 'inherit'};
     text-decoration: none;
 
+    &:visited {
+      color: inherit;
+    }
+
     &:hover {
       color: ${(props) => props.theme.color.yellow.base};
     }

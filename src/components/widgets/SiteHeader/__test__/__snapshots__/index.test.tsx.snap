@@ -59,6 +59,10 @@ exports[`Header is rendered correctly to match the snapshot 1`] = `
   user-select: none;
 }
 
+.emotion-6:visited {
+  color: inherit;
+}
+
 .emotion-6:hover {
   color: hsla(60, 72%, 60%);
 }
@@ -95,6 +99,10 @@ exports[`Header is rendered correctly to match the snapshot 1`] = `
   color: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.emotion-16:visited {
+  color: inherit;
 }
 
 .emotion-16:hover {
