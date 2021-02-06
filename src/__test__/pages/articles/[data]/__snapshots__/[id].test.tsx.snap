@@ -262,6 +262,12 @@ exports[`ArticlePage is rendered correctly to match the snapshot with revision h
 .emotion-66 {
   margin-right: 1rem;
   margin-bottom: 0.5rem;
+  -webkit-filter: drop-shadow(
+        2px 2px 1px hsla(212, 72%, 80%)
+      );
+  filter: drop-shadow(
+        2px 2px 1px hsla(212, 72%, 80%)
+      );
 }
 
 .emotion-66:hover {
@@ -1890,6 +1896,12 @@ exports[`ArticlePage is rendered correctly to match the snapshot without revisio
 .emotion-42 {
   margin-right: 1rem;
   margin-bottom: 0.5rem;
+  -webkit-filter: drop-shadow(
+        2px 2px 1px hsla(212, 72%, 80%)
+      );
+  filter: drop-shadow(
+        2px 2px 1px hsla(212, 72%, 80%)
+      );
 }
 
 .emotion-42:hover {

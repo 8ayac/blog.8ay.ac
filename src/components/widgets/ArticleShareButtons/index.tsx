@@ -21,6 +21,9 @@ const S = {
   ButtonWrapperDiv: styled.div`
     margin-right: 1rem;
     margin-bottom: 0.5rem;
+    filter: drop-shadow(
+      2px 2px 1px ${(props) => props.theme.color.blue.light2}
+    );
 
     :hover {
       filter: brightness(120%);
