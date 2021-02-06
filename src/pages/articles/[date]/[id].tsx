@@ -2,6 +2,7 @@ import { config } from '@/site.config';
 import { ArticleRevisionRecordList } from '@/src/components/elements/ArticleRevisionRecordList';
 import { MarkdownRenderer } from '@/src/components/elements/MarkdownRenderer';
 import { ArticleHeader } from '@/src/components/widgets/ArticleHeader';
+import { ArticleShareButtons } from '@/src/components/widgets/ArticleShareButtons';
 import jsonArticles from '@/src/shared/.content/articles.json';
 import { getLastModifiedDate } from '@/src/shared/utils';
 import { Article } from '@/src/types';
@@ -52,6 +53,10 @@ const S = {
     border-style: dotted;
     border-width: 2px 0;
   `,
+
+  ShareButtonsWrapper: styled.div`
+    margin-top: 5rem;
+  `,
 };
 
 const SEO: React.FC<{ article: Article }> = ({ article }) => (
@@ -84,6 +89,10 @@ const ArticlePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
         </S.RevisionHistoryWrapperDiv>
       )}
       <MarkdownRenderer content={article.body} />
+
+      <S.ShareButtonsWrapper>
+        <ArticleShareButtons article={article} />
+      </S.ShareButtonsWrapper>
     </>
   );
 };
