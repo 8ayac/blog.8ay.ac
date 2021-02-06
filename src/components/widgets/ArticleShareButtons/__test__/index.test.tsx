@@ -1,5 +1,7 @@
 import { ArticleShareButtons } from '@/src/components/widgets/ArticleShareButtons';
+import { theme } from '@/src/constants/theme';
 import { mockArticleData } from '@/src/shared/__mocks__/articleData';
+import { ThemeProvider } from '@emotion/react';
 import { mount } from 'enzyme';
 import React from 'react';
 
@@ -8,12 +10,20 @@ describe('ArticleShareButtons', () => {
 
   describe('is rendered correctly', () => {
     test('to match the snapshot', () => {
-      const wrapper = mount(<ArticleShareButtons article={testArticleData} />);
+      const wrapper = mount(
+        <ThemeProvider theme={theme}>
+          <ArticleShareButtons article={testArticleData} />
+        </ThemeProvider>
+      );
       expect(wrapper).toMatchSnapshot();
     });
 
     test('to contain correct set of share buttons', () => {
-      const wrapper = mount(<ArticleShareButtons article={testArticleData} />);
+      const wrapper = mount(
+        <ThemeProvider theme={theme}>
+          <ArticleShareButtons article={testArticleData} />
+        </ThemeProvider>
+      );
       const expectNames = [
         'Facebook',
         'Hatena',
@@ -30,7 +40,9 @@ describe('ArticleShareButtons', () => {
     describe('under certain conditions', () => {
       test('when size prop is not given (default)', () => {
         const wrapper = mount(
-          <ArticleShareButtons article={testArticleData} />
+          <ThemeProvider theme={theme}>
+            <ArticleShareButtons article={testArticleData} />
+          </ThemeProvider>
         );
         expect(
           wrapper.find('ButtonWrapperDiv').first().find('Icon').prop('size')
@@ -39,7 +51,9 @@ describe('ArticleShareButtons', () => {
 
       test('when size=64', () => {
         const wrapper = mount(
-          <ArticleShareButtons article={testArticleData} size={64} />
+          <ThemeProvider theme={theme}>
+            <ArticleShareButtons article={testArticleData} size={64} />
+          </ThemeProvider>
         );
         expect(
           wrapper.find('ButtonWrapperDiv').first().find('Icon').prop('size')
@@ -49,7 +63,11 @@ describe('ArticleShareButtons', () => {
   });
 
   describe('has proper style rules', () => {
-    const wrapper = mount(<ArticleShareButtons article={testArticleData} />);
+    const wrapper = mount(
+      <ThemeProvider theme={theme}>
+        <ArticleShareButtons article={testArticleData} />
+      </ThemeProvider>
+    );
 
     test('in ButtonListWrapperFlexDiv', () => {
       expect(wrapper.find('ButtonListWrapperFlexDiv')).toHaveStyleRule(
@@ -66,6 +84,15 @@ describe('ArticleShareButtons', () => {
       expect(wrapper.find('ButtonWrapperDiv').first()).toHaveStyleRule(
         'margin-bottom',
         '0.5rem'
+      );
+      expect(wrapper.find('ButtonWrapperDiv').first()).toHaveStyleRule(
+        'filter',
+        new RegExp(
+          `drop-shadow\\((\\r?\\n)?(\\s+)2px 2px 1px ${theme.color.blue.light2.replace(
+            /[()]/g,
+            '\\$&'
+          )}(\\r?\\n)?(\\s+)\\)`
+        )
       );
 
       expect(wrapper.find('ButtonWrapperDiv').first()).toHaveStyleRule(

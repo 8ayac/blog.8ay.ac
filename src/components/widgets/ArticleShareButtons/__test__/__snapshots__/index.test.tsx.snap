@@ -11,6 +11,12 @@ exports[`ArticleShareButtons is rendered correctly to match the snapshot 1`] = `
 .emotion-4 {
   margin-right: 1rem;
   margin-bottom: 0.5rem;
+  -webkit-filter: drop-shadow(
+        2px 2px 1px hsla(212, 72%, 80%)
+      );
+  filter: drop-shadow(
+        2px 2px 1px hsla(212, 72%, 80%)
+      );
 }
 
 .emotion-4:hover {
@@ -18,559 +24,611 @@ exports[`ArticleShareButtons is rendered correctly to match the snapshot 1`] = `
   filter: brightness(120%);
 }
 
-<ArticleShareButtons
-  article={
+<ThemeProvider
+  theme={
     Object {
-      "attributes": Object {
-        "id": "test-article-id-1",
-        "publishedAt": "2021-01-01T00:00:00.000Z",
-        "tags": Array [
-          "test-tag-1-1",
-          "test-tag-1-2",
-        ],
-        "title": "Test Article Title 1",
+      "color": Object {
+        "blue": Object {
+          "base": "hsla(212, 72%, 60%)",
+          "dark": "hsla(212, 72%, 50%)",
+          "dark2": "hsla(212, 72%, 40%)",
+          "dark3": "hsla(212, 72%, 30%)",
+          "dark4": "hsla(212, 72%, 20%)",
+          "light": "hsla(212, 72%, 70%)",
+          "light2": "hsla(212, 72%, 80%)",
+          "light3": "hsla(212, 72%, 90%)",
+        },
+        "border": Object {
+          "primary": "hsla(0, 0%, 50%)",
+          "primaryLight": "hsla(0, 0%, 75%)",
+        },
+        "green": Object {
+          "base": "hsla(148, 72%, 60%)",
+          "dark": "hsla(148, 72%, 50%)",
+          "dark2": "hsla(148, 72%, 40%)",
+          "dark3": "hsla(148, 72%, 30%)",
+          "dark4": "hsla(148, 72%, 20%)",
+          "light": "hsla(148, 72%, 70%)",
+          "light2": "hsla(148, 72%, 80%)",
+          "light3": "hsla(148, 72%, 90%)",
+        },
+        "primary": "hsla(212, 72%, 60%)",
+        "primaryDark": "hsla(212, 72%, 50%)",
+        "primaryLight": "hsla(212, 72%, 70%)",
+        "text": Object {
+          "accent": "hsla(148, 72%, 50%)",
+          "primary": "hsla(0, 0%, 15%)",
+          "primaryLight": "hsla(0, 0%, 40%)",
+          "secondary": "hsla(212, 72%, 40%)",
+        },
+        "yellow": Object {
+          "base": "hsla(60, 72%, 60%)",
+          "dark": "hsla(60, 72%, 50%)",
+          "dark2": "hsla(60, 72%, 40%)",
+          "dark3": "hsla(60, 72%, 30%)",
+          "dark4": "hsla(60, 72%, 20%)",
+          "light": "hsla(60, 72%, 70%)",
+          "light2": "hsla(60, 72%, 80%)",
+          "light3": "hsla(60, 72%, 90%)",
+        },
       },
-      "body": "## test h2
-
-this is a test paragraph of test-article-id-1.
-",
-      "changeLogs": Array [
-        Object {
-          "author": "8ayac",
-          "date": "2021-01-01T11:11:11.000Z",
-          "description": ":test_prefix: this is a test commit 1-1",
-          "id": "1000001",
-        },
-        Object {
-          "author": "8ayac",
-          "date": "2021-01-01T22:22:22.000Z",
-          "description": ":test_prefix: this is a test commit 1-2",
-          "id": "1000002",
-        },
-      ],
-      "description": "test h2
-
-this is a test paragraph of test-article-id-1.
-
-",
     }
   }
 >
-  <ComponentWrapperSection>
-    <section
-      className="emotion-0 emotion-1"
-    >
-      <ButtonListWrapperFlexDiv>
-        <div
-          className="emotion-2 emotion-3"
-        >
-          <ButtonWrapperDiv
-            key="facebook"
+  <ArticleShareButtons
+    article={
+      Object {
+        "attributes": Object {
+          "id": "test-article-id-1",
+          "publishedAt": "2021-01-01T00:00:00.000Z",
+          "tags": Array [
+            "test-tag-1-1",
+            "test-tag-1-2",
+          ],
+          "title": "Test Article Title 1",
+        },
+        "body": "## test h2
+
+this is a test paragraph of test-article-id-1.
+",
+        "changeLogs": Array [
+          Object {
+            "author": "8ayac",
+            "date": "2021-01-01T11:11:11.000Z",
+            "description": ":test_prefix: this is a test commit 1-1",
+            "id": "1000001",
+          },
+          Object {
+            "author": "8ayac",
+            "date": "2021-01-01T22:22:22.000Z",
+            "description": ":test_prefix: this is a test commit 1-2",
+            "id": "1000002",
+          },
+        ],
+        "description": "test h2
+
+this is a test paragraph of test-article-id-1.
+
+",
+      }
+    }
+  >
+    <ComponentWrapperSection>
+      <section
+        className="emotion-0 emotion-1"
+      >
+        <ButtonListWrapperFlexDiv>
+          <div
+            className="emotion-2 emotion-3"
           >
-            <div
-              className="emotion-4 emotion-5"
+            <ButtonWrapperDiv
+              key="facebook"
             >
-              <Facebook
-                key="facebook"
-                shareUrl="http://localhost:3000/articles/2021-01-01/test-article-id-1"
-                size={32}
+              <div
+                className="emotion-4 emotion-5"
               >
-                <ForwardRef(ShareButton-facebook)
-                  url="http://localhost:3000/articles/2021-01-01/test-article-id-1"
+                <Facebook
+                  key="facebook"
+                  shareUrl="http://localhost:3000/articles/2021-01-01/test-article-id-1"
+                  size={32}
                 >
-                  <ShareButton
-                    disabledStyle={
-                      Object {
-                        "opacity": 0.6,
-                      }
-                    }
-                    forwardedRef={null}
-                    networkLink={[Function]}
-                    networkName="facebook"
-                    openShareDialogOnClick={true}
-                    opts={
-                      Object {
-                        "hashtag": undefined,
-                        "quote": undefined,
-                      }
-                    }
-                    resetButtonStyle={true}
+                  <ForwardRef(ShareButton-facebook)
                     url="http://localhost:3000/articles/2021-01-01/test-article-id-1"
-                    windowHeight={400}
-                    windowWidth={550}
                   >
-                    <button
-                      aria-label="facebook"
-                      className="react-share__ShareButton"
-                      onClick={[Function]}
-                      style={
+                    <ShareButton
+                      disabledStyle={
                         Object {
-                          "backgroundColor": "transparent",
-                          "border": "none",
-                          "color": "inherit",
-                          "cursor": "pointer",
-                          "font": "inherit",
-                          "padding": 0,
+                          "opacity": 0.6,
                         }
                       }
-                    >
-                      <Icon
-                        bgStyle={Object {}}
-                        borderRadius={0}
-                        iconFillColor="white"
-                        round={true}
-                        size={32}
-                      >
-                        <svg
-                          height={32}
-                          viewBox="0 0 64 64"
-                          width={32}
-                        >
-                          <circle
-                            cx="32"
-                            cy="32"
-                            fill="#3b5998"
-                            r="31"
-                            style={Object {}}
-                          />
-                          <path
-                            d="M34.1,47V33.3h4.6l0.7-5.3h-5.3v-3.4c0-1.5,0.4-2.6,2.6-2.6l2.8,0v-4.8c-0.5-0.1-2.2-0.2-4.1-0.2 c-4.1,0-6.9,2.5-6.9,7V28H24v5.3h4.6V47H34.1z"
-                            fill="white"
-                          />
-                        </svg>
-                      </Icon>
-                    </button>
-                  </ShareButton>
-                </ForwardRef(ShareButton-facebook)>
-              </Facebook>
-            </div>
-          </ButtonWrapperDiv>
-          <ButtonWrapperDiv
-            key="twitter"
-          >
-            <div
-              className="emotion-4 emotion-5"
-            >
-              <Twitter
-                key="twitter"
-                shareTitle="Test Article Title 1"
-                shareUrl="http://localhost:3000/articles/2021-01-01/test-article-id-1"
-                size={32}
-              >
-                <ForwardRef(ShareButton-twitter)
-                  related={
-                    Array [
-                      "8ayac",
-                    ]
-                  }
-                  title="Test Article Title 1"
-                  url="http://localhost:3000/articles/2021-01-01/test-article-id-1"
-                  via="8ayac"
-                >
-                  <ShareButton
-                    disabledStyle={
-                      Object {
-                        "opacity": 0.6,
-                      }
-                    }
-                    forwardedRef={null}
-                    networkLink={[Function]}
-                    networkName="twitter"
-                    openShareDialogOnClick={true}
-                    opts={
-                      Object {
-                        "hashtags": undefined,
-                        "related": Array [
-                          "8ayac",
-                        ],
-                        "title": "Test Article Title 1",
-                        "via": "8ayac",
-                      }
-                    }
-                    resetButtonStyle={true}
-                    url="http://localhost:3000/articles/2021-01-01/test-article-id-1"
-                    windowHeight={400}
-                    windowWidth={550}
-                  >
-                    <button
-                      aria-label="twitter"
-                      className="react-share__ShareButton"
-                      onClick={[Function]}
-                      style={
+                      forwardedRef={null}
+                      networkLink={[Function]}
+                      networkName="facebook"
+                      openShareDialogOnClick={true}
+                      opts={
                         Object {
-                          "backgroundColor": "transparent",
-                          "border": "none",
-                          "color": "inherit",
-                          "cursor": "pointer",
-                          "font": "inherit",
-                          "padding": 0,
+                          "hashtag": undefined,
+                          "quote": undefined,
                         }
                       }
+                      resetButtonStyle={true}
+                      url="http://localhost:3000/articles/2021-01-01/test-article-id-1"
+                      windowHeight={400}
+                      windowWidth={550}
                     >
-                      <Icon
-                        bgStyle={Object {}}
-                        borderRadius={0}
-                        iconFillColor="white"
-                        round={true}
-                        size={32}
+                      <button
+                        aria-label="facebook"
+                        className="react-share__ShareButton"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "backgroundColor": "transparent",
+                            "border": "none",
+                            "color": "inherit",
+                            "cursor": "pointer",
+                            "font": "inherit",
+                            "padding": 0,
+                          }
+                        }
                       >
-                        <svg
-                          height={32}
-                          viewBox="0 0 64 64"
-                          width={32}
+                        <Icon
+                          bgStyle={Object {}}
+                          borderRadius={0}
+                          iconFillColor="white"
+                          round={true}
+                          size={32}
                         >
-                          <circle
-                            cx="32"
-                            cy="32"
-                            fill="#00aced"
-                            r="31"
-                            style={Object {}}
-                          />
-                          <path
-                            d="M48,22.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6 C41.7,19.8,40,19,38.2,19c-3.6,0-6.6,2.9-6.6,6.6c0,0.5,0.1,1,0.2,1.5c-5.5-0.3-10.3-2.9-13.5-6.9c-0.6,1-0.9,2.1-0.9,3.3 c0,2.3,1.2,4.3,2.9,5.5c-1.1,0-2.1-0.3-3-0.8c0,0,0,0.1,0,0.1c0,3.2,2.3,5.8,5.3,6.4c-0.6,0.1-1.1,0.2-1.7,0.2c-0.4,0-0.8,0-1.2-0.1 c0.8,2.6,3.3,4.5,6.1,4.6c-2.2,1.8-5.1,2.8-8.2,2.8c-0.5,0-1.1,0-1.6-0.1c2.9,1.9,6.4,2.9,10.1,2.9c12.1,0,18.7-10,18.7-18.7 c0-0.3,0-0.6,0-0.8C46,24.5,47.1,23.4,48,22.1z"
-                            fill="white"
-                          />
-                        </svg>
-                      </Icon>
-                    </button>
-                  </ShareButton>
-                </ForwardRef(ShareButton-twitter)>
-              </Twitter>
-            </div>
-          </ButtonWrapperDiv>
-          <ButtonWrapperDiv
-            key="hatena"
-          >
-            <div
-              className="emotion-4 emotion-5"
+                          <svg
+                            height={32}
+                            viewBox="0 0 64 64"
+                            width={32}
+                          >
+                            <circle
+                              cx="32"
+                              cy="32"
+                              fill="#3b5998"
+                              r="31"
+                              style={Object {}}
+                            />
+                            <path
+                              d="M34.1,47V33.3h4.6l0.7-5.3h-5.3v-3.4c0-1.5,0.4-2.6,2.6-2.6l2.8,0v-4.8c-0.5-0.1-2.2-0.2-4.1-0.2 c-4.1,0-6.9,2.5-6.9,7V28H24v5.3h4.6V47H34.1z"
+                              fill="white"
+                            />
+                          </svg>
+                        </Icon>
+                      </button>
+                    </ShareButton>
+                  </ForwardRef(ShareButton-facebook)>
+                </Facebook>
+              </div>
+            </ButtonWrapperDiv>
+            <ButtonWrapperDiv
+              key="twitter"
             >
-              <Hatena
-                key="hatena"
-                shareTitle="Test Article Title 1"
-                shareUrl="http://localhost:3000/articles/2021-01-01/test-article-id-1"
-                size={32}
+              <div
+                className="emotion-4 emotion-5"
               >
-                <ForwardRef(ShareButton-hatena)
-                  title="Test Article Title 1"
-                  url="http://localhost:3000/articles/2021-01-01/test-article-id-1"
+                <Twitter
+                  key="twitter"
+                  shareTitle="Test Article Title 1"
+                  shareUrl="http://localhost:3000/articles/2021-01-01/test-article-id-1"
+                  size={32}
                 >
-                  <ShareButton
-                    disabledStyle={
-                      Object {
-                        "opacity": 0.6,
-                      }
+                  <ForwardRef(ShareButton-twitter)
+                    related={
+                      Array [
+                        "8ayac",
+                      ]
                     }
-                    forwardedRef={null}
-                    networkLink={[Function]}
-                    networkName="hatena"
-                    openShareDialogOnClick={true}
-                    opts={
-                      Object {
-                        "title": "Test Article Title 1",
-                      }
-                    }
-                    resetButtonStyle={true}
+                    title="Test Article Title 1"
                     url="http://localhost:3000/articles/2021-01-01/test-article-id-1"
-                    windowHeight={460}
-                    windowPosition="windowCenter"
-                    windowWidth={660}
+                    via="8ayac"
                   >
-                    <button
-                      aria-label="hatena"
-                      className="react-share__ShareButton"
-                      onClick={[Function]}
-                      style={
+                    <ShareButton
+                      disabledStyle={
                         Object {
-                          "backgroundColor": "transparent",
-                          "border": "none",
-                          "color": "inherit",
-                          "cursor": "pointer",
-                          "font": "inherit",
-                          "padding": 0,
+                          "opacity": 0.6,
                         }
                       }
-                    >
-                      <Icon
-                        bgStyle={Object {}}
-                        borderRadius={0}
-                        iconFillColor="white"
-                        round={true}
-                        size={32}
-                      >
-                        <svg
-                          height={32}
-                          viewBox="0 0 64 64"
-                          width={32}
-                        >
-                          <circle
-                            cx="32"
-                            cy="32"
-                            fill="#009ad9"
-                            r="31"
-                            style={Object {}}
-                          />
-                          <path
-                            d="M 36.164062 33.554688 C 34.988281 32.234375 33.347656 31.5 31.253906 31.34375 C 33.125 30.835938 34.476562 30.09375 35.335938 29.09375 C 36.191406 28.09375 36.609375 26.78125 36.609375 25.101562 C 36.628906 23.875 36.332031 22.660156 35.75 21.578125 C 35.160156 20.558594 34.292969 19.71875 33.253906 19.160156 C 32.304688 18.640625 31.175781 18.265625 29.847656 18.042969 C 28.523438 17.824219 26.195312 17.730469 22.867188 17.730469 L 14.769531 17.730469 L 14.769531 47.269531 L 23.113281 47.269531 C 26.46875 47.269531 28.886719 47.15625 30.367188 46.929688 C 31.851562 46.695312 33.085938 46.304688 34.085938 45.773438 C 35.289062 45.148438 36.28125 44.179688 36.933594 42.992188 C 37.597656 41.796875 37.933594 40.402344 37.933594 38.816406 C 37.933594 36.621094 37.347656 34.867188 36.164062 33.554688 Z M 22.257812 24.269531 L 23.984375 24.269531 C 25.988281 24.269531 27.332031 24.496094 28.015625 24.945312 C 28.703125 25.402344 29.042969 26.183594 29.042969 27.285156 C 29.042969 28.390625 28.664062 29.105469 27.9375 29.550781 C 27.210938 29.992188 25.84375 30.199219 23.855469 30.199219 L 22.257812 30.199219 Z M 29.121094 41.210938 C 28.328125 41.691406 26.976562 41.925781 25.078125 41.925781 L 22.257812 41.925781 L 22.257812 35.488281 L 25.195312 35.488281 C 27.144531 35.488281 28.496094 35.738281 29.210938 36.230469 C 29.925781 36.726562 30.304688 37.582031 30.304688 38.832031 C 30.304688 40.078125 29.914062 40.742188 29.105469 41.222656 Z M 29.121094 41.210938 M 46.488281 39.792969 C 44.421875 39.792969 42.742188 41.46875 42.742188 43.535156 C 42.742188 45.605469 44.421875 47.28125 46.488281 47.28125 C 48.554688 47.28125 50.230469 45.605469 50.230469 43.535156 C 50.230469 41.46875 48.554688 39.792969 46.488281 39.792969 Z M 46.488281 39.792969 M 43.238281 17.730469 L 49.738281 17.730469 L 49.738281 37.429688 L 43.238281 37.429688 Z M 43.238281 17.730469 "
-                            fill="white"
-                          />
-                        </svg>
-                      </Icon>
-                    </button>
-                  </ShareButton>
-                </ForwardRef(ShareButton-hatena)>
-              </Hatena>
-            </div>
-          </ButtonWrapperDiv>
-          <ButtonWrapperDiv
-            key="line"
-          >
-            <div
-              className="emotion-4 emotion-5"
-            >
-              <Line
-                key="line"
-                shareTitle="Test Article Title 1"
-                shareUrl="http://localhost:3000/articles/2021-01-01/test-article-id-1"
-                size={32}
-              >
-                <ForwardRef(ShareButton-line)
-                  title="Test Article Title 1"
-                  url="http://localhost:3000/articles/2021-01-01/test-article-id-1"
-                >
-                  <ShareButton
-                    disabledStyle={
-                      Object {
-                        "opacity": 0.6,
-                      }
-                    }
-                    forwardedRef={null}
-                    networkLink={[Function]}
-                    networkName="line"
-                    openShareDialogOnClick={true}
-                    opts={
-                      Object {
-                        "title": "Test Article Title 1",
-                      }
-                    }
-                    resetButtonStyle={true}
-                    url="http://localhost:3000/articles/2021-01-01/test-article-id-1"
-                    windowHeight={500}
-                    windowWidth={500}
-                  >
-                    <button
-                      aria-label="line"
-                      className="react-share__ShareButton"
-                      onClick={[Function]}
-                      style={
+                      forwardedRef={null}
+                      networkLink={[Function]}
+                      networkName="twitter"
+                      openShareDialogOnClick={true}
+                      opts={
                         Object {
-                          "backgroundColor": "transparent",
-                          "border": "none",
-                          "color": "inherit",
-                          "cursor": "pointer",
-                          "font": "inherit",
-                          "padding": 0,
+                          "hashtags": undefined,
+                          "related": Array [
+                            "8ayac",
+                          ],
+                          "title": "Test Article Title 1",
+                          "via": "8ayac",
                         }
                       }
+                      resetButtonStyle={true}
+                      url="http://localhost:3000/articles/2021-01-01/test-article-id-1"
+                      windowHeight={400}
+                      windowWidth={550}
                     >
-                      <Icon
-                        bgStyle={Object {}}
-                        borderRadius={0}
-                        iconFillColor="white"
-                        round={true}
-                        size={32}
+                      <button
+                        aria-label="twitter"
+                        className="react-share__ShareButton"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "backgroundColor": "transparent",
+                            "border": "none",
+                            "color": "inherit",
+                            "cursor": "pointer",
+                            "font": "inherit",
+                            "padding": 0,
+                          }
+                        }
                       >
-                        <svg
-                          height={32}
-                          viewBox="0 0 64 64"
-                          width={32}
+                        <Icon
+                          bgStyle={Object {}}
+                          borderRadius={0}
+                          iconFillColor="white"
+                          round={true}
+                          size={32}
                         >
-                          <circle
-                            cx="32"
-                            cy="32"
-                            fill="#00b800"
-                            r="31"
-                            style={Object {}}
-                          />
-                          <path
-                            d="M52.62 30.138c0 3.693-1.432 7.019-4.42 10.296h.001c-4.326 4.979-14 11.044-16.201 11.972-2.2.927-1.876-.591-1.786-1.112l.294-1.765c.069-.527.142-1.343-.066-1.865-.232-.574-1.146-.872-1.817-1.016-9.909-1.31-17.245-8.238-17.245-16.51 0-9.226 9.251-16.733 20.62-16.733 11.37 0 20.62 7.507 20.62 16.733zM27.81 25.68h-1.446a.402.402 0 0 0-.402.401v8.985c0 .221.18.4.402.4h1.446a.401.401 0 0 0 .402-.4v-8.985a.402.402 0 0 0-.402-.401zm9.956 0H36.32a.402.402 0 0 0-.402.401v5.338L31.8 25.858a.39.39 0 0 0-.031-.04l-.002-.003-.024-.025-.008-.007a.313.313 0 0 0-.032-.026.255.255 0 0 1-.021-.014l-.012-.007-.021-.012-.013-.006-.023-.01-.013-.005-.024-.008-.014-.003-.023-.005-.017-.002-.021-.003-.021-.002h-1.46a.402.402 0 0 0-.402.401v8.985c0 .221.18.4.402.4h1.446a.401.401 0 0 0 .402-.4v-5.337l4.123 5.568c.028.04.063.072.101.099l.004.003a.236.236 0 0 0 .025.015l.012.006.019.01a.154.154 0 0 1 .019.008l.012.004.028.01.005.001a.442.442 0 0 0 .104.013h1.446a.4.4 0 0 0 .401-.4v-8.985a.402.402 0 0 0-.401-.401zm-13.442 7.537h-3.93v-7.136a.401.401 0 0 0-.401-.401h-1.447a.4.4 0 0 0-.401.401v8.984a.392.392 0 0 0 .123.29c.072.068.17.111.278.111h5.778a.4.4 0 0 0 .401-.401v-1.447a.401.401 0 0 0-.401-.401zm21.429-5.287c.222 0 .401-.18.401-.402v-1.446a.401.401 0 0 0-.401-.402h-5.778a.398.398 0 0 0-.279.113l-.005.004-.006.008a.397.397 0 0 0-.111.276v8.984c0 .108.043.206.112.278l.005.006a.401.401 0 0 0 .284.117h5.778a.4.4 0 0 0 .401-.401v-1.447a.401.401 0 0 0-.401-.401h-3.93v-1.519h3.93c.222 0 .401-.18.401-.402V29.85a.401.401 0 0 0-.401-.402h-3.93V27.93h3.93z"
-                            fill="white"
-                          />
-                        </svg>
-                      </Icon>
-                    </button>
-                  </ShareButton>
-                </ForwardRef(ShareButton-line)>
-              </Line>
-            </div>
-          </ButtonWrapperDiv>
-          <ButtonWrapperDiv
-            key="reddit"
-          >
-            <div
-              className="emotion-4 emotion-5"
+                          <svg
+                            height={32}
+                            viewBox="0 0 64 64"
+                            width={32}
+                          >
+                            <circle
+                              cx="32"
+                              cy="32"
+                              fill="#00aced"
+                              r="31"
+                              style={Object {}}
+                            />
+                            <path
+                              d="M48,22.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6 C41.7,19.8,40,19,38.2,19c-3.6,0-6.6,2.9-6.6,6.6c0,0.5,0.1,1,0.2,1.5c-5.5-0.3-10.3-2.9-13.5-6.9c-0.6,1-0.9,2.1-0.9,3.3 c0,2.3,1.2,4.3,2.9,5.5c-1.1,0-2.1-0.3-3-0.8c0,0,0,0.1,0,0.1c0,3.2,2.3,5.8,5.3,6.4c-0.6,0.1-1.1,0.2-1.7,0.2c-0.4,0-0.8,0-1.2-0.1 c0.8,2.6,3.3,4.5,6.1,4.6c-2.2,1.8-5.1,2.8-8.2,2.8c-0.5,0-1.1,0-1.6-0.1c2.9,1.9,6.4,2.9,10.1,2.9c12.1,0,18.7-10,18.7-18.7 c0-0.3,0-0.6,0-0.8C46,24.5,47.1,23.4,48,22.1z"
+                              fill="white"
+                            />
+                          </svg>
+                        </Icon>
+                      </button>
+                    </ShareButton>
+                  </ForwardRef(ShareButton-twitter)>
+                </Twitter>
+              </div>
+            </ButtonWrapperDiv>
+            <ButtonWrapperDiv
+              key="hatena"
             >
-              <Reddit
-                key="reddit"
-                shareTitle="Test Article Title 1"
-                shareUrl="http://localhost:3000/articles/2021-01-01/test-article-id-1"
-                size={32}
+              <div
+                className="emotion-4 emotion-5"
               >
-                <ForwardRef(ShareButton-reddit)
-                  title="Test Article Title 1"
-                  url="http://localhost:3000/articles/2021-01-01/test-article-id-1"
+                <Hatena
+                  key="hatena"
+                  shareTitle="Test Article Title 1"
+                  shareUrl="http://localhost:3000/articles/2021-01-01/test-article-id-1"
+                  size={32}
                 >
-                  <ShareButton
-                    disabledStyle={
-                      Object {
-                        "opacity": 0.6,
-                      }
-                    }
-                    forwardedRef={null}
-                    networkLink={[Function]}
-                    networkName="reddit"
-                    openShareDialogOnClick={true}
-                    opts={
-                      Object {
-                        "title": "Test Article Title 1",
-                      }
-                    }
-                    resetButtonStyle={true}
+                  <ForwardRef(ShareButton-hatena)
+                    title="Test Article Title 1"
                     url="http://localhost:3000/articles/2021-01-01/test-article-id-1"
-                    windowHeight={460}
-                    windowPosition="windowCenter"
-                    windowWidth={660}
                   >
-                    <button
-                      aria-label="reddit"
-                      className="react-share__ShareButton"
-                      onClick={[Function]}
-                      style={
+                    <ShareButton
+                      disabledStyle={
                         Object {
-                          "backgroundColor": "transparent",
-                          "border": "none",
-                          "color": "inherit",
-                          "cursor": "pointer",
-                          "font": "inherit",
-                          "padding": 0,
+                          "opacity": 0.6,
                         }
                       }
-                    >
-                      <Icon
-                        bgStyle={Object {}}
-                        borderRadius={0}
-                        iconFillColor="white"
-                        round={true}
-                        size={32}
-                      >
-                        <svg
-                          height={32}
-                          viewBox="0 0 64 64"
-                          width={32}
-                        >
-                          <circle
-                            cx="32"
-                            cy="32"
-                            fill="#5f99cf"
-                            r="31"
-                            style={Object {}}
-                          />
-                          <path
-                            d="m 52.8165,31.942362 c 0,-2.4803 -2.0264,-4.4965 -4.5169,-4.4965 -1.2155,0 -2.3171,0.4862 -3.128,1.2682 -3.077,-2.0247 -7.2403,-3.3133 -11.8507,-3.4782 l 2.5211,-7.9373 6.8272,1.5997 -0.0102,0.0986 c 0,2.0281 1.6575,3.6771 3.6958,3.6771 2.0366,0 3.6924,-1.649 3.6924,-3.6771 0,-2.0281 -1.6575,-3.6788 -3.6924,-3.6788 -1.564,0 -2.8968,0.9758 -3.4357,2.3443 l -7.3593,-1.7255 c -0.3213,-0.0782 -0.6477,0.1071 -0.748,0.4233 L 32,25.212062 c -4.8246,0.0578 -9.1953,1.3566 -12.41,3.4425 -0.8058,-0.7446 -1.8751,-1.2104 -3.0583,-1.2104 -2.4905,0 -4.5152,2.0179 -4.5152,4.4982 0,1.649 0.9061,3.0787 2.2389,3.8607 -0.0884,0.4794 -0.1462,0.9639 -0.1462,1.4569 0,6.6487 8.1736,12.0581 18.2223,12.0581 10.0487,0 18.224,-5.4094 18.224,-12.0581 0,-0.4658 -0.0493,-0.9248 -0.1275,-1.377 1.4144,-0.7599 2.3885,-2.2304 2.3885,-3.9406 z m -29.2808,3.0872 c 0,-1.4756 1.207,-2.6775 2.6894,-2.6775 1.4824,0 2.6877,1.2019 2.6877,2.6775 0,1.4756 -1.2053,2.6758 -2.6877,2.6758 -1.4824,0 -2.6894,-1.2002 -2.6894,-2.6758 z m 15.4037,7.9373 c -1.3549,1.3481 -3.4816,2.0043 -6.5008,2.0043 l -0.0221,-0.0051 -0.0221,0.0051 c -3.0209,0 -5.1476,-0.6562 -6.5008,-2.0043 -0.2465,-0.2448 -0.2465,-0.6443 0,-0.8891 0.2465,-0.2465 0.6477,-0.2465 0.8942,0 1.105,1.0999 2.9393,1.6337 5.6066,1.6337 l 0.0221,0.0051 0.0221,-0.0051 c 2.6673,0 4.5016,-0.5355 5.6066,-1.6354 0.2465,-0.2465 0.6477,-0.2448 0.8942,0 0.2465,0.2465 0.2465,0.6443 0,0.8908 z m -0.3213,-5.2615 c -1.4824,0 -2.6877,-1.2002 -2.6877,-2.6758 0,-1.4756 1.2053,-2.6775 2.6877,-2.6775 1.4824,0 2.6877,1.2019 2.6877,2.6775 0,1.4756 -1.2053,2.6758 -2.6877,2.6758 z"
-                            fill="white"
-                          />
-                        </svg>
-                      </Icon>
-                    </button>
-                  </ShareButton>
-                </ForwardRef(ShareButton-reddit)>
-              </Reddit>
-            </div>
-          </ButtonWrapperDiv>
-          <ButtonWrapperDiv
-            key="pocket"
-          >
-            <div
-              className="emotion-4 emotion-5"
-            >
-              <Pocket
-                key="pocket"
-                shareTitle="Test Article Title 1"
-                shareUrl="http://localhost:3000/articles/2021-01-01/test-article-id-1"
-                size={32}
-              >
-                <ForwardRef(ShareButton-pocket)
-                  title="Test Article Title 1"
-                  url="http://localhost:3000/articles/2021-01-01/test-article-id-1"
-                >
-                  <ShareButton
-                    disabledStyle={
-                      Object {
-                        "opacity": 0.6,
-                      }
-                    }
-                    forwardedRef={null}
-                    networkLink={[Function]}
-                    networkName="pocket"
-                    openShareDialogOnClick={true}
-                    opts={
-                      Object {
-                        "title": "Test Article Title 1",
-                      }
-                    }
-                    resetButtonStyle={true}
-                    url="http://localhost:3000/articles/2021-01-01/test-article-id-1"
-                    windowHeight={500}
-                    windowWidth={500}
-                  >
-                    <button
-                      aria-label="pocket"
-                      className="react-share__ShareButton"
-                      onClick={[Function]}
-                      style={
+                      forwardedRef={null}
+                      networkLink={[Function]}
+                      networkName="hatena"
+                      openShareDialogOnClick={true}
+                      opts={
                         Object {
-                          "backgroundColor": "transparent",
-                          "border": "none",
-                          "color": "inherit",
-                          "cursor": "pointer",
-                          "font": "inherit",
-                          "padding": 0,
+                          "title": "Test Article Title 1",
                         }
                       }
+                      resetButtonStyle={true}
+                      url="http://localhost:3000/articles/2021-01-01/test-article-id-1"
+                      windowHeight={460}
+                      windowPosition="windowCenter"
+                      windowWidth={660}
                     >
-                      <Icon
-                        bgStyle={Object {}}
-                        borderRadius={0}
-                        iconFillColor="white"
-                        round={true}
-                        size={32}
+                      <button
+                        aria-label="hatena"
+                        className="react-share__ShareButton"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "backgroundColor": "transparent",
+                            "border": "none",
+                            "color": "inherit",
+                            "cursor": "pointer",
+                            "font": "inherit",
+                            "padding": 0,
+                          }
+                        }
                       >
-                        <svg
-                          height={32}
-                          viewBox="0 0 64 64"
-                          width={32}
+                        <Icon
+                          bgStyle={Object {}}
+                          borderRadius={0}
+                          iconFillColor="white"
+                          round={true}
+                          size={32}
                         >
-                          <circle
-                            cx="32"
-                            cy="32"
-                            fill="#EF3F56"
-                            r="31"
-                            style={Object {}}
-                          />
-                          <path
-                            d="M41.084 29.065l-7.528 7.882a2.104 2.104 0 0 1-1.521.666 2.106 2.106 0 0 1-1.522-.666l-7.528-7.882c-.876-.914-.902-2.43-.065-3.384.84-.955 2.228-.987 3.1-.072l6.015 6.286 6.022-6.286c.88-.918 2.263-.883 3.102.071.841.938.82 2.465-.06 3.383l-.015.002zm6.777-10.976C47.463 16.84 46.361 16 45.14 16H18.905c-1.2 0-2.289.82-2.716 2.044-.125.363-.189.743-.189 1.125v10.539l.112 2.096c.464 4.766 2.73 8.933 6.243 11.838.06.053.125.102.19.153l.04.033c1.882 1.499 3.986 2.514 6.259 3.014a14.662 14.662 0 0 0 6.13.052c.118-.042.235-.065.353-.087.03 0 .065-.022.098-.042a15.395 15.395 0 0 0 6.011-2.945l.039-.045.18-.153c3.502-2.902 5.765-7.072 6.248-11.852L48 29.674v-10.52c0-.366-.041-.728-.161-1.08l.022.015z"
-                            fill="white"
-                          />
-                        </svg>
-                      </Icon>
-                    </button>
-                  </ShareButton>
-                </ForwardRef(ShareButton-pocket)>
-              </Pocket>
-            </div>
-          </ButtonWrapperDiv>
-        </div>
-      </ButtonListWrapperFlexDiv>
-    </section>
-  </ComponentWrapperSection>
-</ArticleShareButtons>
+                          <svg
+                            height={32}
+                            viewBox="0 0 64 64"
+                            width={32}
+                          >
+                            <circle
+                              cx="32"
+                              cy="32"
+                              fill="#009ad9"
+                              r="31"
+                              style={Object {}}
+                            />
+                            <path
+                              d="M 36.164062 33.554688 C 34.988281 32.234375 33.347656 31.5 31.253906 31.34375 C 33.125 30.835938 34.476562 30.09375 35.335938 29.09375 C 36.191406 28.09375 36.609375 26.78125 36.609375 25.101562 C 36.628906 23.875 36.332031 22.660156 35.75 21.578125 C 35.160156 20.558594 34.292969 19.71875 33.253906 19.160156 C 32.304688 18.640625 31.175781 18.265625 29.847656 18.042969 C 28.523438 17.824219 26.195312 17.730469 22.867188 17.730469 L 14.769531 17.730469 L 14.769531 47.269531 L 23.113281 47.269531 C 26.46875 47.269531 28.886719 47.15625 30.367188 46.929688 C 31.851562 46.695312 33.085938 46.304688 34.085938 45.773438 C 35.289062 45.148438 36.28125 44.179688 36.933594 42.992188 C 37.597656 41.796875 37.933594 40.402344 37.933594 38.816406 C 37.933594 36.621094 37.347656 34.867188 36.164062 33.554688 Z M 22.257812 24.269531 L 23.984375 24.269531 C 25.988281 24.269531 27.332031 24.496094 28.015625 24.945312 C 28.703125 25.402344 29.042969 26.183594 29.042969 27.285156 C 29.042969 28.390625 28.664062 29.105469 27.9375 29.550781 C 27.210938 29.992188 25.84375 30.199219 23.855469 30.199219 L 22.257812 30.199219 Z M 29.121094 41.210938 C 28.328125 41.691406 26.976562 41.925781 25.078125 41.925781 L 22.257812 41.925781 L 22.257812 35.488281 L 25.195312 35.488281 C 27.144531 35.488281 28.496094 35.738281 29.210938 36.230469 C 29.925781 36.726562 30.304688 37.582031 30.304688 38.832031 C 30.304688 40.078125 29.914062 40.742188 29.105469 41.222656 Z M 29.121094 41.210938 M 46.488281 39.792969 C 44.421875 39.792969 42.742188 41.46875 42.742188 43.535156 C 42.742188 45.605469 44.421875 47.28125 46.488281 47.28125 C 48.554688 47.28125 50.230469 45.605469 50.230469 43.535156 C 50.230469 41.46875 48.554688 39.792969 46.488281 39.792969 Z M 46.488281 39.792969 M 43.238281 17.730469 L 49.738281 17.730469 L 49.738281 37.429688 L 43.238281 37.429688 Z M 43.238281 17.730469 "
+                              fill="white"
+                            />
+                          </svg>
+                        </Icon>
+                      </button>
+                    </ShareButton>
+                  </ForwardRef(ShareButton-hatena)>
+                </Hatena>
+              </div>
+            </ButtonWrapperDiv>
+            <ButtonWrapperDiv
+              key="line"
+            >
+              <div
+                className="emotion-4 emotion-5"
+              >
+                <Line
+                  key="line"
+                  shareTitle="Test Article Title 1"
+                  shareUrl="http://localhost:3000/articles/2021-01-01/test-article-id-1"
+                  size={32}
+                >
+                  <ForwardRef(ShareButton-line)
+                    title="Test Article Title 1"
+                    url="http://localhost:3000/articles/2021-01-01/test-article-id-1"
+                  >
+                    <ShareButton
+                      disabledStyle={
+                        Object {
+                          "opacity": 0.6,
+                        }
+                      }
+                      forwardedRef={null}
+                      networkLink={[Function]}
+                      networkName="line"
+                      openShareDialogOnClick={true}
+                      opts={
+                        Object {
+                          "title": "Test Article Title 1",
+                        }
+                      }
+                      resetButtonStyle={true}
+                      url="http://localhost:3000/articles/2021-01-01/test-article-id-1"
+                      windowHeight={500}
+                      windowWidth={500}
+                    >
+                      <button
+                        aria-label="line"
+                        className="react-share__ShareButton"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "backgroundColor": "transparent",
+                            "border": "none",
+                            "color": "inherit",
+                            "cursor": "pointer",
+                            "font": "inherit",
+                            "padding": 0,
+                          }
+                        }
+                      >
+                        <Icon
+                          bgStyle={Object {}}
+                          borderRadius={0}
+                          iconFillColor="white"
+                          round={true}
+                          size={32}
+                        >
+                          <svg
+                            height={32}
+                            viewBox="0 0 64 64"
+                            width={32}
+                          >
+                            <circle
+                              cx="32"
+                              cy="32"
+                              fill="#00b800"
+                              r="31"
+                              style={Object {}}
+                            />
+                            <path
+                              d="M52.62 30.138c0 3.693-1.432 7.019-4.42 10.296h.001c-4.326 4.979-14 11.044-16.201 11.972-2.2.927-1.876-.591-1.786-1.112l.294-1.765c.069-.527.142-1.343-.066-1.865-.232-.574-1.146-.872-1.817-1.016-9.909-1.31-17.245-8.238-17.245-16.51 0-9.226 9.251-16.733 20.62-16.733 11.37 0 20.62 7.507 20.62 16.733zM27.81 25.68h-1.446a.402.402 0 0 0-.402.401v8.985c0 .221.18.4.402.4h1.446a.401.401 0 0 0 .402-.4v-8.985a.402.402 0 0 0-.402-.401zm9.956 0H36.32a.402.402 0 0 0-.402.401v5.338L31.8 25.858a.39.39 0 0 0-.031-.04l-.002-.003-.024-.025-.008-.007a.313.313 0 0 0-.032-.026.255.255 0 0 1-.021-.014l-.012-.007-.021-.012-.013-.006-.023-.01-.013-.005-.024-.008-.014-.003-.023-.005-.017-.002-.021-.003-.021-.002h-1.46a.402.402 0 0 0-.402.401v8.985c0 .221.18.4.402.4h1.446a.401.401 0 0 0 .402-.4v-5.337l4.123 5.568c.028.04.063.072.101.099l.004.003a.236.236 0 0 0 .025.015l.012.006.019.01a.154.154 0 0 1 .019.008l.012.004.028.01.005.001a.442.442 0 0 0 .104.013h1.446a.4.4 0 0 0 .401-.4v-8.985a.402.402 0 0 0-.401-.401zm-13.442 7.537h-3.93v-7.136a.401.401 0 0 0-.401-.401h-1.447a.4.4 0 0 0-.401.401v8.984a.392.392 0 0 0 .123.29c.072.068.17.111.278.111h5.778a.4.4 0 0 0 .401-.401v-1.447a.401.401 0 0 0-.401-.401zm21.429-5.287c.222 0 .401-.18.401-.402v-1.446a.401.401 0 0 0-.401-.402h-5.778a.398.398 0 0 0-.279.113l-.005.004-.006.008a.397.397 0 0 0-.111.276v8.984c0 .108.043.206.112.278l.005.006a.401.401 0 0 0 .284.117h5.778a.4.4 0 0 0 .401-.401v-1.447a.401.401 0 0 0-.401-.401h-3.93v-1.519h3.93c.222 0 .401-.18.401-.402V29.85a.401.401 0 0 0-.401-.402h-3.93V27.93h3.93z"
+                              fill="white"
+                            />
+                          </svg>
+                        </Icon>
+                      </button>
+                    </ShareButton>
+                  </ForwardRef(ShareButton-line)>
+                </Line>
+              </div>
+            </ButtonWrapperDiv>
+            <ButtonWrapperDiv
+              key="reddit"
+            >
+              <div
+                className="emotion-4 emotion-5"
+              >
+                <Reddit
+                  key="reddit"
+                  shareTitle="Test Article Title 1"
+                  shareUrl="http://localhost:3000/articles/2021-01-01/test-article-id-1"
+                  size={32}
+                >
+                  <ForwardRef(ShareButton-reddit)
+                    title="Test Article Title 1"
+                    url="http://localhost:3000/articles/2021-01-01/test-article-id-1"
+                  >
+                    <ShareButton
+                      disabledStyle={
+                        Object {
+                          "opacity": 0.6,
+                        }
+                      }
+                      forwardedRef={null}
+                      networkLink={[Function]}
+                      networkName="reddit"
+                      openShareDialogOnClick={true}
+                      opts={
+                        Object {
+                          "title": "Test Article Title 1",
+                        }
+                      }
+                      resetButtonStyle={true}
+                      url="http://localhost:3000/articles/2021-01-01/test-article-id-1"
+                      windowHeight={460}
+                      windowPosition="windowCenter"
+                      windowWidth={660}
+                    >
+                      <button
+                        aria-label="reddit"
+                        className="react-share__ShareButton"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "backgroundColor": "transparent",
+                            "border": "none",
+                            "color": "inherit",
+                            "cursor": "pointer",
+                            "font": "inherit",
+                            "padding": 0,
+                          }
+                        }
+                      >
+                        <Icon
+                          bgStyle={Object {}}
+                          borderRadius={0}
+                          iconFillColor="white"
+                          round={true}
+                          size={32}
+                        >
+                          <svg
+                            height={32}
+                            viewBox="0 0 64 64"
+                            width={32}
+                          >
+                            <circle
+                              cx="32"
+                              cy="32"
+                              fill="#5f99cf"
+                              r="31"
+                              style={Object {}}
+                            />
+                            <path
+                              d="m 52.8165,31.942362 c 0,-2.4803 -2.0264,-4.4965 -4.5169,-4.4965 -1.2155,0 -2.3171,0.4862 -3.128,1.2682 -3.077,-2.0247 -7.2403,-3.3133 -11.8507,-3.4782 l 2.5211,-7.9373 6.8272,1.5997 -0.0102,0.0986 c 0,2.0281 1.6575,3.6771 3.6958,3.6771 2.0366,0 3.6924,-1.649 3.6924,-3.6771 0,-2.0281 -1.6575,-3.6788 -3.6924,-3.6788 -1.564,0 -2.8968,0.9758 -3.4357,2.3443 l -7.3593,-1.7255 c -0.3213,-0.0782 -0.6477,0.1071 -0.748,0.4233 L 32,25.212062 c -4.8246,0.0578 -9.1953,1.3566 -12.41,3.4425 -0.8058,-0.7446 -1.8751,-1.2104 -3.0583,-1.2104 -2.4905,0 -4.5152,2.0179 -4.5152,4.4982 0,1.649 0.9061,3.0787 2.2389,3.8607 -0.0884,0.4794 -0.1462,0.9639 -0.1462,1.4569 0,6.6487 8.1736,12.0581 18.2223,12.0581 10.0487,0 18.224,-5.4094 18.224,-12.0581 0,-0.4658 -0.0493,-0.9248 -0.1275,-1.377 1.4144,-0.7599 2.3885,-2.2304 2.3885,-3.9406 z m -29.2808,3.0872 c 0,-1.4756 1.207,-2.6775 2.6894,-2.6775 1.4824,0 2.6877,1.2019 2.6877,2.6775 0,1.4756 -1.2053,2.6758 -2.6877,2.6758 -1.4824,0 -2.6894,-1.2002 -2.6894,-2.6758 z m 15.4037,7.9373 c -1.3549,1.3481 -3.4816,2.0043 -6.5008,2.0043 l -0.0221,-0.0051 -0.0221,0.0051 c -3.0209,0 -5.1476,-0.6562 -6.5008,-2.0043 -0.2465,-0.2448 -0.2465,-0.6443 0,-0.8891 0.2465,-0.2465 0.6477,-0.2465 0.8942,0 1.105,1.0999 2.9393,1.6337 5.6066,1.6337 l 0.0221,0.0051 0.0221,-0.0051 c 2.6673,0 4.5016,-0.5355 5.6066,-1.6354 0.2465,-0.2465 0.6477,-0.2448 0.8942,0 0.2465,0.2465 0.2465,0.6443 0,0.8908 z m -0.3213,-5.2615 c -1.4824,0 -2.6877,-1.2002 -2.6877,-2.6758 0,-1.4756 1.2053,-2.6775 2.6877,-2.6775 1.4824,0 2.6877,1.2019 2.6877,2.6775 0,1.4756 -1.2053,2.6758 -2.6877,2.6758 z"
+                              fill="white"
+                            />
+                          </svg>
+                        </Icon>
+                      </button>
+                    </ShareButton>
+                  </ForwardRef(ShareButton-reddit)>
+                </Reddit>
+              </div>
+            </ButtonWrapperDiv>
+            <ButtonWrapperDiv
+              key="pocket"
+            >
+              <div
+                className="emotion-4 emotion-5"
+              >
+                <Pocket
+                  key="pocket"
+                  shareTitle="Test Article Title 1"
+                  shareUrl="http://localhost:3000/articles/2021-01-01/test-article-id-1"
+                  size={32}
+                >
+                  <ForwardRef(ShareButton-pocket)
+                    title="Test Article Title 1"
+                    url="http://localhost:3000/articles/2021-01-01/test-article-id-1"
+                  >
+                    <ShareButton
+                      disabledStyle={
+                        Object {
+                          "opacity": 0.6,
+                        }
+                      }
+                      forwardedRef={null}
+                      networkLink={[Function]}
+                      networkName="pocket"
+                      openShareDialogOnClick={true}
+                      opts={
+                        Object {
+                          "title": "Test Article Title 1",
+                        }
+                      }
+                      resetButtonStyle={true}
+                      url="http://localhost:3000/articles/2021-01-01/test-article-id-1"
+                      windowHeight={500}
+                      windowWidth={500}
+                    >
+                      <button
+                        aria-label="pocket"
+                        className="react-share__ShareButton"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "backgroundColor": "transparent",
+                            "border": "none",
+                            "color": "inherit",
+                            "cursor": "pointer",
+                            "font": "inherit",
+                            "padding": 0,
+                          }
+                        }
+                      >
+                        <Icon
+                          bgStyle={Object {}}
+                          borderRadius={0}
+                          iconFillColor="white"
+                          round={true}
+                          size={32}
+                        >
+                          <svg
+                            height={32}
+                            viewBox="0 0 64 64"
+                            width={32}
+                          >
+                            <circle
+                              cx="32"
+                              cy="32"
+                              fill="#EF3F56"
+                              r="31"
+                              style={Object {}}
+                            />
+                            <path
+                              d="M41.084 29.065l-7.528 7.882a2.104 2.104 0 0 1-1.521.666 2.106 2.106 0 0 1-1.522-.666l-7.528-7.882c-.876-.914-.902-2.43-.065-3.384.84-.955 2.228-.987 3.1-.072l6.015 6.286 6.022-6.286c.88-.918 2.263-.883 3.102.071.841.938.82 2.465-.06 3.383l-.015.002zm6.777-10.976C47.463 16.84 46.361 16 45.14 16H18.905c-1.2 0-2.289.82-2.716 2.044-.125.363-.189.743-.189 1.125v10.539l.112 2.096c.464 4.766 2.73 8.933 6.243 11.838.06.053.125.102.19.153l.04.033c1.882 1.499 3.986 2.514 6.259 3.014a14.662 14.662 0 0 0 6.13.052c.118-.042.235-.065.353-.087.03 0 .065-.022.098-.042a15.395 15.395 0 0 0 6.011-2.945l.039-.045.18-.153c3.502-2.902 5.765-7.072 6.248-11.852L48 29.674v-10.52c0-.366-.041-.728-.161-1.08l.022.015z"
+                              fill="white"
+                            />
+                          </svg>
+                        </Icon>
+                      </button>
+                    </ShareButton>
+                  </ForwardRef(ShareButton-pocket)>
+                </Pocket>
+              </div>
+            </ButtonWrapperDiv>
+          </div>
+        </ButtonListWrapperFlexDiv>
+      </section>
+    </ComponentWrapperSection>
+  </ArticleShareButtons>
+</ThemeProvider>
 `;
