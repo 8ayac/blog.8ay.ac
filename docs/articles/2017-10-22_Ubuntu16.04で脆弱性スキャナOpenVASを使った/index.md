@@ -14,11 +14,7 @@ tags: [セキュリティ, やってみた, Web, 方法]
 > > オープンソースソフトウェアとして公開されています。
 > > そのため、OpenVASを使うと、脆弱性診断サービスなどを使わなくても、自分でシステムの脆弱性診断を行うことができます。
 >
-> 引用: [https://www.designet.co.jp/faq/term/?id=T3BlblZBUw:title] より
-
-## 目次
-
-[:contents]
+> 引用: <https://www.designet.co.jp/faq/term/?id=T3BlblZBUw> より
 
 ## 1.環境
 
