@@ -12,10 +12,6 @@ tags: [RSS, Python, 実装, Bugbounty]
 こんにちは、[8ayac](https://twitter.coem/8ayac)です。
 今回は、最近書いたHackerOneのユーザプロフィールのRSSフィードを生成するスクリプトを紹介する記事です。
 
-## 目次
-
-[:contents]
-
 ## 概要
 
 HackerOneのユーザのプロフィール上にあるHacktivityのRSSフィードを生成するスクリプトをPythonで書きました。

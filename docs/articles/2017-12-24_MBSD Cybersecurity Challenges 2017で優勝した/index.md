@@ -10,10 +10,6 @@ tags: [セキュリティ, Writeup, コンテスト, イベントレポート]
 先日、[MBSD Cybersecurity Challenges 2017](http://setten.sgec.or.jp/cooperation/049.html)というコンテストで優勝しました。  
 その時のことを色々と書きます。
 
-## 目次
-
-[:contents]
-
 ## 1. 大会の概要
 
 コンテストの概要を説明しておきます。  

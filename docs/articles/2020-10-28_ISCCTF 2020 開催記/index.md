@@ -13,10 +13,6 @@ tags: [CTF, コンテスト, 運営, イベントレポート, Security, Python]
 ちなみに、ISCCTF 2020自体は、(SurveyやTwitterのリアクションを見ている限りでは、)想像以上に好評でした。
 競技開始前も競技中も、色々な心配を抱えながら運営をしていたので、安堵しています。
 
-## 目次
-
-[:contents]
-
 ## 「ISCCTF 2020」の概要
 
 ISCCTF 2020の概要は以下の通りです。
@@ -30,7 +26,7 @@ ISCCTF 2020の概要は以下の通りです。
 - 運営: [IPFactory](https://twitter.com/_ipfactory_)
 - 問題アーカイブと公式Writeup:
 
-[https://github.com/IPFactory/ISCCTF2020:embed:cite]
+<https://github.com/IPFactory/ISCCTF2020>
 
 ### 開催の経緯
 
@@ -244,7 +240,7 @@ DoSまがいの異常なアクセスの検知方法については、[TSGCTFさ�
 問題の死活監視も、下記のリポジトリにあるスクリプト(SolvabilityInspetor)で自動化していました。
 質については、本番の3日前に突貫で作ったものであり、正直まだまだ改善の余地があります。
 
-[https://github.com/IPFactory/ISCCTF2020_SolvabilityInspector:embed:cite]
+<https://github.com/IPFactory/ISCCTF2020_SolvabilityInspector>
 
 SolvabilityInspectorのおおまかな構造は、下記の図の通りです。
 
