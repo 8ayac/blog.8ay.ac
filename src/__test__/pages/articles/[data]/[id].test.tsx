@@ -85,5 +85,12 @@ describe('ArticlePage', () => {
         '2px 0'
       );
     });
+
+    test('in ShareButtonsWrapper', () => {
+      expect(wrapper.find('ShareButtonsWrapper')).toHaveStyleRule(
+        'margin-top',
+        '5rem'
+      );
+    });
   });
 });
