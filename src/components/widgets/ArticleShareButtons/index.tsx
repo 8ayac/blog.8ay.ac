@@ -22,7 +22,9 @@ const S = {
     margin-right: 1rem;
     margin-bottom: 0.5rem;
     filter: drop-shadow(
-      2px 2px 1px ${(props) => props.theme.color.blue.light2}
+      2px 2px 1px
+        ${(props) =>
+          props.theme.color.articleShareButtons.buttonWrapperDiv.shadow}
     );
 
     :hover {

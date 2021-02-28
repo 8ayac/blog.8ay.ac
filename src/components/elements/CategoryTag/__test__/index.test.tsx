@@ -42,18 +42,20 @@ describe('CategoryTag', () => {
           <CategoryTag name={testTagName} />
         </ThemeProvider>
       );
+      const expectedShadowColor = theme.color.categoryTag.anchor.shadow;
+
       expect(wrapper.find('Anchor')).toHaveStyleRule('padding', '0.2rem 1rem');
       expect(wrapper.find('Anchor')).toHaveStyleRule('font-size', '0.8em');
       expect(wrapper.find('Anchor')).toHaveStyleRule('color', 'white');
       expect(wrapper.find('Anchor')).toHaveStyleRule('text-decoration', 'none');
       expect(wrapper.find('Anchor')).toHaveStyleRule(
         'background-color',
-        theme.color.blue.dark
+        theme.color.categoryTag.anchor.bg
       );
       expect(wrapper.find('Anchor')).toHaveStyleRule(
         'filter',
         new RegExp(
-          `drop-shadow\\((\\r?\\n)?(\\s+)2px 2px 1px ${theme.color.blue.light2.replace(
+          `drop-shadow\\((\\r?\\n)?(\\s+)2px 2px 1px(\\s+)${expectedShadowColor.replace(
             /[()]/g,
             '\\$&'
           )}(\\r?\\n)?(\\s+)\\)`
@@ -66,7 +68,7 @@ describe('CategoryTag', () => {
       });
       expect(wrapper.find('Anchor')).toHaveStyleRule(
         'background-color',
-        theme.color.blue.base,
+        theme.color.categoryTag.anchor.bgOnHover,
         {
           target: ':hover',
         }

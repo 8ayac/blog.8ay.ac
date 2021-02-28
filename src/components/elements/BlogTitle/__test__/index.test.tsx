@@ -91,7 +91,7 @@ describe('BlogTitle', () => {
       );
       expect(wrapper.find('LogoWrapperAnchor')).toHaveStyleRule(
         'color',
-        `${theme.color.yellow.base}`,
+        theme.color.blogTitle.logoWrapperAnchor.textOnHover,
         { target: ':hover' }
       );
     });

@@ -11,11 +11,11 @@ const gHtmlStyle = css`
 const gBodyStyle = css`
   body {
     margin: 0;
-    background-color: ${theme.color.yellow.base};
+    background-color: ${theme.color.global.body.bg};
     font-family: -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI',
       'Helvetica Neue', HelveticaNeue, lYuGothic, 'Yu Gothic Medium',
       'Yu Gothic', Verdana, Meiryo, sans-serif;
-    color: ${theme.color.text.primary};
+    color: ${theme.color.common.text.primary};
   }
 `;
 
@@ -71,14 +71,14 @@ const gH6Style = css`
 const gAnchorStyle = css`
   a {
     font-weight: 600;
-    color: ${theme.color.text.secondary};
+    color: ${theme.color.common.text.secondary};
 
     &:hover {
-      color: ${theme.color.text.accent};
+      color: ${theme.color.common.text.accent};
     }
 
     &:visited {
-      color: ${theme.color.text.secondary};
+      color: ${theme.color.common.text.secondary};
       &:after {
         content: '+';
       }
@@ -109,7 +109,7 @@ const gTableStyle = css`
     td,
     th {
       padding: 6px 13px;
-      border: 1px solid ${theme.color.border.primaryLight};
+      border: 1px solid ${theme.color.common.border.primaryLight};
     }
 
     tr {
@@ -118,7 +118,7 @@ const gTableStyle = css`
     }
 
     tr:nth-of-type(2n) {
-      background-color: ${theme.color.green.light3};
+      background-color: ${theme.color.global.table.tr.bg2n};
     }
   }
 `;

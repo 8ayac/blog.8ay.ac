@@ -12,7 +12,7 @@ const S = {
   CopyRightParagraph: styled.p``,
 
   AboutGAParagraph: styled.p`
-    color: ${(props) => props.theme.color.text.primaryLight};
+    color: ${(props) => props.theme.color.common.text.primaryLight};
   `,
 };
 

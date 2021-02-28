@@ -19,7 +19,7 @@ S.ComponentWrapperDiv = styled(S.FlexContainerDiv)`
 `;
 S.PreIconWrapperDiv = styled(S.FlexContainerDiv)`
   align-items: center;
-  color: ${(props) => props.theme.color.text.primaryLight};
+  color: ${(props) => props.theme.color.common.text.primaryLight};
 `;
 
 export const CategoryTagList: React.FC<{

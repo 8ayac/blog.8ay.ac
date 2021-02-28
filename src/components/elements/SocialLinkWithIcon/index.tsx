@@ -18,7 +18,8 @@ const S = {
     }
 
     &:hover {
-      color: ${(props) => props.theme.color.yellow.base};
+      color: ${(props) =>
+        props.theme.color.socialLinkWithIcon.socialLinkAnchor.textOnHover};
     }
   `,
 

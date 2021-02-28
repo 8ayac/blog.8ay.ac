@@ -106,7 +106,7 @@ describe('SocialLinkWithIcon', () => {
         });
         expect(wSocialLinkAnchor).toHaveStyleRule(
           'color',
-          `${theme.color.yellow.base}`,
+          theme.color.socialLinkWithIcon.socialLinkAnchor.textOnHover,
           {
             target: ':hover',
           }
