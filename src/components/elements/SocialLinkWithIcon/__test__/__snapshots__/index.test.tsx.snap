@@ -17,7 +17,7 @@ exports[`SocialLinkWithIcon is rendered correctly to match the snapshot with the
 }
 
 .emotion-2:hover {
-  color: hsla(60, 72%, 60%);
+  color: hsla(60, 72%, 55%);
 }
 
 .emotion-4 {
@@ -30,24 +30,24 @@ exports[`SocialLinkWithIcon is rendered correctly to match the snapshot with the
       "color": Object {
         "articleShareButtons": Object {
           "buttonWrapperDiv": Object {
-            "shadow": "hsla(212, 72%, 80%)",
+            "shadow": "hsla(212, 72%, 75%)",
           },
         },
         "blogTitle": Object {
           "logoWrapperAnchor": Object {
-            "textOnHover": "hsla(148, 72%, 80%)",
+            "textOnHover": "hsla(148, 72%, 75%)",
           },
         },
         "bodyHeader": Object {
           "titleAnchor": Object {
-            "shadow": "hsla(148, 72%, 80%)",
+            "shadow": "hsla(148, 72%, 75%)",
           },
         },
         "categoryTag": Object {
           "anchor": Object {
-            "bg": "hsla(212, 72%, 50%)",
-            "bgOnHover": "hsla(212, 72%, 60%)",
-            "shadow": "hsla(212, 72%, 80%)",
+            "bg": "hsla(212, 72%, 45%)",
+            "bgOnHover": "hsla(212, 72%, 55%)",
+            "shadow": "hsla(212, 72%, 75%)",
             "text": "white",
           },
         },
@@ -57,46 +57,46 @@ exports[`SocialLinkWithIcon is rendered correctly to match the snapshot with the
             "primaryLight": "hsla(0, 0%, 75%)",
           },
           "text": Object {
-            "accent": "hsla(148, 72%, 50%)",
+            "accent": "hsla(148, 72%, 45%)",
             "primary": "hsla(0, 0%, 15%)",
             "primaryLight": "hsla(0, 0%, 40%)",
-            "secondary": "hsla(212, 72%, 40%)",
+            "secondary": "hsla(212, 72%, 35%)",
           },
         },
         "dateTime": Object {
           "isoDateTime": Object {
-            "text": "hsla(212, 72%, 40%)",
+            "text": "hsla(212, 72%, 35%)",
           },
         },
         "global": Object {
           "body": Object {
-            "bg": "hsla(60, 72%, 60%)",
+            "bg": "hsla(60, 72%, 55%)",
           },
           "table": Object {
             "tr": Object {
-              "bg2n": "hsla(148, 72%, 90%)",
+              "bg2n": "hsla(148, 72%, 85%)",
             },
           },
         },
         "markdownRenderer": Object {
           "convertedMdBody": Object {
             "blockquote": Object {
-              "border": "hsla(212, 72%, 90%)",
+              "border": "hsla(212, 72%, 85%)",
             },
           },
         },
         "siteHeader": Object {
           "header": Object {
-            "bg": "hsla(148, 72%, 30%)",
-            "shadow": "hsla(148, 72%, 20%)",
+            "bg": "hsla(148, 72%, 25%)",
+            "shadow": "hsla(148, 72%, 15%)",
           },
           "innerWrapperFlexContainerDiv": Object {
-            "shadow": "hsla(148, 72%, 20%)",
+            "shadow": "hsla(148, 72%, 15%)",
           },
         },
         "socialLinkWithIcon": Object {
           "socialLinkAnchor": Object {
-            "textOnHover": "hsla(60, 72%, 60%)",
+            "textOnHover": "hsla(60, 72%, 55%)",
           },
         },
       },
@@ -215,7 +215,7 @@ exports[`SocialLinkWithIcon is rendered correctly to match the snapshot without 
 }
 
 .emotion-2:hover {
-  color: hsla(60, 72%, 60%);
+  color: hsla(60, 72%, 55%);
 }
 
 .emotion-4 {
@@ -228,24 +228,24 @@ exports[`SocialLinkWithIcon is rendered correctly to match the snapshot without 
       "color": Object {
         "articleShareButtons": Object {
           "buttonWrapperDiv": Object {
-            "shadow": "hsla(212, 72%, 80%)",
+            "shadow": "hsla(212, 72%, 75%)",
           },
         },
         "blogTitle": Object {
           "logoWrapperAnchor": Object {
-            "textOnHover": "hsla(148, 72%, 80%)",
+            "textOnHover": "hsla(148, 72%, 75%)",
           },
         },
         "bodyHeader": Object {
           "titleAnchor": Object {
-            "shadow": "hsla(148, 72%, 80%)",
+            "shadow": "hsla(148, 72%, 75%)",
           },
         },
         "categoryTag": Object {
           "anchor": Object {
-            "bg": "hsla(212, 72%, 50%)",
-            "bgOnHover": "hsla(212, 72%, 60%)",
-            "shadow": "hsla(212, 72%, 80%)",
+            "bg": "hsla(212, 72%, 45%)",
+            "bgOnHover": "hsla(212, 72%, 55%)",
+            "shadow": "hsla(212, 72%, 75%)",
             "text": "white",
           },
         },
@@ -255,46 +255,46 @@ exports[`SocialLinkWithIcon is rendered correctly to match the snapshot without 
             "primaryLight": "hsla(0, 0%, 75%)",
           },
           "text": Object {
-            "accent": "hsla(148, 72%, 50%)",
+            "accent": "hsla(148, 72%, 45%)",
             "primary": "hsla(0, 0%, 15%)",
             "primaryLight": "hsla(0, 0%, 40%)",
-            "secondary": "hsla(212, 72%, 40%)",
+            "secondary": "hsla(212, 72%, 35%)",
           },
         },
         "dateTime": Object {
           "isoDateTime": Object {
-            "text": "hsla(212, 72%, 40%)",
+            "text": "hsla(212, 72%, 35%)",
           },
         },
         "global": Object {
           "body": Object {
-            "bg": "hsla(60, 72%, 60%)",
+            "bg": "hsla(60, 72%, 55%)",
           },
           "table": Object {
             "tr": Object {
-              "bg2n": "hsla(148, 72%, 90%)",
+              "bg2n": "hsla(148, 72%, 85%)",
             },
           },
         },
         "markdownRenderer": Object {
           "convertedMdBody": Object {
             "blockquote": Object {
-              "border": "hsla(212, 72%, 90%)",
+              "border": "hsla(212, 72%, 85%)",
             },
           },
         },
         "siteHeader": Object {
           "header": Object {
-            "bg": "hsla(148, 72%, 30%)",
-            "shadow": "hsla(148, 72%, 20%)",
+            "bg": "hsla(148, 72%, 25%)",
+            "shadow": "hsla(148, 72%, 15%)",
           },
           "innerWrapperFlexContainerDiv": Object {
-            "shadow": "hsla(148, 72%, 20%)",
+            "shadow": "hsla(148, 72%, 15%)",
           },
         },
         "socialLinkWithIcon": Object {
           "socialLinkAnchor": Object {
-            "textOnHover": "hsla(60, 72%, 60%)",
+            "textOnHover": "hsla(60, 72%, 55%)",
           },
         },
       },
