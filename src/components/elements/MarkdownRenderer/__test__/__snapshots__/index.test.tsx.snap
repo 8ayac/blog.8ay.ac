@@ -45,6 +45,11 @@ exports[`MarkdownRenderer is rendered correctly to match the snapshot 1`] = `
   margin-bottom: 1.8rem;
 }
 
+.emotion-0 ul,
+.emotion-0 ol {
+  padding-left: 3rem;
+}
+
 .emotion-0 ol ol,
 .emotion-0 ul ol {
   list-style-type: lower-roman;

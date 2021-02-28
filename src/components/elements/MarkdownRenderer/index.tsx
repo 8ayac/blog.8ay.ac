@@ -54,6 +54,11 @@ const S = {
       margin-bottom: 1.8rem;
     }
 
+    ul,
+    ol {
+      padding-left: 3rem;
+    }
+
     ol ol,
     ul ol {
       list-style-type: lower-roman;

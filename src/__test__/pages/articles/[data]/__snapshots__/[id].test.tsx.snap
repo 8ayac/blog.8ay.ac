@@ -208,6 +208,11 @@ exports[`ArticlePage is rendered correctly to match the snapshot with revision h
   margin-bottom: 1.8rem;
 }
 
+.emotion-58 ul,
+.emotion-58 ol {
+  padding-left: 3rem;
+}
+
 .emotion-58 ol ol,
 .emotion-58 ul ol {
   list-style-type: lower-roman;
@@ -1840,6 +1845,11 @@ exports[`ArticlePage is rendered correctly to match the snapshot without revisio
 .emotion-34 ul {
   margin-top: 0;
   margin-bottom: 1.8rem;
+}
+
+.emotion-34 ul,
+.emotion-34 ol {
+  padding-left: 3rem;
 }
 
 .emotion-34 ol ol,
