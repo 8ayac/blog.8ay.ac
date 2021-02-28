@@ -93,6 +93,35 @@ const gParagraphStyle = css`
   }
 `;
 
+const gTableStyle = css`
+  table {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+
+    th {
+      font-weight: 600;
+    }
+
+    td,
+    th {
+      padding: 6px 13px;
+      border: 1px solid ${theme.color.border.primaryLight};
+    }
+
+    tr {
+      background-color: #fff;
+      border-top: 1px solid #c6cbd1;
+    }
+
+    tr:nth-child(2n) {
+      background-color: ${theme.color.green.light3};
+    }
+  }
+`;
+
 export const globalStyle = css`
   ${gHtmlStyle}
   ${gBodyStyle}
@@ -105,4 +134,5 @@ export const globalStyle = css`
   ${gH6Style}
   ${gAnchorStyle}
   ${gParagraphStyle}
+  ${gTableStyle}
 `;
