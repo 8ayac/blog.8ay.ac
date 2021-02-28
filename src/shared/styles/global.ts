@@ -117,7 +117,7 @@ const gTableStyle = css`
       border-top: 1px solid #c6cbd1;
     }
 
-    tr:nth-child(2n) {
+    tr:nth-of-type(2n) {
       background-color: ${theme.color.green.light3};
     }
   }
