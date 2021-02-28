@@ -142,7 +142,7 @@ describe('BodyHeader', () => {
       );
       expect(wrapper.find('WrapperHeader')).toHaveStyleRule(
         'border-bottom',
-        `0.25rem solid ${theme.color.border.primaryLight}`
+        `0.25rem solid ${theme.color.common.border.primaryLight}`
       );
     });
 
@@ -152,10 +152,11 @@ describe('BodyHeader', () => {
     });
 
     test('in TitleAnchor', () => {
+      const expectedShadowColor = theme.color.bodyHeader.titleAnchor.shadow;
       expect(wrapper.find('TitleAnchor')).toHaveStyleRule('margin', '0');
       expect(wrapper.find('TitleAnchor')).toHaveStyleRule(
         'color',
-        `${theme.color.text.primary}`
+        `${theme.color.common.text.primary}`
       );
       expect(wrapper.find('TitleAnchor')).toHaveStyleRule(
         'text-decoration',
@@ -164,7 +165,7 @@ describe('BodyHeader', () => {
       expect(wrapper.find('TitleAnchor')).toHaveStyleRule(
         'filter',
         new RegExp(
-          `drop-shadow\\((\\r?\\n)?(\\s+)2px 2px 1px ${theme.color.green.light2.replace(
+          `drop-shadow\\((\\r?\\n)?(\\s+)2px 2px 1px ${expectedShadowColor.replace(
             /[()]/g,
             '\\$&'
           )}(\\r?\\n)?(\\s+)\\)`
@@ -173,7 +174,7 @@ describe('BodyHeader', () => {
 
       expect(wrapper.find('TitleAnchor')).toHaveStyleRule(
         'color',
-        `${theme.color.text.primary}`,
+        `${theme.color.common.text.primary}`,
         { target: ':visited' }
       );
     });

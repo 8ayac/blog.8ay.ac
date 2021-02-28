@@ -6,7 +6,7 @@ export const S = {
   WrapperHeader: styled.header`
     margin-bottom: 3rem;
     border-bottom: 0.25rem solid
-      ${(props) => props.theme.color.border.primaryLight};
+      ${(props) => props.theme.color.common.border.primaryLight};
   `,
 
   TitleH1: styled.h1`
@@ -16,14 +16,14 @@ export const S = {
 
   TitleAnchor: styled.a`
     margin: 0;
-    color: ${(props) => props.theme.color.text.primary};
+    color: ${(props) => props.theme.color.common.text.primary};
     text-decoration: none;
     filter: drop-shadow(
-      2px 2px 1px ${(props) => props.theme.color.green.light2}
+      2px 2px 1px ${(props) => props.theme.color.bodyHeader.titleAnchor.shadow}
     );
 
     &:visited {
-      color: ${(props) => props.theme.color.text.primary};
+      color: ${(props) => props.theme.color.common.text.primary};
     }
   `,
 

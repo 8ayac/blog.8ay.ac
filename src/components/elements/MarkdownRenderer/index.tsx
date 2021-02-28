@@ -13,7 +13,7 @@ const S = {
       padding-bottom: 0.3em;
       margin-top: 2em;
       border-bottom: 1px solid
-        ${(props) => props.theme.color.border.primaryLight};
+        ${(props) => props.theme.color.common.border.primaryLight};
     }
 
     h3,
@@ -77,8 +77,10 @@ const S = {
     blockquote {
       padding: 0 1em;
       margin-left: 0;
-      color: ${(props) => props.theme.color.text.primaryLight};
-      border-left: 0.25em solid ${(props) => props.theme.color.blue.light3};
+      color: ${(props) => props.theme.color.common.text.primaryLight};
+      border-left: 0.25em solid
+        ${(props) =>
+          props.theme.color.markdownRenderer.convertedMdBody.blockquote.border};
 
       :first-of-type {
         margin-top: 0;

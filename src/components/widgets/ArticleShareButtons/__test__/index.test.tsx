@@ -77,6 +77,9 @@ describe('ArticleShareButtons', () => {
     });
 
     test('in ButtonWrapperDiv', () => {
+      const expectedShadowColor =
+        theme.color.articleShareButtons.buttonWrapperDiv.shadow;
+
       expect(wrapper.find('ButtonWrapperDiv').first()).toHaveStyleRule(
         'margin-right',
         '1rem'
@@ -88,7 +91,7 @@ describe('ArticleShareButtons', () => {
       expect(wrapper.find('ButtonWrapperDiv').first()).toHaveStyleRule(
         'filter',
         new RegExp(
-          `drop-shadow\\((\\r?\\n)?(\\s+)2px 2px 1px ${theme.color.blue.light2.replace(
+          `drop-shadow\\((\\r?\\n)?(\\s+)2px 2px 1px(\\s+)${expectedShadowColor.replace(
             /[()]/g,
             '\\$&'
           )}(\\r?\\n)?(\\s+)\\)`

@@ -94,7 +94,7 @@ describe('DateTime', () => {
       );
       expect(wrapper.find('ISODateTime')).toHaveStyleRule(
         'color',
-        `${theme.color.text.secondary}`
+        theme.color.dateTime.isoDateTime.text
       );
     });
   });

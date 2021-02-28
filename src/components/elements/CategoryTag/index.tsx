@@ -7,21 +7,22 @@ const S = {
   Anchor: styled.a`
     padding: 0.2rem 1rem;
     font-size: 0.8em;
-    color: white;
+    color: ${(props) => props.theme.color.categoryTag.anchor.text};
     text-decoration: none;
-    background-color: ${(props) => props.theme.color.blue.dark};
+    background-color: ${(props) => props.theme.color.categoryTag.anchor.bg};
     filter: drop-shadow(
-      2px 2px 1px ${(props) => props.theme.color.blue.light2}
+      2px 2px 1px ${(props) => props.theme.color.categoryTag.anchor.shadow}
     );
     border-radius: 3px;
 
     &:hover {
       color: white;
-      background-color: ${(props) => props.theme.color.blue.base};
+      background-color: ${(props) =>
+        props.theme.color.categoryTag.anchor.bgOnHover};
     }
 
     &:visited {
-      color: white;
+      color: ${(props) => props.theme.color.categoryTag.anchor.text};
     }
   `,
 };

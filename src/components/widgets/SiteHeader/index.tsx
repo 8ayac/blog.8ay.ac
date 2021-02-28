@@ -17,8 +17,10 @@ const S: { [key: string]: StyledComponent<any> } = {
     min-height: 5rem;
     padding: 0.5rem 1.5rem;
 
-    background-color: ${(props) => props.theme.color.green.dark3};
-    filter: drop-shadow(0 0 2px ${(props) => props.theme.color.green.dark4});
+    background-color: ${(props) => props.theme.color.siteHeader.header.bg};
+    filter: drop-shadow(
+      0 0 2px ${(props) => props.theme.color.siteHeader.header.shadow}
+    );
     opacity: 0.9;
   `,
 
@@ -32,7 +34,9 @@ const S: { [key: string]: StyledComponent<any> } = {
   InnerWrapperFlexContainerDiv: styled.div`
     display: flex;
     filter: drop-shadow(
-      2px 2px 1px ${(props) => props.theme.color.green.dark4}
+      2px 2px 1px
+        ${(props) =>
+          props.theme.color.siteHeader.innerWrapperFlexContainerDiv.shadow}
     );
     opacity: 1;
   `,

@@ -74,7 +74,7 @@ describe('ArticlePage', () => {
       );
       expect(wrapper.find('RevisionHistoryWrapperDiv')).toHaveStyleRule(
         'border-color',
-        `${theme.color.border.primaryLight}`
+        `${theme.color.common.border.primaryLight}`
       );
       expect(wrapper.find('RevisionHistoryWrapperDiv')).toHaveStyleRule(
         'border-style',

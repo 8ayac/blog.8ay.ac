@@ -27,7 +27,7 @@ describe('SiteFooter', () => {
     test('in AboutGAParagraph', () => {
       expect(wrapper.find('AboutGAParagraph')).toHaveStyleRule(
         'color',
-        theme.color.text.primaryLight
+        theme.color.common.text.primaryLight
       );
     });
   });

@@ -26,48 +26,76 @@ exports[`DateTime is rendered correctly to match the snapshot in case with descr
   theme={
     Object {
       "color": Object {
-        "blue": Object {
-          "base": "hsla(212, 72%, 60%)",
-          "dark": "hsla(212, 72%, 50%)",
-          "dark2": "hsla(212, 72%, 40%)",
-          "dark3": "hsla(212, 72%, 30%)",
-          "dark4": "hsla(212, 72%, 20%)",
-          "light": "hsla(212, 72%, 70%)",
-          "light2": "hsla(212, 72%, 80%)",
-          "light3": "hsla(212, 72%, 90%)",
+        "articleShareButtons": Object {
+          "buttonWrapperDiv": Object {
+            "shadow": "hsla(212, 72%, 80%)",
+          },
         },
-        "border": Object {
-          "primary": "hsla(0, 0%, 50%)",
-          "primaryLight": "hsla(0, 0%, 75%)",
+        "blogTitle": Object {
+          "logoWrapperAnchor": Object {
+            "textOnHover": "hsla(148, 72%, 80%)",
+          },
         },
-        "green": Object {
-          "base": "hsla(148, 72%, 60%)",
-          "dark": "hsla(148, 72%, 50%)",
-          "dark2": "hsla(148, 72%, 40%)",
-          "dark3": "hsla(148, 72%, 30%)",
-          "dark4": "hsla(148, 72%, 20%)",
-          "light": "hsla(148, 72%, 70%)",
-          "light2": "hsla(148, 72%, 80%)",
-          "light3": "hsla(148, 72%, 90%)",
+        "bodyHeader": Object {
+          "titleAnchor": Object {
+            "shadow": "hsla(148, 72%, 80%)",
+          },
         },
-        "primary": "hsla(212, 72%, 60%)",
-        "primaryDark": "hsla(212, 72%, 50%)",
-        "primaryLight": "hsla(212, 72%, 70%)",
-        "text": Object {
-          "accent": "hsla(148, 72%, 50%)",
-          "primary": "hsla(0, 0%, 15%)",
-          "primaryLight": "hsla(0, 0%, 40%)",
-          "secondary": "hsla(212, 72%, 40%)",
+        "categoryTag": Object {
+          "anchor": Object {
+            "bg": "hsla(212, 72%, 50%)",
+            "bgOnHover": "hsla(212, 72%, 60%)",
+            "shadow": "hsla(212, 72%, 80%)",
+            "text": "white",
+          },
         },
-        "yellow": Object {
-          "base": "hsla(60, 72%, 60%)",
-          "dark": "hsla(60, 72%, 50%)",
-          "dark2": "hsla(60, 72%, 40%)",
-          "dark3": "hsla(60, 72%, 30%)",
-          "dark4": "hsla(60, 72%, 20%)",
-          "light": "hsla(60, 72%, 70%)",
-          "light2": "hsla(60, 72%, 80%)",
-          "light3": "hsla(60, 72%, 90%)",
+        "common": Object {
+          "border": Object {
+            "primary": "hsla(0, 0%, 50%)",
+            "primaryLight": "hsla(0, 0%, 75%)",
+          },
+          "text": Object {
+            "accent": "hsla(148, 72%, 50%)",
+            "primary": "hsla(0, 0%, 15%)",
+            "primaryLight": "hsla(0, 0%, 40%)",
+            "secondary": "hsla(212, 72%, 40%)",
+          },
+        },
+        "dateTime": Object {
+          "isoDateTime": Object {
+            "text": "hsla(212, 72%, 40%)",
+          },
+        },
+        "global": Object {
+          "body": Object {
+            "bg": "hsla(60, 72%, 60%)",
+          },
+          "table": Object {
+            "tr": Object {
+              "bg2n": "hsla(148, 72%, 90%)",
+            },
+          },
+        },
+        "markdownRenderer": Object {
+          "convertedMdBody": Object {
+            "blockquote": Object {
+              "border": "hsla(212, 72%, 90%)",
+            },
+          },
+        },
+        "siteHeader": Object {
+          "header": Object {
+            "bg": "hsla(148, 72%, 30%)",
+            "shadow": "hsla(148, 72%, 20%)",
+          },
+          "innerWrapperFlexContainerDiv": Object {
+            "shadow": "hsla(148, 72%, 20%)",
+          },
+        },
+        "socialLinkWithIcon": Object {
+          "socialLinkAnchor": Object {
+            "textOnHover": "hsla(60, 72%, 60%)",
+          },
         },
       },
     }
@@ -130,48 +158,76 @@ exports[`DateTime is rendered correctly to match the snapshot in case without de
   theme={
     Object {
       "color": Object {
-        "blue": Object {
-          "base": "hsla(212, 72%, 60%)",
-          "dark": "hsla(212, 72%, 50%)",
-          "dark2": "hsla(212, 72%, 40%)",
-          "dark3": "hsla(212, 72%, 30%)",
-          "dark4": "hsla(212, 72%, 20%)",
-          "light": "hsla(212, 72%, 70%)",
-          "light2": "hsla(212, 72%, 80%)",
-          "light3": "hsla(212, 72%, 90%)",
+        "articleShareButtons": Object {
+          "buttonWrapperDiv": Object {
+            "shadow": "hsla(212, 72%, 80%)",
+          },
         },
-        "border": Object {
-          "primary": "hsla(0, 0%, 50%)",
-          "primaryLight": "hsla(0, 0%, 75%)",
+        "blogTitle": Object {
+          "logoWrapperAnchor": Object {
+            "textOnHover": "hsla(148, 72%, 80%)",
+          },
         },
-        "green": Object {
-          "base": "hsla(148, 72%, 60%)",
-          "dark": "hsla(148, 72%, 50%)",
-          "dark2": "hsla(148, 72%, 40%)",
-          "dark3": "hsla(148, 72%, 30%)",
-          "dark4": "hsla(148, 72%, 20%)",
-          "light": "hsla(148, 72%, 70%)",
-          "light2": "hsla(148, 72%, 80%)",
-          "light3": "hsla(148, 72%, 90%)",
+        "bodyHeader": Object {
+          "titleAnchor": Object {
+            "shadow": "hsla(148, 72%, 80%)",
+          },
         },
-        "primary": "hsla(212, 72%, 60%)",
-        "primaryDark": "hsla(212, 72%, 50%)",
-        "primaryLight": "hsla(212, 72%, 70%)",
-        "text": Object {
-          "accent": "hsla(148, 72%, 50%)",
-          "primary": "hsla(0, 0%, 15%)",
-          "primaryLight": "hsla(0, 0%, 40%)",
-          "secondary": "hsla(212, 72%, 40%)",
+        "categoryTag": Object {
+          "anchor": Object {
+            "bg": "hsla(212, 72%, 50%)",
+            "bgOnHover": "hsla(212, 72%, 60%)",
+            "shadow": "hsla(212, 72%, 80%)",
+            "text": "white",
+          },
         },
-        "yellow": Object {
-          "base": "hsla(60, 72%, 60%)",
-          "dark": "hsla(60, 72%, 50%)",
-          "dark2": "hsla(60, 72%, 40%)",
-          "dark3": "hsla(60, 72%, 30%)",
-          "dark4": "hsla(60, 72%, 20%)",
-          "light": "hsla(60, 72%, 70%)",
-          "light2": "hsla(60, 72%, 80%)",
-          "light3": "hsla(60, 72%, 90%)",
+        "common": Object {
+          "border": Object {
+            "primary": "hsla(0, 0%, 50%)",
+            "primaryLight": "hsla(0, 0%, 75%)",
+          },
+          "text": Object {
+            "accent": "hsla(148, 72%, 50%)",
+            "primary": "hsla(0, 0%, 15%)",
+            "primaryLight": "hsla(0, 0%, 40%)",
+            "secondary": "hsla(212, 72%, 40%)",
+          },
+        },
+        "dateTime": Object {
+          "isoDateTime": Object {
+            "text": "hsla(212, 72%, 40%)",
+          },
+        },
+        "global": Object {
+          "body": Object {
+            "bg": "hsla(60, 72%, 60%)",
+          },
+          "table": Object {
+            "tr": Object {
+              "bg2n": "hsla(148, 72%, 90%)",
+            },
+          },
+        },
+        "markdownRenderer": Object {
+          "convertedMdBody": Object {
+            "blockquote": Object {
+              "border": "hsla(212, 72%, 90%)",
+            },
+          },
+        },
+        "siteHeader": Object {
+          "header": Object {
+            "bg": "hsla(148, 72%, 30%)",
+            "shadow": "hsla(148, 72%, 20%)",
+          },
+          "innerWrapperFlexContainerDiv": Object {
+            "shadow": "hsla(148, 72%, 20%)",
+          },
+        },
+        "socialLinkWithIcon": Object {
+          "socialLinkAnchor": Object {
+            "textOnHover": "hsla(60, 72%, 60%)",
+          },
         },
       },
     }

@@ -87,7 +87,7 @@ describe('CategoryTagList', () => {
       );
       expect(wrapper.find('S-PreIconWrapperDiv').first()).toHaveStyleRule(
         'color',
-        `${theme.color.text.primaryLight}`
+        `${theme.color.common.text.primaryLight}`
       );
     });
   });

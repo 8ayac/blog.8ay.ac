@@ -14,7 +14,7 @@ const S = {
 
   ISODateTime: styled.time`
     font-weight: bolder;
-    color: ${(props) => props.theme.color.text.secondary};
+    color: ${(props) => props.theme.color.dateTime.isoDateTime.text};
   `,
 };
 

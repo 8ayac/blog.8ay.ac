@@ -49,7 +49,7 @@ const S = {
   RevisionHistoryWrapperDiv: styled.div`
     padding: 1rem 0 0.7rem;
     margin: 0 0 5rem;
-    border-color: ${(props) => props.theme.color.border.primaryLight};
+    border-color: ${(props) => props.theme.color.common.border.primaryLight};
     border-style: dotted;
     border-width: 2px 0;
   `,

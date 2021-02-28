@@ -18,6 +18,7 @@ describe('Header', () => {
   describe('has proper style rules', () => {
     test('in SiteHeader', () => {
       const wHeader = wrapper.find('Header');
+      const expectedShadowColor = theme.color.siteHeader.header.shadow;
 
       expect(wHeader).toHaveStyleRule('position', 'sticky');
       expect(wHeader).toHaveStyleRule('top', '0');
@@ -31,11 +32,16 @@ describe('Header', () => {
 
       expect(wHeader).toHaveStyleRule(
         'background-color',
-        theme.color.green.dark3
+        theme.color.siteHeader.header.bg
       );
       expect(wHeader).toHaveStyleRule(
         'filter',
-        `drop-shadow(0 0 2px ${theme.color.green.dark4})`
+        new RegExp(
+          `drop-shadow\\((\\r?\\n)?(\\s+)0 0 2px(\\s+)${expectedShadowColor.replace(
+            /[()]/g,
+            '\\$&'
+          )}(\\r?\\n)?(\\s+)\\)`
+        )
       );
       expect(wHeader).toHaveStyleRule('opacity', '0.9');
     });
@@ -51,12 +57,14 @@ describe('Header', () => {
 
     test('in TitleWrapper', () => {
       const wTitleWrapper = wrapper.find('S-TitleWrapper');
+      const expectedShadowColor =
+        theme.color.siteHeader.innerWrapperFlexContainerDiv.shadow;
 
       expect(wTitleWrapper).toHaveStyleRule('display', 'flex');
       expect(wTitleWrapper).toHaveStyleRule(
         'filter',
         new RegExp(
-          `drop-shadow\\((\\r?\\n)?(\\s+)2px 2px 1px ${theme.color.green.dark4.replace(
+          `drop-shadow\\((\\r?\\n)?(\\s+)2px 2px 1px(\\s+)${expectedShadowColor.replace(
             /[()]/g,
             '\\$&'
           )}(\\r?\\n)?(\\s+)\\)`
@@ -67,12 +75,14 @@ describe('Header', () => {
 
     test('in NavWrapper', () => {
       const wNavWrapper = wrapper.find('S-NavWrapper');
+      const expectedShadowColor =
+        theme.color.siteHeader.innerWrapperFlexContainerDiv.shadow;
 
       expect(wNavWrapper).toHaveStyleRule('display', 'flex');
       expect(wNavWrapper).toHaveStyleRule(
         'filter',
         new RegExp(
-          `drop-shadow\\((\\r?\\n)?(\\s+)2px 2px 1px ${theme.color.green.dark4.replace(
+          `drop-shadow\\((\\r?\\n)?(\\s+)2px 2px 1px(\\s+)${expectedShadowColor.replace(
             /[()]/g,
             '\\$&'
           )}(\\r?\\n)?(\\s+)\\)`
