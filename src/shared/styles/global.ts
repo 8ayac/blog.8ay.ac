@@ -98,6 +98,7 @@ const gTableStyle = css`
     display: block;
     width: 100%;
     overflow: auto;
+    word-break: normal;
     border-spacing: 0;
     border-collapse: collapse;
 
