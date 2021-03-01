@@ -11,7 +11,6 @@ const S = {
 
     * {
       display: inline;
-      font-size: 1.6rem;
     }
   `,
 
