@@ -1,6 +1,7 @@
 import { BlogTitle } from '@/src/components/elements/BlogTitle';
 import { SocialLinkWithIcon } from '@/src/components/elements/SocialLinkWithIcon';
 import { BLOG_SUBTITLE, BLOG_TITLE } from '@/src/constants/site';
+import { mq } from '@/src/shared/styles/mediaQuery';
 import styled, { StyledComponent } from '@emotion/styled';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import React from 'react';
@@ -22,6 +23,10 @@ const S: { [key: string]: StyledComponent<any> } = {
       0 0 2px ${(props) => props.theme.color.siteHeader.header.shadow}
     );
     opacity: 0.9;
+
+    ${mq('sm')} {
+      min-height: 3.5rem;
+    }
   `,
 
   HeaderInner: styled.nav`
@@ -33,6 +38,7 @@ const S: { [key: string]: StyledComponent<any> } = {
 
   InnerWrapperFlexContainerDiv: styled.div`
     display: flex;
+    align-items: center;
     filter: drop-shadow(
       2px 2px 1px
         ${(props) =>

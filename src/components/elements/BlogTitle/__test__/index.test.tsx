@@ -1,5 +1,6 @@
 import { BlogTitle } from '@/src/components/elements/BlogTitle';
 import { theme } from '@/src/constants/theme';
+import { mq } from '@/src/shared/styles/mediaQuery';
 import { ThemeProvider } from '@emotion/react';
 import { mount } from 'enzyme';
 import React from 'react';
@@ -98,6 +99,10 @@ describe('BlogTitle', () => {
 
     test('in TitleSpan', () => {
       expect(wrapper.find('TitleSpan')).toHaveStyleRule('font-size', '2.2rem');
+
+      expect(wrapper.find('TitleSpan')).toHaveStyleRule('font-size', '1.8rem', {
+        media: mq('sm'),
+      });
     });
 
     test('in SubtitleSpan', () => {
@@ -105,10 +110,15 @@ describe('BlogTitle', () => {
         'margin-left',
         '0.5rem'
       );
-
       expect(wrapper.find('SubtitleSpan')).toHaveStyleRule(
         'font-size',
         '1.7rem'
+      );
+
+      expect(wrapper.find('SubtitleSpan')).toHaveStyleRule(
+        'font-size',
+        '1.5rem',
+        { media: mq('sm') }
       );
     });
   });

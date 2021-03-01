@@ -89,7 +89,7 @@ const gAnchorStyle = css`
 const gParagraphStyle = css`
   p {
     margin: 0 0 1rem;
-    font-size: 1.8rem;
+    font-size: 1em;
   }
 `;
 

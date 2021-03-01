@@ -1,5 +1,6 @@
 import { SiteHeader } from '@/src/components/widgets/SiteHeader';
 import { theme } from '@/src/constants/theme';
+import { mq } from '@/src/shared/styles/mediaQuery';
 import { ThemeProvider } from '@emotion/react';
 import { mount } from 'enzyme';
 import React from 'react';
@@ -44,6 +45,10 @@ describe('Header', () => {
         )
       );
       expect(wHeader).toHaveStyleRule('opacity', '0.9');
+
+      expect(wHeader).toHaveStyleRule('min-height', '3.5rem', {
+        media: mq('sm'),
+      });
     });
 
     test('in HeaderInner', () => {
@@ -61,6 +66,7 @@ describe('Header', () => {
         theme.color.siteHeader.innerWrapperFlexContainerDiv.shadow;
 
       expect(wTitleWrapper).toHaveStyleRule('display', 'flex');
+      expect(wTitleWrapper).toHaveStyleRule('align-items', 'center');
       expect(wTitleWrapper).toHaveStyleRule(
         'filter',
         new RegExp(

@@ -11,7 +11,6 @@ export const S = {
 
   TitleH1: styled.h1`
     margin: 0 0 1rem;
-    font-size: 2.16em;
   `,
 
   TitleAnchor: styled.a`

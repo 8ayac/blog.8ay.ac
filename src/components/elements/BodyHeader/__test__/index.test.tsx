@@ -147,7 +147,6 @@ describe('BodyHeader', () => {
     });
 
     test('in TitleH1', () => {
-      expect(wrapper.find('TitleH1')).toHaveStyleRule('font-size', '2.16em');
       expect(wrapper.find('TitleH1')).toHaveStyleRule('margin', '0 0 1rem');
     });
 

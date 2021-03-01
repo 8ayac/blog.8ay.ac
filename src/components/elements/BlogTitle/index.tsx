@@ -1,3 +1,4 @@
+import { mq } from '@/src/shared/styles/mediaQuery';
 import styled from '@emotion/styled';
 import Link from 'next/link';
 import React from 'react';
@@ -21,11 +22,19 @@ const S = {
 
   TitleSpan: styled.span`
     font-size: 2.2rem;
+
+    ${mq('sm')} {
+      font-size: 1.8rem;
+    }
   `,
 
   SubtitleSpan: styled.span`
     margin-left: 0.5rem;
     font-size: 1.7rem;
+
+    ${mq('sm')} {
+      font-size: 1.5rem;
+    }
   `,
 };
 

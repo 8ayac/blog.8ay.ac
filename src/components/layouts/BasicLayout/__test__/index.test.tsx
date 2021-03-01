@@ -1,5 +1,6 @@
 import { BasicLayout } from '@/src/components/layouts/BasicLayout';
 import { theme } from '@/src/constants/theme';
+import { mq } from '@/src/shared/styles/mediaQuery';
 import { ThemeProvider } from '@emotion/react';
 import { mount, shallow } from 'enzyme';
 import React from 'react';
@@ -50,6 +51,19 @@ describe('BasicLayout', () => {
 
       expect(wContentWrapperDiv).toHaveStyleRule('max-width', '100%', {
         target: 'img',
+      });
+
+      expect(wContentWrapperDiv).toHaveStyleRule('padding', '3rem 7.5%', {
+        media: mq('sm'),
+      });
+      expect(wContentWrapperDiv).toHaveStyleRule('margin', '0', {
+        media: mq('sm'),
+      });
+      expect(wContentWrapperDiv).toHaveStyleRule('font-size', '1.4rem', {
+        media: mq('sm'),
+      });
+      expect(wContentWrapperDiv).toHaveStyleRule('border-radius', '0', {
+        media: mq('sm'),
       });
     });
   });
