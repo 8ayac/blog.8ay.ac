@@ -1,3 +1,4 @@
+import { config } from '@/site.config';
 import { theme } from '@/src/constants/theme';
 import TagsIndexPage from '@/src/pages/tags';
 import { mockArticleData } from '@/src/shared/__mocks__/articleData';
@@ -85,6 +86,12 @@ describe('TagsIndexPage', () => {
           .find('a')
           .prop('href')
       ).toBe(`/tags/${testCategories[0]}`);
+    });
+
+    test('so that the header links to the appropriate page', () => {
+      expect(
+        wrapper.find('BodyHeader').find('Link').first().find('a').prop('href')
+      ).toBe(config.page.tags.root);
     });
   });
 

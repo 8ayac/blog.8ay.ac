@@ -11,12 +11,29 @@ exports[`TagsIndexPage is rendered correctly to match the snapshot 1`] = `
 }
 
 .emotion-4 {
+  margin: 0;
+  color: hsla(0, 0%, 15%);
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-filter: drop-shadow(
+        2px 2px 1px hsla(148, 72%, 75%)
+      );
+  filter: drop-shadow(
+        2px 2px 1px hsla(148, 72%, 75%)
+      );
+}
+
+.emotion-4:visited {
+  color: hsla(0, 0%, 15%);
+}
+
+.emotion-6 {
   margin-bottom: 3rem;
   margin-bottom: 7.5rem;
   font-size: 1.25em;
 }
 
-.emotion-6 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -27,12 +44,12 @@ exports[`TagsIndexPage is rendered correctly to match the snapshot 1`] = `
   flex-flow: row wrap;
 }
 
-.emotion-6>* {
+.emotion-8>* {
   margin-right: 0.7rem;
   margin-bottom: 0.7rem;
 }
 
-.emotion-8 {
+.emotion-10 {
   padding: 0.2rem 1rem;
   font-size: 0.8em;
   color: white;
@@ -48,51 +65,34 @@ exports[`TagsIndexPage is rendered correctly to match the snapshot 1`] = `
   border-radius: 3px;
 }
 
-.emotion-8:hover {
+.emotion-10:hover {
   color: white;
   background-color: hsla(212, 72%, 55%);
 }
 
-.emotion-8:visited {
+.emotion-10:visited {
   color: white;
 }
 
-.emotion-12 {
+.emotion-14 {
   margin-bottom: 3rem;
 }
 
-.emotion-18 {
-  margin: 0;
-  color: hsla(0, 0%, 15%);
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-filter: drop-shadow(
-        2px 2px 1px hsla(148, 72%, 75%)
-      );
-  filter: drop-shadow(
-        2px 2px 1px hsla(148, 72%, 75%)
-      );
-}
-
-.emotion-18:visited {
-  color: hsla(0, 0%, 15%);
-}
-
-.emotion-20 {
+.emotion-22 {
   display: grid;
   grid-gap: 5%;
   margin: 0 auto;
 }
 
-.emotion-22 h1 {
+.emotion-24 h1 {
   font-size: 2.3rem;
 }
 
-.emotion-26 {
+.emotion-28 {
   margin-bottom: 0.3rem;
 }
 
-.emotion-28 {
+.emotion-30 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -108,11 +108,11 @@ exports[`TagsIndexPage is rendered correctly to match the snapshot 1`] = `
   margin-bottom: 1rem;
 }
 
-.emotion-28>* {
+.emotion-30>* {
   margin-right: 1rem;
 }
 
-.emotion-30 {
+.emotion-32 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -123,26 +123,26 @@ exports[`TagsIndexPage is rendered correctly to match the snapshot 1`] = `
   flex-flow: row wrap;
 }
 
-.emotion-32 {
+.emotion-34 {
   margin-right: 0.5rem;
   font-weight: 600;
 }
 
-.emotion-34 {
+.emotion-36 {
   font-weight: bolder;
   color: hsla(212, 72%, 35%);
 }
 
-.emotion-46 {
+.emotion-48 {
   margin-top: 0.3rem;
 }
 
-.emotion-48 {
+.emotion-50 {
   margin-top: 2rem;
   margin-bottom: 0.5rem;
 }
 
-.emotion-52 {
+.emotion-54 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -331,6 +331,7 @@ this is a test paragraph of test-article-id-2.
       </_default>
     </SEO>
     <BodyHeader
+      linkTo="/tags"
       title="Tags"
     >
       <WrapperHeader>
@@ -341,7 +342,25 @@ this is a test paragraph of test-article-id-2.
             <h1
               className="emotion-2 emotion-3"
             >
-              Tags
+              <Link
+                href="/tags"
+                passHref={true}
+              >
+                <TitleAnchor
+                  href="/tags"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                >
+                  <a
+                    className="emotion-4 emotion-5"
+                    href="/tags"
+                    onClick={[Function]}
+                    onMouseEnter={[Function]}
+                  >
+                    Tags
+                  </a>
+                </TitleAnchor>
+              </Link>
             </h1>
           </TitleH1>
         </header>
@@ -349,7 +368,7 @@ this is a test paragraph of test-article-id-2.
     </BodyHeader>
     <S-TagListSection>
       <section
-        className="emotion-4 emotion-5"
+        className="emotion-6 emotion-7"
       >
         <CategoryTagList
           tags={
@@ -361,7 +380,7 @@ this is a test paragraph of test-article-id-2.
         >
           <S-ComponentWrapperDiv>
             <div
-              className="emotion-6 emotion-7"
+              className="emotion-8 emotion-9"
             >
               <CategoryTag
                 key="test-custom-tag-1"
@@ -377,7 +396,7 @@ this is a test paragraph of test-article-id-2.
                     onMouseEnter={[Function]}
                   >
                     <a
-                      className="emotion-8 emotion-9"
+                      className="emotion-10 emotion-11"
                       href="/tags/test-custom-tag-1"
                       onClick={[Function]}
                       onMouseEnter={[Function]}
@@ -401,7 +420,7 @@ this is a test paragraph of test-article-id-2.
                     onMouseEnter={[Function]}
                   >
                     <a
-                      className="emotion-8 emotion-9"
+                      className="emotion-10 emotion-11"
                       href="/tags/test-custom-tag-2"
                       onClick={[Function]}
                       onMouseEnter={[Function]}
@@ -421,7 +440,7 @@ this is a test paragraph of test-article-id-2.
       key="test-custom-tag-1"
     >
       <section
-        className="emotion-12 emotion-13"
+        className="emotion-14 emotion-15"
         id="test-custom-tag-1"
       >
         <BodyHeader
@@ -446,7 +465,7 @@ this is a test paragraph of test-article-id-2.
                       onMouseEnter={[Function]}
                     >
                       <a
-                        className="emotion-18 emotion-19"
+                        className="emotion-4 emotion-5"
                         href="/tags/test-custom-tag-1"
                         onClick={[Function]}
                         onMouseEnter={[Function]}
@@ -535,11 +554,11 @@ this is a test paragraph of test-article-id-1.
         >
           <ComponentWrapperDiv>
             <div
-              className="emotion-20 emotion-21"
+              className="emotion-22 emotion-23"
             >
               <ArticleHeaderWrapperDiv>
                 <div
-                  className="emotion-22 emotion-23"
+                  className="emotion-24 emotion-25"
                 >
                   <ArticleHeader
                     article={
@@ -613,11 +632,11 @@ this is a test paragraph of test-article-id-2.
                         >
                           <BeforeTitleDiv>
                             <div
-                              className="emotion-26 emotion-27"
+                              className="emotion-28 emotion-29"
                             >
                               <DateTimeWrapperDiv>
                                 <div
-                                  className="emotion-28 emotion-29"
+                                  className="emotion-30 emotion-31"
                                 >
                                   <DateTime
                                     date="2021-02-01T00:00:00.000Z"
@@ -625,18 +644,18 @@ this is a test paragraph of test-article-id-2.
                                   >
                                     <ComponentWrapperDiv>
                                       <div
-                                        className="emotion-30 emotion-31"
+                                        className="emotion-32 emotion-33"
                                       >
                                         <DescriptionSpan>
                                           <span
-                                            className="emotion-32 emotion-33"
+                                            className="emotion-34 emotion-35"
                                           >
                                             Published At:
                                           </span>
                                         </DescriptionSpan>
                                         <ISODateTime>
                                           <time
-                                            className="emotion-34 emotion-35"
+                                            className="emotion-36 emotion-37"
                                           >
                                             2021-02-01T00:00:00.000Z
                                           </time>
@@ -650,18 +669,18 @@ this is a test paragraph of test-article-id-2.
                                   >
                                     <ComponentWrapperDiv>
                                       <div
-                                        className="emotion-30 emotion-31"
+                                        className="emotion-32 emotion-33"
                                       >
                                         <DescriptionSpan>
                                           <span
-                                            className="emotion-32 emotion-33"
+                                            className="emotion-34 emotion-35"
                                           >
                                             Updated At:
                                           </span>
                                         </DescriptionSpan>
                                         <ISODateTime>
                                           <time
-                                            className="emotion-34 emotion-35"
+                                            className="emotion-36 emotion-37"
                                           >
                                             2021-02-01T22:22:22.000Z
                                           </time>
@@ -687,7 +706,7 @@ this is a test paragraph of test-article-id-2.
                                   onMouseEnter={[Function]}
                                 >
                                   <a
-                                    className="emotion-18 emotion-19"
+                                    className="emotion-4 emotion-5"
                                     href="/articles/2021-02-01/test-article-id-2"
                                     onClick={[Function]}
                                     onMouseEnter={[Function]}
@@ -700,11 +719,11 @@ this is a test paragraph of test-article-id-2.
                           </TitleH1>
                           <AfterTitleDiv>
                             <div
-                              className="emotion-46 emotion-47"
+                              className="emotion-48 emotion-49"
                             >
                               <TagListWrapperDiv>
                                 <div
-                                  className="emotion-48 emotion-49"
+                                  className="emotion-50 emotion-51"
                                 >
                                   <CategoryTagList
                                     tags={
@@ -716,11 +735,11 @@ this is a test paragraph of test-article-id-2.
                                   >
                                     <S-ComponentWrapperDiv>
                                       <div
-                                        className="emotion-6 emotion-7"
+                                        className="emotion-8 emotion-9"
                                       >
                                         <S-PreIconWrapperDiv>
                                           <div
-                                            className="emotion-52 emotion-53"
+                                            className="emotion-54 emotion-55"
                                           >
                                             <FontAwesomeIcon
                                               border={false}
@@ -786,7 +805,7 @@ this is a test paragraph of test-article-id-2.
                                               onMouseEnter={[Function]}
                                             >
                                               <a
-                                                className="emotion-8 emotion-9"
+                                                className="emotion-10 emotion-11"
                                                 href="/tags/test-custom-tag-1"
                                                 onClick={[Function]}
                                                 onMouseEnter={[Function]}
@@ -881,11 +900,11 @@ this is a test paragraph of test-article-id-1.
                         >
                           <BeforeTitleDiv>
                             <div
-                              className="emotion-26 emotion-27"
+                              className="emotion-28 emotion-29"
                             >
                               <DateTimeWrapperDiv>
                                 <div
-                                  className="emotion-28 emotion-29"
+                                  className="emotion-30 emotion-31"
                                 >
                                   <DateTime
                                     date="2021-01-01T00:00:00.000Z"
@@ -893,18 +912,18 @@ this is a test paragraph of test-article-id-1.
                                   >
                                     <ComponentWrapperDiv>
                                       <div
-                                        className="emotion-30 emotion-31"
+                                        className="emotion-32 emotion-33"
                                       >
                                         <DescriptionSpan>
                                           <span
-                                            className="emotion-32 emotion-33"
+                                            className="emotion-34 emotion-35"
                                           >
                                             Published At:
                                           </span>
                                         </DescriptionSpan>
                                         <ISODateTime>
                                           <time
-                                            className="emotion-34 emotion-35"
+                                            className="emotion-36 emotion-37"
                                           >
                                             2021-01-01T00:00:00.000Z
                                           </time>
@@ -918,18 +937,18 @@ this is a test paragraph of test-article-id-1.
                                   >
                                     <ComponentWrapperDiv>
                                       <div
-                                        className="emotion-30 emotion-31"
+                                        className="emotion-32 emotion-33"
                                       >
                                         <DescriptionSpan>
                                           <span
-                                            className="emotion-32 emotion-33"
+                                            className="emotion-34 emotion-35"
                                           >
                                             Updated At:
                                           </span>
                                         </DescriptionSpan>
                                         <ISODateTime>
                                           <time
-                                            className="emotion-34 emotion-35"
+                                            className="emotion-36 emotion-37"
                                           >
                                             2021-01-01T22:22:22.000Z
                                           </time>
@@ -955,7 +974,7 @@ this is a test paragraph of test-article-id-1.
                                   onMouseEnter={[Function]}
                                 >
                                   <a
-                                    className="emotion-18 emotion-19"
+                                    className="emotion-4 emotion-5"
                                     href="/articles/2021-01-01/test-article-id-1"
                                     onClick={[Function]}
                                     onMouseEnter={[Function]}
@@ -968,11 +987,11 @@ this is a test paragraph of test-article-id-1.
                           </TitleH1>
                           <AfterTitleDiv>
                             <div
-                              className="emotion-46 emotion-47"
+                              className="emotion-48 emotion-49"
                             >
                               <TagListWrapperDiv>
                                 <div
-                                  className="emotion-48 emotion-49"
+                                  className="emotion-50 emotion-51"
                                 >
                                   <CategoryTagList
                                     tags={
@@ -985,11 +1004,11 @@ this is a test paragraph of test-article-id-1.
                                   >
                                     <S-ComponentWrapperDiv>
                                       <div
-                                        className="emotion-6 emotion-7"
+                                        className="emotion-8 emotion-9"
                                       >
                                         <S-PreIconWrapperDiv>
                                           <div
-                                            className="emotion-52 emotion-53"
+                                            className="emotion-54 emotion-55"
                                           >
                                             <FontAwesomeIcon
                                               border={false}
@@ -1055,7 +1074,7 @@ this is a test paragraph of test-article-id-1.
                                               onMouseEnter={[Function]}
                                             >
                                               <a
-                                                className="emotion-8 emotion-9"
+                                                className="emotion-10 emotion-11"
                                                 href="/tags/test-custom-tag-1"
                                                 onClick={[Function]}
                                                 onMouseEnter={[Function]}
@@ -1079,7 +1098,7 @@ this is a test paragraph of test-article-id-1.
                                               onMouseEnter={[Function]}
                                             >
                                               <a
-                                                className="emotion-8 emotion-9"
+                                                className="emotion-10 emotion-11"
                                                 href="/tags/test-custom-tag-2"
                                                 onClick={[Function]}
                                                 onMouseEnter={[Function]}
@@ -1112,7 +1131,7 @@ this is a test paragraph of test-article-id-1.
       key="test-custom-tag-2"
     >
       <section
-        className="emotion-12 emotion-13"
+        className="emotion-14 emotion-15"
         id="test-custom-tag-2"
       >
         <BodyHeader
@@ -1137,7 +1156,7 @@ this is a test paragraph of test-article-id-1.
                       onMouseEnter={[Function]}
                     >
                       <a
-                        className="emotion-18 emotion-19"
+                        className="emotion-4 emotion-5"
                         href="/tags/test-custom-tag-2"
                         onClick={[Function]}
                         onMouseEnter={[Function]}
@@ -1193,11 +1212,11 @@ this is a test paragraph of test-article-id-1.
         >
           <ComponentWrapperDiv>
             <div
-              className="emotion-20 emotion-21"
+              className="emotion-22 emotion-23"
             >
               <ArticleHeaderWrapperDiv>
                 <div
-                  className="emotion-22 emotion-23"
+                  className="emotion-24 emotion-25"
                 >
                   <ArticleHeader
                     article={
@@ -1273,11 +1292,11 @@ this is a test paragraph of test-article-id-1.
                         >
                           <BeforeTitleDiv>
                             <div
-                              className="emotion-26 emotion-27"
+                              className="emotion-28 emotion-29"
                             >
                               <DateTimeWrapperDiv>
                                 <div
-                                  className="emotion-28 emotion-29"
+                                  className="emotion-30 emotion-31"
                                 >
                                   <DateTime
                                     date="2021-01-01T00:00:00.000Z"
@@ -1285,18 +1304,18 @@ this is a test paragraph of test-article-id-1.
                                   >
                                     <ComponentWrapperDiv>
                                       <div
-                                        className="emotion-30 emotion-31"
+                                        className="emotion-32 emotion-33"
                                       >
                                         <DescriptionSpan>
                                           <span
-                                            className="emotion-32 emotion-33"
+                                            className="emotion-34 emotion-35"
                                           >
                                             Published At:
                                           </span>
                                         </DescriptionSpan>
                                         <ISODateTime>
                                           <time
-                                            className="emotion-34 emotion-35"
+                                            className="emotion-36 emotion-37"
                                           >
                                             2021-01-01T00:00:00.000Z
                                           </time>
@@ -1310,18 +1329,18 @@ this is a test paragraph of test-article-id-1.
                                   >
                                     <ComponentWrapperDiv>
                                       <div
-                                        className="emotion-30 emotion-31"
+                                        className="emotion-32 emotion-33"
                                       >
                                         <DescriptionSpan>
                                           <span
-                                            className="emotion-32 emotion-33"
+                                            className="emotion-34 emotion-35"
                                           >
                                             Updated At:
                                           </span>
                                         </DescriptionSpan>
                                         <ISODateTime>
                                           <time
-                                            className="emotion-34 emotion-35"
+                                            className="emotion-36 emotion-37"
                                           >
                                             2021-01-01T22:22:22.000Z
                                           </time>
@@ -1347,7 +1366,7 @@ this is a test paragraph of test-article-id-1.
                                   onMouseEnter={[Function]}
                                 >
                                   <a
-                                    className="emotion-18 emotion-19"
+                                    className="emotion-4 emotion-5"
                                     href="/articles/2021-01-01/test-article-id-1"
                                     onClick={[Function]}
                                     onMouseEnter={[Function]}
@@ -1360,11 +1379,11 @@ this is a test paragraph of test-article-id-1.
                           </TitleH1>
                           <AfterTitleDiv>
                             <div
-                              className="emotion-46 emotion-47"
+                              className="emotion-48 emotion-49"
                             >
                               <TagListWrapperDiv>
                                 <div
-                                  className="emotion-48 emotion-49"
+                                  className="emotion-50 emotion-51"
                                 >
                                   <CategoryTagList
                                     tags={
@@ -1377,11 +1396,11 @@ this is a test paragraph of test-article-id-1.
                                   >
                                     <S-ComponentWrapperDiv>
                                       <div
-                                        className="emotion-6 emotion-7"
+                                        className="emotion-8 emotion-9"
                                       >
                                         <S-PreIconWrapperDiv>
                                           <div
-                                            className="emotion-52 emotion-53"
+                                            className="emotion-54 emotion-55"
                                           >
                                             <FontAwesomeIcon
                                               border={false}
@@ -1447,7 +1466,7 @@ this is a test paragraph of test-article-id-1.
                                               onMouseEnter={[Function]}
                                             >
                                               <a
-                                                className="emotion-8 emotion-9"
+                                                className="emotion-10 emotion-11"
                                                 href="/tags/test-custom-tag-1"
                                                 onClick={[Function]}
                                                 onMouseEnter={[Function]}
@@ -1471,7 +1490,7 @@ this is a test paragraph of test-article-id-1.
                                               onMouseEnter={[Function]}
                                             >
                                               <a
-                                                className="emotion-8 emotion-9"
+                                                className="emotion-10 emotion-11"
                                                 href="/tags/test-custom-tag-2"
                                                 onClick={[Function]}
                                                 onMouseEnter={[Function]}

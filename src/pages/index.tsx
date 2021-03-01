@@ -1,3 +1,4 @@
+import { config } from '@/site.config';
 import { BodyHeader } from '@/src/components/elements/BodyHeader';
 import { ArticleHeaderList } from '@/src/components/widgets/ArticleHeaderList';
 import { CategoryTagList } from '@/src/components/widgets/CategoryTagList';
@@ -34,11 +35,11 @@ const TopPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
       <SEO />
 
       <S.ArticleListSection>
-        <BodyHeader title="Articles" />
+        <BodyHeader title="Articles" linkTo={config.page.articles.root} />
         <ArticleHeaderList articles={articles} />
       </S.ArticleListSection>
-      <S.TagListSection>
-        <BodyHeader title="Tags" />
+      <S.TagListSection id="tags">
+        <BodyHeader title="Tags" linkTo={config.page.tags.root} />
         <CategoryTagList
           tags={(articles as Article[])
             .map((article) => article.attributes.tags)
