@@ -53,11 +53,6 @@ describe('FootnoteDefinition', () => {
         'inline',
         { target: '*' }
       );
-      expect(wrapper.find('FootnoteWrapperDiv')).toHaveStyleRule(
-        'font-size',
-        '1.6rem',
-        { target: '*' }
-      );
     });
 
     test('in LabelSpan', () => {
