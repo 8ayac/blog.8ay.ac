@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MarkdownRenderer is rendered correctly to match the snapshot 1`] = `
+.emotion-0 {
+  line-height: 200%;
+}
+
 .emotion-0 h1,
 .emotion-0 h2 {
   padding-bottom: 0.3em;
@@ -18,7 +22,6 @@ exports[`MarkdownRenderer is rendered correctly to match the snapshot 1`] = `
 .emotion-0 code,
 .emotion-0 pre {
   font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
-  word-break: normal;
 }
 
 .emotion-0 pre {
@@ -28,7 +31,7 @@ exports[`MarkdownRenderer is rendered correctly to match the snapshot 1`] = `
 .emotion-0 code:not([class]) {
   padding: 0.2em 0.4em;
   margin: 0;
-  font-size: 0.85em;
+  font-size: 85%;
   background-color: hsla(0, 0%, 92.5%);
   border-radius: 3px;
 }
@@ -47,7 +50,7 @@ exports[`MarkdownRenderer is rendered correctly to match the snapshot 1`] = `
 
 .emotion-0 ul,
 .emotion-0 ol {
-  padding-left: 3rem;
+  padding-left: 2rem;
 }
 
 .emotion-0 ol ol,
@@ -55,17 +58,9 @@ exports[`MarkdownRenderer is rendered correctly to match the snapshot 1`] = `
   list-style-type: lower-roman;
 }
 
-.emotion-0 li>p {
-  margin-top: 1.6rem;
-}
-
-.emotion-0 li+li {
-  margin-top: 0.25em;
-}
-
 .emotion-0 blockquote {
   padding: 0 1em;
-  margin-left: 0;
+  margin: 0 2.5%;
   color: hsla(0, 0%, 40%);
   border-left: 0.25em solid hsla(212, 72%, 85%);
 }
@@ -76,6 +71,10 @@ exports[`MarkdownRenderer is rendered correctly to match the snapshot 1`] = `
 
 .emotion-0 blockquote:last-of-type {
   margin-bottom: 0;
+}
+
+.emotion-0 iframe {
+  max-width: 100%;
 }
 
 .emotion-0 div.code-toolbar>.toolbar {
