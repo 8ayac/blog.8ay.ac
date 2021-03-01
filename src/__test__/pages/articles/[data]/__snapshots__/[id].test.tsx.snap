@@ -922,6 +922,7 @@ this is a test paragraph of test-article-id-1.
           className="emotion-58 emotion-59"
         >
           <ReactMarkdown
+            allowDangerousHtml={true}
             plugins={
               Array [
                 [Function],
@@ -2397,6 +2398,7 @@ this is a test paragraph of test-article-id-1.
           className="emotion-34 emotion-35"
         >
           <ReactMarkdown
+            allowDangerousHtml={true}
             plugins={
               Array [
                 [Function],

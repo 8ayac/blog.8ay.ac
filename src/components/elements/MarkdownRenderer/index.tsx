@@ -124,6 +124,7 @@ export const MarkdownRenderer: React.FC<{ content: string }> = ({
           plugins={[remarkGfm, remarkFootnotes]}
           transformImageUri={imageUriTransformer}
           renderers={customRenderers}
+          allowDangerousHtml
         />
       </S.ConvertedMdBody>
     </>
