@@ -63,7 +63,6 @@ exports[`ArticleHeaderList is rendered correctly to match the snapshot 1`] = `
 
 .emotion-22 {
   margin: 0 0 1rem;
-  font-size: 2.16em;
 }
 
 .emotion-24 {

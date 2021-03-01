@@ -1,3 +1,4 @@
+import { mq } from '@/src/shared/styles/mediaQuery';
 import styled from '@emotion/styled';
 import { faLink, IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -21,10 +22,21 @@ const S = {
       color: ${(props) =>
         props.theme.color.socialLinkWithIcon.socialLinkAnchor.textOnHover};
     }
+
+    ${mq('sm')} {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+    }
   `,
 
   LinkDescriptionSpan: styled.span`
     margin-left: 0.5rem;
+
+    ${mq('sm')} {
+      margin-left: 0;
+      font-size: 1rem;
+    }
   `,
 };
 

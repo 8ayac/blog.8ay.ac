@@ -20,8 +20,32 @@ exports[`SocialLinkWithIcon is rendered correctly to match the snapshot with the
   color: hsla(60, 72%, 55%);
 }
 
+@media screen and (max-width: 576px) {
+  .emotion-2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex-flow: column wrap;
+    -webkit-flex-flow: column wrap;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
 .emotion-4 {
   margin-left: 0.5rem;
+}
+
+@media screen and (max-width: 576px) {
+  .emotion-4 {
+    margin-left: 0;
+    font-size: 1rem;
+  }
 }
 
 <ThemeProvider
@@ -218,8 +242,32 @@ exports[`SocialLinkWithIcon is rendered correctly to match the snapshot without 
   color: hsla(60, 72%, 55%);
 }
 
+@media screen and (max-width: 576px) {
+  .emotion-2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex-flow: column wrap;
+    -webkit-flex-flow: column wrap;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
 .emotion-4 {
   margin-left: 0.5rem;
+}
+
+@media screen and (max-width: 576px) {
+  .emotion-4 {
+    margin-left: 0;
+    font-size: 1rem;
+  }
 }
 
 <ThemeProvider
