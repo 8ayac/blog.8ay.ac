@@ -31,7 +31,7 @@ const ArticleIndexPage: NextPage<
   return (
     <>
       <SEO />
-      <BodyHeader title="Articles" />
+      <BodyHeader title="Articles" linkTo={config.page.articles.root} />
       <ArticleHeaderList articles={articles} />
     </>
   );

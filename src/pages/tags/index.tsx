@@ -53,7 +53,7 @@ const TagsIndexPage: NextPage<
   return (
     <>
       <SEO />
-      <BodyHeader title="Tags" />
+      <BodyHeader title="Tags" linkTo={config.page.tags.root} />
 
       <S.TagListSection>
         <CategoryTagList tags={tags} />
