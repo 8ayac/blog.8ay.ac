@@ -177,6 +177,7 @@ exports[`MarkdownRenderer is rendered correctly to match the snapshot 1`] = `
         className="emotion-0 emotion-1"
       >
         <ReactMarkdown
+          allowDangerousHtml={true}
           plugins={
             Array [
               [Function],
