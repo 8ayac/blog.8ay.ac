@@ -8,6 +8,8 @@ import remarkGfm from 'remark-gfm';
 
 const S = {
   ConvertedMdBody: styled.div`
+    line-height: 200%;
+
     h1,
     h2 {
       padding-bottom: 0.3em;
@@ -26,7 +28,6 @@ const S = {
     code,
     pre {
       font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
-      word-break: normal;
     }
 
     pre {
@@ -37,7 +38,7 @@ const S = {
     code:not([class]) {
       padding: 0.2em 0.4em;
       margin: 0;
-      font-size: 0.85em;
+      font-size: 85%;
       background-color: hsla(0, 0%, 92.5%);
       border-radius: 3px;
     }
@@ -56,7 +57,7 @@ const S = {
 
     ul,
     ol {
-      padding-left: 3rem;
+      padding-left: 2rem;
     }
 
     ol ol,
@@ -64,19 +65,9 @@ const S = {
       list-style-type: lower-roman;
     }
 
-    li {
-      > p {
-        margin-top: 1.6rem;
-      }
-
-      + li {
-        margin-top: 0.25em;
-      }
-    }
-
     blockquote {
       padding: 0 1em;
-      margin-left: 0;
+      margin: 0 2.5%;
       color: ${(props) => props.theme.color.common.text.primaryLight};
       border-left: 0.25em solid
         ${(props) =>
@@ -89,6 +80,10 @@ const S = {
       :last-of-type {
         margin-bottom: 0;
       }
+    }
+
+    iframe {
+      max-width: 100%;
     }
 
     /* Below is for the plugin of Prism 'Show Language' */

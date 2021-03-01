@@ -163,6 +163,10 @@ exports[`ArticlePage is rendered correctly to match the snapshot with revision h
   font-weight: bolder;
 }
 
+.emotion-58 {
+  line-height: 200%;
+}
+
 .emotion-58 h1,
 .emotion-58 h2 {
   padding-bottom: 0.3em;
@@ -180,7 +184,6 @@ exports[`ArticlePage is rendered correctly to match the snapshot with revision h
 .emotion-58 code,
 .emotion-58 pre {
   font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
-  word-break: normal;
 }
 
 .emotion-58 pre {
@@ -190,7 +193,7 @@ exports[`ArticlePage is rendered correctly to match the snapshot with revision h
 .emotion-58 code:not([class]) {
   padding: 0.2em 0.4em;
   margin: 0;
-  font-size: 0.85em;
+  font-size: 85%;
   background-color: hsla(0, 0%, 92.5%);
   border-radius: 3px;
 }
@@ -209,7 +212,7 @@ exports[`ArticlePage is rendered correctly to match the snapshot with revision h
 
 .emotion-58 ul,
 .emotion-58 ol {
-  padding-left: 3rem;
+  padding-left: 2rem;
 }
 
 .emotion-58 ol ol,
@@ -217,17 +220,9 @@ exports[`ArticlePage is rendered correctly to match the snapshot with revision h
   list-style-type: lower-roman;
 }
 
-.emotion-58 li>p {
-  margin-top: 1.6rem;
-}
-
-.emotion-58 li+li {
-  margin-top: 0.25em;
-}
-
 .emotion-58 blockquote {
   padding: 0 1em;
-  margin-left: 0;
+  margin: 0 2.5%;
   color: hsla(0, 0%, 40%);
   border-left: 0.25em solid hsla(212, 72%, 85%);
 }
@@ -238,6 +233,10 @@ exports[`ArticlePage is rendered correctly to match the snapshot with revision h
 
 .emotion-58 blockquote:last-of-type {
   margin-bottom: 0;
+}
+
+.emotion-58 iframe {
+  max-width: 100%;
 }
 
 .emotion-58 div.code-toolbar>.toolbar {
@@ -1832,6 +1831,10 @@ exports[`ArticlePage is rendered correctly to match the snapshot without revisio
   color: white;
 }
 
+.emotion-34 {
+  line-height: 200%;
+}
+
 .emotion-34 h1,
 .emotion-34 h2 {
   padding-bottom: 0.3em;
@@ -1849,7 +1852,6 @@ exports[`ArticlePage is rendered correctly to match the snapshot without revisio
 .emotion-34 code,
 .emotion-34 pre {
   font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
-  word-break: normal;
 }
 
 .emotion-34 pre {
@@ -1859,7 +1861,7 @@ exports[`ArticlePage is rendered correctly to match the snapshot without revisio
 .emotion-34 code:not([class]) {
   padding: 0.2em 0.4em;
   margin: 0;
-  font-size: 0.85em;
+  font-size: 85%;
   background-color: hsla(0, 0%, 92.5%);
   border-radius: 3px;
 }
@@ -1878,7 +1880,7 @@ exports[`ArticlePage is rendered correctly to match the snapshot without revisio
 
 .emotion-34 ul,
 .emotion-34 ol {
-  padding-left: 3rem;
+  padding-left: 2rem;
 }
 
 .emotion-34 ol ol,
@@ -1886,17 +1888,9 @@ exports[`ArticlePage is rendered correctly to match the snapshot without revisio
   list-style-type: lower-roman;
 }
 
-.emotion-34 li>p {
-  margin-top: 1.6rem;
-}
-
-.emotion-34 li+li {
-  margin-top: 0.25em;
-}
-
 .emotion-34 blockquote {
   padding: 0 1em;
-  margin-left: 0;
+  margin: 0 2.5%;
   color: hsla(0, 0%, 40%);
   border-left: 0.25em solid hsla(212, 72%, 85%);
 }
@@ -1907,6 +1901,10 @@ exports[`ArticlePage is rendered correctly to match the snapshot without revisio
 
 .emotion-34 blockquote:last-of-type {
   margin-bottom: 0;
+}
+
+.emotion-34 iframe {
+  max-width: 100%;
 }
 
 .emotion-34 div.code-toolbar>.toolbar {
