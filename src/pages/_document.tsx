@@ -1,4 +1,5 @@
 import { config } from '@/site.config';
+import { theme } from '@/src/constants/theme';
 import Document, {
   DocumentContext,
   DocumentInitialProps,
@@ -26,6 +27,7 @@ class MyDocument extends Document {
           type="image/png"
           href={urljoin(config.site.rootUrl, 'img', 'favicon.png')}
         />
+        <meta name="theme-color" content={theme.color.global.body.bg} />
       </Head>
 
       <body>
