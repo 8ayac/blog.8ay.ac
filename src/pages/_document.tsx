@@ -20,7 +20,7 @@ class MyDocument extends Document {
   }
 
   render = (): JSX.Element => (
-    <Html lang="en">
+    <Html lang="ja">
       <Head>
         <link
           rel="icon"
