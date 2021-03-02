@@ -300,6 +300,7 @@ this is a test paragraph of test-article-id-1.
       tagName="custom-test-tag"
     >
       <_default
+        canonical="http://localhost:3000/tags/custom-test-tag"
         openGraph={
           Object {
             "title": "#custom-test-tag - もしくはこれ",

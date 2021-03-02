@@ -436,6 +436,7 @@ this is a test paragraph of test-article-id-1.
       }
     >
       <_default
+        canonical="http://localhost:3000/articles/2021-01-01/test-article-id-1"
         openGraph={
           Object {
             "article": Object {
@@ -2078,6 +2079,7 @@ this is a test paragraph of test-article-id-1.
       }
     >
       <_default
+        canonical="http://localhost:3000/articles/2021-01-01/test-article-id-1"
         openGraph={
           Object {
             "article": Object {
