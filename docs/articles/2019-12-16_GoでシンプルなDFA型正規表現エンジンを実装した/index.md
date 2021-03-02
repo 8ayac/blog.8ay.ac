@@ -481,7 +481,7 @@ type Fragment struct {
 `utils.State`は整数を持つ構造体で、その値は`utils.Context`を使うことで、一つのオートマトン内で一意になるようになっています。
 
 フィールド`F`は受理状態です。
-受理状態は、状態の集合として保持しておきたかったという事情があり、[https://github.com/deckarep/golang-set](https://github.com/deckarep/golang-set)という外部パッケージを利用することにしました。
+受理状態は、状態の集合として保持しておきたかったという事情があり、<https://github.com/deckarep/golang-set>という外部パッケージを利用することにしました。
 なお、実際には、いくつか不都合があったので、いくらか改造して利用しました。
 これは、Pythonの集合型のようなものだと思ってください。
 
