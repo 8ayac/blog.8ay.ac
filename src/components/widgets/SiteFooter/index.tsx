@@ -1,3 +1,4 @@
+import { config } from '@/site.config';
 import styled from '@emotion/styled';
 import React from 'react';
 
@@ -11,6 +12,8 @@ const S = {
 
   CopyRightParagraph: styled.p``,
 
+  AuthorAnchor: styled.a``,
+
   AboutGAParagraph: styled.p`
     color: ${(props) => props.theme.color.common.text.primaryLight};
   `,
@@ -19,7 +22,9 @@ const S = {
 export const SiteFooter: React.FC = () => (
   <S.Footer>
     <S.CopyRightParagraph>
-      © 2021 blog.8ay.ac All Rights Reserved.
+      © 2021{' '}
+      <S.AuthorAnchor href={config.site.repository}>blog.8ay.ac</S.AuthorAnchor>{' '}
+      All Rights Reserved.
     </S.CopyRightParagraph>
     <S.AboutGAParagraph>
       This website uses Google Analytics, a web analytics service by Google.

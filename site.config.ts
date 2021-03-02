@@ -14,6 +14,7 @@ export const config = {
         ? 'https://blog.8ay.ac/'
         : 'http://localhost:3000/',
     publishedYear: 2021,
+    repository: 'https://github.com/8ayac/blog.8ay.ac',
   },
   page: {
     notFound: {
