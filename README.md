@@ -2,6 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/%3C%2F%3E-TypeScript-%230074c1.svg)](http://www.typescriptlang.org/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/755c443f-72d0-4dff-ab0e-b6194020312d/deploy-status)](https://app.netlify.com/sites/blog-8ay-ac/deploys)
 [![8ayac](https://img.shields.io/badge/%F0%9F%A7%BD-8ayac-yellow)](https://twitter.com/8ayac)
 
 My blog hosted on <https://blog.8ay.ac/>.
