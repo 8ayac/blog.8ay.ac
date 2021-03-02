@@ -299,7 +299,7 @@ this is a test paragraph of test-article-id-1.
   >
     <SEO>
       <_default
-        canonical="http://localhost:3000/articles"
+        canonical="https://blog.8ay.ac/articles"
         openGraph={
           Object {
             "title": "Articles - もしくはこれ",

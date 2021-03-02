@@ -10,7 +10,7 @@ export const config = {
       profileUrl: 'https://about.8ay.ac/',
     },
     rootUrl:
-      process.env.NODE_ENV === 'production'
+      process.env.NODE_ENV !== 'development'
         ? 'https://blog.8ay.ac/'
         : 'http://localhost:3000/',
     publishedYear: 2021,

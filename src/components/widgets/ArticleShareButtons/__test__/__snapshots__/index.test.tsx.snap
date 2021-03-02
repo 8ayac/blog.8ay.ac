@@ -159,11 +159,11 @@ this is a test paragraph of test-article-id-1.
               >
                 <Facebook
                   key="facebook"
-                  shareUrl="http://localhost:3000/articles/2021-01-01/test-article-id-1"
+                  shareUrl="https://blog.8ay.ac/articles/2021-01-01/test-article-id-1"
                   size={32}
                 >
                   <ForwardRef(ShareButton-facebook)
-                    url="http://localhost:3000/articles/2021-01-01/test-article-id-1"
+                    url="https://blog.8ay.ac/articles/2021-01-01/test-article-id-1"
                   >
                     <ShareButton
                       disabledStyle={
@@ -182,7 +182,7 @@ this is a test paragraph of test-article-id-1.
                         }
                       }
                       resetButtonStyle={true}
-                      url="http://localhost:3000/articles/2021-01-01/test-article-id-1"
+                      url="https://blog.8ay.ac/articles/2021-01-01/test-article-id-1"
                       windowHeight={400}
                       windowWidth={550}
                     >
@@ -241,7 +241,7 @@ this is a test paragraph of test-article-id-1.
                 <Twitter
                   key="twitter"
                   shareTitle="Test Article Title 1"
-                  shareUrl="http://localhost:3000/articles/2021-01-01/test-article-id-1"
+                  shareUrl="https://blog.8ay.ac/articles/2021-01-01/test-article-id-1"
                   size={32}
                 >
                   <ForwardRef(ShareButton-twitter)
@@ -251,7 +251,7 @@ this is a test paragraph of test-article-id-1.
                       ]
                     }
                     title="Test Article Title 1"
-                    url="http://localhost:3000/articles/2021-01-01/test-article-id-1"
+                    url="https://blog.8ay.ac/articles/2021-01-01/test-article-id-1"
                     via="8ayac"
                   >
                     <ShareButton
@@ -275,7 +275,7 @@ this is a test paragraph of test-article-id-1.
                         }
                       }
                       resetButtonStyle={true}
-                      url="http://localhost:3000/articles/2021-01-01/test-article-id-1"
+                      url="https://blog.8ay.ac/articles/2021-01-01/test-article-id-1"
                       windowHeight={400}
                       windowWidth={550}
                     >
@@ -334,12 +334,12 @@ this is a test paragraph of test-article-id-1.
                 <Hatena
                   key="hatena"
                   shareTitle="Test Article Title 1"
-                  shareUrl="http://localhost:3000/articles/2021-01-01/test-article-id-1"
+                  shareUrl="https://blog.8ay.ac/articles/2021-01-01/test-article-id-1"
                   size={32}
                 >
                   <ForwardRef(ShareButton-hatena)
                     title="Test Article Title 1"
-                    url="http://localhost:3000/articles/2021-01-01/test-article-id-1"
+                    url="https://blog.8ay.ac/articles/2021-01-01/test-article-id-1"
                   >
                     <ShareButton
                       disabledStyle={
@@ -357,7 +357,7 @@ this is a test paragraph of test-article-id-1.
                         }
                       }
                       resetButtonStyle={true}
-                      url="http://localhost:3000/articles/2021-01-01/test-article-id-1"
+                      url="https://blog.8ay.ac/articles/2021-01-01/test-article-id-1"
                       windowHeight={460}
                       windowPosition="windowCenter"
                       windowWidth={660}
@@ -417,12 +417,12 @@ this is a test paragraph of test-article-id-1.
                 <Line
                   key="line"
                   shareTitle="Test Article Title 1"
-                  shareUrl="http://localhost:3000/articles/2021-01-01/test-article-id-1"
+                  shareUrl="https://blog.8ay.ac/articles/2021-01-01/test-article-id-1"
                   size={32}
                 >
                   <ForwardRef(ShareButton-line)
                     title="Test Article Title 1"
-                    url="http://localhost:3000/articles/2021-01-01/test-article-id-1"
+                    url="https://blog.8ay.ac/articles/2021-01-01/test-article-id-1"
                   >
                     <ShareButton
                       disabledStyle={
@@ -440,7 +440,7 @@ this is a test paragraph of test-article-id-1.
                         }
                       }
                       resetButtonStyle={true}
-                      url="http://localhost:3000/articles/2021-01-01/test-article-id-1"
+                      url="https://blog.8ay.ac/articles/2021-01-01/test-article-id-1"
                       windowHeight={500}
                       windowWidth={500}
                     >
@@ -499,12 +499,12 @@ this is a test paragraph of test-article-id-1.
                 <Reddit
                   key="reddit"
                   shareTitle="Test Article Title 1"
-                  shareUrl="http://localhost:3000/articles/2021-01-01/test-article-id-1"
+                  shareUrl="https://blog.8ay.ac/articles/2021-01-01/test-article-id-1"
                   size={32}
                 >
                   <ForwardRef(ShareButton-reddit)
                     title="Test Article Title 1"
-                    url="http://localhost:3000/articles/2021-01-01/test-article-id-1"
+                    url="https://blog.8ay.ac/articles/2021-01-01/test-article-id-1"
                   >
                     <ShareButton
                       disabledStyle={
@@ -522,7 +522,7 @@ this is a test paragraph of test-article-id-1.
                         }
                       }
                       resetButtonStyle={true}
-                      url="http://localhost:3000/articles/2021-01-01/test-article-id-1"
+                      url="https://blog.8ay.ac/articles/2021-01-01/test-article-id-1"
                       windowHeight={460}
                       windowPosition="windowCenter"
                       windowWidth={660}
@@ -582,12 +582,12 @@ this is a test paragraph of test-article-id-1.
                 <Pocket
                   key="pocket"
                   shareTitle="Test Article Title 1"
-                  shareUrl="http://localhost:3000/articles/2021-01-01/test-article-id-1"
+                  shareUrl="https://blog.8ay.ac/articles/2021-01-01/test-article-id-1"
                   size={32}
                 >
                   <ForwardRef(ShareButton-pocket)
                     title="Test Article Title 1"
-                    url="http://localhost:3000/articles/2021-01-01/test-article-id-1"
+                    url="https://blog.8ay.ac/articles/2021-01-01/test-article-id-1"
                   >
                     <ShareButton
                       disabledStyle={
@@ -605,7 +605,7 @@ this is a test paragraph of test-article-id-1.
                         }
                       }
                       resetButtonStyle={true}
-                      url="http://localhost:3000/articles/2021-01-01/test-article-id-1"
+                      url="https://blog.8ay.ac/articles/2021-01-01/test-article-id-1"
                       windowHeight={500}
                       windowWidth={500}
                     >
