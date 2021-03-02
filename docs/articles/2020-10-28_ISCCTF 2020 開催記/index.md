@@ -1,5 +1,5 @@
 ---
-id: organized-ISCCTF-2020
+id: organized-iscctf-2020
 title: ISCCTF 2020 開催記
 publishedAt: 2020-10-27T23:01:23.000Z
 tags: [CTF, コンテスト, 運営, イベントレポート, Security, Python]
