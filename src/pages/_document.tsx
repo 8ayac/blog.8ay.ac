@@ -11,6 +11,20 @@ import Document, {
 import React from 'react';
 import urljoin from 'url-join';
 
+const GATag: React.FC = () => (
+  <>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-YWW1B54WXF"
+    />
+    <script
+      dangerouslySetInnerHTML={{
+        __html: `  window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-YWW1B54WXF');`,
+      }}
+    />
+  </>
+);
+
 class MyDocument extends Document {
   static async getInitialProps(
     ctx: DocumentContext
@@ -22,6 +36,7 @@ class MyDocument extends Document {
   render = (): JSX.Element => (
     <Html lang="ja">
       <Head>
+        <GATag />
         <link
           rel="icon"
           type="image/png"
