@@ -7,6 +7,8 @@ import {
 import jsonArticles from '@/src/shared/.content/articles.json';
 import { getArticlePagePath } from '@/src/shared/utils';
 // eslint-disable-next-line import/no-extraneous-dependencies
+import { Article } from '@/src/types';
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { Feed } from 'feed';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import fs from 'fs-extra';
@@ -38,7 +40,7 @@ const feed = new Feed({
 });
 
 (async () => {
-  jsonArticles.forEach((article) => {
+  (jsonArticles as Article[]).forEach((article) => {
     feed.addItem({
       title: article.attributes.title,
       id: urljoin(config.site.rootUrl, getArticlePagePath(article)),
