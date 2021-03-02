@@ -427,20 +427,20 @@ exports[`Header is rendered correctly to match the snapshot 1`] = `
                     }
                   }
                   key="navs-1"
-                  url="http://localhost:3000/feed.xml"
+                  url="https://blog.8ay.ac/feed.xml"
                 >
                   <ComponentWrapperDiv>
                     <div
                       className="emotion-14 emotion-15"
                     >
                       <SocialLinkAnchor
-                        href="http://localhost:3000/feed.xml"
+                        href="https://blog.8ay.ac/feed.xml"
                         rel="noopener"
                         target="_blank"
                       >
                         <a
                           className="emotion-16 emotion-17"
-                          href="http://localhost:3000/feed.xml"
+                          href="https://blog.8ay.ac/feed.xml"
                           rel="noopener"
                           target="_blank"
                         >
