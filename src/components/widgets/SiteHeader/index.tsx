@@ -1,10 +1,13 @@
+import { config } from '@/site.config';
 import { BlogTitle } from '@/src/components/elements/BlogTitle';
 import { SocialLinkWithIcon } from '@/src/components/elements/SocialLinkWithIcon';
 import { BLOG_SUBTITLE, BLOG_TITLE } from '@/src/constants/site';
 import { mq } from '@/src/shared/styles/mediaQuery';
 import styled, { StyledComponent } from '@emotion/styled';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faRss } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
+import urljoin from 'url-join';
 
 const S: { [key: string]: StyledComponent<any> } = {
   Header: styled.header`
@@ -50,20 +53,35 @@ const S: { [key: string]: StyledComponent<any> } = {
 S.TitleWrapper = styled(S.InnerWrapperFlexContainerDiv)``;
 S.NavWrapper = styled(S.InnerWrapperFlexContainerDiv)``;
 
-export const SiteHeader: React.FC = () => (
-  <S.Header>
-    <S.HeaderInner>
-      <S.TitleWrapper>
-        <BlogTitle title={BLOG_TITLE} subtitle={BLOG_SUBTITLE} />
-      </S.TitleWrapper>
+export const SiteHeader: React.FC = () => {
+  const navs = [
+    { url: 'https://twitter.com/8ayac', description: '8ayac', icon: faTwitter },
+    {
+      url: urljoin(config.site.rootUrl, 'feed.xml'),
+      description: 'RSS',
+      icon: faRss,
+    },
+  ];
 
-      <S.NavWrapper>
-        <SocialLinkWithIcon
-          url="http://twitter.com/8ayac"
-          description="8ayac"
-          icon={faTwitter}
-        />
-      </S.NavWrapper>
-    </S.HeaderInner>
-  </S.Header>
-);
+  return (
+    <S.Header>
+      <S.HeaderInner>
+        <S.TitleWrapper>
+          <BlogTitle title={BLOG_TITLE} subtitle={BLOG_SUBTITLE} />
+        </S.TitleWrapper>
+
+        <S.NavWrapper>
+          {navs.map((v, i) => (
+            <SocialLinkWithIcon
+              /* eslint-disable-next-line react/no-array-index-key */
+              key={`navs-${i}`}
+              url={v.url}
+              description={v.description}
+              icon={v.icon}
+            />
+          ))}
+        </S.NavWrapper>
+      </S.HeaderInner>
+    </S.Header>
+  );
+};

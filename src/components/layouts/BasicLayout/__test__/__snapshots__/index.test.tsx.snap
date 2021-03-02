@@ -171,7 +171,7 @@ exports[`BasicLayout is rendered correctly to match the snapshot 1`] = `
   }
 }
 
-.emotion-20 {
+.emotion-26 {
   max-width: 1000px;
   padding: 3rem 10%;
   margin: 3rem auto;
@@ -181,12 +181,12 @@ exports[`BasicLayout is rendered correctly to match the snapshot 1`] = `
   border-radius: 5px;
 }
 
-.emotion-20 img {
+.emotion-26 img {
   max-width: 100%;
 }
 
 @media screen and (max-width: 576px) {
-  .emotion-20 {
+  .emotion-26 {
     padding: 3rem 7.5%;
     margin: 0;
     font-size: 1.4rem;
@@ -194,14 +194,14 @@ exports[`BasicLayout is rendered correctly to match the snapshot 1`] = `
   }
 }
 
-.emotion-22 {
+.emotion-28 {
   padding: 3rem 0;
   margin-top: 10rem;
   font-size: 1.5rem;
   text-align: center;
 }
 
-.emotion-28 {
+.emotion-34 {
   color: hsla(0, 0%, 40%);
 }
 
@@ -361,20 +361,21 @@ exports[`BasicLayout is rendered correctly to match the snapshot 1`] = `
                         "prefix": "fab",
                       }
                     }
-                    url="http://twitter.com/8ayac"
+                    key="navs-0"
+                    url="https://twitter.com/8ayac"
                   >
                     <ComponentWrapperDiv>
                       <div
                         className="emotion-14 emotion-15"
                       >
                         <SocialLinkAnchor
-                          href="http://twitter.com/8ayac"
+                          href="https://twitter.com/8ayac"
                           rel="noopener"
                           target="_blank"
                         >
                           <a
                             className="emotion-16 emotion-17"
-                            href="http://twitter.com/8ayac"
+                            href="https://twitter.com/8ayac"
                             rel="noopener"
                             target="_blank"
                           >
@@ -438,6 +439,99 @@ exports[`BasicLayout is rendered correctly to match the snapshot 1`] = `
                       </div>
                     </ComponentWrapperDiv>
                   </SocialLinkWithIcon>
+                  <SocialLinkWithIcon
+                    description="RSS"
+                    icon={
+                      Object {
+                        "icon": Array [
+                          448,
+                          512,
+                          Array [],
+                          "f09e",
+                          "M128.081 415.959c0 35.369-28.672 64.041-64.041 64.041S0 451.328 0 415.959s28.672-64.041 64.041-64.041 64.04 28.673 64.04 64.041zm175.66 47.25c-8.354-154.6-132.185-278.587-286.95-286.95C7.656 175.765 0 183.105 0 192.253v48.069c0 8.415 6.49 15.472 14.887 16.018 111.832 7.284 201.473 96.702 208.772 208.772.547 8.397 7.604 14.887 16.018 14.887h48.069c9.149.001 16.489-7.655 15.995-16.79zm144.249.288C439.596 229.677 251.465 40.445 16.503 32.01 7.473 31.686 0 38.981 0 48.016v48.068c0 8.625 6.835 15.645 15.453 15.999 191.179 7.839 344.627 161.316 352.465 352.465.353 8.618 7.373 15.453 15.999 15.453h48.068c9.034-.001 16.329-7.474 16.005-16.504z",
+                        ],
+                        "iconName": "rss",
+                        "prefix": "fas",
+                      }
+                    }
+                    key="navs-1"
+                    url="http://localhost:3000/feed.xml"
+                  >
+                    <ComponentWrapperDiv>
+                      <div
+                        className="emotion-14 emotion-15"
+                      >
+                        <SocialLinkAnchor
+                          href="http://localhost:3000/feed.xml"
+                          rel="noopener"
+                          target="_blank"
+                        >
+                          <a
+                            className="emotion-16 emotion-17"
+                            href="http://localhost:3000/feed.xml"
+                            rel="noopener"
+                            target="_blank"
+                          >
+                            <FontAwesomeIcon
+                              border={false}
+                              fixedWidth={false}
+                              flip={null}
+                              icon={
+                                Object {
+                                  "icon": Array [
+                                    448,
+                                    512,
+                                    Array [],
+                                    "f09e",
+                                    "M128.081 415.959c0 35.369-28.672 64.041-64.041 64.041S0 451.328 0 415.959s28.672-64.041 64.041-64.041 64.04 28.673 64.04 64.041zm175.66 47.25c-8.354-154.6-132.185-278.587-286.95-286.95C7.656 175.765 0 183.105 0 192.253v48.069c0 8.415 6.49 15.472 14.887 16.018 111.832 7.284 201.473 96.702 208.772 208.772.547 8.397 7.604 14.887 16.018 14.887h48.069c9.149.001 16.489-7.655 15.995-16.79zm144.249.288C439.596 229.677 251.465 40.445 16.503 32.01 7.473 31.686 0 38.981 0 48.016v48.068c0 8.625 6.835 15.645 15.453 15.999 191.179 7.839 344.627 161.316 352.465 352.465.353 8.618 7.373 15.453 15.999 15.453h48.068c9.034-.001 16.329-7.474 16.005-16.504z",
+                                  ],
+                                  "iconName": "rss",
+                                  "prefix": "fas",
+                                }
+                              }
+                              inverse={false}
+                              listItem={false}
+                              mask={null}
+                              pull={null}
+                              pulse={false}
+                              rotation={null}
+                              size={null}
+                              spin={false}
+                              swapOpacity={false}
+                              symbol={false}
+                              title=""
+                              transform={null}
+                            >
+                              <svg
+                                aria-hidden="true"
+                                className="svg-inline--fa fa-rss fa-w-14 "
+                                data-icon="rss"
+                                data-prefix="fas"
+                                focusable="false"
+                                role="img"
+                                style={Object {}}
+                                viewBox="0 0 448 512"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M128.081 415.959c0 35.369-28.672 64.041-64.041 64.041S0 451.328 0 415.959s28.672-64.041 64.041-64.041 64.04 28.673 64.04 64.041zm175.66 47.25c-8.354-154.6-132.185-278.587-286.95-286.95C7.656 175.765 0 183.105 0 192.253v48.069c0 8.415 6.49 15.472 14.887 16.018 111.832 7.284 201.473 96.702 208.772 208.772.547 8.397 7.604 14.887 16.018 14.887h48.069c9.149.001 16.489-7.655 15.995-16.79zm144.249.288C439.596 229.677 251.465 40.445 16.503 32.01 7.473 31.686 0 38.981 0 48.016v48.068c0 8.625 6.835 15.645 15.453 15.999 191.179 7.839 344.627 161.316 352.465 352.465.353 8.618 7.373 15.453 15.999 15.453h48.068c9.034-.001 16.329-7.474 16.005-16.504z"
+                                  fill="currentColor"
+                                  style={Object {}}
+                                />
+                              </svg>
+                            </FontAwesomeIcon>
+                            <LinkDescriptionSpan>
+                              <span
+                                className="emotion-18 emotion-19"
+                              >
+                                RSS
+                              </span>
+                            </LinkDescriptionSpan>
+                          </a>
+                        </SocialLinkAnchor>
+                      </div>
+                    </ComponentWrapperDiv>
+                  </SocialLinkWithIcon>
                 </div>
               </S-NavWrapper>
             </nav>
@@ -447,7 +541,7 @@ exports[`BasicLayout is rendered correctly to match the snapshot 1`] = `
     </SiteHeader>
     <ContentWrapperDiv>
       <div
-        className="emotion-20 emotion-21"
+        className="emotion-26 emotion-27"
       >
         <b>
           children
@@ -455,11 +549,11 @@ exports[`BasicLayout is rendered correctly to match the snapshot 1`] = `
         <SiteFooter>
           <Footer>
             <footer
-              className="emotion-22 emotion-23"
+              className="emotion-28 emotion-29"
             >
               <CopyRightParagraph>
                 <p
-                  className="emotion-24 emotion-25"
+                  className="emotion-30 emotion-31"
                 >
                   © 2021
                    
@@ -467,7 +561,7 @@ exports[`BasicLayout is rendered correctly to match the snapshot 1`] = `
                     href="https://github.com/8ayac/blog.8ay.ac"
                   >
                     <a
-                      className="emotion-26 emotion-27"
+                      className="emotion-32 emotion-33"
                       href="https://github.com/8ayac/blog.8ay.ac"
                     >
                       blog.8ay.ac
@@ -479,7 +573,7 @@ exports[`BasicLayout is rendered correctly to match the snapshot 1`] = `
               </CopyRightParagraph>
               <AboutGAParagraph>
                 <p
-                  className="emotion-28 emotion-29"
+                  className="emotion-34 emotion-35"
                 >
                   This website uses Google Analytics, a web analytics service by Google. Google Analytics uses cookies, which are placed on your computer to help the website analyze how you use the site. You can prevent the the collection of your data by disabling cookies in your browser.
                 </p>
