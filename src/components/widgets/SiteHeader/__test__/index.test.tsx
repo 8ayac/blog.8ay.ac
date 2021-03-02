@@ -95,6 +95,9 @@ describe('Header', () => {
         )
       );
       expect(wNavWrapper).toHaveStyleRule('opacity', '1');
+
+      expect(wNavWrapper).toHaveStyleRule('gap', '1rem');
+      expect(wNavWrapper).toHaveStyleRule('gap', '0', { media: mq('sm') });
     });
   });
 });

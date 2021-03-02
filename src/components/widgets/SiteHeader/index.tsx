@@ -51,7 +51,13 @@ const S: { [key: string]: StyledComponent<any> } = {
   `,
 };
 S.TitleWrapper = styled(S.InnerWrapperFlexContainerDiv)``;
-S.NavWrapper = styled(S.InnerWrapperFlexContainerDiv)``;
+S.NavWrapper = styled(S.InnerWrapperFlexContainerDiv)`
+  gap: 1rem;
+
+  ${mq('sm')} {
+    gap: 0;
+  }
+`;
 
 export const SiteHeader: React.FC = () => {
   const navs = [

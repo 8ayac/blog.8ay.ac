@@ -122,6 +122,13 @@ exports[`BasicLayout is rendered correctly to match the snapshot 1`] = `
           hsla(148, 72%, 15%)
       );
   opacity: 1;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 576px) {
+  .emotion-12 {
+    gap: 0;
+  }
 }
 
 .emotion-14 {
