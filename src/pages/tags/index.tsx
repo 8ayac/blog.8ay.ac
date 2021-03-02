@@ -13,6 +13,7 @@ import styled, { StyledComponent } from '@emotion/styled';
 import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
 import { NextSeo } from 'next-seo';
 import React from 'react';
+import urljoin from 'url-join';
 
 export const getStaticProps: GetStaticProps = async () => {
   return {
@@ -43,6 +44,10 @@ S.EachTagSection = styled(S.Section)``;
 const SEO: React.FC = () => (
   <NextSeo
     title={config.page.tags.name}
+    canonical={urljoin(
+      config.site.rootUrl,
+      config.page.tags.name.toLowerCase()
+    )}
     openGraph={{ title: `${config.page.tags.name} ‐ ${config.site.title}` }}
   />
 );

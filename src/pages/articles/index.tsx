@@ -6,6 +6,7 @@ import { Article } from '@/src/types';
 import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
 import { NextSeo } from 'next-seo';
 import React from 'react';
+import urljoin from 'url-join';
 
 export const getStaticProps: GetStaticProps = async () => {
   return {
@@ -18,6 +19,10 @@ export const getStaticProps: GetStaticProps = async () => {
 const SEO: React.FC = () => (
   <NextSeo
     title={config.page.articles.name}
+    canonical={urljoin(
+      config.site.rootUrl,
+      config.page.articles.name.toLowerCase()
+    )}
     openGraph={{
       title: `${config.page.articles.name} - ${config.site.title}`,
     }}

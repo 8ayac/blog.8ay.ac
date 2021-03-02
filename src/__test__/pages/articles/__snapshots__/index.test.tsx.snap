@@ -299,6 +299,7 @@ this is a test paragraph of test-article-id-1.
   >
     <SEO>
       <_default
+        canonical="http://localhost:3000/articles"
         openGraph={
           Object {
             "title": "Articles - もしくはこれ",

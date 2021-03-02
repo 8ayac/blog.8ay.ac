@@ -4,7 +4,7 @@ import { MarkdownRenderer } from '@/src/components/elements/MarkdownRenderer';
 import { ArticleHeader } from '@/src/components/widgets/ArticleHeader';
 import { ArticleShareButtons } from '@/src/components/widgets/ArticleShareButtons';
 import jsonArticles from '@/src/shared/.content/articles.json';
-import { getLastModifiedDate } from '@/src/shared/utils';
+import { getArticlePagePath, getLastModifiedDate } from '@/src/shared/utils';
 import { Article } from '@/src/types';
 import styled from '@emotion/styled';
 import moment from 'moment';
@@ -16,6 +16,7 @@ import {
 } from 'next';
 import { NextSeo } from 'next-seo';
 import React from 'react';
+import urljoin from 'url-join';
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = (jsonArticles as Article[]).map((article) => {
@@ -62,6 +63,7 @@ const S = {
 const SEO: React.FC<{ article: Article }> = ({ article }) => (
   <NextSeo
     title={article.attributes.title}
+    canonical={urljoin(config.site.rootUrl, getArticlePagePath(article))}
     openGraph={{
       title: `${article.attributes.title} - ${config.site.title}`,
       type: 'article',

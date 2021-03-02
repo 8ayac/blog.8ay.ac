@@ -11,6 +11,7 @@ import {
 } from 'next';
 import { NextSeo } from 'next-seo';
 import React from 'react';
+import urljoin from 'url-join';
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const tagsList = (jsonArticles as Article[]).map((article) => {
@@ -47,6 +48,11 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 const SEO: React.FC<{ tagName: string }> = ({ tagName }) => (
   <NextSeo
     title={`#${tagName}`}
+    canonical={urljoin(
+      config.site.rootUrl,
+      config.page.tags.name.toLowerCase(),
+      tagName
+    )}
     openGraph={{ title: `#${tagName} - ${config.site.title}` }}
     twitter={{ cardType: 'summary' }}
   />
