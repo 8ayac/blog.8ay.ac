@@ -1,5 +1,8 @@
 import { theme } from '@/src/constants/theme';
 import { css } from '@emotion/react';
+import { config, dom } from '@fortawesome/fontawesome-svg-core';
+
+config.autoAddCss = false;
 
 const gHtmlStyle = css`
   html {
@@ -134,4 +137,5 @@ export const globalStyle = css`
   ${gAnchorStyle}
   ${gParagraphStyle}
   ${gTableStyle}
+  ${dom.css()}
 `;
