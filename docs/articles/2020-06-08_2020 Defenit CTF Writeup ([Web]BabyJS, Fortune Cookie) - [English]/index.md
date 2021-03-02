@@ -97,7 +97,7 @@ See the source code for details.
   - Render the view specified by the GET parameter `p`
 - `POST /`: Post some text
   - A file is created on the server whose content is the value of the POST parameter `content`.
-    -After posting, if there is no problem (described later), you will be automatically redirected to `/?p={posted file path}`.
+    - After posting, if there is no problem (described later), you will be automatically redirected to `/?p={posted file path}`.
   - Create a file on the server whose content is the value of the POST parameter `content`.
   - After posting, if there is no problem (details will be described later), you will be automatically redirected to `/?p={posted file path}`.
 
