@@ -17,7 +17,7 @@ exports[`ArticleRevisionRecordList is rendered correctly to match the snapshot w
         },
         "bodyHeader": Object {
           "titleAnchor": Object {
-            "shadow": "hsla(148, 72%, 75%)",
+            "shadow": "hsla(148, 72%, 85%)",
           },
         },
         "categoryTag": Object {
@@ -124,7 +124,7 @@ exports[`ArticleRevisionRecordList is rendered correctly to match the snapshot w
         },
         "bodyHeader": Object {
           "titleAnchor": Object {
-            "shadow": "hsla(148, 72%, 75%)",
+            "shadow": "hsla(148, 72%, 85%)",
           },
         },
         "categoryTag": Object {
