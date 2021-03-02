@@ -187,7 +187,7 @@ exports[`Header is rendered correctly to match the snapshot 1`] = `
         },
         "bodyHeader": Object {
           "titleAnchor": Object {
-            "shadow": "hsla(148, 72%, 75%)",
+            "shadow": "hsla(148, 72%, 85%)",
           },
         },
         "categoryTag": Object {

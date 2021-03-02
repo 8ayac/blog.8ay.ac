@@ -40,7 +40,7 @@ const elementsTheme = {
 
     bodyHeader: {
       titleAnchor: {
-        shadow: colors.green.light2,
+        shadow: colors.green.light3,
       },
     },
 
