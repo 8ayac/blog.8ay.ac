@@ -27,6 +27,11 @@ class MyDocument extends Document {
           type="image/png"
           href={urljoin(config.site.rootUrl, 'img', 'favicon.png')}
         />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap"
+          rel="stylesheet"
+        />
         <meta name="theme-color" content={theme.color.global.body.bg} />
       </Head>
 
