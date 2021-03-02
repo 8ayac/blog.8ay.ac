@@ -62,7 +62,7 @@ exports[`MarkdownRenderer is rendered correctly to match the snapshot 1`] = `
   padding: 0 1em;
   margin: 0 2.5%;
   color: hsla(0, 0%, 40%);
-  border-left: 0.25em solid hsla(212, 72%, 85%);
+  border-left: 0.25em solid hsla(212, 72%, 95%);
 }
 
 .emotion-0 blockquote:first-of-type {
@@ -100,7 +100,7 @@ exports[`MarkdownRenderer is rendered correctly to match the snapshot 1`] = `
         },
         "blogTitle": Object {
           "logoWrapperAnchor": Object {
-            "textOnHover": "hsla(148, 72%, 75%)",
+            "textOnHover": "hsla(60, 72%, 65%)",
           },
         },
         "bodyHeader": Object {
@@ -139,14 +139,14 @@ exports[`MarkdownRenderer is rendered correctly to match the snapshot 1`] = `
           },
           "table": Object {
             "tr": Object {
-              "bg2n": "hsla(148, 72%, 85%)",
+              "bg2n": "hsla(148, 72%, 95%)",
             },
           },
         },
         "markdownRenderer": Object {
           "convertedMdBody": Object {
             "blockquote": Object {
-              "border": "hsla(212, 72%, 85%)",
+              "border": "hsla(212, 72%, 95%)",
             },
           },
         },

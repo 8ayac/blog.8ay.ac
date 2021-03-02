@@ -80,7 +80,7 @@ exports[`BasicLayout is rendered correctly to match the snapshot 1`] = `
 }
 
 .emotion-6:hover {
-  color: hsla(148, 72%, 75%);
+  color: hsla(60, 72%, 65%);
 }
 
 .emotion-8 {
@@ -216,7 +216,7 @@ exports[`BasicLayout is rendered correctly to match the snapshot 1`] = `
         },
         "blogTitle": Object {
           "logoWrapperAnchor": Object {
-            "textOnHover": "hsla(148, 72%, 75%)",
+            "textOnHover": "hsla(60, 72%, 65%)",
           },
         },
         "bodyHeader": Object {
@@ -255,14 +255,14 @@ exports[`BasicLayout is rendered correctly to match the snapshot 1`] = `
           },
           "table": Object {
             "tr": Object {
-              "bg2n": "hsla(148, 72%, 85%)",
+              "bg2n": "hsla(148, 72%, 95%)",
             },
           },
         },
         "markdownRenderer": Object {
           "convertedMdBody": Object {
             "blockquote": Object {
-              "border": "hsla(212, 72%, 85%)",
+              "border": "hsla(212, 72%, 95%)",
             },
           },
         },
