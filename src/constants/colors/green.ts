@@ -3,6 +3,7 @@ export const green = {
   light: 'hsla(148, 72%, 65%)',
   light2: 'hsla(148, 72%, 75%)',
   light3: 'hsla(148, 72%, 85%)',
+  light4: 'hsla(148, 72%, 95%)',
   dark: 'hsla(148, 72%, 45%)',
   dark2: 'hsla(148, 72%, 35%)',
   dark3: 'hsla(148, 72%, 25%)',
