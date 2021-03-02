@@ -17,7 +17,7 @@ exports[`BlogTitle is rendered correctly to match the snapshot default 1`] = `
 }
 
 .emotion-0:hover {
-  color: hsla(148, 72%, 75%);
+  color: hsla(60, 72%, 65%);
 }
 
 .emotion-2 {
@@ -52,7 +52,7 @@ exports[`BlogTitle is rendered correctly to match the snapshot default 1`] = `
         },
         "blogTitle": Object {
           "logoWrapperAnchor": Object {
-            "textOnHover": "hsla(148, 72%, 75%)",
+            "textOnHover": "hsla(60, 72%, 65%)",
           },
         },
         "bodyHeader": Object {
@@ -91,14 +91,14 @@ exports[`BlogTitle is rendered correctly to match the snapshot default 1`] = `
           },
           "table": Object {
             "tr": Object {
-              "bg2n": "hsla(148, 72%, 85%)",
+              "bg2n": "hsla(148, 72%, 95%)",
             },
           },
         },
         "markdownRenderer": Object {
           "convertedMdBody": Object {
             "blockquote": Object {
-              "border": "hsla(212, 72%, 85%)",
+              "border": "hsla(212, 72%, 95%)",
             },
           },
         },
@@ -198,7 +198,7 @@ exports[`BlogTitle is rendered correctly to match the snapshot when set linkToTo
         },
         "blogTitle": Object {
           "logoWrapperAnchor": Object {
-            "textOnHover": "hsla(148, 72%, 75%)",
+            "textOnHover": "hsla(60, 72%, 65%)",
           },
         },
         "bodyHeader": Object {
@@ -237,14 +237,14 @@ exports[`BlogTitle is rendered correctly to match the snapshot when set linkToTo
           },
           "table": Object {
             "tr": Object {
-              "bg2n": "hsla(148, 72%, 85%)",
+              "bg2n": "hsla(148, 72%, 95%)",
             },
           },
         },
         "markdownRenderer": Object {
           "convertedMdBody": Object {
             "blockquote": Object {
-              "border": "hsla(212, 72%, 85%)",
+              "border": "hsla(212, 72%, 95%)",
             },
           },
         },

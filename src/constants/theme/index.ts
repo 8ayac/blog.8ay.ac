@@ -8,7 +8,7 @@ const globalStyleTheme = {
 
     table: {
       tr: {
-        bg2n: colors.green.light3,
+        bg2n: colors.green.light4,
       },
     },
   },
@@ -34,7 +34,7 @@ const elementsTheme = {
   color: {
     blogTitle: {
       logoWrapperAnchor: {
-        textOnHover: colors.green.light2,
+        textOnHover: colors.yellow.light,
       },
     },
 
@@ -62,7 +62,7 @@ const elementsTheme = {
     },
 
     markdownRenderer: {
-      convertedMdBody: { blockquote: { border: colors.blue.light3 } },
+      convertedMdBody: { blockquote: { border: colors.blue.light4 } },
     },
 
     socialLinkWithIcon: {

@@ -33,7 +33,7 @@ exports[`DateTime is rendered correctly to match the snapshot in case with descr
         },
         "blogTitle": Object {
           "logoWrapperAnchor": Object {
-            "textOnHover": "hsla(148, 72%, 75%)",
+            "textOnHover": "hsla(60, 72%, 65%)",
           },
         },
         "bodyHeader": Object {
@@ -72,14 +72,14 @@ exports[`DateTime is rendered correctly to match the snapshot in case with descr
           },
           "table": Object {
             "tr": Object {
-              "bg2n": "hsla(148, 72%, 85%)",
+              "bg2n": "hsla(148, 72%, 95%)",
             },
           },
         },
         "markdownRenderer": Object {
           "convertedMdBody": Object {
             "blockquote": Object {
-              "border": "hsla(212, 72%, 85%)",
+              "border": "hsla(212, 72%, 95%)",
             },
           },
         },
@@ -165,7 +165,7 @@ exports[`DateTime is rendered correctly to match the snapshot in case without de
         },
         "blogTitle": Object {
           "logoWrapperAnchor": Object {
-            "textOnHover": "hsla(148, 72%, 75%)",
+            "textOnHover": "hsla(60, 72%, 65%)",
           },
         },
         "bodyHeader": Object {
@@ -204,14 +204,14 @@ exports[`DateTime is rendered correctly to match the snapshot in case without de
           },
           "table": Object {
             "tr": Object {
-              "bg2n": "hsla(148, 72%, 85%)",
+              "bg2n": "hsla(148, 72%, 95%)",
             },
           },
         },
         "markdownRenderer": Object {
           "convertedMdBody": Object {
             "blockquote": Object {
-              "border": "hsla(212, 72%, 85%)",
+              "border": "hsla(212, 72%, 95%)",
             },
           },
         },

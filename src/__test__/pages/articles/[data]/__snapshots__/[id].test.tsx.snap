@@ -224,7 +224,7 @@ exports[`ArticlePage is rendered correctly to match the snapshot with revision h
   padding: 0 1em;
   margin: 0 2.5%;
   color: hsla(0, 0%, 40%);
-  border-left: 0.25em solid hsla(212, 72%, 85%);
+  border-left: 0.25em solid hsla(212, 72%, 95%);
 }
 
 .emotion-58 blockquote:first-of-type {
@@ -291,7 +291,7 @@ exports[`ArticlePage is rendered correctly to match the snapshot with revision h
         },
         "blogTitle": Object {
           "logoWrapperAnchor": Object {
-            "textOnHover": "hsla(148, 72%, 75%)",
+            "textOnHover": "hsla(60, 72%, 65%)",
           },
         },
         "bodyHeader": Object {
@@ -330,14 +330,14 @@ exports[`ArticlePage is rendered correctly to match the snapshot with revision h
           },
           "table": Object {
             "tr": Object {
-              "bg2n": "hsla(148, 72%, 85%)",
+              "bg2n": "hsla(148, 72%, 95%)",
             },
           },
         },
         "markdownRenderer": Object {
           "convertedMdBody": Object {
             "blockquote": Object {
-              "border": "hsla(212, 72%, 85%)",
+              "border": "hsla(212, 72%, 95%)",
             },
           },
         },
@@ -1892,7 +1892,7 @@ exports[`ArticlePage is rendered correctly to match the snapshot without revisio
   padding: 0 1em;
   margin: 0 2.5%;
   color: hsla(0, 0%, 40%);
-  border-left: 0.25em solid hsla(212, 72%, 85%);
+  border-left: 0.25em solid hsla(212, 72%, 95%);
 }
 
 .emotion-34 blockquote:first-of-type {
@@ -1959,7 +1959,7 @@ exports[`ArticlePage is rendered correctly to match the snapshot without revisio
         },
         "blogTitle": Object {
           "logoWrapperAnchor": Object {
-            "textOnHover": "hsla(148, 72%, 75%)",
+            "textOnHover": "hsla(60, 72%, 65%)",
           },
         },
         "bodyHeader": Object {
@@ -1998,14 +1998,14 @@ exports[`ArticlePage is rendered correctly to match the snapshot without revisio
           },
           "table": Object {
             "tr": Object {
-              "bg2n": "hsla(148, 72%, 85%)",
+              "bg2n": "hsla(148, 72%, 95%)",
             },
           },
         },
         "markdownRenderer": Object {
           "convertedMdBody": Object {
             "blockquote": Object {
-              "border": "hsla(212, 72%, 85%)",
+              "border": "hsla(212, 72%, 95%)",
             },
           },
         },
