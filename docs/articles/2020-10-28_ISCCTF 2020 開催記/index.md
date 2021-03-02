@@ -24,9 +24,7 @@ ISCCTF 2020の概要は以下の通りです。
   - 獲得スコア1点以上のユーザ数: 84
 - 想定参加者レベル: CTF入門者～初心者
 - 運営: [IPFactory](https://twitter.com/_ipfactory_)
-- 問題アーカイブと公式Writeup:
-
-<https://github.com/IPFactory/ISCCTF2020>
+- 問題アーカイブと公式Writeup: <https://github.com/IPFactory/ISCCTF2020>
 
 ### 開催の経緯
 
