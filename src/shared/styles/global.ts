@@ -12,9 +12,7 @@ const gBodyStyle = css`
   body {
     margin: 0;
     background-color: ${theme.color.global.body.bg};
-    font-family: -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI',
-      'Helvetica Neue', HelveticaNeue, lYuGothic, 'Yu Gothic Medium',
-      'Yu Gothic', Verdana, Meiryo, sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     color: ${theme.color.common.text.primary};
   }
 `;
