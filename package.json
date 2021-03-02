@@ -12,6 +12,7 @@
     "dev": "next dev",
     "start": "next start",
     "export": "next export",
+    "deploy:netlify": "run-s build export",
     "lint": "run-s lint:ts lint:css",
     "lint:fix": "run-s lint:ts:fix lint:css:fix",
     "lint:ts": "eslint src/ builder/ --ext .ts,.tsx",
