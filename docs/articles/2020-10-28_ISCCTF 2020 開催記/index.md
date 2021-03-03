@@ -153,7 +153,7 @@ ISCCTF 2020ではPPC問題を0点のおまけ問題として出題しました�
 この結果を見て、「それなりに好評価なのでは?」と嬉しくなりました。
 一方で、次回以降の開催における問題の質に対するハードルは上がったように感じており、身が引き締まる思いです。
 
-![問題の評判(数字が大きいほど高評価)](img/organized-iscctf-2020/survey_result_quality_of_challenges.png?w=680&h=312)
+![問題の評判(数字が大きいほど高評価)](img/organized-iscctf-2020/survey_result_quality_of_challenges.png)
 
 また、「問題に関する意見があれば教えてください。」という質問に対し、下記の回答をいただくことができました。
 これは、「自明問ばかりの虚無CTF」という経験者の方の評価が何件来るかドキドキしていた筆者にとって、飛び上がるほど嬉しいコメントでした。
@@ -212,7 +212,7 @@ Nginxだけは、dockerコンテナとして起動せず、Ubuntuに予めイン
 下図は、スコアサーバに対する最終的な負荷試験の結果です。
 単純なトップページへのGETリクエストであれば、400rps程度の処理能力があることを示しています。
 
-![赤枠でrps(requests per second)の部分が囲われた負荷試験の実行結果画面](img/organized-iscctf-2020/jmeter_result.png?w=1124&h=83)
+![赤枠でrps(requests per second)の部分が囲われた負荷試験の実行結果画面](img/organized-iscctf-2020/jmeter_result.png)
 
 ### 監視について
 
@@ -221,12 +221,12 @@ Nginxだけは、dockerコンテナとして起動せず、Ubuntuに予めイン
 サーバへのアクセスや負荷の監視は全て、GCPのMonitoringの機能を用いて行いました。
 具体的には、ダッシュボードに下記のようにグラフを追加して、このダッシュボードを監視していました。
 
-![GCPのMonitoring機能を利用して作成したダッシュボード](img/organized-iscctf-2020/monitoring.png?w=1920&h=1079)
+![GCPのMonitoring機能を利用して作成したダッシュボード](img/organized-iscctf-2020/monitoring.png)
 
 DoSまがいの異常なアクセスの検知方法については、[TSGCTFさんの開催記](https://hakatashi.hatenadiary.com/entry/2019/08/09/200000#:~:text=%E3%82%B0%E3%83%A9%E3%83%95%E3%81%AE1%E6%9C%AC%E3%81%AE%E7%B7%9A%E3%81%8C,%E4%BB%A5%E4%B8%8B%E3%81%AE%E3%82%88%E3%81%86%E3%81%AB%E8%B7%B3%E3%81%AD%E4%B8%8A%E3%81%8C%E3%82%8A%E3%81%BE%E3%81%99%E3%80%82)で勉強して、ISCCTF 2020も同様の方法で、DoSまがいの異常なアクセスを検知できるようにしていました。
 実際の運用中、下図のように異常アクセスを検知できたのは、面白かったです。
 
-![DoSまがいの異常リクエストが来ている箇所で明らかにグラフの線が飛び出ている様子](img/organized-iscctf-2020/monitoring-dos_edited.png?w=1920&h=1080)
+![DoSまがいの異常リクエストが来ている箇所で明らかにグラフの線が飛び出ている様子](img/organized-iscctf-2020/monitoring-dos_edited.png)
 
 画像を見るとバレてしまうのですが、この異常アクセスは、ほぼ一時間続いていました。
 これは、BANの体制が整っていなかったわけではなく、単に監視を担当していた筆者が他のことをしており、見逃していました。
@@ -242,7 +242,7 @@ DoSまがいの異常なアクセスの検知方法については、[TSGCTFさ�
 
 SolvabilityInspectorのおおまかな構造は、下記の図の通りです。
 
-![SolvabilityInspectorのクラス図](img/organized-iscctf-2020/inspectors_UML.png?w=5316&h=883)
+![SolvabilityInspectorのクラス図](img/organized-iscctf-2020/inspectors_UML.png)
 
 ログ出力や、後述するDiscordへのメッセージ送信機能は、ベースのInspector(`inspectors.base.ChallengeInspector`)で共通化しています。
 この恩恵の一つして、ある問題を定期実行される死活監視の対象に組み込みたい場合にも、単にその問題のsolverを`<問題名>Inspector`クラスの`solve(self)`メソッドとして定義すれば、容易に組み込めるようになっています。
@@ -252,14 +252,14 @@ SolvabilityInspectorのおおまかな構造は、下記の図の通りです。
 この機能は、本番前日に[InterKosenCTFさんの開催記](https://furutsuki.hatenablog.com/entry/2020/09/06/230446)を読み返していた際に思い出し、急いで追加実装しました。
 下図は、実際の競技中にDiscordで公開されていたログの様子です。
 
-![問題のSolvabilityをテストした際のログ](img/organized-iscctf-2020/solvability_log.png?w=428&h=548)
+![問題のSolvabilityをテストした際のログ](img/organized-iscctf-2020/solvability_log.png)
 
 また、`.env`において、DiscordのロールIDを指定すれば、問題が正常に解けない状態だったときに、そのロールに対しメンションが飛びます。
 さらに、問題が正常に解けない場合の通知には、そもそも環境への接続できないのか、それとも、何らかの原因で問題が正常に解けない状態なのか、を切り分けやすいような情報が付与されます。
 なお、競技中には、問題が解けない状態になることが一度もなく、残念ながら、この機能が活躍することはありませんでした。
 下図は、試験的に動かしていた際の様子です。
 
-![問題が落ちた場合のログの例](img/organized-iscctf-2020/test_solvability_inspector.png?w=544&h=75)
+![問題が落ちた場合のログの例](img/organized-iscctf-2020/test_solvability_inspector.png)
 
 ちなみに、一問だけ[嘘Solver](https://github.com/IPFactory/ISCCTF2020_SolvabilityInspector/blob/main/inspectors/misc/shell_aint_Bad_Place_to_be.py)で死活確認を行っていた問題があります。
 [この問題](https://github.com/IPFactory/ISCCTF2020/tree/main/misc/shell_aint_bad_place_to_be)は、解く過程で問題サーバにファイルを作成する必要があり、作成したファイルを削除できない制約がありました。
@@ -276,8 +276,8 @@ CTF運営に関する作業(特に作問作業)は、運営チーム全体で進
 作問・レビュー作業は、GitHubを用いて進めていました。
 下図は、実際にGitHub上で行っていたレビューの様子を抜粋したものです。
 
-![GitHub上での問題レビューの様子1](img/organized-iscctf-2020/iter_fold_pull_request_01.png?w=834&h=966)
-![GitHub上での問題レビューの様子2](img/organized-iscctf-2020/iter_fold_pull_request_02.png?w=868&h=915)
+![GitHub上での問題レビューの様子1](img/organized-iscctf-2020/iter_fold_pull_request_01.png)
+![GitHub上での問題レビューの様子2](img/organized-iscctf-2020/iter_fold_pull_request_02.png)
 
 GitHubを使うことで、下記のように、通常のチーム開発のような感じで作問作業を進められました。
 
@@ -304,7 +304,7 @@ HackMDの共有機能やGistのSecret Gistなどを用いる話もありまし�
 これにより、下図のように、一目で各問題の状況が把握できるようになっていました。
 (ポートの管理については、今回は問題ごとにサーバを分けたので、結果的には不要でした。)
 
-![作問状況を共有するスプレッドシート](img/organized-iscctf-2020/spreadsheet.png?w=1512&h=652)
+![作問状況を共有するスプレッドシート](img/organized-iscctf-2020/spreadsheet.png)
 
 画像を見ていただければ、なんとなくどんな感じで使うのかはわかるかと思いますので、詳細な説明は省き、特に工夫している点を紹介します。
 
@@ -315,7 +315,7 @@ HackMDの共有機能やGistのSecret Gistなどを用いる話もありまし�
 「データの入力規則」の機能を用いると、誤った形式のflagを入力しないように、下図のように警告が出したり、誤った形式の文字列の入力を拒否するような設定ができます。
 これは、人間のミスを防ぐ上で、良い仕組みだったと思います。
 
-![入力規則機能で警告が出ている様子](img/organized-iscctf-2020/spreadsheet_validates_flag_format.png?w=400&h=155)
+![入力規則機能で警告が出ている様子](img/organized-iscctf-2020/spreadsheet_validates_flag_format.png)
 
 これは反省点ですが、スプレッドシートへの情報の登録は、何らかの方法で自動化しておくべきだったと思います。
 というのも、ステータス更新を忘れている人も多く、スレッドシートと実際の進捗状況が同期していないことがよくあったためです。
@@ -327,7 +327,7 @@ HackMDの共有機能やGistのSecret Gistなどを用いる話もありまし�
 
 これは完全に[InterKosenCTF 2020](https://furutsuki.hatenablog.com/entry/2020/09/06/230446#:~:text=Discord%E3%81%AEctf-log%E3%81%A8%E3%81%84%E3%81%86%E3%83%81%E3%83%A3%E3%83%B3%E3%83%8D%E3%83%AB%E3%81%A7%E3%81%AF,%E9%87%91%E3%83%BB%E9%8A%80%E3%83%BB%E9%8A%85%E3%83%A1%E3%83%80%E3%83%AB%E3%81%AE%E7%B5%B5%E6%96%87%E5%AD%97%E3%82%92%E3%81%A4%E3%81%91%E3%81%9F%E3%82%8A%E3%81%97%E3%81%A6%E3%81%84%E3%81%BE%E3%81%97%E3%81%9F%E3%80%82)を真似させてもらったのですが、下図のように、Discord上で、誰がどの問題を解いたか、を流していました。
 
-![問題の正答をDiscord上のbotが祝っている様子](img/organized-iscctf-2020/congratz-log.png?w=715&h=757)
+![問題の正答をDiscord上のbotが祝っている様子](img/organized-iscctf-2020/congratz-log.png)
 
 なお、この機能は、CTFdのソースコードに下記のように手を加え、実現しました。
 
