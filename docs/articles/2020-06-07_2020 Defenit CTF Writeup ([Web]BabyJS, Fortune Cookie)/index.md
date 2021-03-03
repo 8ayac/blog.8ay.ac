@@ -11,7 +11,7 @@ tags: [CTF, Writeup, Web Security, Express, MongoDB, Handlebars, Python, JavaScr
 
 ちなみに結果は、合計得点1053ptsで、964チーム中55位でした。
 
-![IPFactoryの結果](img/writeup-of-2020-defenit-ctf-english-ver/IPFactory_result.png?w=229&h=43)
+![IPFactoryの結果](img/writeup-of-2020-defenit-ctf-english-ver/IPFactory_result.png)
 
 The English version is [here](http://caya8.hatenablog.com/entry/2020/06/08/115610)
 
@@ -149,7 +149,7 @@ app.use((req, res, next) => {
 
 実際に投稿してみると、以下のようにFlagが表示されました。
 
-![問題のFlagが表示された画面](img/writeup-of-2020-defenit-ctf-english-ver/babyjs_got_the_flag.png?w=543&h=172)
+![問題のFlagが表示された画面](img/writeup-of-2020-defenit-ctf-english-ver/babyjs_got_the_flag.png)
 
 #### 説明
 

@@ -54,7 +54,7 @@ sudo apt -y install openvas9
 
 インストール中に、下の画像のような画面が出てきた場合は、「Yes」と答える。
 
-![インストール中の画面](img/try-openvas-in-ubuntu16_04/installing.png?w=721&h=407)  
+![インストール中の画面](img/try-openvas-in-ubuntu16_04/installing.png)  
 
 次に、脆弱性のテスト時に使用するデータを更新する。  
 この処理は、30分～1時間ほど時間がかかる。
@@ -95,28 +95,28 @@ sudo openvasmd --rebuild --progress
 その場合、次の手順で進む。  
 (出てこない場合は、次の手順は飛ばして良い。)  
 
-!['Your connection is not secure'と表示されている](img/try-openvas-in-ubuntu16_04/access_the_web_ui_01.png?w=1024&h=640)
+!['Your connection is not secure'と表示されている](img/try-openvas-in-ubuntu16_04/access_the_web_ui_01.png)
 
 ①「Advanced」の箇所をクリック  
 
-!['Your connection is not secure'と表示されている](img/try-openvas-in-ubuntu16_04/access_the_web_ui_02.png?w=1024&h=640)
+!['Your connection is not secure'と表示されている](img/try-openvas-in-ubuntu16_04/access_the_web_ui_02.png)
 
 ②「Add Exception...」の箇所をクリック  
 
-!['Your connection is not secure'と表示されている](img/try-openvas-in-ubuntu16_04/access_the_web_ui_03.png?w=1024&h=640)
+!['Your connection is not secure'と表示されている](img/try-openvas-in-ubuntu16_04/access_the_web_ui_03.png)
 
 ③「Confirm Security Option」の箇所をクリック
 
-![Add Security Exceptionのダイアログが出現している](img/try-openvas-in-ubuntu16_04/access_the_web_ui_04.png?w=1024&h=640)
+![Add Security Exceptionのダイアログが出現している](img/try-openvas-in-ubuntu16_04/access_the_web_ui_04.png)
 
 すると、ログイン画面が出てくるので、デフォルトのIDとパスワードでログインする。  
 デフォルトのIDとパスワードは、それぞれ`admin`。[^2]
 
-![ログインページ](img/try-openvas-in-ubuntu16_04/login_page.png?w=1024&h=640)  
+![ログインページ](img/try-openvas-in-ubuntu16_04/login_page.png)  
 
 ログインすると、このような画面になる。
 
-![トップページ](img/try-openvas-in-ubuntu16_04/toppage.png?w=1024&h=640)
+![トップページ](img/try-openvas-in-ubuntu16_04/toppage.png)
 
 ### 3.脆弱性スキャンを実行する
 
@@ -130,29 +130,29 @@ WebUIにアクセスすることができ、ログインが済んだら、実際
 
 ①上のメニューから`Scans`を選び、その中の`Tasks`をクリックする。
 
-![Scans > Tasks](img/try-openvas-in-ubuntu16_04/execute_scanning_step_01.png?w=1024&h=640)
+![Scans > Tasks](img/try-openvas-in-ubuntu16_04/execute_scanning_step_01.png)
 
 ②以下のような画面が出てきたら、10秒間待つか、ダイアログの[x]を押して閉じてしまう。  
 出てこなければ、この手順は飛ばす。  
 
-![Scans > Tasks](img/try-openvas-in-ubuntu16_04/execute_scanning_step_02.png?w=1024&h=640)
+![Scans > Tasks](img/try-openvas-in-ubuntu16_04/execute_scanning_step_02.png)
 
 ③左上の方の紫色のボタンを押し、`Task Wizard`をクリックする。[^3]  
 紫のボタンの位置はは少しわかりづらいので、画像を参考にすると良い。  
 
-![Scans > Tasks](img/try-openvas-in-ubuntu16_04/execute_scanning_step_03_01.png?w=1024&h=640)
+![Scans > Tasks](img/try-openvas-in-ubuntu16_04/execute_scanning_step_03_01.png)
 
-![Task Wizardボタン](img/try-openvas-in-ubuntu16_04/execute_scanning_step_03_02.png?w=519&h=400)
+![Task Wizardボタン](img/try-openvas-in-ubuntu16_04/execute_scanning_step_03_02.png)
 
 ⑤すると、下の画像のような画面が出てくるので、`IP address or hostname`のフォームに`localhost`または`127.0.0.1`と入力する。  
 入力したら、`Start Scan`をクリックすることで脆弱性スキャンが実行される。  
 
-![対象ホストを設定するためのダイアログ](img/try-openvas-in-ubuntu16_04/execute_scanning_step_05.png?w=1024&h=640)
+![対象ホストを設定するためのダイアログ](img/try-openvas-in-ubuntu16_04/execute_scanning_step_05.png)
 
 ⑥下の画像のような画面になるので、`Status`の欄が`Done`になるまで待つ。  
 `Done`になったらスキャン終了。  
 
-![StatusがRequestedになっている様子](img/try-openvas-in-ubuntu16_04/execute_scanning_step_06.png?w=1024&h=640)
+![StatusがRequestedになっている様子](img/try-openvas-in-ubuntu16_04/execute_scanning_step_06.png)
 
 ## 4.スキャン結果を確認する
 
@@ -161,26 +161,26 @@ WebUIにアクセスすることができ、ログインが済んだら、実際
 
 ①上のメニューから`Scans`を選び、その中の`Reports`をクリックする。  
 
-![Scans > Tasks](img/try-openvas-in-ubuntu16_04/check_the_result_step_01.png?w=1024&h=640)
+![Scans > Tasks](img/try-openvas-in-ubuntu16_04/check_the_result_step_01.png)
 
 ②下の画像のような画面になるので先ほどスキャンした日付のものを選択する。  
 
-![Scans > Reports](img/try-openvas-in-ubuntu16_04/check_the_result_step_02.png?w=1024&h=640)
+![Scans > Reports](img/try-openvas-in-ubuntu16_04/check_the_result_step_02.png)
 
 以上の手順で、下の画像のようにスキャンの結果のレポートが閲覧できる。
 
-![Scans > Reports > Results](img/try-openvas-in-ubuntu16_04/result_page.png?w=1024&h=640)
+![Scans > Reports > Results](img/try-openvas-in-ubuntu16_04/result_page.png)
 
 また、スキャン結果は分類されており、その各項目別の閲覧ができる。  
 
 レーダーのようなマークの横にある小さな▼にカーソルを合わせると、分類されたスキャン結果の各項目が選択できる。  
 例によって、少しわかりづらいので図示する。
 
-![▼の場所を図示した画像](img/try-openvas-in-ubuntu16_04/sort_the_results_01.png?w=1024&h=640)
+![▼の場所を図示した画像](img/try-openvas-in-ubuntu16_04/sort_the_results_01.png)
 
 各項目を選択することで、その項目のスキャン結果が閲覧できる。
 
-![スキャン結果の項目](img/try-openvas-in-ubuntu16_04/sort_the_results_02.png?w=627&h=600)
+![スキャン結果の項目](img/try-openvas-in-ubuntu16_04/sort_the_results_02.png)
 
 ## 5.スキャン結果をエクスポートする
 
@@ -191,19 +191,19 @@ WebUIにアクセスすることができ、ログインが済んだら、実際
 
 ①まずは、レーダーのようなマークの横にある小さな▼にカーソルを合わせ、`Report: Summary and Download`を選択する。
 
-![ドロップダウンメニューが出てきている画面](img/try-openvas-in-ubuntu16_04/export_the_result_step_01.png?w=953&h=715)
+![ドロップダウンメニューが出てきている画面](img/try-openvas-in-ubuntu16_04/export_the_result_step_01.png)
 
 ②次に`Full report`の行にあるプルダウン形式のメニューでエクスポートしたいファイル形式を選択する。  
 
-![ファイル形式がドロップメニューで表示されている様子](img/try-openvas-in-ubuntu16_04/export_the_result_step_02.png?w=1024&h=640)
+![ファイル形式がドロップメニューで表示されている様子](img/try-openvas-in-ubuntu16_04/export_the_result_step_02.png)
 
 ③そして、プルダウン式のメニューの横にある緑色の[↓]ボタンをクリックする。これにより、指定したファイル形式でスキャン結果がエクスポートされる。  
 
-![画面上の緑色の矢印のボタンが矢印で指されている](img/try-openvas-in-ubuntu16_04/export_the_result_step_03.png?w=569&h=426)
+![画面上の緑色の矢印のボタンが矢印で指されている](img/try-openvas-in-ubuntu16_04/export_the_result_step_03.png)
 
 ④この後は、普段何かをダウンロードするときと同じように`Save File`を選択し`OK`と進めば、エクスポートされたスキャン結果をダウンロードすることができる。  
 
-![画面の処理方法を選択させるダイアログ](img/try-openvas-in-ubuntu16_04/export_the_result_step_04.png?w=838&h=629)
+![画面の処理方法を選択させるダイアログ](img/try-openvas-in-ubuntu16_04/export_the_result_step_04.png)
 
 今回はHTML形式でエクスポートしたものをダウンロードしているので、ダウンロードしてきたファイルを任意のブラウザで開けば、実際のスキャン結果が確認できる。  
 

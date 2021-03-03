@@ -933,7 +933,6 @@ this is a test paragraph of test-article-id-1.
               Object {
                 "footnoteDefinition": [Function],
                 "footnoteReference": [Function],
-                "image": [Function],
               }
             }
             source="## test h2
@@ -2410,7 +2409,6 @@ this is a test paragraph of test-article-id-1.
               Object {
                 "footnoteDefinition": [Function],
                 "footnoteReference": [Function],
-                "image": [Function],
               }
             }
             source="## test h2

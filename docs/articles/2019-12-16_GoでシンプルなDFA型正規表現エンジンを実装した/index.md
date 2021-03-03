@@ -60,7 +60,7 @@ DFA型の正規表現エンジンは、一般的に、およそ以下の流れ�
 
 以下の図は、`a`という文字を受理するシンプルなオートマトンを表しています。
 
-![simple_fa](img/implement-simple-dfa-regex-engine-in-golang/simple_fa.png?w=297&h=95)
+![simple_fa](img/implement-simple-dfa-regex-engine-in-golang/simple_fa.png)
 
 上のオートマトンの構成要素は、以下の通りです。
 受理状態は、慣例的に枠線を二重にして表します。
@@ -439,11 +439,11 @@ type Node interface {
 
 では、実際に`(ab)|c*`という正規表現から得られるASTを見てみましょう。
 
-![ast](img/implement-simple-dfa-regex-engine-in-golang/ast.png?w=1681&h=60)
+![ast](img/implement-simple-dfa-regex-engine-in-golang/ast.png)
 
 見づらい場合は、以下のグラフを見てください。
 
-![ast_graph](img/implement-simple-dfa-regex-engine-in-golang/ast_graph.png?w=563&h=366)
+![ast_graph](img/implement-simple-dfa-regex-engine-in-golang/ast_graph.png)
 
 以上のように、しっかりパースできていることがわかります。
 
@@ -522,7 +522,7 @@ func (frg *Fragment) Build() *nfa.NFA {
 > その前にε遷移という概念を、説明します。
 > ε遷移は、以下のようなオートマトンで表現できます。
 >
-> ![char_frg_epsilon](img/implement-simple-dfa-regex-engine-in-golang/char_frg_epsilon.png?w=353&h=110)
+> ![char_frg_epsilon](img/implement-simple-dfa-regex-engine-in-golang/char_frg_epsilon.png)
 >
 > `ε`は空文字を表しています。
 > つまり、このオートマトンは、何も読まずにも受理状態に遷移することを示しています。
@@ -534,7 +534,7 @@ func (frg *Fragment) Build() *nfa.NFA {
 まずは、もっともシンプルなCharacterノードを説明します。
 `Character('a')`というノードは、`a`という正規表現を受理する以下のようなNFAを作れば良さそうです。
 
-![char_frg_a](img/implement-simple-dfa-regex-engine-in-golang/char_frg_a.png?w=353&h=110)
+![char_frg_a](img/implement-simple-dfa-regex-engine-in-golang/char_frg_a.png)
 
 このNFAは、初期状態(左の丸)から、'a'というシンボル(文字)を一文字受け取ったときに、受理されます。
 つまり、これは`a`という文字列にマッチする正規表現を表せていそうです。
@@ -618,7 +618,7 @@ func (frg *Fragment) AddRule(from utils.State, c rune, next utils.State) {
 Concatノードは、`ab`のような連結の正規表現を表します。
 これは、以下の図のようなFragmentになるように実装しました。
 
-![concat_frg](img/implement-simple-dfa-regex-engine-in-golang/concat_frg.png?w=933&h=353)
+![concat_frg](img/implement-simple-dfa-regex-engine-in-golang/concat_frg.png)
 
 色のついた四角で囲まれているのは、Concatノードの子ノードのFragmentです。
 `Concat(Character('a'), Character('b'))`というノードであれば、それぞれ、`Character('a')`/`Character('b')`のFragmentだと思ってください。
@@ -632,7 +632,7 @@ Concatノードは、`ab`のような連結の正規表現を表します。
 Unionノードは、`a|b`のような正規表現を表します。
 これは、以下の図のようなFragmentになるように実装しました。
 
-![union_frg](img/implement-simple-dfa-regex-engine-in-golang/union_frg.png?w=621&h=502)
+![union_frg](img/implement-simple-dfa-regex-engine-in-golang/union_frg.png)
 
 色のついた四角で囲まれているのは、先程と同様、Unionノードの子ノードのFragmentです。
 これらのFragmentの初期状態に、新しく作った状態から無条件で遷移するようにします。
@@ -643,7 +643,7 @@ Unionノードは、`a|b`のような正規表現を表します。
 Starノードは、`a*`のような繰り返し(0回以上の繰り返し)の正規表現を表します。
 これは、以下の図のようなFragmentになるように実装します。
 
-![star_frg](img/implement-simple-dfa-regex-engine-in-golang/star_frg.png?w=933&h=388)
+![star_frg](img/implement-simple-dfa-regex-engine-in-golang/star_frg.png)
 
 色のついたFragmentは、Starノードの子ノードです。
 `Star(Character('a'))`というノードであれば、`Character('a')`のことだと思ってください。
@@ -692,7 +692,7 @@ NFAから非決定性を取り除くことが可能であることは、前述�
 
 実際に、以下のε-NFAを例にとって試してみます。
 
-![eNFAtoNFA](img/implement-simple-dfa-regex-engine-in-golang/eNFAtoNFA_example.png?w=512&h=202)
+![eNFAtoNFA](img/implement-simple-dfa-regex-engine-in-golang/eNFAtoNFA_example.png)
 
 まずは、各状態で何も入力されなかった場合に、どの状態に遷移し得るかを計算します。
 もしかすると、「各状態で1文字以上の空文字が入力された場合に、どの状態に遷移し得るか」と言い換えられるかもしれません。
@@ -758,7 +758,7 @@ func (nfa *NFA) CalcDst(q utils.State, c rune) (mapset.Set, bool) {
 この表は、そのままNFAの遷移規則ですから、ε-NFAからNFAが導けたことがわかると思います。
 以下の図は、上の表をわかりやすくしたものです。
 
-![removeEpsilon_result](img/implement-simple-dfa-regex-engine-in-golang/removeEpsilon_result.png?w=512&h=264)
+![removeEpsilon_result](img/implement-simple-dfa-regex-engine-in-golang/removeEpsilon_result.png)
 
 このあたりの実装は、少々長くなったので、省略します。
 気になった方は、[GitHubに置いてあるコード](https://github.com/8ayac/dfa-regex-engine/blob/master/nfa/nfa.go)をご参照ください。
@@ -784,7 +784,7 @@ NFAから非決定性を取り除くには、部分集合構成法という手�
 
 例えば、以下のようなNFAがあるとします。
 
-![example_NFA](img/implement-simple-dfa-regex-engine-in-golang/subset_construction_example_nfa.png?w=353&h=408)
+![example_NFA](img/implement-simple-dfa-regex-engine-in-golang/subset_construction_example_nfa.png)
 
 各状態の遷移先は以下のようになります。
 
@@ -838,7 +838,7 @@ type DFAStatesMap map[mapset.Set]utils.State
 
 以下の図は、上の表をわかりやすくしたものです。
 
-![result_dfa](img/implement-simple-dfa-regex-engine-in-golang/subset_construction_result_dfa.png?w=513&h=342)
+![result_dfa](img/implement-simple-dfa-regex-engine-in-golang/subset_construction_result_dfa.png)
 
 ご覧の通り、非決定性を取り除けていることがわかると思います。
 
@@ -939,7 +939,7 @@ DFAの最小化は、等価な状態を探し、その状態を一つにまと�
 
 では、以下のような例を用いて説明します。
 
-![minimize_dfa_example](img/implement-simple-dfa-regex-engine-in-golang/minimize_dfa_example.png?w=512&h=204)
+![minimize_dfa_example](img/implement-simple-dfa-regex-engine-in-golang/minimize_dfa_example.png)
 
 まずは、説明しやすいように、以下のような通常の遷移規則表を用意しました。
 
@@ -952,7 +952,7 @@ DFAの最小化は、等価な状態を探し、その状態を一つにまと�
 この表を見て、先程の条件を確認すると、`q1`と`q2`が等価であることがわかります。
 等価だとわかれば、あとは`q2`を`q1`にマージする要領で以下のようなDFAを作成することができます。
 
-![minimize_dfa_result](img/implement-simple-dfa-regex-engine-in-golang/minimize_dfa_result.png?w=352&h=204)
+![minimize_dfa_result](img/implement-simple-dfa-regex-engine-in-golang/minimize_dfa_result.png)
 
 以上が、最小化のアルゴリズムです。
 
