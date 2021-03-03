@@ -88,7 +88,14 @@ export const copyImagesToPublic = (
 };
 
 export const generateDescriptionFromMdBody = (mdBody: string): string => {
-  return remark().use(strip).processSync(mdBody).toString().slice(0, 300);
+  const MAX_LENGTH = 300;
+  const OVERFLOW_SUFFIX_CHAR = '…';
+
+  const stripped = remark().use(strip).processSync(mdBody).toString();
+
+  return stripped.length > stripped.slice(0, MAX_LENGTH).length
+    ? `${stripped.slice(0, MAX_LENGTH)}${OVERFLOW_SUFFIX_CHAR}`
+    : stripped;
 };
 
 export const generateArticlesJson = (
