@@ -64,6 +64,7 @@ const SEO: React.FC<{ article: Article }> = ({ article }) => (
   <NextSeo
     title={article.attributes.title}
     canonical={urljoin(config.site.rootUrl, getArticlePagePath(article))}
+    description={article.description?.replace(/(\r\n|\n|\r)+/gm, ' ')}
     openGraph={{
       title: `${article.attributes.title} - ${config.site.title}`,
       type: 'article',

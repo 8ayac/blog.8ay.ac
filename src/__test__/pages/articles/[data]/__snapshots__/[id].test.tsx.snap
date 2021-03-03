@@ -437,6 +437,7 @@ this is a test paragraph of test-article-id-1.
     >
       <_default
         canonical="https://blog.8ay.ac/articles/2021-01-01/test-article-id-1"
+        description="test h2 this is a test paragraph of test-article-id-1. "
         openGraph={
           Object {
             "article": Object {
@@ -2080,6 +2081,7 @@ this is a test paragraph of test-article-id-1.
     >
       <_default
         canonical="https://blog.8ay.ac/articles/2021-01-01/test-article-id-1"
+        description="test h2 this is a test paragraph of test-article-id-1. "
         openGraph={
           Object {
             "article": Object {
