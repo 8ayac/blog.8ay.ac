@@ -98,7 +98,21 @@ describe('copyImageDirectories', () => {
 describe('generateDescriptionFromMdBody', () => {
   const testMd = '## hoge\r\n\r\n**this is a test.**\r\n\r\n'.repeat(300);
   test('returns the string whose length is 300 or lower.', () => {
-    expect(generateDescriptionFromMdBody(testMd).length).toBeLessThan(301);
+    expect(generateDescriptionFromMdBody(testMd).length).toBeLessThan(301 + 1);
+  });
+
+  test("when the stripped MD body's length is 300 or higher, '…' will be attached to the description's end.", () => {
+    const veryShortMarkdown = 'A'.repeat(300);
+    expect(generateDescriptionFromMdBody(veryShortMarkdown).slice(-1)).toBe(
+      '…'
+    );
+  });
+
+  test("when the stripped MD body's length is less than 300, '…' will NOT be attached to the description's end.", () => {
+    const veryShortMarkdown = '# Very short markdown';
+    expect(generateDescriptionFromMdBody(veryShortMarkdown).slice(-1)).not.toBe(
+      '…'
+    );
   });
 });
 
