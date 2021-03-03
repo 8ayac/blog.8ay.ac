@@ -5,7 +5,7 @@ publishedAt: 2018-12-17T00:19:08.000Z
 tags: [コンテスト, セキュリティ, DFIR, Writeup, イベントレポート]
 ---
 
-![公式ロゴ](img/win-the-1st-in-mbsd-cybersecurity-challenges-2018/mbsd_cybersecurity_challenges_2018_logo.png)
+![公式ロゴ](img/win-the-1st-in-mbsd-cybersecurity-challenges-2018/mbsd_cybersecurity_challenges_2018_logo.png?w=680&h=200)
 
 こんにちは、[8ayac](https://twitter.com/8ayac)です。先日、[MBSD Cybersecurity Challenges 2018](http://setten.sgec.or.jp/cooperation/060.html)というコンテストで優勝しました。[去年](https://twitter.com/8ayac/status/940922733088555008)に続き2年連続の優勝です。
 
@@ -107,7 +107,7 @@ tags: [コンテスト, セキュリティ, DFIR, Writeup, イベントレポー
 
 実際のレポートの雰囲気はこんな感じです。
 
-![実際のレポートを一部抜粋した画像](img/win-the-1st-in-mbsd-cybersecurity-challenges-2018/actual_report_screenshot.png)
+![実際のレポートを一部抜粋した画像](img/win-the-1st-in-mbsd-cybersecurity-challenges-2018/actual_report_screenshot.png?w=526&h=427)
 
 ### OSINT(?)
 

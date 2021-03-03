@@ -54,7 +54,7 @@ tags: [Web, セキュリティ, Bugbounty, 検証]
 
 実際に`attacker.example.com`にChromeでアクセスすると、`victim.example.com`のページの内容を`attacker.example.com`から取得できていることが確認できた。
 
-![attacker.example.comにアクセスした際の画面](img/bypassing-the-same-origin-policy-via-document_domain/the_result_of_accessing_attacker_example_com.png)
+![attacker.example.comにアクセスした際の画面](img/bypassing-the-same-origin-policy-via-document_domain/the_result_of_accessing_attacker_example_com.png?w=1397&h=823)
 
 ## 脅威
 

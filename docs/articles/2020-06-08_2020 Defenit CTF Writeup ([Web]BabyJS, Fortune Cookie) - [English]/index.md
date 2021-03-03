@@ -10,7 +10,7 @@ The challenges I solved are "Fortune Cookies" and "BabyJS" in Web category.
 
 In addition, the result was a total of 1053pts and was 55th out of 964 teams.
 
-![The result of IPFactory](img/writeup-of-2020-defenit-ctf-english-ver/IPFactory_result.png)
+![The result of IPFactory](img/writeup-of-2020-defenit-ctf-english-ver/IPFactory_result.png?w=229&h=43)
 
 日本語版は[こちら](http://caya8.hatenablog.com/entry/2020/06/07/181927)
 
@@ -149,7 +149,7 @@ Finally, referring to [this document](https://handlebarsjs.com/guide/builtin-hel
 
 When I actually posted it, the flag was displayed as follows.
 
-![Got the flag of this problem](img/writeup-of-2020-defenit-ctf-english-ver/babyjs_got_the_flag.png)
+![Got the flag of this problem](img/writeup-of-2020-defenit-ctf-english-ver/babyjs_got_the_flag.png?w=543&h=172)
 
 #### Explanation of the payload
 

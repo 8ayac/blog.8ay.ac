@@ -51,7 +51,7 @@ Attachment: app.py
 
 実際に、問題のトップページにアクセスすると、以下のような、ログインページが表示されます。
 
-![SQLi101のトップページ](img/writeup-of-isc-bughunt101-ctf-by-the-author/sqli101_toppage.png)
+![SQLi101のトップページ](img/writeup-of-isc-bughunt101-ctf-by-the-author/sqli101_toppage.png?width=1200px&height=675px)
 
 ### 最終目標の分析
 
@@ -110,7 +110,7 @@ def is_admin(pw: str) -> bool:
 
 実際に、ログインページのフォームに`" OR "a"="a`と入力して、ログインボタンを押すと、以下のようにFlagが表示されます。
 
-![SQLi101のflagが表示されるページ](img/writeup-of-isc-bughunt101-ctf-by-the-author/sqli101_flag_appeared.png)
+![SQLi101のflagが表示されるページ](img/writeup-of-isc-bughunt101-ctf-by-the-author/sqli101_flag_appeared.png?w=1200&h=675)
 
 ### Flag
 
@@ -137,15 +137,15 @@ Attachment: app.py
 
 トップページにアクセスしてみると、なんとなくどういうアプリかがわかります。
 
-![BuggyBase2のトップページ](img/writeup-of-isc-bughunt101-ctf-by-the-author/buggybase2_toppage.png)
+![BuggyBase2のトップページ](img/writeup-of-isc-bughunt101-ctf-by-the-author/buggybase2_toppage.png?w=1200&h=675)
 
 試しに、フォームに`hoge`と入力して、Encodeボタンをクリックしてみると、`hoge`をBase64エンコードした値が出力されます。
 
-![hogeという文字列をフォームに入力してEncodeボタンをクリックした画面](img/writeup-of-isc-bughunt101-ctf-by-the-author/buggybase2_toppage_encode.png)
+![hogeという文字列をフォームに入力してEncodeボタンをクリックした画面](img/writeup-of-isc-bughunt101-ctf-by-the-author/buggybase2_toppage_encode.png?w=1200&h=675)
 
 出力された値を、もう一度フォームに入れて、Decodeボタンをクリックすると、`hoge`と出力されます。
 
-![aG9nZQ==という文字列をフォームに入力してDecodeボタンをクリックした画面](img/writeup-of-isc-bughunt101-ctf-by-the-author/buggybase2_toppage_decode.png)
+![aG9nZQ==という文字列をフォームに入力してDecodeボタンをクリックした画面](img/writeup-of-isc-bughunt101-ctf-by-the-author/buggybase2_toppage_decode.png?w=1200&h=675)
 
 どうやら、任意の文字列をbase64エンコード/デコードするアプリのようです。
 
@@ -189,15 +189,15 @@ if mode not in ['encode', 'decode']:
 例えば、`{{cofig.__class__.__init__.__globals__['os'].popen(★).read()}}`という文字列の`★`の部分をOSコマンドに置き換えることで、サーバ側でそのOSコマンドを実行させ、その結果を表示することができます。
 実際に、`ls -la`コマンドを実行してみると、`flag.txt`というファイルがあることがわかります。
 
-![SSTI経由でls -laを実行させた結果](img/writeup-of-isc-bughunt101-ctf-by-the-author/buggybase2_ls_-la_result.png)
+![SSTI経由でls -laを実行させた結果](img/writeup-of-isc-bughunt101-ctf-by-the-author/buggybase2_ls_-la_result.png?w=1200&h=675)
 
 ちなみに、表示が見づらい場合は、ペイロードの頭に`<pre>`を、末尾に`<!--`を付けると、見やすくなります。
 
-![SSTIを用いてls -laを実行した結果が適切に改行されている](img/writeup-of-isc-bughunt101-ctf-by-the-author/buggybase2_cmd_result_with_pre.png)
+![SSTIを用いてls -laを実行した結果が適切に改行されている](img/writeup-of-isc-bughunt101-ctf-by-the-author/buggybase2_cmd_result_with_pre.png?w=1200&h=675)
 
 さて、`cat flag.txt`というコマンドを実行させて、flag.txtの内容を見てみると、flagが表示されました。
 
-![this_is_secret.txtの内容が表示されている](img/writeup-of-isc-bughunt101-ctf-by-the-author/buggybase2_cat_this_is_secret_txt.png)
+![this_is_secret.txtの内容が表示されている](img/writeup-of-isc-bughunt101-ctf-by-the-author/buggybase2_cat_this_is_secret_txt.png?w=1200&h=675)
 
 ### Flag
 
@@ -230,13 +230,13 @@ Attachment: app.py
 
 問題文に記載された、URLにアクセスすると、以下のようなページが表示されます。
 
-![SSRF101にアクセスして表示されたトップページ](img/writeup-of-isc-bughunt101-ctf-by-the-author/ssrf101_toppage.png)
+![SSRF101にアクセスして表示されたトップページ](img/writeup-of-isc-bughunt101-ctf-by-the-author/ssrf101_toppage.png?w=1200&h=675)
 
 inputURLと書いてあるので、試しに`http://example.com`と入力して、Submitしてみます。
 すると、以下のように`hostname is not included in the white list`と怒られます。
 どうやら、入力されたURLのホスト名は、予め用意された許可リストで検証されるようです。
 
-![許可リストによる検証でエラーになった](img/writeup-of-isc-bughunt101-ctf-by-the-author/ssrf101_error.png)
+![許可リストによる検証でエラーになった](img/writeup-of-isc-bughunt101-ctf-by-the-author/ssrf101_error.png?w=1200&h=675)
 
 では、配布された[app.py](https://github.com/8ayac/iscbughunt101ctf/blob/master/ssrf101/ssrf101/src/app.py)を見てみましょう。
 
@@ -300,7 +300,7 @@ httpスキームやhttpsスキームは、URIスキームとしては、最も�
 
 実際に各URLを試してみると、`http://shemhazai/`を指定した際に、以下のようなヒントが得られます。
 
-![Hi, SSRF baby. There's the flag in /this_is_secret.txt in ssrf101. All you need is to just read the fileと表示された](img/writeup-of-isc-bughunt101-ctf-by-the-author/ssrf101_hint.png)
+![Hi, SSRF baby. There's the flag in /this_is_secret.txt in ssrf101. All you need is to just read the fileと表示された](img/writeup-of-isc-bughunt101-ctf-by-the-author/ssrf101_hint.png?w=1200&h=675)
 
 ヒントを読んでみると、どうやらflagはssrf101(ホスト名)の`/this_is_secret.txt`にあるようで、そのファイルを読み取れば良いみたいです。
 
@@ -311,7 +311,7 @@ httpスキームやhttpsスキームは、URIスキームとしては、最も�
 
 実際に、`file://ssrf101/this_is_secret.txt`をフォームに入力して、Submitすると、以下のようにflagが表示されました。
 
-![SSRF101のflagが表示された](img/writeup-of-isc-bughunt101-ctf-by-the-author/ssrf101_flag_appeared.png)
+![SSRF101のflagが表示された](img/writeup-of-isc-bughunt101-ctf-by-the-author/ssrf101_flag_appeared.png?w=1200&h=675)
 
 ### Flag
 
@@ -357,7 +357,7 @@ SSRFの基本原理と、fileスキームを使ったLFIの手法を知ってい
 ただ、難易度が高くても、楽しんでくれた方は想像以上にいて、嬉しかったですね。
 「CTFをやったのは初めてだったが、解けたときが嬉しかった。」という声がいくつかあり、「わかり」が発生しました。
 
-![Zoomのアンケート「CTFどうでしたか」の結果、「楽しかった」が86%で「そうでもない」が14%になった。](img/writeup-of-isc-bughunt101-ctf-by-the-author/survey_result.png)
+![Zoomのアンケート「CTFどうでしたか」の結果、「楽しかった」が86%で「そうでもない」が14%になった。](img/writeup-of-isc-bughunt101-ctf-by-the-author/survey_result.png?w=351&h=200)
 
 実は、準備期間が一週間未満な中で、作問以外にも、問題サーバやスコアサーバの準備なども一人でやっていました。
 すべて初めての経験だったのですが、特に問題もなく運営(?)できて良かったです。
