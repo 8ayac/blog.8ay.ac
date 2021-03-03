@@ -26,7 +26,7 @@ HackerOneのユーザのプロフィール上にあるHacktivityのRSSフィー�
 IPFactoryでは、下図のようにメンバーのアウトプットを一覧表示する[ページ](https://ipfactory.github.io)を公開しています。
 このページ自体は、[Team Blog Hub](https://github.com/catnose99/team-blog-hub)に自分たちで手を加えたものです。
 
-![メンバーのアウトプットを一覧表示するページ](img/writing-a-script-to-generate-the-RSS-feed-of-user-profile-in-H1/ipfactory.github.io_toppage.png)
+![メンバーのアウトプットを一覧表示するページ](img/writing-a-script-to-generate-the-RSS-feed-of-user-profile-in-H1/ipfactory.github.io_toppage.png?w=1023&h=996)
 
 各メンバーのアウトプット(基本的にはブログ)の更新情報は、毎日自動的に取得され、ページに反映されます。
 各アウトプットについて、RSSフィードを配信しているURLを設定ファイルに適切に記述しておけば、それを元に更新情報が自動で取得されます。
@@ -36,14 +36,14 @@ IPFactoryでは、下図のようにメンバーのアウトプットを一覧�
 
 HackerOneのユーザのプロフィールページでは、下図のように、ユーザの脆弱性報告の履歴がHacktivityとして一覧で表示されています。
 
-![筆者のHacktivity](img/writing-a-script-to-generate-the-RSS-feed-of-user-profile-in-H1/h1_profile.png)
+![筆者のHacktivity](img/writing-a-script-to-generate-the-RSS-feed-of-user-profile-in-H1/h1_profile.png?w=1212&h=862)
 
 ### 公式ではHacktivityのRSSフィードが配信されていない
 
 筆者はバグバウンティが好きなので、[IPFactory.github.io](https://ipfactory.github.io/)に、自身のブログと同様に、Hacktivityの情報も掲載しています。
 実際には、下図の赤枠で囲われた部分のような感じで掲載されています。
 
-![BlogHubに筆者のHacktivityの情報が掲載されている様子](img/writing-a-script-to-generate-the-RSS-feed-of-user-profile-in-H1/ipfactory.github.io_8ayac.png)
+![BlogHubに筆者のHacktivityの情報が掲載されている様子](img/writing-a-script-to-generate-the-RSS-feed-of-user-profile-in-H1/ipfactory.github.io_8ayac.png?w=1082&h=981)
 
 このように、Hacktivityの情報を掲載するには、HacktivityのRSSフィードが必要です。
 しかしながら、どうやら、公式ではHacktivityのRSSフィードが用意されていませんでした。
