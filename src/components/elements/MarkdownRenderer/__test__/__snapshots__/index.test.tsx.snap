@@ -187,6 +187,7 @@ exports[`MarkdownRenderer is rendered correctly to match the snapshot 1`] = `
             Object {
               "footnoteDefinition": [Function],
               "footnoteReference": [Function],
+              "image": [Function],
             }
           }
           source="test"
