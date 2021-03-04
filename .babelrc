@@ -13,54 +13,6 @@
         }
       }
     ],
-    "@emotion",
-    [
-      "prismjs",
-      {
-        "languages": [
-          "apacheconf",
-          "bash",
-          "bnf",
-          "c",
-          "cpp",
-          "css",
-          "diff",
-          "django",
-          "docker",
-          "ebnf",
-          "ejs",
-          "erb",
-          "git",
-          "go",
-          "graphql",
-          "handlebars",
-          "http",
-          "ini",
-          "java",
-          "javascript",
-          "jq",
-          "js-extras",
-          "js-templates",
-          "json",
-          "json5",
-          "jsx",
-          "markdown",
-          "nginx",
-          "php",
-          "python",
-          "regex",
-          "ruby",
-          "sass",
-          "shell-session",
-          "sql",
-          "tsx",
-          "typescript",
-          "yaml"
-        ],
-        "plugins": ["show-language"],
-        "theme": "okaidia",
-        "css": true
-      }
-    ]
+    "@emotion"
   ]
 }
