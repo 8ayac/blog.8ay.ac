@@ -19,15 +19,6 @@ exports[`MarkdownRenderer is rendered correctly to match the snapshot 1`] = `
   margin-top: 1em;
 }
 
-.emotion-0 code,
-.emotion-0 pre {
-  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
-}
-
-.emotion-0 pre {
-  white-space: pre-wrap;
-}
-
 .emotion-0 code:not([class]) {
   padding: 0.2em 0.4em;
   margin: 0;
@@ -185,6 +176,7 @@ exports[`MarkdownRenderer is rendered correctly to match the snapshot 1`] = `
           }
           renderers={
             Object {
+              "code": [Function],
               "footnoteDefinition": [Function],
               "footnoteReference": [Function],
             }

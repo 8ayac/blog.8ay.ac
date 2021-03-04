@@ -181,15 +181,6 @@ exports[`ArticlePage is rendered correctly to match the snapshot with revision h
   margin-top: 1em;
 }
 
-.emotion-58 code,
-.emotion-58 pre {
-  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
-}
-
-.emotion-58 pre {
-  white-space: pre-wrap;
-}
-
 .emotion-58 code:not([class]) {
   padding: 0.2em 0.4em;
   margin: 0;
@@ -932,6 +923,7 @@ this is a test paragraph of test-article-id-1.
             }
             renderers={
               Object {
+                "code": [Function],
                 "footnoteDefinition": [Function],
                 "footnoteReference": [Function],
               }
@@ -1851,15 +1843,6 @@ exports[`ArticlePage is rendered correctly to match the snapshot without revisio
   margin-top: 1em;
 }
 
-.emotion-34 code,
-.emotion-34 pre {
-  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
-}
-
-.emotion-34 pre {
-  white-space: pre-wrap;
-}
-
 .emotion-34 code:not([class]) {
   padding: 0.2em 0.4em;
   margin: 0;
@@ -2409,6 +2392,7 @@ this is a test paragraph of test-article-id-1.
             }
             renderers={
               Object {
+                "code": [Function],
                 "footnoteDefinition": [Function],
                 "footnoteReference": [Function],
               }

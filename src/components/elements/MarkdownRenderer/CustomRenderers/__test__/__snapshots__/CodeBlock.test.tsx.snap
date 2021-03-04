@@ -1,0 +1,306 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CodeBlock is rendered correctly to match the snapshot 1`] = `
+<CodeBlock
+  language="js"
+  value="console.log(1);"
+>
+  <SyntaxHighlighter
+    customStyle={
+      Object {
+        "borderRadius": "5px",
+        "fontFamily": "monospace",
+        "lineHeight": "1.1",
+        "padding": "1.5rem 2rem",
+      }
+    }
+    language="js"
+    style={
+      Object {
+        ".language-css .token.string": Object {
+          "color": "#87C38A",
+        },
+        ".namespace": Object {
+          "Opacity": ".7",
+        },
+        ".style .token.string": Object {
+          "color": "#87C38A",
+        },
+        ":not(pre) > code[class*=\\"language-\\"]": Object {
+          "background": "#1d1f21",
+          "borderRadius": ".3em",
+          "padding": ".1em",
+        },
+        "atrule": Object {
+          "color": "#F9EE98",
+        },
+        "attr-name": Object {
+          "color": "#A8FF60",
+        },
+        "attr-value": Object {
+          "color": "#F9EE98",
+        },
+        "bold": Object {
+          "fontWeight": "bold",
+        },
+        "boolean": Object {
+          "color": "#99CC99",
+        },
+        "builtin": Object {
+          "color": "#A8FF60",
+        },
+        "cdata": Object {
+          "color": "#7C7C7C",
+        },
+        "char": Object {
+          "color": "#A8FF60",
+        },
+        "class-name": Object {
+          "color": "#FFFFB6",
+          "textDecoration": "underline",
+        },
+        "code[class*=\\"language-\\"]": Object {
+          "MozHyphens": "none",
+          "MozTabSize": "4",
+          "OTabSize": "4",
+          "WebkitHyphens": "none",
+          "color": "#c5c8c6",
+          "direction": "ltr",
+          "fontFamily": "Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace",
+          "hyphens": "none",
+          "lineHeight": "1.5",
+          "msHyphens": "none",
+          "tabSize": "4",
+          "textAlign": "left",
+          "textShadow": "0 1px rgba(0, 0, 0, 0.3)",
+          "whiteSpace": "pre",
+          "wordBreak": "normal",
+          "wordSpacing": "normal",
+        },
+        "comment": Object {
+          "color": "#7C7C7C",
+        },
+        "constant": Object {
+          "color": "#99CC99",
+        },
+        "deleted": Object {
+          "color": "#f92672",
+        },
+        "doctype": Object {
+          "color": "#7C7C7C",
+        },
+        "entity": Object {
+          "color": "#FFFFB6",
+          "cursor": "help",
+        },
+        "function": Object {
+          "color": "#DAD085",
+        },
+        "important": Object {
+          "color": "#fd971f",
+          "fontWeight": "bold",
+        },
+        "inserted": Object {
+          "color": "#A8FF60",
+        },
+        "italic": Object {
+          "fontStyle": "italic",
+        },
+        "keyword": Object {
+          "color": "#96CBFE",
+        },
+        "number": Object {
+          "color": "#FF73FD",
+        },
+        "operator": Object {
+          "color": "#EDEDED",
+        },
+        "pre[class*=\\"language-\\"]": Object {
+          "MozHyphens": "none",
+          "MozTabSize": "4",
+          "OTabSize": "4",
+          "WebkitHyphens": "none",
+          "background": "#1d1f21",
+          "borderRadius": "0.3em",
+          "color": "#c5c8c6",
+          "direction": "ltr",
+          "fontFamily": "Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace",
+          "hyphens": "none",
+          "lineHeight": "1.5",
+          "margin": ".5em 0",
+          "msHyphens": "none",
+          "overflow": "auto",
+          "padding": "1em",
+          "tabSize": "4",
+          "textAlign": "left",
+          "textShadow": "0 1px rgba(0, 0, 0, 0.3)",
+          "whiteSpace": "pre",
+          "wordBreak": "normal",
+          "wordSpacing": "normal",
+        },
+        "prolog": Object {
+          "color": "#7C7C7C",
+        },
+        "property": Object {
+          "color": "#96CBFE",
+        },
+        "punctuation": Object {
+          "color": "#c5c8c6",
+        },
+        "regex": Object {
+          "color": "#E9C062",
+        },
+        "selector": Object {
+          "color": "#A8FF60",
+        },
+        "string": Object {
+          "color": "#A8FF60",
+        },
+        "symbol": Object {
+          "color": "#f92672",
+        },
+        "tag": Object {
+          "color": "#96CBFE",
+        },
+        "url": Object {
+          "color": "#96CBFE",
+        },
+        "variable": Object {
+          "color": "#C6C5FE",
+        },
+      }
+    }
+  >
+    <pre
+      style={
+        Object {
+          "MozHyphens": "none",
+          "MozTabSize": "4",
+          "OTabSize": "4",
+          "WebkitHyphens": "none",
+          "background": "#1d1f21",
+          "borderRadius": "5px",
+          "color": "#c5c8c6",
+          "direction": "ltr",
+          "fontFamily": "monospace",
+          "hyphens": "none",
+          "lineHeight": "1.1",
+          "margin": ".5em 0",
+          "msHyphens": "none",
+          "overflow": "auto",
+          "padding": "1.5rem 2rem",
+          "tabSize": "4",
+          "textAlign": "left",
+          "textShadow": "0 1px rgba(0, 0, 0, 0.3)",
+          "whiteSpace": "pre",
+          "wordBreak": "normal",
+          "wordSpacing": "normal",
+        }
+      }
+    >
+      <code
+        className="language-js"
+        style={
+          Object {
+            "MozHyphens": "none",
+            "MozTabSize": "4",
+            "OTabSize": "4",
+            "WebkitHyphens": "none",
+            "color": "#c5c8c6",
+            "direction": "ltr",
+            "fontFamily": "Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace",
+            "hyphens": "none",
+            "lineHeight": "1.5",
+            "msHyphens": "none",
+            "tabSize": "4",
+            "textAlign": "left",
+            "textShadow": "0 1px rgba(0, 0, 0, 0.3)",
+            "whiteSpace": "pre",
+            "wordBreak": "normal",
+            "wordSpacing": "normal",
+          }
+        }
+      >
+        <span
+          className="token console"
+          key="code-segement0"
+          style={
+            Object {
+              "color": "#FFFFB6",
+              "textDecoration": "underline",
+            }
+          }
+        >
+          console
+        </span>
+        <span
+          className="token"
+          key="code-segement1"
+          style={
+            Object {
+              "color": "#c5c8c6",
+            }
+          }
+        >
+          .
+        </span>
+        <span
+          className="token method property-access"
+          key="code-segement2"
+          style={
+            Object {
+              "color": "#DAD085",
+            }
+          }
+        >
+          log
+        </span>
+        <span
+          className="token"
+          key="code-segement3"
+          style={
+            Object {
+              "color": "#c5c8c6",
+            }
+          }
+        >
+          (
+        </span>
+        <span
+          className="token"
+          key="code-segement4"
+          style={
+            Object {
+              "color": "#FF73FD",
+            }
+          }
+        >
+          1
+        </span>
+        <span
+          className="token"
+          key="code-segement5"
+          style={
+            Object {
+              "color": "#c5c8c6",
+            }
+          }
+        >
+          )
+        </span>
+        <span
+          className="token"
+          key="code-segement6"
+          style={
+            Object {
+              "color": "#c5c8c6",
+            }
+          }
+        >
+          ;
+        </span>
+      </code>
+    </pre>
+  </SyntaxHighlighter>
+</CodeBlock>
+`;

@@ -1,7 +1,6 @@
 import { customRenderers } from '@/src/components/elements/MarkdownRenderer/CustomRenderers';
 import styled from '@emotion/styled';
-import Prism from 'prismjs';
-import React, { useEffect } from 'react';
+import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkFootnotes from 'remark-footnotes';
 import remarkGfm from 'remark-gfm';
@@ -23,15 +22,6 @@ const S = {
     h5,
     h6 {
       margin-top: 1em;
-    }
-
-    code,
-    pre {
-      font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
-    }
-
-    pre {
-      white-space: pre-wrap;
     }
 
     /* This rule is for the inline code block. */
@@ -103,10 +93,6 @@ const S = {
 export const MarkdownRenderer: React.FC<{ content: string }> = ({
   content,
 }) => {
-  useEffect(() => {
-    Prism.highlightAll();
-  });
-
   const imageUriTransformer = (v: string): string => {
     return v.replace(/^\/?img\//, '/img/article/');
   };
