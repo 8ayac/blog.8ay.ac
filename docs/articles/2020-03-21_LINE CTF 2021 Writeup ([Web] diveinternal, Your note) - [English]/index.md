@@ -70,10 +70,7 @@ The URL to which the request is forwarded can be freely specified to some extent
 After that, I organized the specifications of the back-end application and just did a puzzle.
 For details, refer to Solver described later.
 
-<details>
-<summary>
-    Notes on backend app specifications
-</summary>
+### Notes on backend app specifications
 
 ### class `Activity` in `app.main`
 
@@ -132,8 +129,6 @@ For details, refer to Solver described later.
 |`GET /addsub`|API for new Subscriber registration||
 |`GET /integrityStatus`|API for checking DB integrity status|You can get the DB file path and the value of the current DB consistency verification hash(`dbHash`).|
 |`GET /rollback`|API for DB rollback|If you pass `app.main.SignCheck (request)`, `app.main.Activity.IntegrityCheck` will be executed. The value of the request header `Key` is passed as the argument `key`. The value of `dbhash` specified in the query string is passed to the argument `dbHash`.|
-
-</details>
 
 ### Solver
 

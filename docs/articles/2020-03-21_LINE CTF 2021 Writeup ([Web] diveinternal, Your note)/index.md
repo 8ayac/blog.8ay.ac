@@ -70,10 +70,7 @@ Total issues:
 あとは、バックエンドのアプリの仕様を整理して、パズルをした。
 詳細は、後述のSolverを参照されたい。
 
-<details>
-<summary>
-    バックエンドのアプリの仕様に関するメモ
-</summary>
+### バックエンドのアプリの仕様に関するメモ
 
 ### class `Activity` in `app.main`
 
@@ -132,8 +129,6 @@ Total issues:
 |`GET /addsub`|新規Subscriber登録用API||
 |`GET /integrityStatus`|DBの完全性に関するステータス取得用API|DBファイルのパスと、現在のDBの整合性検証用ハッシュ(`dbHash`)の値が取得できる。|
 |`GET /rollback`|DBのロールバック用API|`app.main.SignCheck(request)`をpassすると、`app.main.Activity.IntegrityCheck`が実行される。引数`key`には、リクエストヘッダ`Key`の値が渡され、引数`dbHash`にはクエリ文字列で指定した`dbhash`の値が渡される。|
-
-</details>
 
 ### Solver
 
