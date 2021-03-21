@@ -1,6 +1,6 @@
 ---
 id: writeup-of-line-ctf-2021
-title: LINE CTF 2021 Writeup ([Web] diveinternal, Your note)
+title: LINE CTF 2021 Writeup ([Web] diveinternal, Your Note)
 publishedAt: 2021-03-21T04:14:00.000Z
 tags: [CTF, Writeup, Web Security, Nginx, SSRF, Host Spoofing, Python, XS-Leaks]
 ---
