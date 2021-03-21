@@ -12,7 +12,7 @@ The problems I solved are diveinternal and Your Note[^1].
 Since freshness is essential for gratitude, apology, and Writeup, the content is simple without a detailed explanation. [^2]
 Please note that the explanation is basically for those who know the problem's content, and the context is largely omitted.
 
-日本語版は[こちら](http://blog.8ay.ac/2021-03-21/writeup-of-line-ctf-2021)
+日本語版は[こちら](http://blog.8ay.ac/articles/2021-03-21/writeup-of-line-ctf-2021)
 
 ## [Web 50pts] diveinternal (65/680 Solves)
 

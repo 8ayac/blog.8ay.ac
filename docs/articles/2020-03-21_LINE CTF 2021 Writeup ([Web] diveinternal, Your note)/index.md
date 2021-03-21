@@ -12,7 +12,7 @@ tags: [CTF, Writeup, Web Security, Nginx, SSRF, Host Spoofing, Python, XS-Leaks]
 感謝と謝罪とWriteupは鮮度が大事らしいので、内容は丁寧な解説とかはなく、簡易的なものになっています。[^2]
 基本的には、問題の内容を知っている人向けの説明になっており、コンテキストが大きく省略されている部分がありますので、ご注意ください。
 
-The English version is [here](http://blog.8ay.ac/2021-03-21/writeup-of-line-ctf-2021-english-ver)
+The English version is [here](http://blog.8ay.ac/articles/2021-03-21/writeup-of-line-ctf-2021-english-ver)
 
 ## [Web 50pts] diveinternal (65/680 Solves)
 
