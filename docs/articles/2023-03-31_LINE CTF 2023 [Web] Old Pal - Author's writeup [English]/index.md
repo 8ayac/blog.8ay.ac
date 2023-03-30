@@ -18,7 +18,7 @@ This author's writeup explains the intended solution and key points of this chal
 The file distributed as a challenge is the following program written in Perl.
 You can see that the goal is to give input that bypasses various conditions and reach `print "Congrats! Flag is LINECTF{redacted}"` on line 52.
 
-```perl.
+```perl
 #! /usr/bin/perl
 use strict;
 use warnings; use CGI
