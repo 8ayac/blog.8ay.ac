@@ -122,7 +122,7 @@ sub warn {
 あとは、<http://104.198.120.186:11006/cgi-bin/main.pl?password=20230326-__LINE__>にアクセスすれば、Flagが入手できます。
 もちろん下記のようにcurlコマンドで取ってきても良いです。
 
-```
+```shell-session
 $ curl http://104.198.120.186:11006/cgi-bin/main.pl?password=20230326-__LINE__ 
 Congrats! Flag is LINECTF{3e05d493c941cfe0dd81b70dbf2d972b}
 ```
