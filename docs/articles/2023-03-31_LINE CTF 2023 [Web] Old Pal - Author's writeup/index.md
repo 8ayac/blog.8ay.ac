@@ -4,6 +4,8 @@ title: LINE CTF 2023 [Web] Old Pal - Author's writeup
 publishedAt: 2023-03-31T06:00:00
 tags: [CTF, Writeup, Web Security, Perl, Eval Injection, Filter Bypass]
 ---
+こんにちは、[8ayac](https://twitter.com/8ayac)です🐝
+
 2023/03/25 9:00(JST)から2023/03/26 9:00(JST)に行われた[LINE CTF 2023](https://ctftime.org/event/1716)において、Web問のOld Palを作りました。
 
 この問題は、477チーム[^1]中67名によって解かれ、最終的なスコアは119点でした。
