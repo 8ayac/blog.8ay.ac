@@ -21,7 +21,7 @@ const feed = new Feed({
   id: config.site.rootUrl,
   link: config.site.rootUrl,
   description: config.site.subtitle,
-  copyright: `All rights reserved 2021${
+  copyright: `All rights reserved 2021-2023${
     new Date().getFullYear() > config.site.publishedYear
       ? ` - ${new Date().getFullYear()}`
       : ''
