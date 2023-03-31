@@ -158,5 +158,6 @@ And I have never known about `__LINE__` before this time.
 Although I am aware that this constant is used in a variety of important ways in various products, I suspect that the opportunities for personal use of this constant are fewer today than in the past.
 Considering this context, for some people, this `__LINE__` may be what they call an "Old Pal (≒Old Friend)" :)
 
+Thank you!
 
 [^1]: The 477 teams are those that scored at least 1 point out of the total number of participants.
