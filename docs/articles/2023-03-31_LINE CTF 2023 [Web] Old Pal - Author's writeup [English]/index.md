@@ -129,7 +129,7 @@ Congrats! Flag is LINECTF{3e05d493c941cfe0dd81b70dbf2d972b}
 
 ## Unintended solutions
 
-Disappointingly, this challenge had some unintended solutions like belows:
+Disappointingly, this challenge had some unintended solutions like below:
 
 - `040p20-13324107`: The floating-point value with octal for the mantissa (`040p20-13324107` equals `0x20p20-13324107`, but if `x` is included the input value is filtered.)
 - `20230326-v49`: <https://perldoc.perl.org/perldata#Version-Strings>.
