@@ -117,7 +117,7 @@ sub warn {
 ```
 
 Then, the input value that satisfies these conditions is `20230326-__LINE__`.
-Note that `__LINE__` will then be 1 not 51 in this eval.
+Note that `__LINE__` will be 1, not 51, in this eval.
 
 Now, you can get the flag by accessing <http://104.198.120.186:11006/cgi-bin/main.pl?password=20230326-__LINE__>.
 Of course, you can also use the curl command to get it, as shown below.
