@@ -151,11 +151,11 @@ I hope you enjoyed the taste of Old Pal ;)
 
 Besides, the magic constant `__LINE__` is also available in C, PHP, and other languages.
 Perl has many strange notations and specifications, so considering the difficulty of eliminating unexpected solutions in advance, it would have been more reasonable to choose PHP.
-Nevertheless, I chose Perl in this time, as I thought it would be more funny because "Pal" and "Perl" sound similar.
+Nevertheless, I chose Perl this time, as I thought it would be more funny because "Pal" and "Perl" sound similar.
 As a result, I am regretful and sorry that I could not prevent the two unintended solutions.
 
 And I have never known about `__LINE__` before this time.
-Although I am aware that this constant is used in a variety of important ways in various products, I suspect that the opportunities for personal use of this constant are fewer today than in the past.
+Although I am aware that this constant is used in a variety of important ways in various products, I suspect that the opportunities for the personal use of this constant are fewer today than in the past.
 Considering this context, for some people, this `__LINE__` may be what they call an "Old Pal (≒Old Friend)" :)
 
 Thank you!
