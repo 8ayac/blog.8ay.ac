@@ -150,7 +150,7 @@ Also, I hoped this simple challenge would be an "aperitif" before solving other 
 I hope you enjoyed the taste of Old Pal ;)
 
 Besides, the magic constant `__LINE__` is also available in C, PHP, and other languages.
-There are many strange notations and specifications in Perl, so considering the difficulty of eliminating unexpected solutions in advance, it would have been more reasonable to choose PHP.
+Perl has many strange notations and specifications, so considering the difficulty of eliminating unexpected solutions in advance, it would have been more reasonable to choose PHP.
 Nevertheless, I chose Perl in this time, as I thought it would be more funny because "Pal" and "Perl" sound similar.
 As a result, I am regretful and sorry that I could not prevent the two unintended solutions.
 
